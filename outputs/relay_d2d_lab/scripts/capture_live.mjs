@@ -1,0 +1,16 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-webgl','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await page.goto('http://127.0.0.1:8765',{waitUntil:'networkidle'});
+await page.waitForFunction(()=>window.relayLab?.state.status?.devices.some(d=>d.online&&d.role==='relay'));
+await page.click('[data-mode="live"]');await page.selectOption('#environment','live');
+await page.fill('#duration','10');await page.selectOption('#destinationDevice','laptop');
+await page.click('#startRun');
+await page.waitForFunction(()=>window.relayLab.state.status?.run?.config?.environment==='live'&&!window.relayLab.state.status.run.finished);
+await page.waitForFunction(()=>window.relayLab.state.status.run.finished,null,{timeout:20000});
+await page.waitForSelector('#packetRows tr');await page.locator('#packetRows tr').first().click();
+await page.screenshot({path:'results/dashboard_live_light.png',fullPage:true});
+const run=await page.evaluate(()=>window.relayLab.state.status.run);delete run.events;
+fs.writeFileSync('results/final_ui_live_run.json',JSON.stringify(run,null,2));
+await browser.close();console.log(JSON.stringify({id:run.id,sent:run.sent,received:run.delivery_confirmed,rtt_p95_ms:run.rtt_p95_ms}));

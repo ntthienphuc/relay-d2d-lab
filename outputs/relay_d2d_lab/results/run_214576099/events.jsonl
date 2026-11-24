@@ -1,0 +1,200 @@
+{"type": "send", "node": "S", "seq": 0, "bytes": 128, "server_time": 1795510904.9943383, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 0, "bytes": 128, "server_time": 1795510904.9943383, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 0, "processing_ms": 0.0, "server_time": 1795510904.9953399, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 0, "bytes": 128, "hops": 1, "server_time": 1795510904.9953399, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 0, "hops": 1, "rtt_ms": 1.686, "server_time": 1795510904.9953399, "run": 214576099}
+{"type": "send", "node": "S", "seq": 1, "bytes": 128, "server_time": 1795510905.0464363, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 1, "bytes": 128, "server_time": 1795510905.0464363, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 1, "processing_ms": 0.0, "server_time": 1795510905.0464363, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 1, "bytes": 128, "hops": 1, "server_time": 1795510905.0474384, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 1, "hops": 1, "rtt_ms": 1.0637, "server_time": 1795510905.0474384, "run": 214576099}
+{"type": "send", "node": "S", "seq": 2, "bytes": 128, "server_time": 1795510905.1363063, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 2, "bytes": 128, "server_time": 1795510905.1363063, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 2, "processing_ms": 0.0, "server_time": 1795510905.1363063, "run": 214576099}
+{"type": "send", "node": "S", "seq": 3, "bytes": 128, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 2, "bytes": 128, "hops": 1, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 3, "bytes": 128, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 3, "processing_ms": 0.0, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 3, "bytes": 128, "hops": 1, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 2, "hops": 1, "rtt_ms": 2.0979, "server_time": 1795510905.137307, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 3, "hops": 1, "rtt_ms": 1.4037, "server_time": 1795510905.1386566, "run": 214576099}
+{"type": "send", "node": "S", "seq": 4, "bytes": 128, "server_time": 1795510905.1980217, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 4, "bytes": 128, "server_time": 1795510905.1980217, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 4, "processing_ms": 0.0, "server_time": 1795510905.1980217, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 4, "bytes": 128, "hops": 1, "server_time": 1795510905.1980217, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 4, "hops": 1, "rtt_ms": 1.0289, "server_time": 1795510905.1980217, "run": 214576099}
+{"type": "send", "node": "S", "seq": 5, "bytes": 128, "server_time": 1795510905.2656407, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 5, "bytes": 128, "server_time": 1795510905.3233888, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 5, "processing_ms": 0.0, "server_time": 1795510905.3233888, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 5, "bytes": 128, "hops": 1, "server_time": 1795510905.3233888, "run": 214576099}
+{"type": "send", "node": "S", "seq": 6, "bytes": 128, "server_time": 1795510905.3233888, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 6, "bytes": 128, "server_time": 1795510905.3243876, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 6, "processing_ms": 0.0, "server_time": 1795510905.3243876, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 5, "hops": 1, "rtt_ms": 58.3183, "server_time": 1795510905.3243876, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 6, "bytes": 128, "hops": 1, "server_time": 1795510905.3243876, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 6, "hops": 1, "rtt_ms": 1.0787, "server_time": 1795510905.3243876, "run": 214576099}
+{"type": "send", "node": "S", "seq": 7, "bytes": 128, "server_time": 1795510905.3643057, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 7, "bytes": 128, "server_time": 1795510905.3653069, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 7, "processing_ms": 0.0, "server_time": 1795510905.3653069, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 7, "bytes": 128, "hops": 1, "server_time": 1795510905.3653069, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 7, "hops": 1, "rtt_ms": 1.2933, "server_time": 1795510905.3653069, "run": 214576099}
+{"type": "send", "node": "S", "seq": 8, "bytes": 128, "server_time": 1795510905.3997905, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 8, "bytes": 128, "server_time": 1795510905.4005833, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 8, "processing_ms": 0.0, "server_time": 1795510905.4005833, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 8, "bytes": 128, "hops": 1, "server_time": 1795510905.4005833, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 8, "hops": 1, "rtt_ms": 1.459, "server_time": 1795510905.4011502, "run": 214576099}
+{"type": "send", "node": "S", "seq": 9, "bytes": 128, "server_time": 1795510905.448853, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 9, "bytes": 128, "server_time": 1795510905.448853, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 9, "processing_ms": 0.0, "server_time": 1795510905.4498594, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 9, "bytes": 128, "hops": 1, "server_time": 1795510905.4498594, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 9, "hops": 1, "rtt_ms": 1.7601, "server_time": 1795510905.4509306, "run": 214576099}
+{"type": "send", "node": "S", "seq": 10, "bytes": 128, "server_time": 1795510905.5109525, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 10, "bytes": 128, "server_time": 1795510905.5109525, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 10, "processing_ms": 0.0, "server_time": 1795510905.5109525, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 10, "bytes": 128, "hops": 1, "server_time": 1795510905.5109525, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 10, "hops": 1, "rtt_ms": 0.9025, "server_time": 1795510905.5109525, "run": 214576099}
+{"type": "send", "node": "S", "seq": 11, "bytes": 128, "server_time": 1795510905.5644944, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 11, "bytes": 128, "server_time": 1795510905.5644944, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 11, "processing_ms": 0.0, "server_time": 1795510905.5644944, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 11, "bytes": 128, "hops": 1, "server_time": 1795510905.5644944, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 11, "hops": 1, "rtt_ms": 1.2525, "server_time": 1795510905.5654926, "run": 214576099}
+{"type": "send", "node": "S", "seq": 12, "bytes": 128, "server_time": 1795510905.6037235, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 12, "bytes": 128, "server_time": 1795510905.6042697, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 12, "processing_ms": 0.0, "server_time": 1795510905.6042697, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 12, "bytes": 128, "hops": 1, "server_time": 1795510905.6042697, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 12, "hops": 1, "rtt_ms": 0.997, "server_time": 1795510905.6042697, "run": 214576099}
+{"type": "send", "node": "S", "seq": 13, "bytes": 128, "server_time": 1795510905.649952, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 13, "bytes": 128, "server_time": 1795510905.650951, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 13, "processing_ms": 0.0, "server_time": 1795510905.650951, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 13, "bytes": 128, "hops": 1, "server_time": 1795510905.650951, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 13, "hops": 1, "rtt_ms": 1.3538, "server_time": 1795510905.650951, "run": 214576099}
+{"type": "send", "node": "S", "seq": 14, "bytes": 128, "server_time": 1795510905.6817646, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 14, "bytes": 128, "server_time": 1795510905.682269, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 14, "processing_ms": 0.0, "server_time": 1795510905.682269, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 14, "bytes": 128, "hops": 1, "server_time": 1795510905.6829653, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 14, "hops": 1, "rtt_ms": 1.3352, "server_time": 1795510905.6829653, "run": 214576099}
+{"type": "send", "node": "S", "seq": 15, "bytes": 128, "server_time": 1795510905.7573974, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 15, "bytes": 128, "server_time": 1795510905.7573974, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 15, "processing_ms": 0.0, "server_time": 1795510905.7573974, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 15, "bytes": 128, "hops": 1, "server_time": 1795510905.758558, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 15, "hops": 1, "rtt_ms": 1.2557, "server_time": 1795510905.758558, "run": 214576099}
+{"type": "send", "node": "S", "seq": 16, "bytes": 128, "server_time": 1795510905.8276873, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 16, "bytes": 128, "server_time": 1795510905.8276873, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 16, "processing_ms": 0.0, "server_time": 1795510905.8276873, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 16, "bytes": 128, "hops": 1, "server_time": 1795510905.8276873, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 16, "hops": 1, "rtt_ms": 1.4357, "server_time": 1795510905.8286946, "run": 214576099}
+{"type": "send", "node": "S", "seq": 17, "bytes": 128, "server_time": 1795510905.8397832, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 17, "bytes": 128, "server_time": 1795510905.8397832, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 17, "processing_ms": 0.0, "server_time": 1795510905.8397832, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 17, "bytes": 128, "hops": 1, "server_time": 1795510905.8407798, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 17, "hops": 1, "rtt_ms": 0.735, "server_time": 1795510905.8407798, "run": 214576099}
+{"type": "send", "node": "S", "seq": 18, "bytes": 128, "server_time": 1795510905.8923323, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 18, "bytes": 128, "server_time": 1795510905.8923323, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 18, "processing_ms": 0.0, "server_time": 1795510905.8923323, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 18, "bytes": 128, "hops": 1, "server_time": 1795510905.8923323, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 18, "hops": 1, "rtt_ms": 0.7318, "server_time": 1795510905.8923323, "run": 214576099}
+{"type": "send", "node": "S", "seq": 19, "bytes": 128, "server_time": 1795510905.9362233, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 19, "bytes": 128, "server_time": 1795510905.9369125, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 19, "processing_ms": 0.0, "server_time": 1795510905.937419, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 19, "bytes": 128, "hops": 1, "server_time": 1795510905.937419, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 19, "hops": 1, "rtt_ms": 2.5613, "server_time": 1795510905.937419, "run": 214576099}
+{"type": "send", "node": "S", "seq": 20, "bytes": 128, "server_time": 1795510906.0100439, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 20, "bytes": 128, "server_time": 1795510906.0100439, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 20, "processing_ms": 0.0, "server_time": 1795510906.0110435, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 20, "bytes": 128, "hops": 1, "server_time": 1795510906.0110435, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 20, "hops": 1, "rtt_ms": 1.4399, "server_time": 1795510906.0110435, "run": 214576099}
+{"type": "send", "node": "S", "seq": 21, "bytes": 128, "server_time": 1795510906.0354202, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 21, "bytes": 128, "server_time": 1795510906.0354202, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 21, "processing_ms": 0.0, "server_time": 1795510906.036443, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 21, "bytes": 128, "hops": 1, "server_time": 1795510906.036443, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 21, "hops": 1, "rtt_ms": 1.5436, "server_time": 1795510906.036443, "run": 214576099}
+{"type": "send", "node": "S", "seq": 22, "bytes": 128, "server_time": 1795510906.0926688, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 22, "bytes": 128, "server_time": 1795510906.0926688, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 22, "processing_ms": 0.0, "server_time": 1795510906.0926688, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 22, "bytes": 128, "hops": 1, "server_time": 1795510906.0926688, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 22, "hops": 1, "rtt_ms": 1.1734, "server_time": 1795510906.0936792, "run": 214576099}
+{"type": "send", "node": "S", "seq": 23, "bytes": 128, "server_time": 1795510906.1556022, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 23, "bytes": 128, "server_time": 1795510906.1556022, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 23, "processing_ms": 0.0, "server_time": 1795510906.1556022, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 23, "bytes": 128, "hops": 1, "server_time": 1795510906.1556022, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 23, "hops": 1, "rtt_ms": 1.1771, "server_time": 1795510906.1556022, "run": 214576099}
+{"type": "send", "node": "S", "seq": 24, "bytes": 128, "server_time": 1795510906.2056167, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 24, "bytes": 128, "server_time": 1795510906.2056167, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 24, "processing_ms": 0.0, "server_time": 1795510906.207123, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 24, "bytes": 128, "hops": 1, "server_time": 1795510906.207123, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 24, "hops": 1, "rtt_ms": 1.6986, "server_time": 1795510906.2081308, "run": 214576099}
+{"type": "send", "node": "S", "seq": 25, "bytes": 128, "server_time": 1795510906.2800856, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 25, "bytes": 128, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 25, "processing_ms": 0.0, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "send", "node": "S", "seq": 26, "bytes": 128, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 25, "bytes": 128, "hops": 1, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 26, "bytes": 128, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 26, "processing_ms": 0.0, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 26, "bytes": 128, "hops": 1, "server_time": 1795510906.2810867, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 25, "hops": 1, "rtt_ms": 1.9129, "server_time": 1795510906.2825913, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 26, "hops": 1, "rtt_ms": 1.1255, "server_time": 1795510906.2825913, "run": 214576099}
+{"type": "send", "node": "S", "seq": 27, "bytes": 128, "server_time": 1795510906.320008, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 27, "bytes": 128, "server_time": 1795510906.320008, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 27, "processing_ms": 0.0, "server_time": 1795510906.320008, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 27, "bytes": 128, "hops": 1, "server_time": 1795510906.320008, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 27, "hops": 1, "rtt_ms": 0.9896, "server_time": 1795510906.3210154, "run": 214576099}
+{"type": "send", "node": "S", "seq": 28, "bytes": 128, "server_time": 1795510906.4133866, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 28, "bytes": 128, "server_time": 1795510906.4143856, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 28, "processing_ms": 0.0, "server_time": 1795510906.4143856, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 28, "bytes": 128, "hops": 1, "server_time": 1795510906.4143856, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 28, "hops": 1, "rtt_ms": 1.3424, "server_time": 1795510906.4143856, "run": 214576099}
+{"type": "send", "node": "S", "seq": 29, "bytes": 128, "server_time": 1795510906.4612358, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 29, "bytes": 128, "server_time": 1795510906.4612358, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 29, "processing_ms": 0.0, "server_time": 1795510906.4612358, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 29, "bytes": 128, "hops": 1, "server_time": 1795510906.4612358, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 29, "hops": 1, "rtt_ms": 1.2964, "server_time": 1795510906.4622366, "run": 214576099}
+{"type": "send", "node": "S", "seq": 30, "bytes": 128, "server_time": 1795510906.50424, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 30, "bytes": 128, "server_time": 1795510906.50424, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 30, "processing_ms": 0.0, "server_time": 1795510906.50424, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 30, "bytes": 128, "hops": 1, "server_time": 1795510906.50424, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 30, "hops": 1, "rtt_ms": 1.188, "server_time": 1795510906.5052466, "run": 214576099}
+{"type": "send", "node": "S", "seq": 31, "bytes": 128, "server_time": 1795510906.5510185, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 31, "bytes": 128, "server_time": 1795510906.5510185, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 31, "processing_ms": 0.0, "server_time": 1795510906.5510185, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 31, "bytes": 128, "hops": 1, "server_time": 1795510906.5510185, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 31, "hops": 1, "rtt_ms": 1.4963, "server_time": 1795510906.552525, "run": 214576099}
+{"type": "send", "node": "S", "seq": 32, "bytes": 128, "server_time": 1795510906.6454504, "run": 214576099}
+{"type": "send", "node": "S", "seq": 33, "bytes": 128, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 32, "bytes": 128, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 32, "processing_ms": 0.0, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 33, "bytes": 128, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 33, "processing_ms": 0.0, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 32, "bytes": 128, "hops": 1, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 33, "bytes": 128, "hops": 1, "server_time": 1795510906.6464503, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 32, "hops": 1, "rtt_ms": 2.284, "server_time": 1795510906.6479547, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 33, "hops": 1, "rtt_ms": 1.8702, "server_time": 1795510906.6479547, "run": 214576099}
+{"type": "send", "node": "S", "seq": 34, "bytes": 128, "server_time": 1795510906.7310836, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 34, "bytes": 128, "server_time": 1795510906.7381144, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 34, "processing_ms": 0.0, "server_time": 1795510906.7381144, "run": 214576099}
+{"type": "send", "node": "S", "seq": 35, "bytes": 128, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 34, "bytes": 128, "hops": 1, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 35, "bytes": 128, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 35, "processing_ms": 0.0, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 35, "bytes": 128, "hops": 1, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 34, "hops": 1, "rtt_ms": 9.7145, "server_time": 1795510906.739116, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 35, "hops": 1, "rtt_ms": 1.2781, "server_time": 1795510906.7401228, "run": 214576099}
+{"type": "send", "node": "S", "seq": 36, "bytes": 128, "server_time": 1795510906.8277411, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 36, "bytes": 128, "server_time": 1795510906.8277411, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 36, "processing_ms": 0.0, "server_time": 1795510906.8277411, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 36, "bytes": 128, "hops": 1, "server_time": 1795510906.8287487, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 36, "hops": 1, "rtt_ms": 1.3113, "server_time": 1795510906.8287487, "run": 214576099}
+{"type": "send", "node": "S", "seq": 37, "bytes": 128, "server_time": 1795510906.847302, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 37, "bytes": 128, "server_time": 1795510906.847302, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 37, "processing_ms": 0.0, "server_time": 1795510906.847302, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 37, "bytes": 128, "hops": 1, "server_time": 1795510906.847302, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 37, "hops": 1, "rtt_ms": 1.3009, "server_time": 1795510906.8483882, "run": 214576099}
+{"type": "send", "node": "S", "seq": 38, "bytes": 128, "server_time": 1795510906.9100528, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 38, "bytes": 128, "server_time": 1795510906.9100528, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 38, "processing_ms": 0.0, "server_time": 1795510906.9100528, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 38, "bytes": 128, "hops": 1, "server_time": 1795510906.9100528, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 38, "hops": 1, "rtt_ms": 1.1162, "server_time": 1795510906.9110527, "run": 214576099}
+{"type": "send", "node": "S", "seq": 39, "bytes": 128, "server_time": 1795510906.9455004, "run": 214576099}
+{"type": "relay_receive", "node": "R", "seq": 39, "bytes": 128, "server_time": 1795510906.9455004, "run": 214576099}
+{"type": "forward", "node": "R", "seq": 39, "processing_ms": 0.0, "server_time": 1795510906.9465005, "run": 214576099}
+{"type": "receive", "node": "D", "seq": 39, "bytes": 128, "hops": 1, "server_time": 1795510906.9465005, "run": 214576099}
+{"type": "ack", "node": "S", "seq": 39, "hops": 1, "rtt_ms": 1.1791, "server_time": 1795510906.9465005, "run": 214576099}

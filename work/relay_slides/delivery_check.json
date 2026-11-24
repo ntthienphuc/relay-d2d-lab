@@ -1,0 +1,70 @@
+{
+  "slide_count": 30,
+  "notes_count": 30,
+  "pdf_pages": 32,
+  "editable_charts": 2,
+  "chart_workbooks": 2,
+  "scope": "One physical Android pilot; two Android simultaneously not verified; baseband and NOMA are software-only.",
+  "files": {
+    "BAT_DAU.txt": {
+      "bytes": 2104,
+      "sha256": "a08283bcfdb5bd53cbd23da663bf3972d28504d3deb94f67ac612834b144751c"
+    },
+    "Loi_thuyet_trinh_Relay_D2D.html": {
+      "bytes": 38549,
+      "sha256": "7c73c3364f88f8177aca080f5c910bc1086f5867be453ea94fa88550a1e33a46"
+    },
+    "Loi_thuyet_trinh_Relay_D2D.pdf": {
+      "bytes": 1620576,
+      "sha256": "9203f3314a60511ebe1add55a7b42c0398deea244359232e83c26938df4c8e8f"
+    },
+    "Relay_D2D_Thuyet_trinh.pptx": {
+      "bytes": 727742,
+      "sha256": "16849382fce5c3ccbfb51f3a15576fa4546bb6773f3d468ad3d9ff4c0966bd49"
+    },
+    "Relay_D2D_Tron_bo.zip": {
+      "bytes": 2005431,
+      "sha256": "79f817a301033e07eea5526d8522490a14557efda398225d11918c96efab3e96"
+    },
+    "code\\af_df_symbols.py": {
+      "bytes": 6877,
+      "sha256": "97545daef88808ebac4bc4182a7ede49eb696786775c45ef43ecb07865144242"
+    },
+    "code\\baseband_results.json": {
+      "bytes": 7418,
+      "sha256": "73c0e94fa1a83331ecb23f5b15a488f046cde6200365b1d6d5b7527daa52ad4d"
+    },
+    "code\\HUONG_DAN.txt": {
+      "bytes": 2878,
+      "sha256": "74fb1cf9f17684854b78939040da7b6092749295c20623564bd34e8169a6ce1d"
+    },
+    "code\\monte_carlo_outage.py": {
+      "bytes": 1815,
+      "sha256": "72c802b8bbada8a52a4d78a8e385f1397741707bc48df72417bd7c4d21a7ad24"
+    },
+    "code\\noma_results.json": {
+      "bytes": 957,
+      "sha256": "797b3f749a901a1e19e22dcd49bfab0ba068fe1b3e13807b7a66fc410affa5de"
+    },
+    "code\\noma_sic.py": {
+      "bytes": 1642,
+      "sha256": "a3b2b6f642c9f33882998100e4b20cadc52ee6685c07821186eeb362e39673f0"
+    },
+    "code\\outage_results.json": {
+      "bytes": 14403,
+      "sha256": "3c6f46cd14d91750e17728b2d3bd10f16f568c877309b8715c5f54ed68da542e"
+    },
+    "code\\packet_codec.py": {
+      "bytes": 1682,
+      "sha256": "1671727fc9fc34f5cf320a20731a73747a46f69506fa5a72c9b89c4a3a2cf5b6"
+    },
+    "code\\packet_walkthrough.py": {
+      "bytes": 1107,
+      "sha256": "c980f0915dba52976af5048953797c0f1b5f50896da5f63825ff0f25802e5e08"
+    },
+    "code\\requirements.txt": {
+      "bytes": 15,
+      "sha256": "105a25c9a24a53a42b52ccc93f930e1ea4a88b42372d440ae7c1b82c3a8b2c64"
+    }
+  }
+}

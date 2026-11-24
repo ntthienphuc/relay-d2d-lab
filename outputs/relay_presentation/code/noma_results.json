@@ -1,0 +1,39 @@
+{
+  "seed": 20261124,
+  "samples": 100000,
+  "alpha_near": 0.2,
+  "alpha_far": 0.8,
+  "scope": "uncoded BPSK, AWGN, near receiver only, no relay hop or RF hardware",
+  "rows": [
+    {
+      "snr_db": 0,
+      "ber_near_without_sic": 0.38271,
+      "ber_near_after_sic": 0.36958,
+      "ber_far_stream_at_near": 0.14813
+    },
+    {
+      "snr_db": 4,
+      "ber_near_without_sic": 0.42233,
+      "ber_near_after_sic": 0.23509,
+      "ber_far_stream_at_near": 0.08029
+    },
+    {
+      "snr_db": 8,
+      "ber_near_without_sic": 0.47377,
+      "ber_near_after_sic": 0.0841,
+      "ber_far_stream_at_near": 0.02769
+    },
+    {
+      "snr_db": 12,
+      "ber_near_without_sic": 0.49854,
+      "ber_near_after_sic": 0.00828,
+      "ber_far_stream_at_near": 0.00292
+    },
+    {
+      "snr_db": 16,
+      "ber_near_without_sic": 0.50145,
+      "ber_near_after_sic": 2e-05,
+      "ber_far_stream_at_near": 1e-05
+    }
+  ]
+}

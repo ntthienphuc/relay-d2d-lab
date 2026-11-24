@@ -1,0 +1,600 @@
+{"type": "send", "node": "S", "seq": 0, "bytes": 512, "server_time": 1795510180.229548, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 0, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.229548, "run": 213851334}
+{"type": "send", "node": "S", "seq": 1, "bytes": 512, "server_time": 1795510180.2894077, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 1, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510180.2997134, "run": 213851334}
+{"type": "send", "node": "S", "seq": 2, "bytes": 512, "server_time": 1795510180.3365266, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 2, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.3396835, "run": 213851334}
+{"event_id": "6b9f8608:1026874609538983:0", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 0, "bytes": 512, "hops": 0, "device_mono_ns": 1026874609836829, "server_time": 1795510180.379731}
+{"event_id": "6b9f8608:1026874670613021:1", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 1, "bytes": 512, "hops": 0, "device_mono_ns": 1026874670896136, "server_time": 1795510180.379731}
+{"event_id": "6b9f8608:1026874714410483:2", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 2, "bytes": 512, "hops": 0, "device_mono_ns": 1026874714607521, "server_time": 1795510180.379731}
+{"type": "send", "node": "S", "seq": 3, "bytes": 512, "server_time": 1795510180.379731, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 3, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.3894384, "run": 213851334}
+{"type": "send", "node": "S", "seq": 4, "bytes": 512, "server_time": 1795510180.4471786, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 4, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.4548063, "run": 213851334}
+{"type": "send", "node": "S", "seq": 5, "bytes": 512, "server_time": 1795510180.499378, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 5, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.499378, "run": 213851334}
+{"type": "send", "node": "S", "seq": 6, "bytes": 512, "server_time": 1795510180.5411372, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 6, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510180.5496655, "run": 213851334}
+{"type": "send", "node": "S", "seq": 7, "bytes": 512, "server_time": 1795510180.5724967, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 7, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.5794342, "run": 213851334}
+{"type": "send", "node": "S", "seq": 8, "bytes": 512, "server_time": 1795510180.6406157, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 8, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510180.6495378, "run": 213851334}
+{"type": "send", "node": "S", "seq": 9, "bytes": 512, "server_time": 1795510180.6787663, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 9, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510180.690017, "run": 213851334}
+{"type": "send", "node": "S", "seq": 10, "bytes": 512, "server_time": 1795510180.7298257, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 10, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.7347167, "run": 213851334}
+{"type": "send", "node": "S", "seq": 11, "bytes": 512, "server_time": 1795510180.7875724, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 11, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.7957406, "run": 213851334}
+{"type": "send", "node": "S", "seq": 12, "bytes": 512, "server_time": 1795510180.8505366, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 12, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.8598146, "run": 213851334}
+{"type": "send", "node": "S", "seq": 13, "bytes": 512, "server_time": 1795510180.8867812, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 13, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.8898013, "run": 213851334}
+{"type": "send", "node": "S", "seq": 14, "bytes": 512, "server_time": 1795510180.939174, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 14, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510180.9446292, "run": 213851334}
+{"type": "send", "node": "S", "seq": 15, "bytes": 512, "server_time": 1795510180.9781091, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 15, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510180.9847696, "run": 213851334}
+{"event_id": "6b9f8608:1026874761327444:3", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 3, "bytes": 512, "hops": 0, "device_mono_ns": 1026874761589406, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026874826495559:4", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 4, "bytes": 512, "hops": 0, "device_mono_ns": 1026874826700521, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026874878726675:5", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 5, "bytes": 512, "hops": 0, "device_mono_ns": 1026874878936290, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026874920726136:6", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 6, "bytes": 512, "hops": 0, "device_mono_ns": 1026874920937098, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026874953543905:7", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 7, "bytes": 512, "hops": 0, "device_mono_ns": 1026874953752521, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875020933828:8", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 8, "bytes": 512, "hops": 0, "device_mono_ns": 1026875021142405, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875061164290:9", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 9, "bytes": 512, "hops": 0, "device_mono_ns": 1026875061430598, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875109621405:10", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 10, "bytes": 512, "hops": 0, "device_mono_ns": 1026875109822944, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875167129867:11", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 11, "bytes": 512, "hops": 0, "device_mono_ns": 1026875167350021, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875231233482:12", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 12, "bytes": 512, "hops": 0, "device_mono_ns": 1026875231447751, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875265710521:13", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 13, "bytes": 512, "hops": 0, "device_mono_ns": 1026875265921944, "server_time": 1795510181.0095866}
+{"event_id": "6b9f8608:1026875318997021:14", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 14, "bytes": 512, "hops": 0, "device_mono_ns": 1026875319219213, "server_time": 1795510181.0095866}
+{"type": "send", "node": "S", "seq": 16, "bytes": 512, "server_time": 1795510181.0415406, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 16, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510181.0494666, "run": 213851334}
+{"type": "send", "node": "S", "seq": 17, "bytes": 512, "server_time": 1795510181.0734103, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 17, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.0796137, "run": 213851334}
+{"type": "send", "node": "S", "seq": 18, "bytes": 512, "server_time": 1795510181.142782, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 18, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.1496248, "run": 213851334}
+{"type": "send", "node": "S", "seq": 19, "bytes": 512, "server_time": 1795510181.179845, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 19, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.179845, "run": 213851334}
+{"type": "send", "node": "S", "seq": 20, "bytes": 512, "server_time": 1795510181.2268667, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 20, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.233498, "run": 213851334}
+{"type": "send", "node": "S", "seq": 21, "bytes": 512, "server_time": 1795510181.2693741, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 21, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.2793655, "run": 213851334}
+{"type": "send", "node": "S", "seq": 22, "bytes": 512, "server_time": 1795510181.3356855, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 22, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.3397672, "run": 213851334}
+{"type": "send", "node": "S", "seq": 23, "bytes": 512, "server_time": 1795510181.3671038, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 23, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510181.3794436, "run": 213851334}
+{"type": "send", "node": "S", "seq": 24, "bytes": 512, "server_time": 1795510181.4304838, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 24, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.4304838, "run": 213851334}
+{"type": "send", "node": "S", "seq": 25, "bytes": 512, "server_time": 1795510181.482945, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 25, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510181.494497, "run": 213851334}
+{"type": "send", "node": "S", "seq": 26, "bytes": 512, "server_time": 1795510181.5307534, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 26, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.5307534, "run": 213851334}
+{"type": "send", "node": "S", "seq": 27, "bytes": 512, "server_time": 1795510181.5693944, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 27, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.575411, "run": 213851334}
+{"event_id": "6b9f8608:1026875357139328:15", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 15, "bytes": 512, "hops": 0, "device_mono_ns": 1026875357334674, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875420800174:16", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 16, "bytes": 512, "hops": 0, "device_mono_ns": 1026875420983636, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875451154020:17", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 17, "bytes": 512, "hops": 0, "device_mono_ns": 1026875451321482, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875522487059:18", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 18, "bytes": 512, "hops": 0, "device_mono_ns": 1026875522661982, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875558093905:19", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 19, "bytes": 512, "hops": 0, "device_mono_ns": 1026875558291828, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875606385136:20", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 20, "bytes": 512, "hops": 0, "device_mono_ns": 1026875606587674, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875650798751:21", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 21, "bytes": 512, "hops": 0, "device_mono_ns": 1026875650990136, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875715669443:22", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 22, "bytes": 512, "hops": 0, "device_mono_ns": 1026875715855059, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875753837213:23", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 23, "bytes": 512, "hops": 0, "device_mono_ns": 1026875754036482, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875809670943:24", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 24, "bytes": 512, "hops": 0, "device_mono_ns": 1026875809882405, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875862154943:25", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 25, "bytes": 512, "hops": 0, "device_mono_ns": 1026875862367174, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875909930866:26", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 26, "bytes": 512, "hops": 0, "device_mono_ns": 1026875910141751, "server_time": 1795510181.6096642}
+{"event_id": "6b9f8608:1026875948177097:27", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 27, "bytes": 512, "hops": 0, "device_mono_ns": 1026875948390520, "server_time": 1795510181.6096642}
+{"type": "send", "node": "S", "seq": 28, "bytes": 512, "server_time": 1795510181.6415763, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 28, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510181.6498358, "run": 213851334}
+{"type": "send", "node": "S", "seq": 29, "bytes": 512, "server_time": 1795510181.6732323, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 29, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510181.6813133, "run": 213851334}
+{"type": "send", "node": "S", "seq": 30, "bytes": 512, "server_time": 1795510181.732646, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 30, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510181.7414865, "run": 213851334}
+{"type": "send", "node": "S", "seq": 31, "bytes": 512, "server_time": 1795510181.7845743, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 31, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.7895975, "run": 213851334}
+{"type": "send", "node": "S", "seq": 32, "bytes": 512, "server_time": 1795510181.8382835, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 32, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.8446825, "run": 213851334}
+{"type": "send", "node": "S", "seq": 33, "bytes": 512, "server_time": 1795510181.880534, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 33, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.8895426, "run": 213851334}
+{"type": "send", "node": "S", "seq": 34, "bytes": 512, "server_time": 1795510181.9435403, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 34, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510181.9495087, "run": 213851334}
+{"type": "send", "node": "S", "seq": 35, "bytes": 512, "server_time": 1795510182.000496, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 35, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.000496, "run": 213851334}
+{"type": "send", "node": "S", "seq": 36, "bytes": 512, "server_time": 1795510182.0370748, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 36, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.0445855, "run": 213851334}
+{"type": "send", "node": "S", "seq": 37, "bytes": 512, "server_time": 1795510182.0846348, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 37, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.089818, "run": 213851334}
+{"type": "send", "node": "S", "seq": 38, "bytes": 512, "server_time": 1795510182.1371942, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 38, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.1446247, "run": 213851334}
+{"type": "send", "node": "S", "seq": 39, "bytes": 512, "server_time": 1795510182.169525, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 39, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.1845772, "run": 213851334}
+{"event_id": "6b9f8608:1026876021180443:28", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 28, "bytes": 512, "hops": 0, "device_mono_ns": 1026876021393982, "server_time": 1795510182.2283247}
+{"event_id": "6b9f8608:1026876051979558:29", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 29, "bytes": 512, "hops": 0, "device_mono_ns": 1026876052361135, "server_time": 1795510182.2283247}
+{"event_id": "6b9f8608:1026876112944289:30", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 30, "bytes": 512, "hops": 0, "device_mono_ns": 1026876113215020, "server_time": 1795510182.2283247}
+{"event_id": "6b9f8608:1026876164259020:31", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 31, "bytes": 512, "hops": 0, "device_mono_ns": 1026876164546981, "server_time": 1795510182.2283247}
+{"event_id": "6b9f8608:1026876217566020:32", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 32, "bytes": 512, "hops": 0, "device_mono_ns": 1026876217839289, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876260624289:33", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 33, "bytes": 512, "hops": 0, "device_mono_ns": 1026876260839520, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876322773020:34", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 34, "bytes": 512, "hops": 0, "device_mono_ns": 1026876322991481, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876379891674:35", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 35, "bytes": 512, "hops": 0, "device_mono_ns": 1026876380277674, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876416659712:36", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 36, "bytes": 512, "hops": 0, "device_mono_ns": 1026876416873481, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876465425751:37", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 37, "bytes": 512, "hops": 0, "device_mono_ns": 1026876465633289, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876516993289:38", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 38, "bytes": 512, "hops": 0, "device_mono_ns": 1026876517208597, "server_time": 1795510182.2299128}
+{"event_id": "6b9f8608:1026876556408943:39", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 39, "bytes": 512, "hops": 0, "device_mono_ns": 1026876556619712, "server_time": 1795510182.2299128}
+{"type": "send", "node": "S", "seq": 40, "bytes": 512, "server_time": 1795510182.2299128, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 40, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.2323272, "run": 213851334}
+{"type": "send", "node": "S", "seq": 41, "bytes": 512, "server_time": 1795510182.2848542, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 41, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.2894628, "run": 213851334}
+{"type": "send", "node": "S", "seq": 42, "bytes": 512, "server_time": 1795510182.3194013, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 42, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.3285725, "run": 213851334}
+{"type": "send", "node": "S", "seq": 43, "bytes": 512, "server_time": 1795510182.3881493, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 43, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.389657, "run": 213851334}
+{"type": "send", "node": "S", "seq": 44, "bytes": 512, "server_time": 1795510182.4402401, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 44, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.4496462, "run": 213851334}
+{"type": "send", "node": "S", "seq": 45, "bytes": 512, "server_time": 1795510182.4817321, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 45, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.4893713, "run": 213851334}
+{"type": "send", "node": "S", "seq": 46, "bytes": 512, "server_time": 1795510182.5295358, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 46, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510182.5397298, "run": 213851334}
+{"type": "send", "node": "S", "seq": 47, "bytes": 512, "server_time": 1795510182.5910556, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 47, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.5993855, "run": 213851334}
+{"type": "send", "node": "S", "seq": 48, "bytes": 512, "server_time": 1795510182.6384401, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 48, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.6394455, "run": 213851334}
+{"type": "send", "node": "S", "seq": 49, "bytes": 512, "server_time": 1795510182.688736, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 49, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.6897411, "run": 213851334}
+{"type": "send", "node": "S", "seq": 50, "bytes": 512, "server_time": 1795510182.729814, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 50, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.734752, "run": 213851334}
+{"type": "send", "node": "S", "seq": 51, "bytes": 512, "server_time": 1795510182.7933621, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 51, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.8015327, "run": 213851334}
+{"type": "send", "node": "S", "seq": 52, "bytes": 512, "server_time": 1795510182.8384588, "run": 213851334}
+{"event_id": "6b9f8608:1026876609591058:40", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 40, "bytes": 512, "hops": 0, "device_mono_ns": 1026876609778943, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876663759289:41", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 41, "bytes": 512, "hops": 0, "device_mono_ns": 1026876663968558, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876699134981:42", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 42, "bytes": 512, "hops": 0, "device_mono_ns": 1026876699330366, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876766277596:43", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 43, "bytes": 512, "hops": 0, "device_mono_ns": 1026876766495673, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876819829019:44", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 44, "bytes": 512, "hops": 0, "device_mono_ns": 1026876820398558, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876861351327:45", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 45, "bytes": 512, "hops": 0, "device_mono_ns": 1026876861565904, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876908934673:46", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 46, "bytes": 512, "hops": 0, "device_mono_ns": 1026876909141019, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026876970441289:47", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 47, "bytes": 512, "hops": 0, "device_mono_ns": 1026876970663058, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026877017678558:48", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 48, "bytes": 512, "hops": 0, "device_mono_ns": 1026877017890058, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026877068401250:49", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 49, "bytes": 512, "hops": 0, "device_mono_ns": 1026877068676673, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026877109256173:50", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 50, "bytes": 512, "hops": 0, "device_mono_ns": 1026877109569019, "server_time": 1795510182.839466}
+{"event_id": "6b9f8608:1026877172603788:51", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 51, "bytes": 512, "hops": 0, "device_mono_ns": 1026877172818250, "server_time": 1795510182.839466}
+{"type": "ack", "node": "S", "seq": 52, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.839466, "run": 213851334}
+{"type": "send", "node": "S", "seq": 53, "bytes": 512, "server_time": 1795510182.8862429, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 53, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.8895662, "run": 213851334}
+{"type": "send", "node": "S", "seq": 54, "bytes": 512, "server_time": 1795510182.9338572, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 54, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510182.9393744, "run": 213851334}
+{"type": "send", "node": "S", "seq": 55, "bytes": 512, "server_time": 1795510182.9903784, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 55, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510182.994454, "run": 213851334}
+{"type": "send", "node": "S", "seq": 56, "bytes": 512, "server_time": 1795510183.042998, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 56, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510183.049451, "run": 213851334}
+{"type": "send", "node": "S", "seq": 57, "bytes": 512, "server_time": 1795510183.0747185, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 57, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.0795662, "run": 213851334}
+{"type": "send", "node": "S", "seq": 58, "bytes": 512, "server_time": 1795510183.1117404, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 58, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.1197371, "run": 213851334}
+{"type": "send", "node": "S", "seq": 59, "bytes": 512, "server_time": 1795510183.1916096, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 59, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.1997995, "run": 213851334}
+{"type": "send", "node": "S", "seq": 60, "bytes": 512, "server_time": 1795510183.223619, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 60, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.2304895, "run": 213851334}
+{"type": "send", "node": "S", "seq": 61, "bytes": 512, "server_time": 1795510183.2811475, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 61, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510183.2896826, "run": 213851334}
+{"type": "send", "node": "S", "seq": 62, "bytes": 512, "server_time": 1795510183.329352, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 62, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510183.3376973, "run": 213851334}
+{"type": "send", "node": "S", "seq": 63, "bytes": 512, "server_time": 1795510183.381693, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 63, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.3896053, "run": 213851334}
+{"type": "send", "node": "S", "seq": 64, "bytes": 512, "server_time": 1795510183.4197912, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 64, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510183.4296892, "run": 213851334}
+{"event_id": "6b9f8608:1026877217959558:52", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 52, "bytes": 512, "hops": 0, "device_mono_ns": 1026877218151519, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877265596135:53", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 53, "bytes": 512, "hops": 0, "device_mono_ns": 1026877265794788, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877312206942:54", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 54, "bytes": 512, "hops": 0, "device_mono_ns": 1026877312409096, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877369166173:55", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 55, "bytes": 512, "hops": 0, "device_mono_ns": 1026877369352481, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877420627058:56", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 56, "bytes": 512, "hops": 0, "device_mono_ns": 1026877420802134, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877454028904:57", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 57, "bytes": 512, "hops": 0, "device_mono_ns": 1026877454251057, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877490913942:58", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 58, "bytes": 512, "hops": 0, "device_mono_ns": 1026877491129981, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877571288865:59", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 59, "bytes": 512, "hops": 0, "device_mono_ns": 1026877571522096, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877602950519:60", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 60, "bytes": 512, "hops": 0, "device_mono_ns": 1026877603168519, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877661028096:61", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 61, "bytes": 512, "hops": 0, "device_mono_ns": 1026877661239403, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877708430942:62", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 62, "bytes": 512, "hops": 0, "device_mono_ns": 1026877708652980, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877764886250:63", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 63, "bytes": 512, "hops": 0, "device_mono_ns": 1026877765107596, "server_time": 1795510183.450658}
+{"event_id": "6b9f8608:1026877801282519:64", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 64, "bytes": 512, "hops": 0, "device_mono_ns": 1026877801497980, "server_time": 1795510183.450658}
+{"type": "send", "node": "S", "seq": 65, "bytes": 512, "server_time": 1795510183.482361, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 65, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510183.489836, "run": 213851334}
+{"type": "send", "node": "S", "seq": 66, "bytes": 512, "server_time": 1795510183.5517235, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 66, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.5596893, "run": 213851334}
+{"type": "send", "node": "S", "seq": 67, "bytes": 512, "server_time": 1795510183.5833418, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 67, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.5893836, "run": 213851334}
+{"type": "send", "node": "S", "seq": 68, "bytes": 512, "server_time": 1795510183.6156032, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 68, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.6196027, "run": 213851334}
+{"type": "send", "node": "S", "seq": 69, "bytes": 512, "server_time": 1795510183.6948617, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 69, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.6995153, "run": 213851334}
+{"type": "send", "node": "S", "seq": 70, "bytes": 512, "server_time": 1795510183.7268994, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 70, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.732817, "run": 213851334}
+{"type": "send", "node": "S", "seq": 71, "bytes": 512, "server_time": 1795510183.7991836, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 71, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.7996893, "run": 213851334}
+{"type": "send", "node": "S", "seq": 72, "bytes": 512, "server_time": 1795510183.834475, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 72, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.8393884, "run": 213851334}
+{"type": "send", "node": "S", "seq": 73, "bytes": 512, "server_time": 1795510183.8870158, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 73, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.8893964, "run": 213851334}
+{"type": "send", "node": "S", "seq": 74, "bytes": 512, "server_time": 1795510183.9377582, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 74, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510183.9397638, "run": 213851334}
+{"type": "send", "node": "S", "seq": 75, "bytes": 512, "server_time": 1795510183.9904459, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 75, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510183.9945455, "run": 213851334}
+{"type": "send", "node": "S", "seq": 76, "bytes": 512, "server_time": 1795510184.0194552, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 76, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.0321717, "run": 213851334}
+{"event_id": "6b9f8608:1026877861615788:65", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 65, "bytes": 512, "hops": 0, "device_mono_ns": 1026877861856903, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026877930610288:66", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 66, "bytes": 512, "hops": 0, "device_mono_ns": 1026877930806980, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026877962215634:67", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 67, "bytes": 512, "hops": 0, "device_mono_ns": 1026877962422519, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026877994949557:68", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 68, "bytes": 512, "hops": 0, "device_mono_ns": 1026877995148057, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878072875096:69", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 69, "bytes": 512, "hops": 0, "device_mono_ns": 1026878073076826, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878103806095:70", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 70, "bytes": 512, "hops": 0, "device_mono_ns": 1026878103981403, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878175672711:71", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 71, "bytes": 512, "hops": 0, "device_mono_ns": 1026878175816134, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878213770942:72", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 72, "bytes": 512, "hops": 0, "device_mono_ns": 1026878214040826, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878266974865:73", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 73, "bytes": 512, "hops": 0, "device_mono_ns": 1026878267195403, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878317362480:74", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 74, "bytes": 512, "hops": 0, "device_mono_ns": 1026878317572711, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878369713595:75", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 75, "bytes": 512, "hops": 0, "device_mono_ns": 1026878369930095, "server_time": 1795510184.0695162}
+{"event_id": "6b9f8608:1026878404277634:76", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 76, "bytes": 512, "hops": 0, "device_mono_ns": 1026878404490403, "server_time": 1795510184.0695162}
+{"type": "send", "node": "S", "seq": 77, "bytes": 512, "server_time": 1795510184.0695162, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 77, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510184.0800884, "run": 213851334}
+{"type": "send", "node": "S", "seq": 78, "bytes": 512, "server_time": 1795510184.1320596, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 78, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.1395056, "run": 213851334}
+{"type": "send", "node": "S", "seq": 79, "bytes": 512, "server_time": 1795510184.1948433, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 79, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.1994977, "run": 213851334}
+{"type": "send", "node": "S", "seq": 80, "bytes": 512, "server_time": 1795510184.231508, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 80, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510184.239552, "run": 213851334}
+{"type": "send", "node": "S", "seq": 81, "bytes": 512, "server_time": 1795510184.2795231, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 81, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.2795231, "run": 213851334}
+{"type": "send", "node": "S", "seq": 82, "bytes": 512, "server_time": 1795510184.3425257, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 82, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510184.3495917, "run": 213851334}
+{"type": "send", "node": "S", "seq": 83, "bytes": 512, "server_time": 1795510184.38016, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 83, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.3883212, "run": 213851334}
+{"type": "send", "node": "S", "seq": 84, "bytes": 512, "server_time": 1795510184.4097683, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 84, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.4097683, "run": 213851334}
+{"type": "send", "node": "S", "seq": 85, "bytes": 512, "server_time": 1795510184.4899247, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 85, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.4899247, "run": 213851334}
+{"type": "send", "node": "S", "seq": 86, "bytes": 512, "server_time": 1795510184.5375543, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 86, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.539559, "run": 213851334}
+{"type": "send", "node": "S", "seq": 87, "bytes": 512, "server_time": 1795510184.5860214, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 87, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.594633, "run": 213851334}
+{"type": "send", "node": "S", "seq": 88, "bytes": 512, "server_time": 1795510184.6476533, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 88, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.6557307, "run": 213851334}
+{"type": "send", "node": "S", "seq": 89, "bytes": 512, "server_time": 1795510184.666572, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 89, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.673629, "run": 213851334}
+{"event_id": "6b9f8608:1026878454049211:77", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 77, "bytes": 512, "hops": 0, "device_mono_ns": 1026878454250634, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878511273403:78", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 78, "bytes": 512, "hops": 0, "device_mono_ns": 1026878511546903, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878574271249:79", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 79, "bytes": 512, "hops": 0, "device_mono_ns": 1026878574488211, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878611012441:80", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 80, "bytes": 512, "hops": 0, "device_mono_ns": 1026878611237249, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878659091018:81", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 81, "bytes": 512, "hops": 0, "device_mono_ns": 1026878659317672, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878721999787:82", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 82, "bytes": 512, "hops": 0, "device_mono_ns": 1026878722226557, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878759109941:83", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 83, "bytes": 512, "hops": 0, "device_mono_ns": 1026878759331903, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878789798518:84", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 84, "bytes": 512, "hops": 0, "device_mono_ns": 1026878790007672, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878868314903:85", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 85, "bytes": 512, "hops": 0, "device_mono_ns": 1026878868563172, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878917280941:86", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 86, "bytes": 512, "hops": 0, "device_mono_ns": 1026878917519864, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026878965626787:87", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 87, "bytes": 512, "hops": 0, "device_mono_ns": 1026878965860403, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026879026854941:88", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 88, "bytes": 512, "hops": 0, "device_mono_ns": 1026879027064979, "server_time": 1795510184.711305}
+{"event_id": "6b9f8608:1026879044844710:89", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 89, "bytes": 512, "hops": 0, "device_mono_ns": 1026879045035403, "server_time": 1795510184.711305}
+{"type": "send", "node": "S", "seq": 90, "bytes": 512, "server_time": 1795510184.743055, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 90, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.749591, "run": 213851334}
+{"type": "send", "node": "S", "seq": 91, "bytes": 512, "server_time": 1795510184.7906048, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 91, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.794618, "run": 213851334}
+{"type": "send", "node": "S", "seq": 92, "bytes": 512, "server_time": 1795510184.8379388, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 92, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.8394434, "run": 213851334}
+{"type": "send", "node": "S", "seq": 93, "bytes": 512, "server_time": 1795510184.8905125, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 93, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510184.8994076, "run": 213851334}
+{"type": "send", "node": "S", "seq": 94, "bytes": 512, "server_time": 1795510184.9395206, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 94, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.9425926, "run": 213851334}
+{"type": "send", "node": "S", "seq": 95, "bytes": 512, "server_time": 1795510184.9796185, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 95, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510184.984412, "run": 213851334}
+{"type": "send", "node": "S", "seq": 96, "bytes": 512, "server_time": 1795510185.0375793, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 96, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.0398777, "run": 213851334}
+{"type": "send", "node": "S", "seq": 97, "bytes": 512, "server_time": 1795510185.090459, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 97, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.090459, "run": 213851334}
+{"type": "send", "node": "S", "seq": 98, "bytes": 512, "server_time": 1795510185.1427774, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 98, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.1497855, "run": 213851334}
+{"type": "send", "node": "S", "seq": 99, "bytes": 512, "server_time": 1795510185.1905274, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 99, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.1905274, "run": 213851334}
+{"type": "send", "node": "S", "seq": 100, "bytes": 512, "server_time": 1795510185.22177, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 100, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.229421, "run": 213851334}
+{"type": "send", "node": "S", "seq": 101, "bytes": 512, "server_time": 1795510185.2697015, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 101, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.2794075, "run": 213851334}
+{"event_id": "6b9f8608:1026879122350979:90", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 90, "bytes": 512, "hops": 0, "device_mono_ns": 1026879122541633, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879170096479:91", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 91, "bytes": 512, "hops": 0, "device_mono_ns": 1026879170360479, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879217337941:92", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 92, "bytes": 512, "hops": 0, "device_mono_ns": 1026879217641556, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879269754248:93", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 93, "bytes": 512, "hops": 0, "device_mono_ns": 1026879270049325, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879318930979:94", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 94, "bytes": 512, "hops": 0, "device_mono_ns": 1026879319159325, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879358738287:95", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 95, "bytes": 512, "hops": 0, "device_mono_ns": 1026879358969402, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879416868248:96", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 96, "bytes": 512, "hops": 0, "device_mono_ns": 1026879417063748, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879469861748:97", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 97, "bytes": 512, "hops": 0, "device_mono_ns": 1026879470095633, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879522080864:98", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 98, "bytes": 512, "hops": 0, "device_mono_ns": 1026879522323402, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879570077056:99", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 99, "bytes": 512, "hops": 0, "device_mono_ns": 1026879570305479, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879601392402:100", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 100, "bytes": 512, "hops": 0, "device_mono_ns": 1026879601626748, "server_time": 1795510185.3196714}
+{"event_id": "6b9f8608:1026879651028979:101", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 101, "bytes": 512, "hops": 0, "device_mono_ns": 1026879651237364, "server_time": 1795510185.3196714}
+{"type": "send", "node": "S", "seq": 102, "bytes": 512, "server_time": 1795510185.3196714, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 102, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.3297167, "run": 213851334}
+{"type": "send", "node": "S", "seq": 103, "bytes": 512, "server_time": 1795510185.3799386, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 103, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.3878045, "run": 213851334}
+{"type": "send", "node": "S", "seq": 104, "bytes": 512, "server_time": 1795510185.447797, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 104, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.4547415, "run": 213851334}
+{"type": "send", "node": "S", "seq": 105, "bytes": 512, "server_time": 1795510185.4793723, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 105, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.4847488, "run": 213851334}
+{"type": "send", "node": "S", "seq": 106, "bytes": 512, "server_time": 1795510185.5384269, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 106, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.5394325, "run": 213851334}
+{"type": "send", "node": "S", "seq": 107, "bytes": 512, "server_time": 1795510185.5912876, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 107, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510185.599771, "run": 213851334}
+{"type": "send", "node": "S", "seq": 108, "bytes": 512, "server_time": 1795510185.6387875, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 108, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.6397917, "run": 213851334}
+{"type": "send", "node": "S", "seq": 109, "bytes": 512, "server_time": 1795510185.6861775, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 109, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510185.6943877, "run": 213851334}
+{"type": "send", "node": "S", "seq": 110, "bytes": 512, "server_time": 1795510185.7335, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 110, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510185.7394607, "run": 213851334}
+{"type": "send", "node": "S", "seq": 111, "bytes": 512, "server_time": 1795510185.7807074, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 111, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510185.7894094, "run": 213851334}
+{"type": "send", "node": "S", "seq": 112, "bytes": 512, "server_time": 1795510185.8326018, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 112, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.839598, "run": 213851334}
+{"type": "send", "node": "S", "seq": 113, "bytes": 512, "server_time": 1795510185.8794918, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 113, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510185.8917654, "run": 213851334}
+{"event_id": "6b9f8608:1026879701597325:102", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 102, "bytes": 512, "hops": 0, "device_mono_ns": 1026879701801325, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026879759445594:103", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 103, "bytes": 512, "hops": 0, "device_mono_ns": 1026879759655864, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026879826420748:104", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 104, "bytes": 512, "hops": 0, "device_mono_ns": 1026879826630056, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026879859268863:105", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 105, "bytes": 512, "hops": 0, "device_mono_ns": 1026879859498902, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026879917910286:106", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 106, "bytes": 512, "hops": 0, "device_mono_ns": 1026879918165133, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026879970741671:107", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 107, "bytes": 512, "hops": 0, "device_mono_ns": 1026879971131902, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880018225671:108", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 108, "bytes": 512, "hops": 0, "device_mono_ns": 1026880018516594, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880065580094:109", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 109, "bytes": 512, "hops": 0, "device_mono_ns": 1026880065875786, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880113320709:110", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 110, "bytes": 512, "hops": 0, "device_mono_ns": 1026880113559479, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880160439017:111", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 111, "bytes": 512, "hops": 0, "device_mono_ns": 1026880160679056, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880212006671:112", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 112, "bytes": 512, "hops": 0, "device_mono_ns": 1026880212466402, "server_time": 1795510185.936929}
+{"event_id": "6b9f8608:1026880264492825:113", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 113, "bytes": 512, "hops": 0, "device_mono_ns": 1026880264726748, "server_time": 1795510185.936929}
+{"type": "send", "node": "S", "seq": 114, "bytes": 512, "server_time": 1795510185.936929, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 114, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510185.9415765, "run": 213851334}
+{"type": "send", "node": "S", "seq": 115, "bytes": 512, "server_time": 1795510185.981643, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 115, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510185.9897184, "run": 213851334}
+{"type": "send", "node": "S", "seq": 116, "bytes": 512, "server_time": 1795510186.0205314, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 116, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510186.0364249, "run": 213851334}
+{"type": "send", "node": "S", "seq": 117, "bytes": 512, "server_time": 1795510186.0838668, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 117, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.0894463, "run": 213851334}
+{"type": "send", "node": "S", "seq": 118, "bytes": 512, "server_time": 1795510186.1361208, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 118, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.139555, "run": 213851334}
+{"type": "send", "node": "S", "seq": 119, "bytes": 512, "server_time": 1795510186.1841397, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 119, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510186.1897883, "run": 213851334}
+{"type": "send", "node": "S", "seq": 120, "bytes": 512, "server_time": 1795510186.2361236, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 120, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510186.244653, "run": 213851334}
+{"type": "send", "node": "S", "seq": 121, "bytes": 512, "server_time": 1795510186.283684, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 121, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.2894573, "run": 213851334}
+{"type": "send", "node": "S", "seq": 122, "bytes": 512, "server_time": 1795510186.330831, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 122, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.339395, "run": 213851334}
+{"type": "send", "node": "S", "seq": 123, "bytes": 512, "server_time": 1795510186.3944921, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 123, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.3998082, "run": 213851334}
+{"type": "send", "node": "S", "seq": 124, "bytes": 512, "server_time": 1795510186.4341311, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 124, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510186.4394217, "run": 213851334}
+{"type": "send", "node": "S", "seq": 125, "bytes": 512, "server_time": 1795510186.4913247, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 125, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.4948452, "run": 213851334}
+{"type": "send", "node": "S", "seq": 126, "bytes": 512, "server_time": 1795510186.5184877, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 126, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.5295472, "run": 213851334}
+{"event_id": "6b9f8608:1026880317628748:114", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 114, "bytes": 512, "hops": 0, "device_mono_ns": 1026880317808709, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880361158786:115", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 115, "bytes": 512, "hops": 0, "device_mono_ns": 1026880361391632, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880403335709:116", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 116, "bytes": 512, "hops": 0, "device_mono_ns": 1026880403560402, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880462955478:117", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 117, "bytes": 512, "hops": 0, "device_mono_ns": 1026880463175632, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880515637671:118", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 118, "bytes": 512, "hops": 0, "device_mono_ns": 1026880515862094, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880563506632:119", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 119, "bytes": 512, "hops": 0, "device_mono_ns": 1026880563743094, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880615581248:120", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 120, "bytes": 512, "hops": 0, "device_mono_ns": 1026880615813671, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880666703901:121", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 121, "bytes": 512, "hops": 0, "device_mono_ns": 1026880666936324, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880711275132:122", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 122, "bytes": 512, "hops": 0, "device_mono_ns": 1026880711510786, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880773709786:123", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 123, "bytes": 512, "hops": 0, "device_mono_ns": 1026880773948440, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880814208747:124", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 124, "bytes": 512, "hops": 0, "device_mono_ns": 1026880814436786, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880869321401:125", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 125, "bytes": 512, "hops": 0, "device_mono_ns": 1026880869523747, "server_time": 1795510186.5393565}
+{"event_id": "6b9f8608:1026880900848709:126", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 126, "bytes": 512, "hops": 0, "device_mono_ns": 1026880901031132, "server_time": 1795510186.5393565}
+{"type": "send", "node": "S", "seq": 127, "bytes": 512, "server_time": 1795510186.5797758, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 127, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510186.5893865, "run": 213851334}
+{"type": "send", "node": "S", "seq": 128, "bytes": 512, "server_time": 1795510186.6331165, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 128, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.639458, "run": 213851334}
+{"type": "send", "node": "S", "seq": 129, "bytes": 512, "server_time": 1795510186.6958482, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 129, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.6994681, "run": 213851334}
+{"type": "send", "node": "S", "seq": 130, "bytes": 512, "server_time": 1795510186.7436845, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 130, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.7496743, "run": 213851334}
+{"type": "send", "node": "S", "seq": 131, "bytes": 512, "server_time": 1795510186.8004203, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 131, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.8064554, "run": 213851334}
+{"type": "send", "node": "S", "seq": 132, "bytes": 512, "server_time": 1795510186.8369913, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 132, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510186.8527594, "run": 213851334}
+{"type": "send", "node": "S", "seq": 133, "bytes": 512, "server_time": 1795510186.8844433, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 133, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.8893533, "run": 213851334}
+{"type": "send", "node": "S", "seq": 134, "bytes": 512, "server_time": 1795510186.9155633, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 134, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510186.9195526, "run": 213851334}
+{"type": "send", "node": "S", "seq": 135, "bytes": 512, "server_time": 1795510187.0004406, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 135, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510187.0096889, "run": 213851334}
+{"type": "send", "node": "S", "seq": 136, "bytes": 512, "server_time": 1795510187.0373824, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 136, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.0450087, "run": 213851334}
+{"type": "send", "node": "S", "seq": 137, "bytes": 512, "server_time": 1795510187.0908995, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 137, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.0996943, "run": 213851334}
+{"type": "send", "node": "S", "seq": 138, "bytes": 512, "server_time": 1795510187.1225417, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 138, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510187.1294284, "run": 213851334}
+{"event_id": "6b9f8608:1026880960765901:127", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 127, "bytes": 512, "hops": 0, "device_mono_ns": 1026880961046209, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881011913055:128", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 128, "bytes": 512, "hops": 0, "device_mono_ns": 1026881012390209, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881075096170:129", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 129, "bytes": 512, "hops": 0, "device_mono_ns": 1026881075389170, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881123003786:130", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 130, "bytes": 512, "hops": 0, "device_mono_ns": 1026881123241439, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881180288516:131", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 131, "bytes": 512, "hops": 0, "device_mono_ns": 1026881180517901, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881215918786:132", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 132, "bytes": 512, "hops": 0, "device_mono_ns": 1026881216267901, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881263384901:133", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 133, "bytes": 512, "hops": 0, "device_mono_ns": 1026881263605555, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881294630862:134", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 134, "bytes": 512, "hops": 0, "device_mono_ns": 1026881294836709, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881380665055:135", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 135, "bytes": 512, "hops": 0, "device_mono_ns": 1026881380888516, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881416344016:136", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 136, "bytes": 512, "hops": 0, "device_mono_ns": 1026881416567439, "server_time": 1795510187.1395466}
+{"event_id": "6b9f8608:1026881470117632:137", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 137, "bytes": 512, "hops": 0, "device_mono_ns": 1026881470336862, "server_time": 1795510187.1395466}
+{"type": "send", "node": "S", "seq": 139, "bytes": 512, "server_time": 1795510187.1856863, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 139, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.1897998, "run": 213851334}
+{"type": "send", "node": "S", "seq": 140, "bytes": 512, "server_time": 1795510187.2333388, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 140, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.2393482, "run": 213851334}
+{"type": "send", "node": "S", "seq": 141, "bytes": 512, "server_time": 1795510187.2912517, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 141, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.2997777, "run": 213851334}
+{"type": "send", "node": "S", "seq": 142, "bytes": 512, "server_time": 1795510187.3226604, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 142, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.3296313, "run": 213851334}
+{"type": "send", "node": "S", "seq": 143, "bytes": 512, "server_time": 1795510187.3997529, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 143, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.3997529, "run": 213851334}
+{"type": "send", "node": "S", "seq": 144, "bytes": 512, "server_time": 1795510187.4313495, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 144, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.4346054, "run": 213851334}
+{"type": "send", "node": "S", "seq": 145, "bytes": 512, "server_time": 1795510187.4946592, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 145, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.4995763, "run": 213851334}
+{"type": "send", "node": "S", "seq": 146, "bytes": 512, "server_time": 1795510187.5471747, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 146, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.5496802, "run": 213851334}
+{"type": "send", "node": "S", "seq": 147, "bytes": 512, "server_time": 1795510187.5821822, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 147, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.5897112, "run": 213851334}
+{"type": "send", "node": "S", "seq": 148, "bytes": 512, "server_time": 1795510187.6463208, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 148, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.6497664, "run": 213851334}
+{"type": "send", "node": "S", "seq": 149, "bytes": 512, "server_time": 1795510187.6936562, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 149, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.699715, "run": 213851334}
+{"type": "send", "node": "S", "seq": 150, "bytes": 512, "server_time": 1795510187.7463431, "run": 213851334}
+{"event_id": "6b9f8608:1026881509821324:138", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 138, "bytes": 512, "hops": 0, "device_mono_ns": 1026881509960132, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881565264285:139", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 139, "bytes": 512, "hops": 0, "device_mono_ns": 1026881565479016, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881613218362:140", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 140, "bytes": 512, "hops": 0, "device_mono_ns": 1026881613403016, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881670903093:141", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 141, "bytes": 512, "hops": 0, "device_mono_ns": 1026881671122439, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881701935170:142", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 142, "bytes": 512, "hops": 0, "device_mono_ns": 1026881702154401, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881780383439:143", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 143, "bytes": 512, "hops": 0, "device_mono_ns": 1026881780621631, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881809942131:144", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 144, "bytes": 512, "hops": 0, "device_mono_ns": 1026881810145747, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881877155324:145", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 145, "bytes": 512, "hops": 0, "device_mono_ns": 1026881877444054, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881926594670:146", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 146, "bytes": 512, "hops": 0, "device_mono_ns": 1026881926869785, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026881962683439:147", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 147, "bytes": 512, "hops": 0, "device_mono_ns": 1026881962893208, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026882025556016:148", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 148, "bytes": 512, "hops": 0, "device_mono_ns": 1026882025779862, "server_time": 1795510187.7496815}
+{"event_id": "6b9f8608:1026882073113670:149", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 149, "bytes": 512, "hops": 0, "device_mono_ns": 1026882073336900, "server_time": 1795510187.7496815}
+{"type": "ack", "node": "S", "seq": 150, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.7496815, "run": 213851334}
+{"type": "send", "node": "S", "seq": 151, "bytes": 512, "server_time": 1795510187.790581, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 151, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510187.7994916, "run": 213851334}
+{"type": "send", "node": "S", "seq": 152, "bytes": 512, "server_time": 1795510187.8275392, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 152, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510187.8344572, "run": 213851334}
+{"type": "send", "node": "S", "seq": 153, "bytes": 512, "server_time": 1795510187.879833, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 153, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.879833, "run": 213851334}
+{"type": "send", "node": "S", "seq": 154, "bytes": 512, "server_time": 1795510187.9459474, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 154, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.9526796, "run": 213851334}
+{"type": "send", "node": "S", "seq": 155, "bytes": 512, "server_time": 1795510187.993649, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 155, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510187.999421, "run": 213851334}
+{"type": "send", "node": "S", "seq": 156, "bytes": 512, "server_time": 1795510188.0501828, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 156, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.0501828, "run": 213851334}
+{"type": "send", "node": "S", "seq": 157, "bytes": 512, "server_time": 1795510188.0868342, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 157, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.0897028, "run": 213851334}
+{"type": "send", "node": "S", "seq": 158, "bytes": 512, "server_time": 1795510188.1374774, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 158, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.1394856, "run": 213851334}
+{"type": "send", "node": "S", "seq": 159, "bytes": 512, "server_time": 1795510188.187797, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 159, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510188.189802, "run": 213851334}
+{"type": "send", "node": "S", "seq": 160, "bytes": 512, "server_time": 1795510188.240232, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 160, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.240232, "run": 213851334}
+{"type": "send", "node": "S", "seq": 161, "bytes": 512, "server_time": 1795510188.2883127, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 161, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.2898176, "run": 213851334}
+{"type": "send", "node": "S", "seq": 162, "bytes": 512, "server_time": 1795510188.330646, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 162, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.339486, "run": 213851334}
+{"type": "send", "node": "S", "seq": 163, "bytes": 512, "server_time": 1795510188.37814, "run": 213851334}
+{"event_id": "6b9f8608:1026882124803554:150", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 150, "bytes": 512, "hops": 0, "device_mono_ns": 1026882125031823, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882170657323:151", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 151, "bytes": 512, "hops": 0, "device_mono_ns": 1026882171055708, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882206638246:152", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 152, "bytes": 512, "hops": 0, "device_mono_ns": 1026882206812054, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882258813977:153", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 153, "bytes": 512, "hops": 0, "device_mono_ns": 1026882259027477, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882325396939:154", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 154, "bytes": 512, "hops": 0, "device_mono_ns": 1026882325687054, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882373052246:155", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 155, "bytes": 512, "hops": 0, "device_mono_ns": 1026882373257785, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882429804785:156", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 156, "bytes": 512, "hops": 0, "device_mono_ns": 1026882430017015, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882466567669:157", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 157, "bytes": 512, "hops": 0, "device_mono_ns": 1026882466779015, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882516880092:158", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 158, "bytes": 512, "hops": 0, "device_mono_ns": 1026882517178900, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882567036977:159", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 159, "bytes": 512, "hops": 0, "device_mono_ns": 1026882567237246, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882619300169:160", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 160, "bytes": 512, "hops": 0, "device_mono_ns": 1026882619510054, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882667622015:161", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 161, "bytes": 512, "hops": 0, "device_mono_ns": 1026882667835438, "server_time": 1795510188.37814}
+{"event_id": "6b9f8608:1026882709948400:162", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 162, "bytes": 512, "hops": 0, "device_mono_ns": 1026882710124900, "server_time": 1795510188.37814}
+{"type": "ack", "node": "S", "seq": 163, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.3796444, "run": 213851334}
+{"type": "send", "node": "S", "seq": 164, "bytes": 512, "server_time": 1795510188.4298165, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 164, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.4298165, "run": 213851334}
+{"type": "send", "node": "S", "seq": 165, "bytes": 512, "server_time": 1795510188.4772189, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 165, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.484859, "run": 213851334}
+{"type": "send", "node": "S", "seq": 166, "bytes": 512, "server_time": 1795510188.5406768, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 166, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510188.5506861, "run": 213851334}
+{"type": "send", "node": "S", "seq": 167, "bytes": 512, "server_time": 1795510188.5764427, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 167, "hops": 0, "rtt_ms": 15.0, "server_time": 1795510188.5819752, "run": 213851334}
+{"type": "send", "node": "S", "seq": 168, "bytes": 512, "server_time": 1795510188.641347, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 168, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510188.6494436, "run": 213851334}
+{"type": "send", "node": "S", "seq": 169, "bytes": 512, "server_time": 1795510188.6872532, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 169, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510188.6897745, "run": 213851334}
+{"type": "send", "node": "S", "seq": 170, "bytes": 512, "server_time": 1795510188.7405877, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 170, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.749647, "run": 213851334}
+{"type": "send", "node": "S", "seq": 171, "bytes": 512, "server_time": 1795510188.801253, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 171, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.801253, "run": 213851334}
+{"type": "send", "node": "S", "seq": 172, "bytes": 512, "server_time": 1795510188.8329396, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 172, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.83937, "run": 213851334}
+{"type": "send", "node": "S", "seq": 173, "bytes": 512, "server_time": 1795510188.8806505, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 173, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.8806505, "run": 213851334}
+{"type": "send", "node": "S", "seq": 174, "bytes": 512, "server_time": 1795510188.9174483, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 174, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510188.9194534, "run": 213851334}
+{"event_id": "6b9f8608:1026882756877323:163", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 163, "bytes": 512, "hops": 0, "device_mono_ns": 1026882757096400, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026882809498400:164", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 164, "bytes": 512, "hops": 0, "device_mono_ns": 1026882809750438, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026882856976515:165", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 165, "bytes": 512, "hops": 0, "device_mono_ns": 1026882857154092, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026882929119015:166", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 166, "bytes": 512, "hops": 0, "device_mono_ns": 1026882929319092, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026882955630515:167", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 167, "bytes": 512, "hops": 0, "device_mono_ns": 1026882955832438, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883021275207:168", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 168, "bytes": 512, "hops": 0, "device_mono_ns": 1026883021480592, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883066596977:169", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 169, "bytes": 512, "hops": 0, "device_mono_ns": 1026883066793323, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883121438900:170", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 170, "bytes": 512, "hops": 0, "device_mono_ns": 1026883121647938, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883180584823:171", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 171, "bytes": 512, "hops": 0, "device_mono_ns": 1026883180784053, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883212542630:172", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 172, "bytes": 512, "hops": 0, "device_mono_ns": 1026883212751938, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883259851592:173", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 173, "bytes": 512, "hops": 0, "device_mono_ns": 1026883260262207, "server_time": 1795510188.9910095}
+{"event_id": "6b9f8608:1026883297071938:174", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 174, "bytes": 512, "hops": 0, "device_mono_ns": 1026883297269976, "server_time": 1795510188.9910095}
+{"type": "send", "node": "S", "seq": 175, "bytes": 512, "server_time": 1795510189.0068817, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 175, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.0095725, "run": 213851334}
+{"type": "send", "node": "S", "seq": 176, "bytes": 512, "server_time": 1795510189.0383892, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 176, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.0394099, "run": 213851334}
+{"type": "send", "node": "S", "seq": 177, "bytes": 512, "server_time": 1795510189.08742, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 177, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.0895662, "run": 213851334}
+{"type": "send", "node": "S", "seq": 178, "bytes": 512, "server_time": 1795510189.1195724, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 178, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.1207447, "run": 213851334}
+{"type": "send", "node": "S", "seq": 179, "bytes": 512, "server_time": 1795510189.1796324, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 179, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510189.1924236, "run": 213851334}
+{"type": "send", "node": "S", "seq": 180, "bytes": 512, "server_time": 1795510189.22415, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 180, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.2296088, "run": 213851334}
+{"type": "send", "node": "S", "seq": 181, "bytes": 512, "server_time": 1795510189.2894113, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 181, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.2894113, "run": 213851334}
+{"type": "send", "node": "S", "seq": 182, "bytes": 512, "server_time": 1795510189.3371618, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 182, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.3396733, "run": 213851334}
+{"type": "send", "node": "S", "seq": 183, "bytes": 512, "server_time": 1795510189.3884008, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 183, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.3899083, "run": 213851334}
+{"type": "send", "node": "S", "seq": 184, "bytes": 512, "server_time": 1795510189.4406884, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 184, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.4501033, "run": 213851334}
+{"type": "send", "node": "S", "seq": 185, "bytes": 512, "server_time": 1795510189.4897869, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 185, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.4897869, "run": 213851334}
+{"type": "send", "node": "S", "seq": 186, "bytes": 512, "server_time": 1795510189.5247028, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 186, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.529555, "run": 213851334}
+{"type": "send", "node": "S", "seq": 187, "bytes": 512, "server_time": 1795510189.6047387, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 187, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510189.6205747, "run": 213851334}
+{"type": "send", "node": "S", "seq": 188, "bytes": 512, "server_time": 1795510189.6205747, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 188, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.6205747, "run": 213851334}
+{"event_id": "6b9f8608:1026883385773976:175", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 175, "bytes": 512, "hops": 0, "device_mono_ns": 1026883385939246, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883418081169:176", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 176, "bytes": 512, "hops": 0, "device_mono_ns": 1026883418274053, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883466584284:177", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 177, "bytes": 512, "hops": 0, "device_mono_ns": 1026883466752553, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883498714669:178", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 178, "bytes": 512, "hops": 0, "device_mono_ns": 1026883498901053, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883566778784:179", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 179, "bytes": 512, "hops": 0, "device_mono_ns": 1026883566966245, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883605198476:180", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 180, "bytes": 512, "hops": 0, "device_mono_ns": 1026883605455553, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883668515938:181", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 181, "bytes": 512, "hops": 0, "device_mono_ns": 1026883668769553, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883716848245:182", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 182, "bytes": 512, "hops": 0, "device_mono_ns": 1026883717114207, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883767903361:183", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 183, "bytes": 512, "hops": 0, "device_mono_ns": 1026883768255399, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883820471938:184", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 184, "bytes": 512, "hops": 0, "device_mono_ns": 1026883820673899, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883869429591:185", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 185, "bytes": 512, "hops": 0, "device_mono_ns": 1026883869624284, "server_time": 1795510189.629674}
+{"event_id": "6b9f8608:1026883905868976:186", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 186, "bytes": 512, "hops": 0, "device_mono_ns": 1026883906079668, "server_time": 1795510189.629674}
+{"type": "send", "node": "S", "seq": 189, "bytes": 512, "server_time": 1795510189.6797054, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 189, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.6889927, "run": 213851334}
+{"type": "send", "node": "S", "seq": 190, "bytes": 512, "server_time": 1795510189.7535412, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 190, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.759713, "run": 213851334}
+{"type": "send", "node": "S", "seq": 191, "bytes": 512, "server_time": 1795510189.7842212, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 191, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.789759, "run": 213851334}
+{"type": "send", "node": "S", "seq": 192, "bytes": 512, "server_time": 1795510189.8358848, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 192, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.8395445, "run": 213851334}
+{"type": "send", "node": "S", "seq": 193, "bytes": 512, "server_time": 1795510189.8833723, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 193, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510189.8895779, "run": 213851334}
+{"type": "send", "node": "S", "seq": 194, "bytes": 512, "server_time": 1795510189.9365592, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 194, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510189.939567, "run": 213851334}
+{"type": "send", "node": "S", "seq": 195, "bytes": 512, "server_time": 1795510189.983832, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 195, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510189.990177, "run": 213851334}
+{"type": "send", "node": "S", "seq": 196, "bytes": 512, "server_time": 1795510190.0399334, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 196, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510190.0399334, "run": 213851334}
+{"type": "send", "node": "S", "seq": 197, "bytes": 512, "server_time": 1795510190.0875578, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 197, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510190.089796, "run": 213851334}
+{"type": "send", "node": "S", "seq": 198, "bytes": 512, "server_time": 1795510190.1401417, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 198, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510190.1401417, "run": 213851334}
+{"type": "send", "node": "S", "seq": 199, "bytes": 512, "server_time": 1795510190.1873841, "run": 213851334}
+{"type": "ack", "node": "S", "seq": 199, "hops": 0, "rtt_ms": 16.0, "server_time": 1795510190.1898894, "run": 213851334}
+{"event_id": "6b9f8608:1026883992942245:187", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 187, "bytes": 512, "hops": 0, "device_mono_ns": 1026883993060784, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026883998035784:188", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 188, "bytes": 512, "hops": 0, "device_mono_ns": 1026883998146707, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884060244091:189", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 189, "bytes": 512, "hops": 0, "device_mono_ns": 1026884060413360, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884138185399:190", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 190, "bytes": 512, "hops": 0, "device_mono_ns": 1026884138357937, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884163753245:191", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 191, "bytes": 512, "hops": 0, "device_mono_ns": 1026884163952937, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884215926476:192", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 192, "bytes": 512, "hops": 0, "device_mono_ns": 1026884216293130, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884262985437:193", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 193, "bytes": 512, "hops": 0, "device_mono_ns": 1026884263157514, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884317035706:194", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 194, "bytes": 512, "hops": 0, "device_mono_ns": 1026884317180283, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884363364245:195", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 195, "bytes": 512, "hops": 0, "device_mono_ns": 1026884363514283, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884418399168:196", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 196, "bytes": 512, "hops": 0, "device_mono_ns": 1026884418552206, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884467202437:197", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 197, "bytes": 512, "hops": 0, "device_mono_ns": 1026884467353668, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884519537245:198", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 198, "bytes": 512, "hops": 0, "device_mono_ns": 1026884519679552, "server_time": 1795510190.329963}
+{"event_id": "6b9f8608:1026884567083399:199", "type": "receive", "node": "D", "device_id": "6b9f8608", "run": 213851334, "seq": 199, "bytes": 512, "hops": 0, "device_mono_ns": 1026884567231822, "server_time": 1795510190.329963}

@@ -1,0 +1,35 @@
+# Local dependencies, caches and credentials
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+
+# Temporary chart workspaces and duplicate paper extraction
+/.chart-data-*/
+/work/relay_paper/
+
+# Keep the installable demo APK; ignore intermediate Android build outputs
+/outputs/relay_d2d_lab/android/build/*
+!/outputs/relay_d2d_lab/android/build/relaylab.apk
+/outputs/relay_d2d_lab/results/server.*.log
+
+# Preserve slide source, assets and verification receipts, not render caches
+/work/relay_slides/renders/
+/work/relay_slides/script_renders/
+/work/relay_slides/powerpoint_renders/
+/work/relay_slides/*_contacts/
+/work/relay_slides/candidate.pptx*
+/work/relay_slides/probe.*
+/work/relay_slides/presentation.json

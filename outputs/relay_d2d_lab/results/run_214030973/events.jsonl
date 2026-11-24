@@ -1,0 +1,36 @@
+{"type": "invalid", "node": "D", "server_time": 1795510359.8664687, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 1, "bytes": 128, "hops": 0, "server_time": 1795510359.8664687, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 1, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8664687, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 2, "bytes": 128, "hops": 0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 2, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 3, "bytes": 128, "hops": 0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 3, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 4, "bytes": 128, "hops": 0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 4, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "invalid", "node": "D", "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 6, "bytes": 128, "hops": 0, "server_time": 1795510359.8674688, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 6, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8690012, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 7, "bytes": 128, "hops": 0, "server_time": 1795510359.8690012, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 7, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8690012, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 8, "bytes": 128, "hops": 0, "server_time": 1795510359.8690012, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 8, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 9, "bytes": 128, "hops": 0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 9, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "invalid", "node": "D", "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 11, "bytes": 128, "hops": 0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 11, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 12, "bytes": 128, "hops": 0, "server_time": 1795510359.8697836, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 12, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 13, "bytes": 128, "hops": 0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 13, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 14, "bytes": 128, "hops": 0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 14, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "invalid", "node": "D", "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 16, "bytes": 128, "hops": 0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 16, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 17, "bytes": 128, "hops": 0, "server_time": 1795510359.8708816, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 17, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8723872, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 18, "bytes": 128, "hops": 0, "server_time": 1795510359.8723872, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 18, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8723872, "run": 214030973}
+{"type": "receive", "node": "D", "seq": 19, "bytes": 128, "hops": 0, "server_time": 1795510359.8723872, "run": 214030973}
+{"type": "ack", "node": "S", "seq": 19, "hops": 0, "rtt_ms": 0.0, "server_time": 1795510359.8723872, "run": 214030973}

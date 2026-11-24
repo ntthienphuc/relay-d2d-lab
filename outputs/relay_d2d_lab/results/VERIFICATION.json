@@ -1,0 +1,151 @@
+{
+  "generated_utc": "2026-11-24T09:04:33.009555+00:00",
+  "scope": "Development and preliminary tests completed. One physical Android; simultaneous two-Android topology requires the second device.",
+  "hardware": {
+    "scope": "One physical SM-G965F; second physical Android not tested. UDP over Wi-Fi/LAN; no USB data tunnel.",
+    "cases": [
+      {
+        "id": 214211019,
+        "config": {
+          "environment": "live",
+          "route": "relay",
+          "duration": 50.0,
+          "rate": 20,
+          "payload": 128,
+          "relay_id": "6b9f8608",
+          "destination_id": "laptop",
+          "laptop_ip": "192.168.1.6",
+          "drop_every": 0
+        },
+        "topology": "LAN UDP via physical Android relay; laptop holds S and D (two-device pilot)",
+        "finished": true,
+        "elapsed": 50.0,
+        "sent": 1000,
+        "received_observed": 1000,
+        "delivery_confirmed": 1000,
+        "acked": 1000,
+        "pdr_observed": 1.0,
+        "pdr_confirmed": 1.0,
+        "goodput_kbps": 20.48,
+        "rtt_ms": 14.2079813,
+        "rtt_p95_ms": 21.62483,
+        "relay_ms": 1.688292791,
+        "duplicates": 0,
+        "invalid": 0,
+        "dropped_by_relay": 0,
+        "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+        "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+      },
+      {
+        "id": 214265759,
+        "config": {
+          "environment": "live",
+          "route": "relay",
+          "duration": 12.0,
+          "rate": 20,
+          "payload": 128,
+          "relay_id": "6b9f8608",
+          "destination_id": "laptop",
+          "laptop_ip": "192.168.1.6",
+          "drop_every": 0
+        },
+        "topology": "LAN UDP via physical Android relay; laptop holds S and D (two-device pilot)",
+        "finished": true,
+        "elapsed": 12.0,
+        "sent": 240,
+        "received_observed": 180,
+        "delivery_confirmed": 180,
+        "acked": 180,
+        "pdr_observed": 0.75,
+        "pdr_confirmed": 0.75,
+        "goodput_kbps": 15.36,
+        "rtt_ms": 13.82424111111111,
+        "rtt_p95_ms": 20.17824,
+        "relay_ms": 1.408839333333333,
+        "duplicates": 0,
+        "invalid": 0,
+        "dropped_by_relay": 60,
+        "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+        "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+      },
+      {
+        "id": 214283081,
+        "config": {
+          "environment": "live",
+          "route": "direct",
+          "duration": 10.0,
+          "rate": 20,
+          "payload": 512,
+          "relay_id": "",
+          "destination_id": "6b9f8608",
+          "laptop_ip": "192.168.1.6",
+          "drop_every": 0
+        },
+        "topology": "LAN UDP application-direct",
+        "finished": true,
+        "elapsed": 10.0,
+        "sent": 200,
+        "received_observed": 200,
+        "delivery_confirmed": 200,
+        "acked": 200,
+        "pdr_observed": 1.0,
+        "pdr_confirmed": 1.0,
+        "goodput_kbps": 81.92,
+        "rtt_ms": 8.0143035,
+        "rtt_p95_ms": 11.432939999999997,
+        "relay_ms": null,
+        "duplicates": 0,
+        "invalid": 0,
+        "dropped_by_relay": 0,
+        "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+        "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+      }
+    ],
+    "date": "2026-11-24",
+    "checks": "Positive receipt; pause causes missing packets; Android sink reports receive. Raw counts preserved, no forced PDR threshold."
+  },
+  "browser": {
+    "errors": [],
+    "overflow": false,
+    "run": {
+      "id": 214576099,
+      "sent": 40,
+      "confirmed": 40
+    },
+    "webgl": true,
+    "tested_at": "2026-11-24T09:01:53.091Z"
+  },
+  "pytest": {
+    "passed": 7,
+    "junit": "results/tests.xml"
+  },
+  "science": {
+    "samples_per_point": 1000000,
+    "snr_points": 21,
+    "df_max_absolute_mc_closed_difference": 0.0007398713191433259,
+    "energy": "Modeled sensitivity, not measured"
+  },
+  "source_sha256": {
+    "lab\\network.py": "ec473a65d16ed9ff834a638192facdcc1f9f161debf2f644d2d35217f8d8d68d",
+    "lab\\packet.py": "1671727fc9fc34f5cf320a20731a73747a46f69506fa5a72c9b89c4a3a2cf5b6",
+    "lab\\records.py": "2f1dfacdfd06480fa7cada4cab849db29542e66949dbe2014d11c9df0175469f",
+    "lab\\server.py": "ef11a911686af0db833607f88cd20a4b321d207f9e385953a82f62d2c96f3254",
+    "lab\\__init__.py": "143a1c88eebb61cce3f3c4db7ed334f2dc39501252a87627716ea37db07f578c",
+    "sim\\model.py": "51dc8fd18298815a63e411e50bf2a92e835f72096fa035da605c47cb3dbd2396",
+    "sim\\__init__.py": "a0d73e24b48e4588b7d82966fc6cfd7652e01ccb253a5893f4dce57f538284e8",
+    "web\\src\\api.js": "4ea517cef57870f2578c1b850bc2785f0dc6c8b089694a2484b17b8a63e11d86",
+    "web\\src\\cameras.js": "31391d77b9d686c3286906e9139d03bb1eddc6cbc7a26fddc47ba2f07dc824ba",
+    "web\\src\\charts.js": "bd7824eb76b0e35d2d1167457698a29311d633353007a45d47b9c9829c682914",
+    "web\\src\\logs.js": "3c625cb6cc16c276a565010b7a7e8c3db2b104b53cdbe58106a924ca86335d4c",
+    "web\\src\\main.js": "a3f1b9a4ddff51914e1c610c92faa24be5877ae923510b5e3e52d6ca362f402d",
+    "web\\src\\nodes.js": "75a47b43eaee98cef2ff5cfe4fbe470891d1f120f28cde160434f45ccf43601e",
+    "web\\src\\packets.js": "1486fd2086f5076ac12c0666ed3cb45ddc79a4cd3904853c0133973bd54acbd9",
+    "web\\src\\state.js": "8739982bfbb44a6a6aed867bc2acb73113e42877445636e1c56b04c02e1d65b7",
+    "web\\src\\ui.js": "b13ab54fc74ad7fa644fca6a5e39ff2ebf5fb97c6c3b9e580a02eaecea4abc9a",
+    "web\\src\\world.js": "8bc8792e64ff57eb44bd5f03566227f46649143c07c6b677173811045c2894a3",
+    "android\\src\\vn\\relaylab\\MainActivity.java": "95c656093d5adccd8b244574d2e26ef391fd0a2d6a8af959b14abb2a8f139be2",
+    "android\\src\\vn\\relaylab\\Packet.java": "e32bc6ca7dc8003d8a7e2586cf946ef871319ea46ac2e0f18c9f6434c44216c0",
+    "android\\src\\vn\\relaylab\\UdpNode.java": "1ae22d23181e8ff0001b38e41d5986a1b27b79747b098421bb7af23a77487c9e",
+    "android\\build\\relaylab.apk": "40353236774678c90dcb2da342c054aa9ca9561963f8848776223b3f6dc04ad3"
+  }
+}

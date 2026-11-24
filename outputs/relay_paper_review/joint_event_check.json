@@ -1,0 +1,27 @@
+{
+  "seed": 20261114,
+  "samples": 1000000,
+  "snr_db": 0,
+  "results": [
+    {
+      "mode": "HD",
+      "direct_event_monte_carlo": 0.225332,
+      "wilson_95_ci": [
+        0.22451418153798652,
+        0.22615192870552986
+      ],
+      "joint_threshold_closed_form": 0.22555321367424397,
+      "product_of_marginals_as_printed_eq17": 0.29599112416131756
+    },
+    {
+      "mode": "FD",
+      "direct_event_monte_carlo": 0.227293,
+      "wilson_95_ci": [
+        0.22647266013715034,
+        0.22811543504022241
+      ],
+      "joint_threshold_closed_form": 0.22752770175538062,
+      "product_of_marginals_as_printed_eq17": 0.29845500669585656
+    }
+  ]
+}

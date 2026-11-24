@@ -1,0 +1,10 @@
+{
+  "id": 214359696,
+  "topology": "PYTEST localhost UDP",
+  "started_wall": 1795510688.5881274,
+  "duration": 1,
+  "rate": 20,
+  "payload": 128,
+  "environment": "test",
+  "route": "direct"
+}

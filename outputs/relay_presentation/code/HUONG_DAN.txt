@@ -1,0 +1,44 @@
+CODE MINH HOA RELAY D2D
+
+Các chương trình này minh họa nguyên lý, không điều khiển tín hiệu RF của Android.
+Yêu cầu: Python 3.9 trở lên, NumPy. Cài: python -m pip install -r requirements.txt
+Chạy lệnh trong thư mục này.
+
+1. python packet_walkthrough.py
+   Dùng đúng bộ mã/giải mã gói của demo thật (packet_codec.py).
+   Kiểm tra header 32 byte, payload, CRC và hop count. Chạy offline, không phát UDP.
+   Kết quả mong đợi: gói hợp lệ đi tiếp, payload sai bị loại.
+
+2. python af_df_symbols.py --frames 10000 --out baseband_results.json
+   Mô phỏng mẫu tín hiệu phức, BPSK, Hamming(7,4), CRC32 và hai chặng Rayleigh.
+   AF nhân toàn bộ tín hiệu nhận với gain. DF giải mã rồi tái tạo từ payload nhận được.
+   Khung DF bị loại tại relay vẫn được tính là thất bại đầu cuối.
+   BER có điều kiện trên khung đã chuyển tiếp không nên dùng riêng để xếp hạng DF.
+   SNR = P/N0 trên symbol đã mã hóa. Đây không phải Eb/N0 của bit thông tin.
+   Hamming sửa một lỗi mỗi từ mã; CRC chỉ phát hiện lỗi, không sửa và không tuyệt đối.
+   Mô hình có CSI lý tưởng và không mô phỏng đồng bộ sóng, RF hay toàn bộ Wi-Fi PHY.
+
+3. python noma_sic.py
+   Hai luồng BPSK độc lập, tỷ lệ công suất 0,2 và 0,8, ví dụ bộ thu gần h=1 đã biết.
+   Giải mã luồng mạnh, dựng lại và trừ, sau đó giải mã luồng còn lại.
+   Không mã kênh, không có chặng relay, không phải tái lập toàn bộ bài cooperative NOMA.
+
+4. python monte_carlo_outage.py
+   21 điểm SNR, một triệu mẫu kênh mỗi điểm, seed 20261124.
+   Mô hình SISO HD, Rayleigh độc lập, hai khe bằng nhau, không kết hợp đường trực tiếp.
+   Đối chiếu outage DF với dạng đóng; sai khác cực đại của kết quả đã chạy ~0,0007398713.
+   Outage là không đạt tốc độ mục tiêu, khác lỗi bit, lỗi khung hữu hạn và mất gói UDP.
+
+CÁCH DÙNG TRÊN LAPTOP DỰ ÁN
+Nếu thư mục này vẫn nằm trong outputs/relay_presentation/code, dùng Python đã có:
+  ..\..\relay_d2d_lab\.venv\Scripts\python.exe af_df_symbols.py --frames 10000
+Không cần cài NumPy lại vào môi trường đó.
+
+KẾT QUẢ ĐI KÈM
+baseband_results.json: 10.000 khung/điểm. Payload 16 byte, thêm 4 byte CRC.
+noma_results.json: 100.000 symbol mỗi điểm, ví dụ uncoded AWGN.
+outage_results.json: một triệu mẫu Rayleigh/điểm, R=0,5 bit/s/Hz toàn khung.
+Giữ cùng code, tham số và seed để tái lập.
+
+Nguồn bộ gói: outputs/relay_d2d_lab/lab/packet.py, sao chép không sửa.
+Các ví dụ baseband và SIC là code giảng giải bổ sung cho slide, tách khỏi app đang chạy.

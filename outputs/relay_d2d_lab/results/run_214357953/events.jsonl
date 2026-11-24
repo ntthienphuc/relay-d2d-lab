@@ -1,0 +1,3 @@
+{"type": "send", "node": "S", "seq": 0, "bytes": 128, "server_time": 1795510686.8470745, "run": 214357953}
+{"event_id": "receipt-0", "type": "receive", "node": "D", "seq": 0, "bytes": 128, "server_time": 1795510686.8480735, "run": 214357953}
+{"type": "drop_paused", "node": "R", "seq": 1, "server_time": 1795510686.8480735, "run": 214357953}

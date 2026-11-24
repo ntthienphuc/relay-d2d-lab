@@ -1,0 +1,234 @@
+{
+  "seed": 20261124,
+  "payload_bytes": 16,
+  "frames_per_point": 10000,
+  "model": "complex Rayleigh block fading; Hamming(7,4); CRC32; BPSK; perfect CSI; equal HD slots",
+  "snr_definition": "P/N0 per transmitted coded BPSK symbol, NOT information-bit Eb/N0",
+  "metric_note": "Frame failure counts relay erasures and destination failures. Conditional BER excludes erased frames; do not compare it alone.",
+  "rows": [
+    {
+      "snr_db": -2,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.9981,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.0019,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.34826171875,
+          "correct_frames": 19,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 1.0,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.0,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.353428125,
+          "correct_frames": 0,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.9943,
+          "relay_drop_rate": 0.9309000000000001,
+          "crc_accept_rate": 0.0057,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.18921852387843704,
+          "correct_frames": 57,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 2,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.9451,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.0549,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.236040625,
+          "correct_frames": 549,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.9779,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.0221,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.23325546875,
+          "correct_frames": 221,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.893,
+          "relay_drop_rate": 0.6684,
+          "crc_accept_rate": 0.107,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.09683636158021713,
+          "correct_frames": 1070,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 6,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.7266,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.2734,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.1355734375,
+          "correct_frames": 2734,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.7646,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.2354,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.1173375,
+          "correct_frames": 2354,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.6013,
+          "relay_drop_rate": 0.37060000000000004,
+          "crc_accept_rate": 0.3987,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.04439744200826184,
+          "correct_frames": 3987,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 10,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.4568,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.5432,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.0715140625,
+          "correct_frames": 5432,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.40759999999999996,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.5924,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.04894375,
+          "correct_frames": 5924,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.31389999999999996,
+          "relay_drop_rate": 0.1664,
+          "crc_accept_rate": 0.6861,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.019422534788867563,
+          "correct_frames": 6861,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 14,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.2532,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.7468,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.03612890625,
+          "correct_frames": 7468,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.1735,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.8265,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.0191859375,
+          "correct_frames": 8265,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.14139999999999997,
+          "relay_drop_rate": 0.0716,
+          "crc_accept_rate": 0.8586,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.008305619883670831,
+          "correct_frames": 8586,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 18,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.13139999999999996,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.8686,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.01768671875,
+          "correct_frames": 8686,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.0686,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.9314,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.0075,
+          "correct_frames": 9314,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.06240000000000001,
+          "relay_drop_rate": 0.031000000000000028,
+          "crc_accept_rate": 0.9376,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.003582140092879257,
+          "correct_frames": 9376,
+          "frames": 10000
+        }
+      }
+    },
+    {
+      "snr_db": 22,
+      "modes": {
+        "AF-FG": {
+          "frame_failure_rate": 0.06379999999999997,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.9362,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.00866171875,
+          "correct_frames": 9362,
+          "frames": 10000
+        },
+        "AF-VG": {
+          "frame_failure_rate": 0.025900000000000034,
+          "relay_drop_rate": 0.0,
+          "crc_accept_rate": 0.9741,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.00300546875,
+          "correct_frames": 9741,
+          "frames": 10000
+        },
+        "DF": {
+          "frame_failure_rate": 0.026100000000000012,
+          "relay_drop_rate": 0.01319999999999999,
+          "crc_accept_rate": 0.9739,
+          "undetected_bad_frames": 0,
+          "payload_ber_given_forwarded": 0.0014939387413862991,
+          "correct_frames": 9739,
+          "frames": 10000
+        }
+      }
+    }
+  ]
+}

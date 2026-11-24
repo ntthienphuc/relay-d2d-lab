@@ -1,0 +1,10 @@
+{
+  "id": 214305266,
+  "topology": "PYTEST record reconciliation",
+  "started_wall": 1795510634.1580608,
+  "duration": 1,
+  "rate": 1,
+  "payload": 128,
+  "environment": "test",
+  "route": "relay"
+}

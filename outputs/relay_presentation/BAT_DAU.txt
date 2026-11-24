@@ -1,0 +1,31 @@
+BỘ TRÌNH BÀY RELAY D2D
+
+1. Relay_D2D_Thuyet_trinh.pptx
+   30 slide tiếng Việt. Slide 1-26 là phần chính khoảng 20-25 phút, đã gồm demo 3 phút.
+   Slide 27-30 là phụ lục. Mỗi slide có Speaker Notes chứa lời thoại, gợi ý chỉ vào hình và nguồn.
+   Mở bằng PowerPoint. Có thể sửa chữ, sơ đồ, bảng và dữ liệu biểu đồ.
+
+2. Loi_thuyet_trinh_Relay_D2D.pdf
+   32 trang. Mỗi trang đầu tương ứng một slide, có hình thu nhỏ và lời nói gợi ý.
+   Trang 31: 10 câu hỏi thường gặp. Trang 32: hướng dẫn demo và cách rút gọn bài nói.
+
+3. Loi_thuyet_trinh_Relay_D2D.html
+   Bản lời thoại có mục lục để tra nhanh. Mở bằng trình duyệt, không cần mạng.
+   Có thể sửa câu chữ bằng trình soạn thảo văn bản hoặc sửa trực tiếp Speaker Notes trong PowerPoint.
+
+4. Thư mục code
+   Code minh họa chạy được cho gói/CRC, AF/DF baseband, NOMA/SIC và Monte Carlo outage.
+   Đọc code/HUONG_DAN.txt trước khi chạy. Có các file JSON kết quả đi kèm.
+
+PHẠM VI TRÌNH BÀY
+Đo thiết bị thật hiện có: một Android S9+ làm relay, laptop giữ nguồn và đích.
+Hai Android đồng thời và STA/hotspot mở rộng vùng phủ chưa được xác nhận.
+AF/DF và NOMA ở tầng tín hiệu trong gói này là mô phỏng phần mềm.
+Mô hình hiện có chưa phải tái lập toàn bộ paper cooperative NOMA của Tran và Voznak.
+Ảnh sản phẩm chụp giao diện thật. Các ảnh và bảng kiểm thử có thể thuộc những phiên khác nhau.
+
+TRƯỚC KHI TRÌNH BÀY
+Luyện phần nguyên lý ở slide 3-9 trước. Sau đó luyện theo đường đi gói ở slide 11-15.
+Khi nói NOMA, dùng phép tính mẫu tại slide 20. Tránh đọc công thức mà không chỉ ý nghĩa biến.
+Slide 25 chỉ trình bày kết quả của đúng phiên pilot, không suy rộng thành tăng vùng phủ.
+Nếu chưa có máy đích thứ hai, chọn pilot một Android hoặc REPLAY và nói rõ cấu hình.

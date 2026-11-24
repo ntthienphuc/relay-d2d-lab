@@ -1,0 +1,1133 @@
+{
+  "config": {
+    "samples": 100000,
+    "seed": 20261124,
+    "rate": 0.5,
+    "relay_position": 0.5,
+    "pathloss": 2.2,
+    "qos": 0.1,
+    "processing_mj": 0.8,
+    "csi_mj": 0.1
+  },
+  "rows": [
+    {
+      "snr_db": -10.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.98415,
+          "failures": 98415,
+          "ci95": [
+            0.9833571003665647,
+            0.9849057042165212
+          ],
+          "throughput_bps_hz": 0.007925000000000015,
+          "energy_mj": 0.40002857142857146,
+          "bits_per_joule": 19811.08492250557
+        },
+        "DF": {
+          "outage": 0.98698,
+          "failures": 98698,
+          "ci95": [
+            0.9862584587158554,
+            0.9876641284490133
+          ],
+          "throughput_bps_hz": 0.006510000000000016,
+          "energy_mj": 1.5000285714285715,
+          "bits_per_joule": 4339.917334907917
+        },
+        "AF-FG": {
+          "outage": 0.9979,
+          "failures": 99790,
+          "ci95": [
+            0.9975965082655135,
+            0.9981652399569764
+          ],
+          "throughput_bps_hz": 0.0010499999999999954,
+          "energy_mj": 0.6200285714285714,
+          "bits_per_joule": 1693.4703469886108
+        },
+        "AF-VG": {
+          "outage": 0.99992,
+          "failures": 99992,
+          "ci95": [
+            0.9998421315618751,
+            0.99995946147164
+          ],
+          "throughput_bps_hz": 3.999999999998449e-05,
+          "energy_mj": 0.7200285714285714,
+          "bits_per_joule": 55.553351057476185
+        }
+      },
+      "df_closed": 0.9871286686468439,
+      "direct_closed": 0.984111117429684,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": -8.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.92732,
+          "failures": 92732,
+          "ci95": [
+            0.9256944794344062,
+            0.9289126911830561
+          ],
+          "throughput_bps_hz": 0.03633999999999998,
+          "energy_mj": 0.4000452826626418,
+          "bits_per_joule": 90839.71633942628
+        },
+        "DF": {
+          "outage": 0.93625,
+          "failures": 93625,
+          "ci95": [
+            0.9347189756393098,
+            0.9377475089199615
+          ],
+          "throughput_bps_hz": 0.03187499999999999,
+          "energy_mj": 1.5000452826626418,
+          "bits_per_joule": 21249.358514977997
+        },
+        "AF-FG": {
+          "outage": 0.98241,
+          "failures": 98241,
+          "ci95": [
+            0.9815765183862731,
+            0.9832064198744447
+          ],
+          "throughput_bps_hz": 0.008794999999999997,
+          "energy_mj": 0.6200452826626417,
+          "bits_per_joule": 14184.4478877928
+        },
+        "AF-VG": {
+          "outage": 0.9964,
+          "failures": 99640,
+          "ci95": [
+            0.9960092423844888,
+            0.9967526210773388
+          ],
+          "throughput_bps_hz": 0.0018000000000000238,
+          "energy_mj": 0.7200452826626417,
+          "bits_per_joule": 2499.842778420599
+        }
+      },
+      "df_closed": 0.9358416708869478,
+      "direct_closed": 0.926723175520714,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": -6.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.8085,
+          "failures": 80850,
+          "ci95": [
+            0.8060493883477655,
+            0.8109269107617707
+          ],
+          "throughput_bps_hz": 0.09575,
+          "energy_mj": 0.40007176818375745,
+          "bits_per_joule": 239332.0589320388
+        },
+        "DF": {
+          "outage": 0.82165,
+          "failures": 82165,
+          "ci95": [
+            0.8192650384181791,
+            0.8240102504264962
+          ],
+          "throughput_bps_hz": 0.089175,
+          "energy_mj": 1.5000717681837576,
+          "bits_per_joule": 59447.155723736105
+        },
+        "AF-FG": {
+          "outage": 0.92564,
+          "failures": 92564,
+          "ci95": [
+            0.9239975303681108,
+            0.9272497693174097
+          ],
+          "throughput_bps_hz": 0.03717999999999999,
+          "energy_mj": 0.6200717681837574,
+          "bits_per_joule": 59960.801164844765
+        },
+        "AF-VG": {
+          "outage": 0.9662,
+          "failures": 96620,
+          "ci95": [
+            0.9650619135923661,
+            0.9673022700214613
+          ],
+          "throughput_bps_hz": 0.016900000000000026,
+          "energy_mj": 0.7200717681837574,
+          "bits_per_joule": 23469.882790471052
+        }
+      },
+      "df_closed": 0.8232222717036051,
+      "direct_closed": 0.8077606162547928,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": -4.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.64661,
+          "failures": 64661,
+          "ci95": [
+            0.6436416601144835,
+            0.649567076392645
+          ],
+          "throughput_bps_hz": 0.176695,
+          "energy_mj": 0.4001137449058724,
+          "bits_per_joule": 441611.92223368346
+        },
+        "DF": {
+          "outage": 0.66405,
+          "failures": 66405,
+          "ci95": [
+            0.6611163225911754,
+            0.6669710740665862
+          ],
+          "throughput_bps_hz": 0.16797499999999999,
+          "energy_mj": 1.5001137449058726,
+          "bits_per_joule": 111974.84228806922
+        },
+        "AF-FG": {
+          "outage": 0.81593,
+          "failures": 81593,
+          "ci95": [
+            0.8135159180879723,
+            0.8183198102027112
+          ],
+          "throughput_bps_hz": 0.09203499999999998,
+          "energy_mj": 0.6201137449058725,
+          "bits_per_joule": 148416.31999943824
+        },
+        "AF-VG": {
+          "outage": 0.86606,
+          "failures": 86606,
+          "ci95": [
+            0.8639349856968462,
+            0.8681568912951697
+          ],
+          "throughput_bps_hz": 0.06696999999999997,
+          "energy_mj": 0.7201137449058724,
+          "bits_per_joule": 92999.19696540962
+        }
+      },
+      "df_closed": 0.6649119929153336,
+      "direct_closed": 0.6467069608088449,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": -2.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.48175,
+          "failures": 48175,
+          "ci95": [
+            0.47865385027281526,
+            0.4848475518057942
+          ],
+          "throughput_bps_hz": 0.259125,
+          "energy_mj": 0.40018027352699437,
+          "bits_per_joule": 647520.6729112313
+        },
+        "DF": {
+          "outage": 0.49828,
+          "failures": 49828,
+          "ci95": [
+            0.49518116876525736,
+            0.5013789633758501
+          ],
+          "throughput_bps_hz": 0.25085999999999997,
+          "energy_mj": 1.5001802735269945,
+          "bits_per_joule": 167219.90311885404
+        },
+        "AF-FG": {
+          "outage": 0.67184,
+          "failures": 67184,
+          "ci95": [
+            0.6689232407669569,
+            0.6747435574145105
+          ],
+          "throughput_bps_hz": 0.16408,
+          "energy_mj": 0.6201802735269943,
+          "bits_per_joule": 264568.23443749564
+        },
+        "AF-VG": {
+          "outage": 0.69188,
+          "failures": 69188,
+          "ci95": [
+            0.6890109792410403,
+            0.6947342793428749
+          ],
+          "throughput_bps_hz": 0.15405999999999997,
+          "energy_mj": 0.7201802735269943,
+          "bits_per_joule": 213918.6612894992
+        }
+      },
+      "df_closed": 0.49835612868085666,
+      "direct_closed": 0.4813283501251402,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 0.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.34096,
+          "failures": 34096,
+          "ci95": [
+            0.3380281328952984,
+            0.34390408554755203
+          ],
+          "throughput_bps_hz": 0.32952000000000004,
+          "energy_mj": 0.4002857142857143,
+          "bits_per_joule": 823211.9914346896
+        },
+        "DF": {
+          "outage": 0.35332,
+          "failures": 35332,
+          "ci95": [
+            0.35036305938736867,
+            0.35628820948333884
+          ],
+          "throughput_bps_hz": 0.32333999999999996,
+          "energy_mj": 1.5002857142857144,
+          "bits_per_joule": 215518.94877166252
+        },
+        "AF-FG": {
+          "outage": 0.52544,
+          "failures": 52544,
+          "ci95": [
+            0.5223441207719485,
+            0.5285339247688833
+          ],
+          "throughput_bps_hz": 0.23728,
+          "energy_mj": 0.6202857142857143,
+          "bits_per_joule": 382533.3947489636
+        },
+        "AF-VG": {
+          "outage": 0.49791,
+          "failures": 49791,
+          "ci95": [
+            0.49481119171492016,
+            0.5010089688518906
+          ],
+          "throughput_bps_hz": 0.25104499999999996,
+          "energy_mj": 0.7202857142857143,
+          "bits_per_joule": 348535.3034510114
+        }
+      },
+      "df_closed": 0.35291348848364756,
+      "direct_closed": 0.33914019859317207,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 2.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.23256,
+          "failures": 23256,
+          "ci95": [
+            0.22995189234439534,
+            0.23518865406126305
+          ],
+          "throughput_bps_hz": 0.38372,
+          "energy_mj": 0.40045282662641746,
+          "bits_per_joule": 958215.2365676082
+        },
+        "DF": {
+          "outage": 0.2408,
+          "failures": 24080,
+          "ci95": [
+            0.23815993665224564,
+            0.2434599767053174
+          ],
+          "throughput_bps_hz": 0.3796,
+          "energy_mj": 1.5004528266264177,
+          "bits_per_joule": 252990.29283945137
+        },
+        "AF-FG": {
+          "outage": 0.39486,
+          "failures": 39486,
+          "ci95": [
+            0.39183440844838796,
+            0.3978936690609261
+          ],
+          "throughput_bps_hz": 0.30257,
+          "energy_mj": 0.6204528266264174,
+          "bits_per_joule": 487659.95900955296
+        },
+        "AF-VG": {
+          "outage": 0.33266,
+          "failures": 33266,
+          "ci95": [
+            0.3297462140966014,
+            0.335586642003918
+          ],
+          "throughput_bps_hz": 0.33367,
+          "energy_mj": 0.7204528266264174,
+          "bits_per_joule": 463139.27528390527
+        }
+      },
+      "df_closed": 0.2401544847916762,
+      "direct_closed": 0.22998947035371997,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 4.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.15374,
+          "failures": 15374,
+          "ci95": [
+            0.15151770771664042,
+            0.15598889413208555
+          ],
+          "throughput_bps_hz": 0.42313,
+          "energy_mj": 0.40071768183757417,
+          "bits_per_joule": 1055930.444745162
+        },
+        "DF": {
+          "outage": 0.1592,
+          "failures": 15920,
+          "ci95": [
+            0.15694549942816705,
+            0.16148068294936957
+          ],
+          "throughput_bps_hz": 0.4204,
+          "energy_mj": 1.5007176818375743,
+          "bits_per_joule": 280132.6359300541
+        },
+        "AF-FG": {
+          "outage": 0.28896,
+          "failures": 28896,
+          "ci95": [
+            0.28615874641946276,
+            0.29177746698709633
+          ],
+          "throughput_bps_hz": 0.35552,
+          "energy_mj": 0.6207176818375741,
+          "bits_per_joule": 572756.3599405091
+        },
+        "AF-VG": {
+          "outage": 0.21102,
+          "failures": 21102,
+          "ci95": [
+            0.20850215937369243,
+            0.21356004186885608
+          ],
+          "throughput_bps_hz": 0.39449,
+          "energy_mj": 0.7207176818375741,
+          "bits_per_joule": 547357.1829043942
+        }
+      },
+      "df_closed": 0.15910309336731276,
+      "direct_closed": 0.15202268041578287,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 6.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.09996,
+          "failures": 9996,
+          "ci95": [
+            0.09811628448392122,
+            0.10183444907919421
+          ],
+          "throughput_bps_hz": 0.45002,
+          "energy_mj": 0.4011374490587243,
+          "bits_per_joule": 1121859.8539128657
+        },
+        "DF": {
+          "outage": 0.10315,
+          "failures": 10315,
+          "ci95": [
+            0.1012800831341573,
+            0.10505040535329989
+          ],
+          "throughput_bps_hz": 0.448425,
+          "energy_mj": 1.5011374490587244,
+          "bits_per_joule": 298723.4781739548
+        },
+        "AF-FG": {
+          "outage": 0.20792,
+          "failures": 20792,
+          "ci95": [
+            0.20541599536009464,
+            0.21044644404375185
+          ],
+          "throughput_bps_hz": 0.39604,
+          "energy_mj": 0.6211374490587243,
+          "bits_per_joule": 637604.4474538794
+        },
+        "AF-VG": {
+          "outage": 0.1301,
+          "failures": 13010,
+          "ci95": [
+            0.1280291269699161,
+            0.1321992910507728
+          ],
+          "throughput_bps_hz": 0.43495,
+          "energy_mj": 0.7211374490587242,
+          "bits_per_joule": 603144.3805445484
+        }
+      },
+      "df_closed": 0.10357101922337933,
+      "direct_closed": 0.09881592612087123,
+      "selected": "INFEASIBLE",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 8.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.06435,
+          "failures": 6435,
+          "ci95": [
+            0.0628458473914033,
+            0.06588762195359034
+          ],
+          "throughput_bps_hz": 0.467825,
+          "energy_mj": 0.4018027352699434,
+          "bits_per_joule": 1164315.120168858
+        },
+        "DF": {
+          "outage": 0.06608,
+          "failures": 6608,
+          "ci95": [
+            0.0645569010593599,
+            0.06763643537626418
+          ],
+          "throughput_bps_hz": 0.46696,
+          "energy_mj": 1.5018027352699437,
+          "bits_per_joule": 310932.9801001232
+        },
+        "AF-FG": {
+          "outage": 0.14673,
+          "failures": 14673,
+          "ci95": [
+            0.1445505089511605,
+            0.1489366314494039
+          ],
+          "throughput_bps_hz": 0.426635,
+          "energy_mj": 0.6218027352699435,
+          "bits_per_joule": 686125.9621426156
+        },
+        "AF-VG": {
+          "outage": 0.07857,
+          "failures": 7857,
+          "ci95": [
+            0.07691848139846655,
+            0.0802538954776052
+          ],
+          "throughput_bps_hz": 0.460715,
+          "energy_mj": 0.7218027352699434,
+          "bits_per_joule": 638283.8100879452
+        }
+      },
+      "df_closed": 0.06666070412798976,
+      "direct_closed": 0.06353995812755434,
+      "selected": "AF-VG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 10.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.04163,
+          "failures": 4163,
+          "ci95": [
+            0.04040951380797861,
+            0.04288570102885078
+          ],
+          "throughput_bps_hz": 0.47918499999999997,
+          "energy_mj": 0.40285714285714286,
+          "bits_per_joule": 1189466.3120567375
+        },
+        "DF": {
+          "outage": 0.0425,
+          "failures": 4250,
+          "ci95": [
+            0.04126718108251323,
+            0.043767966915500264
+          ],
+          "throughput_bps_hz": 0.47875,
+          "energy_mj": 1.5028571428571431,
+          "bits_per_joule": 318559.8859315589
+        },
+        "AF-FG": {
+          "outage": 0.10154,
+          "failures": 10154,
+          "ci95": [
+            0.09968323550710591,
+            0.10342737667057379
+          ],
+          "throughput_bps_hz": 0.44923,
+          "energy_mj": 0.6228571428571429,
+          "bits_per_joule": 721240.8256880734
+        },
+        "AF-VG": {
+          "outage": 0.04826,
+          "failures": 4826,
+          "ci95": [
+            0.04694895041660425,
+            0.049605755062352284
+          ],
+          "throughput_bps_hz": 0.47587,
+          "energy_mj": 0.7228571428571429,
+          "bits_per_joule": 658318.1818181819
+        }
+      },
+      "df_closed": 0.042593801907405124,
+      "direct_closed": 0.04057521485027228,
+      "selected": "AF-VG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 12.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.02674,
+          "failures": 2674,
+          "ci95": [
+            0.025758164047288673,
+            0.027758194732033434
+          ],
+          "throughput_bps_hz": 0.48663,
+          "energy_mj": 0.40452826626417465,
+          "bits_per_joule": 1202956.7290662683
+        },
+        "DF": {
+          "outage": 0.02697,
+          "failures": 2697,
+          "ci95": [
+            0.025983983893203055,
+            0.02799235721608726
+          ],
+          "throughput_bps_hz": 0.486515,
+          "energy_mj": 1.5045282662641748,
+          "bits_per_joule": 323367.1383310352
+        },
+        "AF-FG": {
+          "outage": 0.07007,
+          "failures": 7007,
+          "ci95": [
+            0.06850433965772965,
+            0.071668690241256
+          ],
+          "throughput_bps_hz": 0.464965,
+          "energy_mj": 0.6245282662641746,
+          "bits_per_joule": 744505.9337047212
+        },
+        "AF-VG": {
+          "outage": 0.02981,
+          "failures": 2981,
+          "ci95": [
+            0.02877388603770505,
+            0.03088223688510579
+          ],
+          "throughput_bps_hz": 0.485095,
+          "energy_mj": 0.7245282662641745,
+          "bits_per_joule": 669532.1943769777
+        }
+      },
+      "df_closed": 0.02709030654223853,
+      "direct_closed": 0.025796542876206627,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 14.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.01649,
+          "failures": 1649,
+          "ci95": [
+            0.015719059419296726,
+            0.01729808682883333
+          ],
+          "throughput_bps_hz": 0.491755,
+          "energy_mj": 0.40717681837574166,
+          "bits_per_joule": 1207718.5581478998
+        },
+        "DF": {
+          "outage": 0.01699,
+          "failures": 1699,
+          "ci95": [
+            0.01620737060657345,
+            0.017809737228444027
+          ],
+          "throughput_bps_hz": 0.491505,
+          "energy_mj": 1.5071768183757417,
+          "bits_per_joule": 326109.7132118091
+        },
+        "AF-FG": {
+          "outage": 0.04743,
+          "failures": 4743,
+          "ci95": [
+            0.0461298787101863,
+            0.04876489053453713
+          ],
+          "throughput_bps_hz": 0.476285,
+          "energy_mj": 0.6271768183757417,
+          "bits_per_joule": 759411.0401489005
+        },
+        "AF-VG": {
+          "outage": 0.01829,
+          "failures": 1829,
+          "ci95": [
+            0.017477800595058355,
+            0.0191392073658664
+          ],
+          "throughput_bps_hz": 0.490855,
+          "energy_mj": 0.7271768183757417,
+          "bits_per_joule": 675014.6423759741
+        }
+      },
+      "df_closed": 0.017179344023507678,
+      "direct_closed": 0.016354920866261117,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 16.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.01026,
+          "failures": 1026,
+          "ci95": [
+            0.009653969428076245,
+            0.010903655447436595
+          ],
+          "throughput_bps_hz": 0.49487,
+          "energy_mj": 0.4113744905872428,
+          "bits_per_joule": 1202967.1535869087
+        },
+        "DF": {
+          "outage": 0.01049,
+          "failures": 1049,
+          "ci95": [
+            0.009877075699508318,
+            0.011140531505972731
+          ],
+          "throughput_bps_hz": 0.494755,
+          "energy_mj": 1.5113744905872428,
+          "bits_per_joule": 327354.34075492667
+        },
+        "AF-FG": {
+          "outage": 0.03235,
+          "failures": 3235,
+          "ci95": [
+            0.031271247562838556,
+            0.03346468022136036
+          ],
+          "throughput_bps_hz": 0.483825,
+          "energy_mj": 0.6313744905872428,
+          "bits_per_joule": 766304.3205150611
+        },
+        "AF-VG": {
+          "outage": 0.01096,
+          "failures": 1096,
+          "ci95": [
+            0.010333226592167724,
+            0.011624344504987496
+          ],
+          "throughput_bps_hz": 0.49452,
+          "energy_mj": 0.7313744905872428,
+          "bits_per_joule": 676151.556233435
+        }
+      },
+      "df_closed": 0.010874065955619783,
+      "direct_closed": 0.010350633925378614,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 18.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00633,
+          "failures": 633,
+          "ci95": [
+            0.005857053407415697,
+            0.006840873395162042
+          ],
+          "throughput_bps_hz": 0.496835,
+          "energy_mj": 0.41802735269943414,
+          "bits_per_joule": 1188522.7050135864
+        },
+        "DF": {
+          "outage": 0.00632,
+          "failures": 632,
+          "ci95": [
+            0.005847439437320912,
+            0.0068304881335190795
+          ],
+          "throughput_bps_hz": 0.49684,
+          "energy_mj": 1.5180273526994341,
+          "bits_per_joule": 327293.1802687835
+        },
+        "AF-FG": {
+          "outage": 0.02191,
+          "failures": 2191,
+          "ci95": [
+            0.02102088025545275,
+            0.0228358495945369
+          ],
+          "throughput_bps_hz": 0.489045,
+          "energy_mj": 0.6380273526994341,
+          "bits_per_joule": 766495.351540802
+        },
+        "AF-VG": {
+          "outage": 0.00656,
+          "failures": 656,
+          "ci95": [
+            0.00607825881074305,
+            0.007079650321802902
+          ],
+          "throughput_bps_hz": 0.49672,
+          "energy_mj": 0.7380273526994341,
+          "bits_per_joule": 673037.3856513312
+        }
+      },
+      "df_closed": 0.006874907258159089,
+      "direct_closed": 0.006543341050487384,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 20.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00418,
+          "failures": 418,
+          "ci95": [
+            0.0037987231309727964,
+            0.004599368847989049
+          ],
+          "throughput_bps_hz": 0.49791,
+          "energy_mj": 0.4285714285714286,
+          "bits_per_joule": 1161790.0
+        },
+        "DF": {
+          "outage": 0.00402,
+          "failures": 402,
+          "ci95": [
+            0.0036464162671342023,
+            0.004431688004023671
+          ],
+          "throughput_bps_hz": 0.49799,
+          "energy_mj": 1.5285714285714287,
+          "bits_per_joule": 325787.85046728974
+        },
+        "AF-FG": {
+          "outage": 0.01469,
+          "failures": 1469,
+          "ci95": [
+            0.013962755709198922,
+            0.015454528826136432
+          ],
+          "throughput_bps_hz": 0.492655,
+          "energy_mj": 0.6485714285714286,
+          "bits_per_joule": 759600.2202643172
+        },
+        "AF-VG": {
+          "outage": 0.00413,
+          "failures": 413,
+          "ci95": [
+            0.0037511110191242886,
+            0.004546984801148816
+          ],
+          "throughput_bps_hz": 0.497935,
+          "energy_mj": 0.7485714285714286,
+          "bits_per_joule": 665180.3435114505
+        }
+      },
+      "df_closed": 0.004343293317870003,
+      "direct_closed": 0.004133568812348203,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 22.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00279,
+          "failures": 279,
+          "ci95": [
+            0.0024816266992663655,
+            0.003136572068148461
+          ],
+          "throughput_bps_hz": 0.498605,
+          "energy_mj": 0.44528266264174615,
+          "bits_per_joule": 1119749.4127480877
+        },
+        "DF": {
+          "outage": 0.00239,
+          "failures": 239,
+          "ci95": [
+            0.0021058767349096917,
+            0.002712352762995202
+          ],
+          "throughput_bps_hz": 0.498805,
+          "energy_mj": 1.5452826626417462,
+          "bits_per_joule": 322792.0768536064
+        },
+        "AF-FG": {
+          "outage": 0.00976,
+          "failures": 976,
+          "ci95": [
+            0.009169235492155566,
+            0.010388427796469856
+          ],
+          "throughput_bps_hz": 0.49512,
+          "energy_mj": 0.6652826626417461,
+          "bits_per_joule": 744225.0156256086
+        },
+        "AF-VG": {
+          "outage": 0.00248,
+          "failures": 248,
+          "ci95": [
+            0.0021902529024229,
+            0.0028079696811217276
+          ],
+          "throughput_bps_hz": 0.49876,
+          "energy_mj": 0.765282662641746,
+          "bits_per_joule": 651733.0449879615
+        }
+      },
+      "df_closed": 0.002742633448241995,
+      "direct_closed": 0.0026100986473254714,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 24.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00185,
+          "failures": 185,
+          "ci95": [
+            0.0016021168476352103,
+            0.002136154136431272
+          ],
+          "throughput_bps_hz": 0.499075,
+          "energy_mj": 0.4717681837574166,
+          "bits_per_joule": 1057881.8521102825
+        },
+        "DF": {
+          "outage": 0.0015,
+          "failures": 150,
+          "ci95": [
+            0.0012785249121674267,
+            0.0017597729610778642
+          ],
+          "throughput_bps_hz": 0.49925,
+          "energy_mj": 1.5717681837574167,
+          "bits_per_joule": 317635.8989571284
+        },
+        "AF-FG": {
+          "outage": 0.00655,
+          "failures": 655,
+          "ci95": [
+            0.006068637891929041,
+            0.007069272008879163
+          ],
+          "throughput_bps_hz": 0.49672499999999997,
+          "energy_mj": 0.6917681837574166,
+          "bits_per_joule": 718051.236907113
+        },
+        "AF-VG": {
+          "outage": 0.00154,
+          "failures": 154,
+          "ci95": [
+            0.0013153611909504598,
+            0.0018029336092458242
+          ],
+          "throughput_bps_hz": 0.49923,
+          "energy_mj": 0.7917681837574165,
+          "bits_per_joule": 630525.4621761299
+        }
+      },
+      "df_closed": 0.0017313615692127408,
+      "direct_closed": 0.0016476550168403408,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 26.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00121,
+          "failures": 121,
+          "ci95": [
+            0.0010128484167396263,
+            0.0014454717361109622
+          ],
+          "throughput_bps_hz": 0.499395,
+          "energy_mj": 0.5137449058724278,
+          "bits_per_joule": 972068.0327758009
+        },
+        "DF": {
+          "outage": 0.00089,
+          "failures": 89,
+          "ci95": [
+            0.000723363803450121,
+            0.001094980933792521
+          ],
+          "throughput_bps_hz": 0.499555,
+          "energy_mj": 1.6137449058724278,
+          "bits_per_joule": 309562.55736710073
+        },
+        "AF-FG": {
+          "outage": 0.00452,
+          "failures": 452,
+          "ci95": [
+            0.004122854210192376,
+            0.004955211647852913
+          ],
+          "throughput_bps_hz": 0.49774,
+          "energy_mj": 0.7337449058724278,
+          "bits_per_joule": 678355.6465147566
+        },
+        "AF-VG": {
+          "outage": 0.00089,
+          "failures": 89,
+          "ci95": [
+            0.000723363803450121,
+            0.001094980933792521
+          ],
+          "throughput_bps_hz": 0.499555,
+          "energy_mj": 0.8337449058724278,
+          "bits_per_joule": 599170.0776597458
+        }
+      },
+      "df_closed": 0.0010927645714129506,
+      "direct_closed": 0.0010399163389194484,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 28.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.00083,
+          "failures": 83,
+          "ci95": [
+            0.0006696639808269074,
+            0.0010286853659892447
+          ],
+          "throughput_bps_hz": 0.499585,
+          "energy_mj": 0.5802735269943409,
+          "bits_per_joule": 860947.4269620993
+        },
+        "DF": {
+          "outage": 0.00055,
+          "failures": 55,
+          "ci95": [
+            0.0004226123324926616,
+            0.0007157585256665369
+          ],
+          "throughput_bps_hz": 0.499725,
+          "energy_mj": 1.680273526994341,
+          "bits_per_joule": 297406.93522316206
+        },
+        "AF-FG": {
+          "outage": 0.00277,
+          "failures": 277,
+          "ci95": [
+            0.002462796002917365,
+            0.0031154043010219647
+          ],
+          "throughput_bps_hz": 0.498615,
+          "energy_mj": 0.8002735269943408,
+          "bits_per_joule": 623055.721801386
+        },
+        "AF-VG": {
+          "outage": 0.00055,
+          "failures": 55,
+          "ci95": [
+            0.0004226123324926616,
+            0.0007157585256665369
+          ],
+          "throughput_bps_hz": 0.499725,
+          "energy_mj": 0.9002735269943408,
+          "bits_per_joule": 555081.3003114567
+        }
+      },
+      "df_closed": 0.0006896269286981614,
+      "direct_closed": 0.0006562688165881074,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    },
+    {
+      "snr_db": 30.0,
+      "modes": {
+        "Direct": {
+          "outage": 0.0005,
+          "failures": 50,
+          "ci95": [
+            0.000379312021663277,
+            0.0006590626778071797
+          ],
+          "throughput_bps_hz": 0.49975,
+          "energy_mj": 0.6857142857142857,
+          "bits_per_joule": 728802.0833333334
+        },
+        "DF": {
+          "outage": 0.00031,
+          "failures": 31,
+          "ci95": [
+            0.00021841194235080693,
+            0.0004399773541024312
+          ],
+          "throughput_bps_hz": 0.499845,
+          "energy_mj": 1.7857142857142858,
+          "bits_per_joule": 279913.19999999995
+        },
+        "AF-FG": {
+          "outage": 0.00189,
+          "failures": 189,
+          "ci95": [
+            0.001639264217383291,
+            0.0021790036936341853
+          ],
+          "throughput_bps_hz": 0.499055,
+          "energy_mj": 0.9057142857142857,
+          "bits_per_joule": 551007.0977917981
+        },
+        "AF-VG": {
+          "outage": 0.00031,
+          "failures": 31,
+          "ci95": [
+            0.00021841194235080693,
+            0.0004399773541024312
+          ],
+          "throughput_bps_hz": 0.499845,
+          "energy_mj": 1.0057142857142858,
+          "bits_per_joule": 497004.971590909
+        }
+      },
+      "df_closed": 0.00043518056310603366,
+      "direct_closed": 0.000414127787778877,
+      "selected": "AF-FG",
+      "outage_choice": "DF"
+    }
+  ],
+  "units": "end-to-end bit/s/Hz; energy modeled, not measured",
+  "model": "SISO Rayleigh independent blocks; equal HD slots; no S-D combining; ideal CSI/DF",
+  "energy_assumption": "Illustrative sensitivity model, not calibrated hardware. Circuit: Direct .4mJ, relay .6mJ; AF processing .02mJ/frame. Costs non-overlapping.",
+  "selection": "Relay candidates only; upper Wilson 95% outage <= QoS. In-sample choice, no performance superiority claim.",
+  "frame_s": 0.01,
+  "bandwidth_hz": 100000
+}

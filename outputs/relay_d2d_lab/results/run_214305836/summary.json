@@ -1,0 +1,28 @@
+{
+  "id": 214305836,
+  "config": {
+    "duration": 1,
+    "rate": 20,
+    "payload": 128,
+    "environment": "test",
+    "route": "direct"
+  },
+  "topology": "PYTEST localhost UDP",
+  "finished": true,
+  "elapsed": 0.22,
+  "sent": 20,
+  "received_observed": 16,
+  "delivery_confirmed": 16,
+  "acked": 16,
+  "pdr_observed": 0.8,
+  "pdr_confirmed": 0.8,
+  "goodput_kbps": 74.81278538407143,
+  "rtt_ms": 0.38585,
+  "rtt_p95_ms": 0.725125,
+  "relay_ms": null,
+  "duplicates": 0,
+  "invalid": 4,
+  "dropped_by_relay": 0,
+  "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+  "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+}

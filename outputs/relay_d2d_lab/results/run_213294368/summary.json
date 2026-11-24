@@ -1,0 +1,30 @@
+{
+  "id": 213294368,
+  "config": {
+    "environment": "local",
+    "route": "relay",
+    "duration": 2.0,
+    "rate": 20,
+    "payload": 128,
+    "relay_id": "6b9f8608",
+    "destination_id": "laptop",
+    "laptop_ip": "127.0.0.1",
+    "drop_every": 0
+  },
+  "topology": "LOOPBACK software nodes; not physical device evidence",
+  "finished": true,
+  "elapsed": 2.0,
+  "sent": 40,
+  "received_observed": 40,
+  "delivery_confirmed": 40,
+  "acked": 40,
+  "pdr_observed": 1.0,
+  "pdr_confirmed": 1.0,
+  "goodput_kbps": 20.48,
+  "rtt_ms": 1.15,
+  "rtt_p95_ms": 15.0,
+  "relay_ms": 0.0,
+  "duplicates": 0,
+  "invalid": 0,
+  "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+}

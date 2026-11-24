@@ -1,0 +1,32 @@
+{
+  "id": 214682166,
+  "config": {
+    "environment": "live",
+    "route": "relay",
+    "duration": 10.0,
+    "rate": 20,
+    "payload": 128,
+    "relay_id": "6b9f8608",
+    "destination_id": "laptop",
+    "laptop_ip": "192.168.1.6",
+    "drop_every": 0
+  },
+  "topology": "LAN UDP via physical Android relay; laptop holds S and D (two-device pilot)",
+  "finished": true,
+  "elapsed": 10.0,
+  "sent": 200,
+  "received_observed": 200,
+  "delivery_confirmed": 200,
+  "acked": 200,
+  "pdr_observed": 1.0,
+  "pdr_confirmed": 1.0,
+  "goodput_kbps": 20.48,
+  "rtt_ms": 21.4095965,
+  "rtt_p95_ms": 45.91278499999999,
+  "relay_ms": 1.904991335,
+  "duplicates": 0,
+  "invalid": 0,
+  "dropped_by_relay": 0,
+  "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+  "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 213851334,
+  "config": {
+    "environment": "live",
+    "route": "direct",
+    "duration": 10.0,
+    "rate": 20,
+    "payload": 512,
+    "relay_id": "",
+    "destination_id": "6b9f8608",
+    "laptop_ip": "192.168.1.6",
+    "drop_every": 0
+  },
+  "topology": "LAN UDP application-direct",
+  "finished": true,
+  "elapsed": 10.0,
+  "sent": 200,
+  "received_observed": 200,
+  "delivery_confirmed": 200,
+  "acked": 200,
+  "pdr_observed": 1.0,
+  "pdr_confirmed": 1.0,
+  "goodput_kbps": 81.92,
+  "rtt_ms": 4.74,
+  "rtt_p95_ms": 16.0,
+  "relay_ms": null,
+  "duplicates": 0,
+  "invalid": 0,
+  "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+}

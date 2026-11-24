@@ -1,0 +1,14 @@
+{
+  "id": 214358049,
+  "topology": "LOOPBACK software nodes; not physical device evidence",
+  "started_wall": 1795510686.9414434,
+  "environment": "local",
+  "route": "relay",
+  "duration": 2.0,
+  "rate": 20,
+  "payload": 128,
+  "relay_id": "6b9f8608",
+  "destination_id": "laptop",
+  "laptop_ip": "127.0.0.1",
+  "drop_every": 0
+}

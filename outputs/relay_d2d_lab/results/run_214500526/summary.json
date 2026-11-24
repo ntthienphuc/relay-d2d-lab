@@ -1,0 +1,28 @@
+{
+  "id": 214500526,
+  "config": {
+    "duration": 1,
+    "rate": 1,
+    "payload": 128,
+    "environment": "test",
+    "route": "relay"
+  },
+  "topology": "PYTEST record reconciliation",
+  "finished": true,
+  "elapsed": 0.0,
+  "sent": 1,
+  "received_observed": 1,
+  "delivery_confirmed": 1,
+  "acked": 0,
+  "pdr_observed": 1.0,
+  "pdr_confirmed": 1.0,
+  "goodput_kbps": 1024.0,
+  "rtt_ms": null,
+  "rtt_p95_ms": null,
+  "relay_ms": null,
+  "duplicates": 0,
+  "invalid": 0,
+  "dropped_by_relay": 1,
+  "source_clock": "time.perf_counter_ns (high resolution, monotonic, same source process)",
+  "report_note": "Receiver telemetry may be incomplete; confirmed = union of sink receipts and valid ACK. RTT only acknowledged packets. Goodput includes drain-period receipts divided by configured send window."
+}

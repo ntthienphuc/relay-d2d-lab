@@ -1,0 +1,14 @@
+{
+  "id": 214265759,
+  "topology": "LAN UDP via physical Android relay; laptop holds S and D (two-device pilot)",
+  "started_wall": 1795510594.65124,
+  "environment": "live",
+  "route": "relay",
+  "duration": 12.0,
+  "rate": 20,
+  "payload": 128,
+  "relay_id": "6b9f8608",
+  "destination_id": "laptop",
+  "laptop_ip": "192.168.1.6",
+  "drop_every": 0
+}

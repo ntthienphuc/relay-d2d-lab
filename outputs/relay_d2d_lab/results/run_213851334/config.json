@@ -1,0 +1,14 @@
+{
+  "id": 213851334,
+  "topology": "LAN UDP application-direct",
+  "started_wall": 1795510180.2262158,
+  "environment": "live",
+  "route": "direct",
+  "duration": 10.0,
+  "rate": 20,
+  "payload": 512,
+  "relay_id": "",
+  "destination_id": "6b9f8608",
+  "laptop_ip": "192.168.1.6",
+  "drop_every": 0
+}

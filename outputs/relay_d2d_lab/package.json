@@ -1,0 +1,23 @@
+{
+  "name": "relay_d2d_lab",
+  "version": "1.0.0",
+  "description": "Local Relay D2D research lab: Three.js, native Android UDP and AF/DF Monte Carlo",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node scripts/browser_smoke.mjs",
+    "test:science": ".venv/Scripts/python -m pytest tests -q"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}

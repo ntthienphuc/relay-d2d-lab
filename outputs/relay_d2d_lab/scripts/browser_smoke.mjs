@@ -1,0 +1,50 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+for(let attempt=0;attempt<40;attempt++){
+  try{const r=await fetch('http://127.0.0.1:8765/api/status');if(r.ok)break;}catch{}
+  await new Promise(resolve=>setTimeout(resolve,250));
+}
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-webgl','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('http://127.0.0.1:8765',{waitUntil:'networkidle'});
+await page.waitForFunction(()=>window.relayLab?.state.simulation);
+await page.screenshot({path:'results/dashboard_simulation.png',fullPage:true,animations:'disabled'});
+await page.selectOption('#protocol','AF-VG');
+await page.fill('#processing','0.8');
+await page.click('#simulate');
+await page.waitForFunction(()=>!document.getElementById('simulate').disabled);
+await page.click('[data-mode="live"]');
+await page.selectOption('#environment','local');
+await page.fill('#duration','2');
+await page.click('#startRun');
+await page.waitForFunction(()=>window.relayLab.state.status?.run?.finished&&window.relayLab.state.status.run.config.duration===2,{timeout:15000});
+const run=await page.evaluate(()=>window.relayLab.state.status.run);
+if(run.sent!==40||run.delivery_confirmed!==40)throw new Error('Loopback did not deliver expected 40 packets');
+await page.waitForSelector('#packetRows tr');
+await page.locator('#packetRows tr').nth(2).click();
+if(!await page.locator('#packetDetail').textContent().then(x=>x.includes('RTT')))throw new Error('Packet detail missing');
+await page.screenshot({path:'results/dashboard_loopback.png',fullPage:true,animations:'disabled'});
+await page.selectOption('#traceFilter','missing');
+await page.waitForFunction(()=>document.querySelectorAll('#packetRows tr').length===0);
+await page.selectOption('#traceFilter','all');
+await page.click('[data-mode="replay"]');
+await page.waitForSelector('.history-item button');
+await page.locator('.history-item button').first().click();
+await page.waitForFunction(()=>window.relayLab.state.replay!==null);
+await page.screenshot({path:'results/dashboard_replay.png',fullPage:true,animations:'disabled'});
+await page.setViewportSize({width:390,height:844});
+await page.click('[data-mode="live"]');
+await page.waitForSelector('#packetRows tr');
+await page.screenshot({path:'results/dashboard_mobile_logs.png',fullPage:true,animations:'disabled'});
+await page.click('[data-mode="simulation"]');
+await page.waitForFunction(()=>document.querySelector('[data-mode="simulation"]').classList.contains('active'));
+await page.screenshot({path:'results/dashboard_mobile.png',fullPage:true,animations:'disabled'});
+const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+const result={errors,overflow,run:{id:run.id,sent:run.sent,confirmed:run.delivery_confirmed},webgl:await page.evaluate(()=>!!window.relayLab.renderer.getContext()),tested_at:new Date().toISOString()};
+fs.writeFileSync('results/browser_smoke.json',JSON.stringify(result,null,2));
+await browser.close();
+console.log(JSON.stringify(result));
+if(errors.length||overflow)process.exit(1);
+
