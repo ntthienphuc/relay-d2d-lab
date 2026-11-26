@@ -92,21 +92,7 @@
       "destination_id": "6b9f8608",
       "drop_every": 0,
       "corrupt_every": 0
-    },
-    {
-      "id": 409468194,
-      "sent": 30,
-      "received_observed": 30,
-      "acked": 29,
-      "rtt_p95_ms": 222.56721999999996,
-      "goodput_kbps": 10.24,
-      "environment": "live",
-      "route": "relay",
-      "relay_kind": "android",
-      "source_id": "laptop",
-      "destination_id": "laptop",
-      "drop_every": 0,
-      "corrupt_every": 0
     }
-  ]
+  ],
+  "scope": "Retained ESP32, Direct and local control runs from 2.6.1."
 }

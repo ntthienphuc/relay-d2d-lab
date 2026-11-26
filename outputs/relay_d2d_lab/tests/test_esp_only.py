@@ -8,8 +8,8 @@ from lab.network import Engine
 from lab.packet import ACK, DATA, Packet
 
 
-class PhoneRelay(asyncio.DatagramProtocol):
-    """UDP peer fixture for the Android single-hop route."""
+class RelayPeer(asyncio.DatagramProtocol):
+    """UDP peer fixture for an ESP32 single-hop route."""
     def __init__(self):
         self.target = None
         self.origins = {}
@@ -28,14 +28,14 @@ class PhoneRelay(asyncio.DatagramProtocol):
             self.transport.sendto(raw, self.origins.pop(key))
 
 
-def test_android_relay_laptop_endpoints_and_kind_guard(tmp_path, monkeypatch):
+def test_live_relay_only_accepts_esp32(tmp_path, monkeypatch):
     monkeypatch.setattr(records, 'RESULTS', tmp_path)
 
     async def exercise():
         engine = Engine()
         await engine.open(practice=True)
         loop = asyncio.get_running_loop()
-        transport, phone = await loop.create_datagram_endpoint(PhoneRelay, local_addr=('127.0.0.1', 0))
+        transport, phone = await loop.create_datagram_endpoint(RelayPeer, local_addr=('127.0.0.1', 0))
         ip, port = transport.get_extra_info('sockname')
         engine.devices['phone'] = {
             'role': 'relay', 'platform': 'android', 'running': True,
@@ -51,15 +51,19 @@ def test_android_relay_laptop_endpoints_and_kind_guard(tmp_path, monkeypatch):
                       source_id='laptop', destination_id='laptop', laptop_ip='127.0.0.1',
                       rate=3, duration=1, payload=128)
         try:
-            with pytest.raises(ValueError, match='Android hoặc ESP32'):
+            with pytest.raises(ValueError, match='ESP32'):
                 await engine.start(config)
             assert engine.current is None
-            config['relay_kind'] = 'android'
+            config.pop('relay_kind')
+            with pytest.raises(ValueError, match='ESP32'):
+                await engine.start(config)
+            engine.devices['phone']['platform'] = 'esp32'
+            config['relay_kind'] = 'esp32'
             await engine.start(config)
             await engine.task
             snapshot = engine.current.snapshot()
             assert snapshot['sent'] == snapshot['received_observed'] == snapshot['acked'] == 3
-            assert engine.current.config['relay_kind'] == 'android'
+            assert engine.current.config['relay_kind'] == 'esp32'
             for trace in engine.current.traces.values():
                 events = {event['type']: event for event in trace['events']}
                 assert events['send']['sent_ns'] == events['receive']['sent_ns'] == events['ack']['sent_ns']

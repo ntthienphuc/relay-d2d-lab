@@ -33,7 +33,7 @@ def test_remote_source_out_of_order_receipts_and_duplicate_ack(tmp_path,monkeypa
     finally:r.close();r.log.close()
 
 def test_device_requires_udp_heartbeat_and_clears_old_session_endpoint():
-    nodes={};d={'id':'esp','role':'relay','listen_port':39010,'local_ip':'192.168.1.5','running':True,'session':'a'}
+    nodes={};d={'id':'esp','role':'relay','platform':'esp32','listen_port':39010,'local_ip':'192.168.1.5','running':True,'session':'a'}
     register(nodes,d)
     with pytest.raises(ValueError):endpoint(nodes,'esp')
     register(nodes,d,('192.168.1.5',39010));assert endpoint(nodes,'esp')==('192.168.1.5',39010)

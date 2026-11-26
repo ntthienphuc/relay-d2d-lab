@@ -17,7 +17,7 @@ function block(parent,size,position,mat) {
   return mesh;
 }
 
-function phone(relay) {
+function phone() {
   const node = new THREE.Group();
   const housing = new THREE.Group();
   housing.position.y = .1;
@@ -30,7 +30,7 @@ function phone(relay) {
   block(housing,[.22,.025,.025],[0,1.63,.108],edge);
   for (let i=0;i<4;i++) {
     const w=.38+i%2*.09;
-    block(housing,[w,.03,.02],[-.23+w/2,1.18-i*.095,.11],relay?orange:blue);
+    block(housing,[w,.03,.02],[-.23+w/2,1.18-i*.095,.11],blue);
   }
   block(node,[.99,.07,.77],[0,.06,0],graphite);
   return node;
@@ -75,6 +75,6 @@ export function makeDevice(spec) {
   if(spec.kind==='pc')return laptop();
   if(spec.kind==='ap')return accessPoint();
   if(spec.kind==='esp')return createRelayBox();
-  return phone(spec.detail==='Relay UDP');
+  return phone();
 }
 

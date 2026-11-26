@@ -33,6 +33,7 @@ final class PhoneRoom implements Closeable {
         if (!path.equals("/api/device")) throw new IOException("Unknown endpoint");
         String id = body.getString("id");
         if (id.length() > 64 || id.isEmpty()) throw new IOException("Invalid device");
+        if ("relay".equals(body.optString("role")) && !"esp32".equals(body.optString("platform"))) throw new IOException("Trạm chuyển tiếp phải là ESP32.");
         devices.put(id, body);
         long now = SystemClock.elapsedRealtime();
         seen.put(id, now);

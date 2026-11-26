@@ -31,8 +31,9 @@ function laptop(){
 export function createNodes(scene){
   const nodes={};
   for(const [id,color,x,z] of [['S','#2f4652',-4.4,0],['R','#ef652e',0,-.7],['D','#7464a3',4.4,0]]){
-    const g=new THREE.Group();g.position.set(x,.2,z);const device=id==='S'?laptop():phone(color);g.add(device);scene.add(g);
-    let alternate=id==='D'?laptop():id==='R'?createRelayBox():phone(color);alternate.visible=false;g.add(alternate);
+    const g=new THREE.Group();g.position.set(x,.2,z);const device=id==='R'?createRelayBox():id==='S'?laptop():phone(color);g.add(device);scene.add(g);
+    const alternate=id==='R'?null:id==='D'?laptop():phone(color);
+    if(alternate){alternate.visible=false;g.add(alternate);}
     const ring=new THREE.Mesh(new THREE.TorusGeometry(1,.018,8,64),new THREE.MeshBasicMaterial({color}));
     ring.rotation.x=Math.PI/2;ring.position.y=.02;g.add(ring);
     const light=new THREE.PointLight(color,3,3);light.position.set(0,.6,.5);g.add(light);
@@ -48,9 +49,7 @@ export function updateNodes(nodes,state,time){
   nodes.D.device.visible=!laptopSink;nodes.D.alternate.visible=laptopSink;
   const androidSource=state.mode!=='simulation'&&config?.source_id&&config.source_id!=='laptop';
   nodes.S.device.visible=!androidSource;nodes.S.alternate.visible=!!androidSource;
-  const relay=state.status?.devices?.find(d=>d.id===state.activeRun?.config?.relay_id);
-  const esp=(state.mode==='simulation'||relay?.platform==='esp32'||config?.relay_kind==='esp32'||String(state.activeRun?.config?.relay_id).startsWith('esp32-'));
-  nodes.R.device.visible=!esp;nodes.R.alternate.visible=!!esp;
+  nodes.R.group.visible=state.mode==='simulation'||config?.route!=='direct';
   nodes.R.group.position.x=relayX;nodes.R.anchor.x=relayX;
   for(const node of Object.values(nodes)){
     node.ring.material.opacity=.55+.25*Math.sin(time*2);node.ring.material.transparent=true;

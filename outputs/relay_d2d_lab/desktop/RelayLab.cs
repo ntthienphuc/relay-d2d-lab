@@ -15,8 +15,8 @@ using Microsoft.Web.WebView2.WinForms;
 
 [assembly: AssemblyTitle("Relay Lab")]
 [assembly: AssemblyProduct("Relay Lab")]
-[assembly: AssemblyVersion("2.6.1.0")]
-[assembly: AssemblyFileVersion("2.6.1.0")]
+[assembly: AssemblyVersion("2.7.0.0")]
+[assembly: AssemblyFileVersion("2.7.0.0")]
 
 internal static class Program
 {
@@ -165,7 +165,7 @@ internal sealed class LabWindow : Form
                     status = await GetStatus();
                 }
             }
-            if (status == null || !status.ContainsKey("version") || (string)status["version"] != "2.6.1"
+            if (status == null || !status.ContainsKey("version") || (string)status["version"] != "2.7.0"
                 || !status.ContainsKey("practice") || !Equals(status["practice"], practice))
                 throw new InvalidOperationException("Phòng đo chưa sẵn sàng. Kiểm tra ứng dụng đang dùng cổng " + address.Port + ".");
             var env = await CoreWebView2Environment.CreateAsync(null, Path.Combine(dataDir, "WebView"));

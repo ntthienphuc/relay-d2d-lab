@@ -67,7 +67,7 @@ for(let i=0;i<slides.length;i++){
   txt(s,'MẠNG TRUYỀN THÔNG CỘNG TÁC',62,64,1100,40,23,C.teal,true);
   txt(s,d.title,62,165,1156,100,80,C.ink,true);
   txt(s,d.subtitle,66,284,1120,70,35,C.muted);
-  steps(s,['S\nLaptop phát','R\nAndroid relay','D\nAndroid đích'],{y:430,w:300,h:118,gap:128,colors:[C.pale,'#E5EEF7','#EEE9F7']});
+  steps(s,['S\nLaptop phát','R\nESP32 RelayBox','D\nAndroid đích'],{y:430,w:300,h:118,gap:128,colors:[C.pale,'#E5EEF7','#EEE9F7']});
   note(s,'Nguyên lý tín hiệu, code minh họa và bằng chứng từ sản phẩm',594);break;
  }
  case 'roles':{

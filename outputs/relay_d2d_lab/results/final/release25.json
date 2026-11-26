@@ -34,36 +34,8 @@
       "relay_platform": "esp32",
       "invalid_relay": 0,
       "corrupt_every": 0
-    },
-    {
-      "id": 383656707,
-      "route": "relay",
-      "sent": 40,
-      "received": 39,
-      "acks": 39,
-      "forwarded": 40,
-      "goodput_kbps": 9.984,
-      "p95_ms": 197.7428769,
-      "sha256": "82a3a6db11bb144a10a38dafb9d9d7377a3f7e1d8c40e4ad6009b23d26913270",
-      "relay_platform": "android",
-      "invalid_relay": 0,
-      "corrupt_every": 0
-    },
-    {
-      "id": 383668602,
-      "route": "relay",
-      "sent": 40,
-      "received": 31,
-      "acks": 31,
-      "forwarded": 32,
-      "goodput_kbps": 7.936,
-      "p95_ms": 227.4999805,
-      "sha256": "220b30bd9d2493037d76dff6b2be848f6c4f947520254bdbc791fc17e7c36034",
-      "relay_platform": "android",
-      "invalid_relay": 8,
-      "corrupt_every": 5
     }
   ],
-  "scope": "Four live UI probes (Direct, ESP, Android relay, and Android relay CRC), separate from the four measurement series.",
+  "scope": "Retained historical Direct and ESP32 UI probes; software-relay configurations omitted from this edition.",
   "historical_ui_probe_apk_sha256": "ec7355fd7c990ed3f2ccce887ea588e0c244db341bcc558279048c3d226a6143"
 }

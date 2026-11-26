@@ -1,4 +1,4 @@
-RELAY LAB 2.6.1
+RELAY LAB 2.7.0
 Hướng dẫn và kịch bản demo nằm trong Huong_dan_va_kich_ban_demo.pdf.
 Mở Relay Lab từ Desktop để đo thiết bị. Trong Mô phỏng, chọn Mô hình kênh hoặc Tập gửi gói UDP trên laptop.
 Để chạy từ mã nguồn, dùng Python 3.9 64-bit, START_READY.cmd cho thiết bị (cổng 8765) hoặc TAP_TREN_LAPTOP.cmd cho phòng tập riêng (cổng 8877). KIEM_TRA.cmd kiểm thử bản cài từ mã.

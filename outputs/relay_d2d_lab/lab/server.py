@@ -52,7 +52,7 @@ class RunRequest(BaseModel):
     rate: int = Field(default=20,ge=1,le=200)
     payload: int = Field(default=128,ge=16,le=1024)
     relay_id: str = 'local'
-    relay_kind: Literal['','android','esp32'] = ''
+    relay_kind: Literal['','esp32'] = ''
     source_id: str = 'laptop'
     destination_id: str = 'laptop'
     laptop_ip: str = '127.0.0.1'
@@ -75,7 +75,7 @@ async def status():
         'udp_source_port':engine.source.transport.get_extra_info('sockname')[1],
         'udp_sink_port':engine.local_sink[1],
         'devices':devices,'run':engine.current.snapshot() if engine.current else None,
-        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.6.1','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
+        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.7.0','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
 
 
 @app.post('/api/network')
@@ -161,7 +161,7 @@ async def events(data:dict):
 @app.get('/api/preflight')
 async def preflight():
     devices=[dict(d,online=time.time()-d.get('last_seen',0)<8) for d in engine.devices.values()]
-    return {'version':'2.6.1','server_ip':lan_ip(),'devices':devices,
+    return {'version':'2.7.0','server_ip':lan_ip(),'devices':devices,
             'checks':{'android_apk':(ROOT/'android/build/relaylab.apk').exists(),
                       'esp32_firmware':(ROOT/'esp32/build/cam/RelayBox.ino.bin').exists(),
                       'local_udp':len(engine.transports)==3},
@@ -198,6 +198,13 @@ async def simulate(data:dict):
         return simulation
 
 
+def supported_session(item):
+    config = item['config']
+    if config.get('environment') != 'live' or config.get('route') != 'relay':
+        return True
+    return config.get('relay_kind') == 'esp32' or str(config.get('relay_id', '')).startswith('esp32-')
+
+
 @app.get('/api/history')
 async def history(scope: str = 'all'):
     rows=[]
@@ -209,7 +216,7 @@ async def history(scope: str = 'all'):
         if (scope == 'new' and archived) or (scope == 'evidence' and not archived): continue
         try:
             item=json.loads(path.read_text(encoding='utf-8'))
-            if item['config']['environment']!='test':rows.append(item)
+            if item['config']['environment']!='test' and supported_session(item):rows.append(item)
         except (ValueError,OSError): pass
     return sorted(rows, key=lambda row: row.get('started_wall', (RESULTS/f"run_{row['id']}"/'config.json').stat().st_mtime), reverse=True)[:40]
 
@@ -219,6 +226,7 @@ async def replay(run_id:int):
     folder=RESULTS/f'run_{run_id}'
     if not (folder/'summary.json').exists(): raise HTTPException(404,'Run not found')
     summary=json.loads((folder/'summary.json').read_text(encoding='utf-8'))
+    if not supported_session(summary): raise HTTPException(404,'Phiên thuộc cấu hình đã ngừng sử dụng.')
     log=[json.loads(line) for line in (folder/'events.jsonl').read_text(encoding='utf-8').splitlines()]
     return {'summary':summary,'events':log}
 
@@ -242,6 +250,9 @@ async def trace(run_id:int,filter:str='all'):
     if run:
         return response(run.traces,run.finished)
     path=RESULTS/f'run_{run_id}'/'events.jsonl'
+    summary = path.with_name('summary.json')
+    if summary.is_file() and not supported_session(json.loads(summary.read_text(encoding='utf-8'))):
+        raise HTTPException(404,'Phiên thuộc cấu hình đã ngừng sử dụng.')
     if not path.exists():raise HTTPException(404,'Run not found')
     packets={}
     for line in path.read_text(encoding='utf-8').splitlines():

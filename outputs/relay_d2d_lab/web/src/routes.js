@@ -20,37 +20,27 @@ export function updateRouteControls(status, pending=false) {
   const practice = $('environment').value === 'local' || status?.practice === true;
   const choice = $('route').value;
   const direct = choice === 'direct';
-  const phoneRelay = choice === 'android';
   const useLan = node => !node.bridge_id;
-  const allDestinations = node => direct || phoneRelay ? useLan(node) : true;
-  const relays = listed(nodes, 'relay', node => phoneRelay
-    ? node.platform === 'android' && useLan(node)
-    : node.platform === 'esp32');
-  fill($('relayDevice'), relays.length ? relays : [['', phoneRelay ? 'Chờ Android chọn Relay' : 'Chờ ESP32 kết nối']]);
+  const relays = listed(nodes, 'relay', node => node.platform === 'esp32');
+  fill($('relayDevice'), relays.length ? relays : [['', 'Chờ ESP32 kết nối']]);
   const relayId = $('relayDevice').value;
   fill($('sourceDevice'), [...listed(nodes, 'source', node => useLan(node) ||
-    (!direct && !phoneRelay && node.bridge_id === relayId)), ['laptop', 'Laptop làm nguồn']]);
+    (!direct && node.bridge_id === relayId)), ['laptop', 'Laptop làm nguồn']]);
   const sourceOnEsp = nodes.some(node => node.id === $('sourceDevice').value && node.bridge_id);
-  fill($('destinationDevice'), [...listed(nodes, 'sink', node => allDestinations(node)
-    && (direct || phoneRelay || !node.bridge_id || (!sourceOnEsp && node.bridge_id === relayId))), ['laptop', 'Laptop làm đích']]);
-  const usingLaptop = $('sourceDevice').value === 'laptop' || $('destinationDevice').value === 'laptop';
-  const wrongNetwork = (direct || phoneRelay) && nodes.some(d => d.online && d.role === 'sink' && d.bridge_id);
+  fill($('destinationDevice'), [...listed(nodes, 'sink', node => useLan(node) || (!direct && !sourceOnEsp && node.bridge_id === relayId)), ['laptop', 'Laptop làm đích']]);
+  const wrongNetwork = direct && nodes.some(d => d.online && d.role === 'sink' && d.bridge_id);
   const hint = $('routeHelp');
   hint.classList.toggle('attention', !practice && (wrongNetwork || (!direct && !relays.length)));
   hint.textContent = practice ? 'Tập trên laptop bằng UDP cục bộ.' :
     wrongNetwork ? 'Điện thoại đích còn ở RelayBox. Hãy về cùng Wi-Fi với laptop rồi chọn Laptop trong ứng dụng.' :
-    phoneRelay ? 'Các máy dùng cùng Wi-Fi. Chọn Relay trên điện thoại ở giữa và nhập IP laptop.' :
     direct ? 'Cho nguồn và đích dùng chung Wi-Fi với laptop rồi chọn Laptop trong ứng dụng.' :
     'Giữ laptop ở Wi-Fi router. Điện thoại phía RelayBox chọn Gateway ESP, dù làm Nguồn hay Đích.';
-  if (phoneRelay && usingLaptop && !practice && !wrongNetwork)
-    hint.textContent += ' Có thể để laptop đảm nhiệm một đầu.';
   $('routeDevices').classList.toggle('hidden', practice);
   $('relayChoice').classList.toggle('hidden', direct);
   $('routeNetwork').textContent = practice ? 'UDP nội bộ · Không cần điện thoại' : direct ?
-    'Nguồn → Wi-Fi gốc → Đích' : phoneRelay ? 'Nguồn → Android relay → Đích · Chung Wi-Fi gốc' :
+    'Nguồn → Wi-Fi gốc → Đích' :
     'Nguồn → ESP32 relay → Đích';
   const form = $('routeDevices');
-  if (phoneRelay && !practice && form.dataset.route !== choice) form.open = true;
   form.dataset.route = choice;
   const run=status?.run;
   const active=!!run&&!run.finished;
@@ -62,8 +52,8 @@ export function updateRouteControls(status, pending=false) {
   if(!pilotAvailable)$('pilot').checked=false;
   const missingEnd=!practice&&bothLaptop&&!(pilotAvailable&&$('pilot').checked);
   if(active&&!sameRoom)hint.textContent='Một phiên đang chạy trong phòng khác. Đợi phiên kết thúc rồi bắt đầu.';
-  else if(missingRelay)hint.textContent=phoneRelay?'Trên máy B, chọn Relay và nối cùng Wi-Fi router với laptop.':'Cấp nguồn ESP32 và kiểm tra IP máy mở phòng trên trang RelayBox.';
-  else if(missingEnd)hint.textContent=direct||phoneRelay?'Chọn Nguồn hoặc Đích trên điện thoại, nối Wi-Fi router và kết nối trạm.':'Trên điện thoại, nối RelayBox, chọn Nguồn hoặc Đích → Gateway ESP → Kết nối trạm.';
+  else if(missingRelay)hint.textContent='Cấp nguồn ESP32 và kiểm tra IP máy mở phòng trên trang RelayBox.';
+  else if(missingEnd)hint.textContent=direct?'Chọn Nguồn hoặc Đích trên điện thoại, nối Wi-Fi router và kết nối trạm.':'Trên điện thoại, nối RelayBox, chọn Nguồn hoặc Đích → Gateway ESP → Kết nối trạm.';
   if(pilotAvailable&&$('pilot').checked)hint.textContent='Kiểm tra relay thật với laptop đảm nhiệm cả nguồn và đích.';
   $('startRun').disabled=!status||pending||active||missingRelay||missingEnd;
   $('startRun').textContent=active&&sameRoom?'Đang gửi gói…':practice?'Bắt đầu tập UDP':'Bắt đầu đo';
@@ -73,7 +63,7 @@ export function updateRouteControls(status, pending=false) {
   pause.textContent=status?.paused&&sameRoom?'Tiếp tục relay':'Tạm dừng relay';
   $('stopRun').disabled=!sameRoom;
   for(const id of ['route','sourceDevice','destinationDevice','relayDevice','useBenchAddress','payload','duration','pps','dropEvery','corruptEvery','experimentLabel','pilot'])$(id).disabled=active;
-  $('pps').max=!practice&&!direct&&!phoneRelay?'50':'200';
+  $('pps').max=!practice&&!direct?'50':'200';
 
 }
 

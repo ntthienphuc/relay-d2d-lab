@@ -16,6 +16,8 @@ def register(devices, data, endpoint=None):
         raise ValueError('Invalid device ID')
     if data.get('role') not in ('source', 'relay', 'sink'):
         raise ValueError('Invalid device role')
+    if data.get('role') == 'relay' and data.get('platform') != 'esp32':
+        raise ValueError('Trạm chuyển tiếp phải là ESP32.')
     if not isinstance(data.get('listen_port'), int) or not 1024 <= data['listen_port'] <= 65535:
         raise ValueError('Invalid device UDP port')
     ipaddress.IPv4Address(data.get('local_ip', '0.0.0.0'))

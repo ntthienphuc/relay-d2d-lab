@@ -1,0 +1,68 @@
+{
+  "pc": "2.6.1",
+  "android": "2.7.0",
+  "esp": "2.6.0",
+  "runs": [
+    {
+      "id": 421584576,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40,
+      "rtt_p95_ms": 170.2955699999999,
+      "goodput_kbps": 10.24,
+      "config": {
+        "environment": "live",
+        "route": "relay",
+        "duration": 4.0,
+        "rate": 10,
+        "payload": 128,
+        "relay_id": "esp32-641d44",
+        "relay_kind": "esp32",
+        "source_id": "laptop",
+        "destination_id": "6b9f8608",
+        "laptop_ip": "192.168.4.109",
+        "drop_every": 0,
+        "corrupt_every": 0,
+        "experiment_label": "Hai đầu và một ESP32 · sink",
+        "study_id": "",
+        "location": "bench",
+        "block": 0,
+        "ap_kind": "router",
+        "ap_ssid": "",
+        "placement": "",
+        "condition": "natural"
+      }
+    },
+    {
+      "id": 421592606,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40,
+      "rtt_p95_ms": 162.78389454999999,
+      "goodput_kbps": 10.24,
+      "config": {
+        "environment": "live",
+        "route": "relay",
+        "duration": 4.0,
+        "rate": 10,
+        "payload": 128,
+        "relay_id": "esp32-641d44",
+        "relay_kind": "esp32",
+        "source_id": "6b9f8608",
+        "destination_id": "laptop",
+        "laptop_ip": "192.168.4.109",
+        "drop_every": 0,
+        "corrupt_every": 0,
+        "experiment_label": "Hai đầu và một ESP32 · source",
+        "study_id": "",
+        "location": "bench",
+        "block": 0,
+        "ap_kind": "router",
+        "ap_ssid": "",
+        "placement": "",
+        "condition": "natural"
+      }
+    }
+  ],
+  "apk_sha256": "a7be14d0226c88dcdb13853fbb81c5c9fa103a05232299462e2daef76f8e9e23"
+}

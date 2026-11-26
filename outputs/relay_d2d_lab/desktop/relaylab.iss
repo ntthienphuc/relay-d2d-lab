@@ -4,8 +4,8 @@
 [Setup]
 AppId=RelayLabD2D25
 AppName=Relay Lab
-AppVersion=2.6.1
-VersionInfoVersion=2.6.1.0
+AppVersion=2.7.0
+VersionInfoVersion=2.7.0.0
 AppPublisher=Relay Lab
 DefaultDirName={localappdata}\Programs\Relay Lab 2.5
 DefaultGroupName=Relay Lab 2.5
@@ -17,13 +17,13 @@ DisableProgramGroupPage=yes
 Compression=lzma2/fast
 SolidCompression=yes
 OutputDir={#OutputRoot}
-OutputBaseFilename=Cai_dat_Relay_Lab_2_6_1_Windows_x64
+OutputBaseFilename=Cai_dat_Relay_Lab_2_7_0_Windows_x64
 SetupIconFile={#DemoSource}\desktop\relaylab.ico
 UninstallDisplayIcon={app}\RelayLab.exe
 UninstallDisplayName=Relay Lab
 SetupLogging=yes
 [Files]
-Source: "{#DemoSource}\*"; DestDir: "{app}\Demo"; Excludes: "wheels\*,.venv\*,.runtime\*,.luu_phien\*,__pycache__\*,*.pyc"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#DemoSource}\*"; DestDir: "{app}\Demo"; Excludes: "android\build\*.keystore,android\build\*.idsig,android\build\unsigned.apk,android\build\aligned.apk,android\build\classes\*,android\build\dex\*,.pytest_cache\*,wheels\*,.venv\*,.runtime\*,.luu_phien\*,__pycache__\*,*.pyc"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "{#RuntimeRoot}\*"; DestDir: "{app}\Demo\.venv\Scripts"; Excludes: "__pycache__\*,*.pyc"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "{#HostRoot}\RelayLab.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#HostRoot}\*.dll"; DestDir: "{app}"; Flags: ignoreversion

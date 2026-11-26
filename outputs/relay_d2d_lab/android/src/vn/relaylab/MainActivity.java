@@ -13,11 +13,11 @@ import java.util.UUID;
 import static vn.relaylab.StationTheme.*;
 
 public class MainActivity extends Activity {
-    private static final String[] ROLES={"source","relay","sink"};
-    private static final String[] NAMES={"Nguồn","Relay","Đích"};
-    private static final String[] DESCRIPTIONS={"Phát DATA và đo thời gian chờ xác nhận (ACK).","Kiểm tra DATA, chuyển đến đích và đưa ACK về nguồn.","Nhận DATA, kiểm tra nội dung rồi gửi ACK về nguồn."};
+    private static final String[] ROLES={"source","sink"};
+    private static final String[] NAMES={"Nguồn","Đích"};
+    private static final String[] DESCRIPTIONS={"Phát DATA và đo thời gian chờ xác nhận (ACK).","Nhận DATA, kiểm tra nội dung rồi gửi ACK về nguồn."};
     private static final String GATEWAY="192.168.50.1";
-    private final Button[] roles=new Button[3];
+    private final Button[] roles=new Button[ROLES.length];
     private final TextView[] values=new TextView[3], labels=new TextView[3];
     private StationTheme ui;
     private String id;
@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private LinearLayout config,live,body;
     private TextView title,endpoint,state,hint,log;
     private EditText address;
-    private Button action,pause,pc,esp;
+    private Button action,pc,esp;
     private UdpNode node;
     private PhoneRoom room;
     private JournalView history;
@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
         config=ui.group(false);ui.add(body,config,0);
         LinearLayout choose=ui.card(config);ui.add(choose,ui.label("Vai trò của điện thoại",17,INK,true),0);
         LinearLayout row=ui.group(true);ui.pad(row,3,3);row.setBackground(ui.bg(PAGE,EDGE,10));ui.add(choose,row,9);
-        for(int i=0;i<3;i++){
+        for(int i=0;i<ROLES.length;i++){
             final int index=i;roles[i]=ui.button(NAMES[i],false);ui.flex(row,roles[i],i==0?0:6);
             roles[i].setOnClickListener(v->selectRole(index));
         }
@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
         esp.setOnClickListener(v->address.setText(GATEWAY));
         hostRoom=new CheckBox(this);hostRoom.setText("Mở phòng trên điện thoại này");ui.add(network,hostRoom,6);
         hostRoom.setOnCheckedChangeListener((v,on)->{
-            address.setEnabled(!on);pc.setEnabled(!on);esp.setEnabled(!on&&role!=1);
+            address.setEnabled(!on);pc.setEnabled(!on);esp.setEnabled(!on);
             if(on)address.setText(UdpNode.findIp());else address.setText(prefs.getString("server",""));
         });
         Button wifi=ui.button("1 · Chọn Wi-Fi router hoặc RelayBox",false);ui.add(network,wifi,9);
@@ -116,38 +116,33 @@ public class MainActivity extends Activity {
             log.setVisibility(show?View.VISIBLE:View.GONE);
             details.setText(show?"Thu gọn chi tiết":"Xem chi tiết kết nối");
         });
-        pause=ui.button("Tạm dừng / tiếp tục relay",false);ui.add(live,pause,10);pause.setOnClickListener(v->{if(node!=null)node.togglePause();});
         LinearLayout dock=ui.group(false);dock.setBackgroundColor(WHITE);ui.pad(dock,18,10);root.addView(dock);
         Button savedLogs=ui.button("Nhật ký trên máy · Xem và xuất",false);ui.add(dock,savedLogs,0);
         savedLogs.setOnClickListener(v->history.show());
         action=ui.button("Kết nối trạm",true);ui.add(dock,action,0);
         action.setOnClickListener(v->{if(node!=null&&node.isRunning())stopNode();else startNode();});
         String r=getIntent().getStringExtra("role");if(r==null)r=prefs.getString("role","source");
-        selectRole("sink".equals(r)?2:"relay".equals(r)?1:0);live.setVisibility(View.GONE);
+        selectRole("sink".equals(r)?1:0);live.setVisibility(View.GONE);
         if(getIntent().getBooleanExtra("auto",false))action.postDelayed(this::startNode,400);
     }
     private void highlight(Button b,boolean active){ui.paint(b,active?LIGHT:PAGE,active?0xffda926f:PAGE,active?ACCENT:INK);b.setSelected(active);}
     private void updatePath(){boolean via=GATEWAY.contentEquals(address.getText());highlight(pc,!via);highlight(esp,via);}
     private void selectRole(int n){
-        role=n;for(int i=0;i<3;i++)highlight(roles[i],i==n);
-        hint.setText(DESCRIPTIONS[n]);hostRoom.setEnabled(n!=1);
-        if(n==1)hostRoom.setChecked(false);
-        esp.setEnabled(n!=1&&!hostRoom.isChecked());
-        if(n==1&&GATEWAY.contentEquals(address.getText()))address.setText(prefs.getString("lastLaptop",""));
+        role=n;for(int i=0;i<ROLES.length;i++)highlight(roles[i],i==n);
+        hint.setText(DESCRIPTIONS[n]);esp.setEnabled(!hostRoom.isChecked());
     }
     private void help(){new AlertDialog.Builder(this).setTitle("Ai mở phòng đo?").setMessage(
         "Có laptop · Giữ laptop ở Wi-Fi router. Điện thoại phía RelayBox chọn Gateway ESP. Chọn Nguồn trên máy gửi, Đích trên máy nhận, rồi bắt đầu đo trên laptop.\n\n"+
         "Hai điện thoại + ESP · Máy ở Wi-Fi router chọn Mở phòng trên điện thoại này. Dùng IP hiện trên máy đó cho ô IP máy chủ trong trang ESP. Máy ở xa nối RelayBox, chọn Gateway ESP và vai trò còn lại. Bấm Đo 50 gói trên máy mở phòng.\n\n"+
-        "Qua Android làm relay · Ba trạm cùng Wi-Fi. Máy ở giữa chọn Relay, cả ba dùng IP của laptop.\n\n"+
         "Sau mỗi lượt, mở Nhật ký trên máy rồi chạm vào mã phiên để xuất file.").setPositiveButton("Đã hiểu",null).show();}
     private void showTelemetry(String message){
         if(node==null)return;
         org.json.JSONObject d=node.snapshot();boolean ok=d.optBoolean("management_ok");
-        String active=d.optBoolean("paused")?"Tạm dừng chuyển tiếp":d.optBoolean("active")?"Đang phát DATA":"Sẵn sàng nhận lệnh";
+        String active=d.optBoolean("active")?"Đang phát DATA":"Sẵn sàng nhận lệnh";
         String now=ok?active:"Đang tìm phòng đo. Kiểm tra Wi-Fi và địa chỉ.";
         if(room!=null){now=room.status();measure.setEnabled(room.canStart());}
         if(!now.contentEquals(state.getText()))state.setText(now);
-        String[] keys={role==0?"sent":"received",role==1?"forwarded":"acks","invalid"};
+        String[] keys={role==0?"sent":"received","acks","invalid"};
         for(int i=0;i<3;i++){String v=d.has(keys[i])?String.valueOf(d.optInt(keys[i])):"—";if(!v.contentEquals(values[i].getText()))values[i].setText(v);}
         if(!message.contentEquals(log.getText()))log.setText(message);
     }
@@ -156,12 +151,7 @@ public class MainActivity extends Activity {
         if(!android.util.Patterns.IP_ADDRESS.matcher(host).matches()||host.indexOf(':')>=0||host.equals("0.0.0.0")){
             address.setError("Nhập địa chỉ IPv4 hợp lệ của laptop hoặc ESP32");address.requestFocus();return;
         }
-        if (role == 1 && GATEWAY.equals(host)) {
-            address.setError("Chọn Wi-Fi gốc và nhập địa chỉ laptop cho vai trò này.");
-            address.requestFocus();
-            return;
-        }
-        int epoch=++generation;String r=ROLES[role];int port=role==0?39012:role==1?39010:39011;
+        int epoch=++generation;String r=ROLES[role];int port=role==0?39012:39011;
         try{
             WifiLink link=WifiLink.choose(this);
             if(hostRoom.isChecked()){
@@ -170,15 +160,15 @@ public class MainActivity extends Activity {
             }else if(GATEWAY.equals(host)!=link.ip.startsWith("192.168.50.")){
                 throw new Exception("Kiểm tra Wi-Fi đã chọn: RelayBox dùng Gateway ESP, Wi-Fi router dùng IP máy mở phòng.");
             }
-            node=new UdpNode(id,host,r,port,host,39002,getFilesDir(),link,s->runOnUiThread(()->{if(epoch==generation)showTelemetry(s);}));
+            node=new UdpNode(id,host,r,port,getFilesDir(),link,s->runOnUiThread(()->{if(epoch==generation)showTelemetry(s);}));
             android.net.wifi.WifiManager wifi=(android.net.wifi.WifiManager)getApplicationContext().getSystemService(WIFI_SERVICE);
             wifiLock=wifi.createWifiLock(android.net.wifi.WifiManager.WIFI_MODE_FULL_HIGH_PERF,"RelayLab:measurement");wifiLock.acquire();node.start();
             SharedPreferences.Editor ed=prefs.edit().putString("server",host).putString("role",r);
             if(!GATEWAY.equals(host)&&room==null)ed.putString("lastLaptop",host);ed.apply();
             measure.setVisibility(room==null?View.GONE:View.VISIBLE);measure.setEnabled(false);
-            config.setVisibility(View.GONE);live.setVisibility(View.VISIBLE);pause.setVisibility(role==1?View.VISIBLE:View.GONE);
+            config.setVisibility(View.GONE);live.setVisibility(View.VISIBLE);
             title.setText("Trạm "+NAMES[role].toLowerCase(java.util.Locale.ROOT));endpoint.setText(android.os.Build.MODEL+"  ·  "+host);
-            labels[0].setText(role==0?"Đã phát":"Đã nhận");labels[1].setText(role==1?"Đã chuyển":role==0?"ACK nhận":"ACK gửi");labels[2].setText("Gói lỗi");
+            labels[0].setText(role==0?"Đã phát":"Đã nhận");labels[1].setText(role==0?"ACK nhận":"ACK gửi");labels[2].setText("Gói lỗi");
             state.setText("Đang kết nối");action.setText("Đổi kết nối");ui.paint(action,WHITE,EDGE,INK);
         }catch(Exception ex){stopNode();state.setText("Chưa khởi động · "+ex.getMessage());}
     }

@@ -1,83 +1,416 @@
 {
-  "release": "2.6.1",
-  "offline_dependencies": "38 pinned Windows x64/Python 3.9 wheels, install verified before final package",
+  "release": "2.7.0",
+  "android": "2.7.0",
+  "esp32": "2.6.0",
   "report": {
-    "pages": 31,
-    "rgb_nonneutral_144dpi": 0,
-    "board_photo": "https://www.dfrobot.com/product-1879.html",
-    "theory_figures": [
-      "AF / DF",
-      "outage crossover",
-      "gain",
-      "Monte Carlo precision",
-      "paired bootstrap",
-      "packet-level DATA / ACK"
+    "pages": 33,
+    "rgb_nonneutral_144dpi": 0
+  },
+  "report_sources": [
+    "https://web.stanford.edu/class/ee359/pdfs/lecture9_handout.pdf",
+    "https://ocw.mit.edu/courses/6-450-principles-of-digital-communication-i-fall-2009/resources/mit6_450f09_slide22/"
+  ],
+  "figures": {
+    "report_pdf_pages": [
+      17,
+      18,
+      25
+    ],
+    "slides": [
+      8,
+      12,
+      15,
+      17,
+      22
+    ],
+    "rt_data": [
+      405451643,
+      405462659
     ]
   },
-  "native_vectors": 22,
-  "holdout_rows": 945,
-  "apk_device_qa": [
-    "invalid IPv4 blocks startup and focuses address",
-    "help dialog and return",
-    "three role descriptions",
-    "gateway and saved laptop",
-    "installed version on SM-G965F and CPH2219"
-  ],
-  "reproduction": [
-    "Reproduced all 16 SNR points and seven relay positions.",
-    "paired_20261126_112923 10 sessions match the raw events.",
-    "paired_20261126_125705 4 sessions match the raw events.",
-    "paired_20261126_133222 2 sessions match the raw events.",
-    "paired_20261126_140526 4 sessions match the raw events.",
-    "Relay Lab 2.5: four live UI probes match the raw events.",
-    "PC 2.6.1: six sessions match the packet traces, including four local Android journals.",
-    "395570653 Android sink: 50/50, 0 injected drops",
-    "395590684 Android source: 50/50, 0 injected drops",
-    "395604760 Android source: 40/50, 10 injected drops",
-    "396250058 Android room host: 50 matching DATA/ACK with PC receiver",
-    "ESP32 2.6: phone and Windows HTTPS observations verified; both 40-packet runs match Android logs.",
-    "ESP32 model replay: exact outage counts at all three SNRs for all four schemes."
-  ],
+  "validation": {
+    "pytest_passed": 25,
+    "android_ui": [
+      "Nguồn",
+      "Đích"
+    ],
+    "windows_isolated": {
+      "version": "2.7.0",
+      "practice": false,
+      "modeButtons": [
+        "live",
+        "simulation",
+        "replay"
+      ],
+      "routes": [
+        "relay",
+        "direct"
+      ],
+      "legacyStatus": 422,
+      "registrationStatus": 400,
+      "history": 40,
+      "errors": []
+    },
+    "bench": {
+      "pc": "2.6.1",
+      "android": "2.7.0",
+      "esp": "2.6.0",
+      "runs": [
+        {
+          "id": 421584576,
+          "sent": 40,
+          "received_observed": 40,
+          "acked": 40,
+          "rtt_p95_ms": 170.2955699999999,
+          "goodput_kbps": 10.24,
+          "config": {
+            "environment": "live",
+            "route": "relay",
+            "duration": 4.0,
+            "rate": 10,
+            "payload": 128,
+            "relay_id": "esp32-641d44",
+            "relay_kind": "esp32",
+            "source_id": "laptop",
+            "destination_id": "6b9f8608",
+            "laptop_ip": "192.168.4.109",
+            "drop_every": 0,
+            "corrupt_every": 0,
+            "experiment_label": "Hai đầu và một ESP32 · sink",
+            "study_id": "",
+            "location": "bench",
+            "block": 0,
+            "ap_kind": "router",
+            "ap_ssid": "",
+            "placement": "",
+            "condition": "natural"
+          }
+        },
+        {
+          "id": 421592606,
+          "sent": 40,
+          "received_observed": 40,
+          "acked": 40,
+          "rtt_p95_ms": 162.78389454999999,
+          "goodput_kbps": 10.24,
+          "config": {
+            "environment": "live",
+            "route": "relay",
+            "duration": 4.0,
+            "rate": 10,
+            "payload": 128,
+            "relay_id": "esp32-641d44",
+            "relay_kind": "esp32",
+            "source_id": "6b9f8608",
+            "destination_id": "laptop",
+            "laptop_ip": "192.168.4.109",
+            "drop_every": 0,
+            "corrupt_every": 0,
+            "experiment_label": "Hai đầu và một ESP32 · source",
+            "study_id": "",
+            "location": "bench",
+            "block": 0,
+            "ap_kind": "router",
+            "ap_ssid": "",
+            "placement": "",
+            "condition": "natural"
+          }
+        }
+      ]
+    },
+    "slide_show": [
+      {
+        "slide": 1,
+        "visited": true,
+        "notes_length": 303,
+        "charts": 0
+      },
+      {
+        "slide": 2,
+        "visited": true,
+        "notes_length": 411,
+        "charts": 0
+      },
+      {
+        "slide": 3,
+        "visited": true,
+        "notes_length": 239,
+        "charts": 0
+      },
+      {
+        "slide": 4,
+        "visited": true,
+        "notes_length": 456,
+        "charts": 0
+      },
+      {
+        "slide": 5,
+        "visited": true,
+        "notes_length": 354,
+        "charts": 0
+      },
+      {
+        "slide": 6,
+        "visited": true,
+        "notes_length": 429,
+        "charts": 0
+      },
+      {
+        "slide": 7,
+        "visited": true,
+        "notes_length": 475,
+        "charts": 0
+      },
+      {
+        "slide": 8,
+        "visited": true,
+        "notes_length": 334,
+        "charts": 0
+      },
+      {
+        "slide": 9,
+        "visited": true,
+        "notes_length": 683,
+        "charts": 0
+      },
+      {
+        "slide": 10,
+        "visited": true,
+        "notes_length": 278,
+        "charts": 1
+      },
+      {
+        "slide": 11,
+        "visited": true,
+        "notes_length": 364,
+        "charts": 0
+      },
+      {
+        "slide": 12,
+        "visited": true,
+        "notes_length": 290,
+        "charts": 0
+      },
+      {
+        "slide": 13,
+        "visited": true,
+        "notes_length": 438,
+        "charts": 0
+      },
+      {
+        "slide": 14,
+        "visited": true,
+        "notes_length": 217,
+        "charts": 0
+      },
+      {
+        "slide": 15,
+        "visited": true,
+        "notes_length": 302,
+        "charts": 0
+      },
+      {
+        "slide": 16,
+        "visited": true,
+        "notes_length": 271,
+        "charts": 0
+      },
+      {
+        "slide": 17,
+        "visited": true,
+        "notes_length": 449,
+        "charts": 0
+      },
+      {
+        "slide": 18,
+        "visited": true,
+        "notes_length": 449,
+        "charts": 0
+      },
+      {
+        "slide": 19,
+        "visited": true,
+        "notes_length": 336,
+        "charts": 1
+      },
+      {
+        "slide": 20,
+        "visited": true,
+        "notes_length": 452,
+        "charts": 0
+      },
+      {
+        "slide": 21,
+        "visited": true,
+        "notes_length": 316,
+        "charts": 0
+      },
+      {
+        "slide": 22,
+        "visited": true,
+        "notes_length": 326,
+        "charts": 0
+      },
+      {
+        "slide": 23,
+        "visited": true,
+        "notes_length": 587,
+        "charts": 0
+      },
+      {
+        "slide": 24,
+        "visited": true,
+        "notes_length": 791,
+        "charts": 0
+      }
+    ],
+    "guide_pages": 5,
+    "windows_installer": "Cai_dat_Relay_Lab_2_7_0_Windows_x64.exe",
+    "reproduction": "scripts/reproduce_final.py; 20 paired sessions, 16 SNR values, seven relay positions and ESP comparison"
+  },
+  "video": {
+    "duration_s": 118.032,
+    "frames": 2833,
+    "fps": 24,
+    "width": 1440,
+    "height": 810,
+    "video": "H.264",
+    "audio": "Vietnamese narration and original music, AAC",
+    "audio_peak_dbfs": -1.5,
+    "audio_mean_dbfs": -18.6,
+    "shots": [
+      {
+        "chapter": "Nhà ba tầng",
+        "start_s": 0,
+        "checked_frame_s": 3.996,
+        "preview_psnr_db": 46.9
+      },
+      {
+        "chapter": "Tầng hai",
+        "start_s": 9.081,
+        "checked_frame_s": 13.304,
+        "preview_psnr_db": 46.6
+      },
+      {
+        "chapter": "Hai mạng Wi-Fi",
+        "start_s": 18.678,
+        "checked_frame_s": 22.869,
+        "preview_psnr_db": 40.6
+      },
+      {
+        "chapter": "Chiều đi",
+        "start_s": 28.204,
+        "checked_frame_s": 32.934,
+        "preview_psnr_db": 41.9
+      },
+      {
+        "chapter": "Chiều về",
+        "start_s": 38.953,
+        "checked_frame_s": 43.916,
+        "preview_psnr_db": 40.8
+      },
+      {
+        "chapter": "Cùng chiếc hộp",
+        "start_s": 50.233,
+        "checked_frame_s": 54.863,
+        "preview_psnr_db": 40.5
+      },
+      {
+        "chapter": "Mô hình tín hiệu",
+        "start_s": 60.755,
+        "checked_frame_s": 66.073,
+        "preview_psnr_db": 45.4
+      },
+      {
+        "chapter": "Hai cách chuyển tín hiệu",
+        "start_s": 72.842,
+        "checked_frame_s": 77.7,
+        "preview_psnr_db": 46.3
+      },
+      {
+        "chapter": "Hai cách chuyển tín hiệu",
+        "start_s": 83.882,
+        "checked_frame_s": 88.818,
+        "preview_psnr_db": 46.4
+      },
+      {
+        "chapter": "Trở lại bàn đo",
+        "start_s": 95.1,
+        "checked_frame_s": 100.274,
+        "preview_psnr_db": 46.9
+      },
+      {
+        "chapter": "Từ bàn đo đến cầu thang",
+        "start_s": 106.86,
+        "checked_frame_s": 111.776,
+        "preview_psnr_db": 44.3
+      }
+    ],
+    "powerpoint": {
+      "duration_ms": 118041,
+      "observed_playback_ms": 1338,
+      "seek_to_theory_ms": 74403,
+      "embedded": true,
+      "slide": 1
+    },
+    "voice": {
+      "engine": "VieNeu-TTS v3 Turbo",
+      "preset": "Thiện Minh",
+      "pcm_sample_rate_hz": 48000,
+      "utterances": 24,
+      "asr_check": "Whisper small, Vietnamese per recorded utterance",
+      "max_within_phrase_quiet_s": 0.5,
+      "level_window_ms": 20,
+      "level_threshold_rms": 0.011
+    },
+    "caption_check": {
+      "captions": 41,
+      "language": "vi",
+      "layout_px": [
+        1440,
+        810
+      ],
+      "overlaps": 0,
+      "runtime_errors": 0
+    }
+  },
   "limitations": [
-    "Experiments on one bench; inter-floor coverage and Internet throughput not measured.",
-    "Direct, DF, fixed- and variable-gain AF are calculated on the ESP32 CPU using a channel model. Physical Wi-Fi traffic is packet relaying and IPv4 NAPT.",
-    "No empirical claim of typical RTT from one run in each direction.",
-    "Historical trials include one zero-delivery session. Cause unresolved.",
-    "PC 2.6.1 UI re-test used one USB-visible Samsung and a laptop. The Android relay pilot used the laptop as both endpoints."
+    "Measurements with the updated APK were taken on the bench using the running 2.6.1 controller. Windows 2.7 was validated separately.",
+    "Inter-floor coverage and Internet throughput have not been measured."
   ],
   "deliverable_sha256": {
-    "Bao_cao_Overleaf.zip": "9179b7071dd765c98af3112bc849101c2dca04ad19b57ebf33b6519a965604dc",
-    "Bao_cao_Relay_D2D.pdf": "09fbe7f4bf8aee60bfeba0c98866e32143701b2e1d67c071b6985c83c15c6e45",
-    "BAT_DAU.html": "5da54c43d0c89abf503776da7ae6e58d59b26d20a9b400e332e212d91d6b27db",
-    "Cai_dat_Relay_Lab_2_6_1_Windows_x64.exe": "2150c72fad0cfc9ddd606c98ae035e993060bbbddf8b6389a7002e5ea9b593fe",
+    "Bao_cao_Overleaf.zip": "6c4236fb7481c1ba4fd42e689326c583611d17c8aad6bc345687185bb02c2abf",
+    "Bao_cao_Relay_D2D.pdf": "b889ae36b709fdd4e96c76fae4fe8f61a40df5e5af496190e4bfeca5df878209",
+    "BAT_DAU.html": "2016868ac7d2b384b33792b6ac0bf930195118b576e6f25b7c554ebe91829075",
+    "Cai_dat_Relay_Lab_2_7_0_Windows_x64.exe": "d271ed7abe40035cb30a04fdbe1668feb76b9e84a614272dce390a684b2f6128",
     "De_bai/01_Chu_de_3.png": "ec16922d347c15f53d1447f62b0ec2abc8bdc5590055c81c219b51cd599ae325",
     "De_bai/02_Yeu_cau_bao_cao.png": "55528feafca23631731d02d32f34dcaf2cb2855c8ef9afebca123bba3cd67e9d",
-    "Demo/android/AndroidManifest.xml": "5e917a961b44208b2ec4fdc9b641f7c575acea8e50fd3f37b95e4bbb34b08876",
-    "Demo/android/build/relaylab.apk": "a8c288bc1d2631e3a73cd1fc1dfdcebc248934895e87e536f837a5b0c2b7f4c8",
-    "Demo/android/res/drawable/station_mark.xml": "f086aee1a39736ace7f749a13b6c1537429a12e832bef3da47f4865c3d0a2b6b",
-    "Demo/android/res/values/styles.xml": "63411e3b6d4437fcac136521b1e8354f7ede0a3418241c16f126aa5ce551e0a2",
-    "Demo/android/src/vn/relaylab/EspPortal.java": "fa243dfc6c82956dcac03fb4b39e5895ad4d1d2b7c8f3fb1d1dcbc8a7abd6916",
+    "Demo/android/AndroidManifest.xml": "29425afb67f5f83d93e3ef17d11e5e53ff17710b0f883570222e3ba3db77db45",
+    "Demo/android/build/relaylab.apk": "a7be14d0226c88dcdb13853fbb81c5c9fa103a05232299462e2daef76f8e9e23",
+    "Demo/android/res/drawable/station_mark.xml": "ef9eaf66264b3480bf89489719b144b47e8ed2034749bf57876c9d4ab39f3aaf",
+    "Demo/android/res/values/styles.xml": "33109e39b2bdc6d7ac9cf9f0e7b5d0b8dc21d74832479323fc996c5d136f2599",
+    "Demo/android/src/vn/relaylab/EspPortal.java": "1d82432a7340aa03e0f3bbfc9727cee118fb7046eecf1cd49718cb9ab0646bfe",
     "Demo/android/src/vn/relaylab/InternetActivity.java": "04d45267515562461c292f054deb39e77364560b85d9999dcbcf7db1d54fece8",
-    "Demo/android/src/vn/relaylab/JournalView.java": "41cd8387aea753a9638b032273ba15c2c34b57ae1c13160628572efc4557d9d5",
-    "Demo/android/src/vn/relaylab/MainActivity.java": "c573ae87472b702a2deeab6ab8691d58f60e726cdf3d8396be60ca3aaddcedf1",
-    "Demo/android/src/vn/relaylab/Packet.java": "e434ebbe555cf3e944d2bf4fcbeb32c86a257323d119439ac15d00341ad13a1e",
-    "Demo/android/src/vn/relaylab/PhoneRoom.java": "4d11c7da882514dd7ab1ec4e573b45b6727c4a07f75304f8623028db89a86c89",
-    "Demo/android/src/vn/relaylab/RoomHttp.java": "d8aa019a3ebf15de5082f9426cf2da963fcfa987a3929d223274447f2c62ec6d",
-    "Demo/android/src/vn/relaylab/SourceSession.java": "d1bc3920b419a1bcfbefa815b5aa1e94b2c68add02379c6c2e8e1fa021640ea1",
+    "Demo/android/src/vn/relaylab/JournalView.java": "147fbca0ce19e71b432082f6a8fb25151569a21f9793c0b37b56adf39160b540",
+    "Demo/android/src/vn/relaylab/MainActivity.java": "ade9ad58bfbcf0ebe2caa55a1c69887019a4334c7b01ee4ed55e3cd6381ea2ac",
+    "Demo/android/src/vn/relaylab/Packet.java": "2922d090b9a33bef54561508e2ce8b8b020ddd2e1e3b1158228b39319d18035e",
+    "Demo/android/src/vn/relaylab/PhoneRoom.java": "b8435a4ec062ce2c73d782936699c60039fde0030078f3d6b2e57956933ef89c",
+    "Demo/android/src/vn/relaylab/RoomHttp.java": "4b3cf466b9df3dfd55390fc828908bc1d8263e4ac145dff10abed45fe3ed0599",
+    "Demo/android/src/vn/relaylab/SourceSession.java": "6911aa931d886f6abf3ddefc8788e4fd599a2b434c590d59124840f0e722a64b",
     "Demo/android/src/vn/relaylab/StationTheme.java": "58e0d6319299451432bd649a06198a27bfbb6792ec9d81a60c15f163fbc58022",
     "Demo/android/src/vn/relaylab/Telemetry.java": "848f13ac09ce41500511af61461267dec3bfce0831695296d98ed55373fea464",
-    "Demo/android/src/vn/relaylab/UdpNode.java": "1b1014ab07600577943bf8d1e153ed8e18f42d60f3641ae5738629b674f938a2",
-    "Demo/android/src/vn/relaylab/WifiLink.java": "a392a15fe086f7375e1915c1edee992503e9e6c8dc835e6410748964285e83dd",
-    "Demo/BAT_DAU.txt": "7ed78badb888fb3b1575f24bc700aded58539f5229e240e827b19028d6de962e",
-    "Demo/desktop/build.ps1": "b58900f41ce2fb94e1c7b11d423cdd39ba3f936199d6eb2f6f34525e574166c1",
+    "Demo/android/src/vn/relaylab/UdpNode.java": "3ed78bb609fba60615b580b6b0b687d6e4e1d9c3aeab54474c099046e9adb7dd",
+    "Demo/android/src/vn/relaylab/WifiLink.java": "f3d95e397fead5d85f541d8ba02ed1175e70028f269f71b0b0831def4fb75d9b",
+    "Demo/BAT_DAU.txt": "011521928a42838d8c3894796179dc5bb5fa4367d53681027c17462bf98b4646",
+    "Demo/desktop/build.ps1": "5a6dde7c4794f63657d3309033ece89186191590b2219d84693515a691f9c84b",
     "Demo/desktop/desktop_server.py": "989a25e1628f51e5b054410e372bea64e71eacbd07af94cff5667f8cfa907837",
-    "Demo/desktop/RelayLab.cs": "8040f0125468eb2394df19a26563faec48bc3822af5c407076359e2645aaa727",
+    "Demo/desktop/RelayLab.cs": "1a8af6b40377fa67ef14f771429b150266e33666481b621b764dd86e949e5003",
     "Demo/desktop/relaylab.ico": "e616b471846bd1348f210b81a8076a7ad14fa7b776a62c131e21a7a7adb333c2",
-    "Demo/desktop/relaylab.iss": "752eae569dced2ab44493a5d5eb5dfee5118bb2c4aec7133f4168ad5efeebaa5",
+    "Demo/desktop/relaylab.iss": "9adb4cad836d97fe07096a957b9af361b8ea4659d095c254e8c405f8e51a00aa",
     "Demo/docs/bench_template.html": "1c2b4a41b4c80ffd6a773e376bb3771a74f79730e30913967e5f653ca51a3678",
     "Demo/docs/PROTOCOL.html": "0bf1ecd8cde6b540098be0c4135058008bd92484e1e04d2e190c9ec3d517baa5",
     "Demo/docs/READY.html": "7a470701bb71f350750c52814fe027a3012bec46d0c964c81c0a4d7f46725bac",
-    "Demo/docs/VALIDATION.html": "28d9e1f29e341935429f1e86b10f53bb17e0bca7ac33c771fb488d3b47efb9e1",
+    "Demo/docs/VALIDATION.html": "6c00b7aea6103e660e3bc61865543b4a54002128e6c14121fc905c289c7e3206",
     "Demo/esp32/build/cam/RelayBox.ino.bin": "a89af6c0017e1d6ca5a5441d7ea5c6c16a071ab38e7277a9c0383870a7e51a6a",
     "Demo/esp32/build/cam/RelayBox.ino.bootloader.bin": "9619980afaad48ca813f3c5bbbcc33d9e12e2d900a352fcaa25940b03d177912",
     "Demo/esp32/build/cam/RelayBox.ino.merged.bin": "61862e8468540a6748337d0534f06f26b085252ad149402efe758292e3d9339e",
@@ -87,43 +420,44 @@
     "Demo/esp32/build/RelayBox.ino.merged.bin": "19adaff99c6f24ef3f2b9af182b2eacaecdf277e88ee479de9dfa65bff506fc9",
     "Demo/esp32/build/RelayBox.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
     "Demo/esp32/README.md": "567d969a5d040b2664d3f1affd766e1a5fd2b679414a19aa8e2fc8ea8294f4b9",
-    "Demo/esp32/RelayBox/compare.cpp": "b69ee6be0b82e3402e6cd6f5bf46cca2378baf712a8f80f489051730264ef04d",
-    "Demo/esp32/RelayBox/compare.h": "7e6a9db93362b2e79c403fa8752304d0bd4471c31a705cb8df786dd8b67bd9ca",
+    "Demo/esp32/RelayBox/compare.cpp": "abf93530b82b9b6c49510311798b9b940546412b4b3a53e59e1dcea1e16e38ca",
+    "Demo/esp32/RelayBox/compare.h": "1be74046b9f86b29f939a14bde0b1aecfcfc855533554e193ab92e687025dcba",
     "Demo/esp32/RelayBox/config.cpp": "05ce13fe14e006b28b0bb0e702d829fe5aca7768ead39cf4b830353152aecd73",
-    "Demo/esp32/RelayBox/internet.cpp": "0a80a93b3c8f5d09ec05fbced7ade1b7baeef28e5a3ff1524c35cf19d0584a88",
-    "Demo/esp32/RelayBox/internet.h": "f90b98a1bacc5ddd1c25b44ee3a33942a6b1a8e3d4f0335a5c77a506e72e87d7",
-    "Demo/esp32/RelayBox/management.cpp": "c8b28b273f54788a5dfeaff8e6e03fbaebcd2bef5f3fdd8a55cddef66906deb8",
-    "Demo/esp32/RelayBox/panel.cpp": "8f1711f9a9786da62ccad68f2313bdf85c6451bbd193d0f17190489321e9873a",
+    "Demo/esp32/RelayBox/internet.cpp": "8a897f7df3c8531da826b8c550436b34f1871365f6ba8777a1d7762fa2512279",
+    "Demo/esp32/RelayBox/internet.h": "db6d4ee73cfa84aab4395d87fb66aa9d5c2406ba490bf0d7e2b748bd60b4e486",
+    "Demo/esp32/RelayBox/management.cpp": "ae02777f61eb8bf9b35beabd2bc784aacadf48a7c5bdbd5cf8bfe15b7a3e779b",
+    "Demo/esp32/RelayBox/panel.cpp": "bdad606e8922ae66b455b288091cb01071a9723d2ff72f63826f293b5dd52c76",
     "Demo/esp32/RelayBox/portal.cpp": "b1ae918ae065a40f8051459315a99b93d1cfca49eb3efe14f79dc2b6590429ab",
     "Demo/esp32/RelayBox/portal_page.h": "ba6de649ea34e21363aa30eecea7b7657a32b9e9c4462f717d9c216d6dd54f0d",
-    "Demo/esp32/RelayBox/protocol.h": "f8b811925b09323bb54836a5c8d5cee5b7ca4d00a1e7e293014fac2653b97907",
-    "Demo/esp32/RelayBox/relay_core.h": "337d39c282206d2c25bf2f7e988a3d6d1453d4473d73fb728967c339e5310cda",
-    "Demo/esp32/RelayBox/RelayBox.ino": "15ae0d0dd35b58cf606352986022d10b943c906b3c25ed69f265fbb0fd40beed",
-    "Demo/esp32/RelayBox/state.h": "b4b1f1e4e3992e249d0c1303f6a3c423929100a1a8f0a25dbf9d9218fedd5bf2",
-    "Demo/esp32/RelayBox/transport.cpp": "c355d1f17d83006cc303db1a158aa135c738ec3e7fda21661cc060e0c6c3d7d4",
-    "Demo/Huong_dan_va_kich_ban_demo.pdf": "38c427a790628c4a2819c5fd1afdaf71b5e79be2ad9451e5d0bcb6a64c53f5dd",
+    "Demo/esp32/RelayBox/protocol.h": "6cd9c442bf6d963e0102062af4f6dff903b1b5d6ec213b81565d5665c1e4de6c",
+    "Demo/esp32/RelayBox/relay_core.h": "f26c2ed359de7736f9b5e5e34fd0db7faa65072f92e1a332b3151288aa195ece",
+    "Demo/esp32/RelayBox/RelayBox.ino": "bcce9f32769d35c2451baeac4c4e1310dae52c23dec245c1d4cd40b13af195c0",
+    "Demo/esp32/RelayBox/state.h": "44f88f4b0b516712fe53bfb82b874a7494d3490d1f4af43ec6a1c80d577c9215",
+    "Demo/esp32/RelayBox/transport.cpp": "f2ddfdb586e2d4f6d82403e40a0324352a3dd83de1767b4c1cb659776227c9ac",
+    "Demo/Huong_dan_va_kich_ban_demo.pdf": "d0d9f116d5e9efbbcdafd148b78aa47b2c6e1f79017d2368425dd5d8e60fdb9c",
     "Demo/KIEM_TRA.cmd": "ae7705cd4f7f86113c298a08db833f65915d0bbf156ca27314dea993c2605e47",
-    "Demo/lab/__init__.py": "143a1c88eebb61cce3f3c4db7ed334f2dc39501252a87627716ea37db07f578c",
-    "Demo/lab/devices.py": "2e92d0be7ca2edfa341da53353255a158dcafc8a23d29680598de3dfa90690b9",
-    "Demo/lab/network.py": "399c575ace7b185d539bd8c081230bf3f0e71d04966a39cc06256be4a6dfe907",
-    "Demo/lab/packet.py": "f9c0768d21ff28e631dd4844bf7740823a5c33cf74bc4d4c6e049eb6f7a9d4d9",
+    "Demo/lab/__init__.py": "81ef97e2e3c5bcfb686a194e0cab09843ce9ea6867132d729664f10262e3f40b",
+    "Demo/lab/devices.py": "60aa6235a202ab4d4831f5d53bd1fa6fe4c9700773c62465048cf876961a0ad6",
+    "Demo/lab/network.py": "e33b97cc71ea7376c13096fbbc6b4ae64a3e0f756d77f01b64be7211c288cd3d",
+    "Demo/lab/packet.py": "6999e469684db021e298d5f919935fff503887d7e662883d496212b92c966f7e",
     "Demo/lab/records.py": "7dce1c2cdb3d314fb263c2fc01c1a4d6c336c62dfe6619a973d9c48847b30fb0",
-    "Demo/lab/server.py": "14142178b9818d335dfca21d772d22f4aa9ebe234413619ccb019dea36d891d0",
-    "Demo/lab/settings.py": "13b68efcab6bce954e56783d41407218a0bf5b0f5f4a81bbaec7367a0ef5d6c0",
+    "Demo/lab/server.py": "6bc644cdeec989788c97641d93576f6f84b81dfba272b65aeedf87903f45378d",
+    "Demo/lab/settings.py": "08bf3f43f624a666002406a1433b825b7b80b3747465c59d09a4c4620c140e5d",
     "Demo/LAM_MOI_LUOT_DO.cmd": "f90eae8a6f017c2dd26df1836e6d5d104615d489973a2f28dcb6c7b68b7b5fb0",
-    "Demo/package-lock.json": "d804af36e36f2771eeca6437ec74a720d06b1fb4bbaa22d952279f88b1fcad93",
-    "Demo/package.json": "14265eff7ae883e5a4482d8f071f173351ef6cd9605b491d37225f609c64b0de",
+    "Demo/package-lock.json": "49e64c37c8321922c2efd871957400dff9804c0bed035f094f5dfedc22e33944",
+    "Demo/package.json": "18078d62e6a382a5db23818f27759e5e401bb289e8294091d92c8174be2ee198",
     "Demo/requirements.txt": "c961dc0d4b314a29ee617e7ad74dea51fdffcd616e5473be157a0b09bc21af00",
-    "Demo/research/figures_esp26.py": "f9c00fd0d974b7e92adf2a53c5e4471174844efec7450f49598168db0d9356d4",
+    "Demo/research/figures_esp26.py": "23d161dfb00d1c8d6ff3b31affee41f600215aeea0dd7601187a6a76184cfb62",
     "Demo/research/paper_inventory.json": "7fb8656ccae347053823134ad1b738d939a3d983ee2b523e2a1720d5eac5fe0f",
-    "Demo/research/PAPER_REVIEW.html": "74bbad47f1c3880f6aaf65cad84344e554ae92e199f12970703fbd09d7c1bfe4",
-    "Demo/research/plot_board_model.py": "21f3e210882d9684ffd3dd1719457c2745fe4c9def51299e21b04402452e1749",
-    "Demo/results/final/evidence_ids.json": "5ec326cda8032048522adde4795f8b0f6011387f49ca24bda282fc2ba7654b3e",
+    "Demo/research/PAPER_REVIEW.html": "1a03427c602591cbb2b0dbc14ed3ea92ce7fff225fd2393b8b35da2712ea5577",
+    "Demo/research/plot_board_model.py": "b269d660a9100538b43a8a6486a2537325bb44bdc99b4b0bd80e4738e3761206",
+    "Demo/results/final/evidence_ids.json": "3142c047fb7c68f44301f3efc5fa219b2f969ffdba6be6982f47f1d007758305",
     "Demo/results/final/monte_carlo_final.json": "81e8810a2379eca3ba14b305b82c3e7af79b9d437c590bfbbda795cd79d93cd6",
     "Demo/results/final/relay_positions.json": "bc0af8ae5ef6d41c00c4c824ed6f86e88266d5b64843a102bbfcf78c2bfbe901",
     "Demo/results/final/release24.json": "43c35c1115bbe91d93f1aae1acea78e5d254e39b4e94631dacea73884ef6b7e6",
-    "Demo/results/final/release25.json": "2bb5e54c10a85a43b84b010a390ff07e6139eb3cdb169c7fc988ad30e0aa7fea",
+    "Demo/results/final/release25.json": "625bca079b31128b4103b23356cc1fa4626d37044b93dce9744497d49ce3f3c7",
     "Demo/results/final/release26.json": "1b0638b378161b012d929117890c8ff7aedd38ba52ef170b0080cea944f02306",
+    "Demo/results/final/release27.json": "d2bf509d25d519d216c40aec1ad5707aa6518e52bf19f541ac84f33532be4253",
     "Demo/results/final/verification.json": "23986d893d1022fbe1765bb14a3c1d674e0fe5a3c3a2cda04bfc8a64f622ad83",
     "Demo/results/internet_26/board-model.json": "1b3bca509ee6854890f50409986637d3225293ba6b0d0b22e4a70f68f58fc73a",
     "Demo/results/internet_26/esp-before.json": "b5e05d7196f615f9bfc2c6ec51f36f9ce1641c56630adf5dbb775e3c4866af8c",
@@ -135,7 +469,7 @@
     "Demo/results/internet_26/esp-status.json": "9800107ca4d6dec68a4451535443f415c3fe5acab52bdcd3525381611e50929e",
     "Demo/results/internet_26/latest-cases.json": "1893ca6b50d0f9630e8e917d20beca71b1835bf547c2f96a0d46ad1bfff15fff",
     "Demo/results/paired_20261126_112923/audit.json": "c270d6e8e03414fdeb0413e662b3b065fc6d44a88112f8788d39b0ecff2d9db6",
-    "Demo/results/paired_20261126_112923/controls.json": "a19a5d2f7aa89d609e4e7e4a5615c7b6ada3501d5aa60bab6acb94b0b744b71c",
+    "Demo/results/paired_20261126_112923/controls.json": "ed08fac18e7520d6500bfb40c5cf819d9d5e0fd3ea7d7911ea418976eac54aed",
     "Demo/results/paired_20261126_112923/dashboard.png": "d4c8d09c789c5fc65db28cb143d5ba6f156e2a47412349bf79c9fc418da43275",
     "Demo/results/paired_20261126_112923/delivery.json": "5bd6c41e32ea0a7c94fc1952292da889da720f10e63c29bfd3d99b727fc2b8a7",
     "Demo/results/paired_20261126_112923/measured-2.1.0.apk": "3946bec69360eceb68792addcf2f91cecf795feba32eddfe2d7fa9bd780ba431",
@@ -147,9 +481,9 @@
     "Demo/results/paired_20261126_112923/sink.png": "bddb36f33b1f9d6f3571cd6a07a55e189042132d16ed3f318c62ba14b870e720",
     "Demo/results/paired_20261126_112923/source.png": "1d37f4c67afc72345dd5ff590f0c21e7e64c9b2e3c109915488b5b62a2d30980",
     "Demo/results/paired_20261126_112923/trials.json": "0ef246db9de31f44a07d7b721f0b6a721502174f896ef9f8634f5555e80f4e81",
-    "Demo/results/paired_20261126_112923/ui_checks.json": "2b1b8140bbe7e1ee4a1c18a086935be03458c8d240854a4935417a824446339e",
+    "Demo/results/paired_20261126_112923/ui_checks.json": "e034be55ca396b2e4f9c111e03ccfd76fe1ba26bcda1f94c62fb2337a6e14e7c",
     "Demo/results/paired_20261126_125705/audit.json": "86e3c3a9bfc0c7a888e51229259ff789c0f8829478137d805595e47c6d06c0df",
-    "Demo/results/paired_20261126_125705/controls.json": "8dceae0cf1547cb207bc8782dc458cd0010bdea3d072176661458d3a6b90f902",
+    "Demo/results/paired_20261126_125705/controls.json": "9f85b624ffe2c93de1d948aabc843f58101ce25bd257aa5ffbf3d45c9c6d3330",
     "Demo/results/paired_20261126_125705/dashboard.png": "366f38671f703a19a6b3bedd135c2c9a1e62814248e9136c3ab9c948426de174",
     "Demo/results/paired_20261126_125705/paired.png": "47eecfe0970d54d448bf34d2db0cb511ec5fef2898f14621c723f74f9e7180a9",
     "Demo/results/paired_20261126_125705/plan.json": "f92cf0dce6212d98fc5f488515908a5130d2a84be671327714e2d947a8eca09f",
@@ -158,7 +492,7 @@
     "Demo/results/paired_20261126_125705/sink.png": "280fb64422ff5f967d60d0d2048e376e0d88926f57da67d9b991d9db3814616b",
     "Demo/results/paired_20261126_125705/source.png": "b91ed4fe1a9951bb32dfde37fa8d939183d14a4b59a68b79cc77e099cfba702b",
     "Demo/results/paired_20261126_125705/trials.json": "9be642d5f8d0476b25583cf7360b837b6028794f8cedc679df38a7ca7b31ec9e",
-    "Demo/results/paired_20261126_125705/ui_checks.json": "3c327d44c2fca9e891b14273336ff5284c010c0ec7f5107157a46756f4f1a5a7",
+    "Demo/results/paired_20261126_125705/ui_checks.json": "ebea09c68349bf5ccff9d14a9683e84d4c39bfffa778d24d95003a9711d7e2ff",
     "Demo/results/paired_20261126_133222/audit.json": "2b162f205ed2354a1ded815e974ca844ab2dcbbc8c1d47bbda0128ec9f6767d4",
     "Demo/results/paired_20261126_133222/paired.png": "3eedc51da6f189acc0d9618b236ec6be0f566c329ee84caf8120b550df127ddd",
     "Demo/results/paired_20261126_133222/plan.json": "ab04230069e715b6dee2cd6dbe4f9ec31a180087a81d322491da8ce6bfe64a46",
@@ -264,12 +598,6 @@
     "Demo/results/run_382833268/config.json": "bc4653c943ffbdf11355ae31a369a14ac1e10e586ee1e33bc643043397d4b67c",
     "Demo/results/run_382833268/events.jsonl": "4aaf0f198996bfa08b67ed24dac3c4fac788c63bc6a80e8bc9973cd92ac67511",
     "Demo/results/run_382833268/summary.json": "ce51274127a34c161acc0aa7b27e1291bd8f4484e9b940cfd49220af3783df93",
-    "Demo/results/run_383656707/config.json": "93cc662875f76ceff767252a2d0a3dceead827a738e9b549543f2400b0fd9723",
-    "Demo/results/run_383656707/events.jsonl": "82a3a6db11bb144a10a38dafb9d9d7377a3f7e1d8c40e4ad6009b23d26913270",
-    "Demo/results/run_383656707/summary.json": "ce7ee0d6db238f20d6bfa0178dfe79fd129dd82193965697e986b335f3b61b76",
-    "Demo/results/run_383668602/config.json": "7f83998a1d6b9ade2415de337d6a230cf71d1c1399107b8b873c7f02cb4c7252",
-    "Demo/results/run_383668602/events.jsonl": "220b30bd9d2493037d76dff6b2be848f6c4f947520254bdbc791fc17e7c36034",
-    "Demo/results/run_383668602/summary.json": "bfb15e31f65c2db40f5049d0ed8e77900f75810f02252a0edd7c580e4c3616f1",
     "Demo/results/run_395570653/android-local.jsonl": "3c4f44f713f095d848fd63b9c9ff2487fadbc5a22d436bb67ab4bd3e7a7669f1",
     "Demo/results/run_395570653/config.json": "882570ee23ed5f4ee1d376226e67745c39130028b81617799f6a37154f516c59",
     "Demo/results/run_395570653/events.jsonl": "756623e4b7ce842a5c4d180d9961e2f06d9acbdb615762629c56c95367c955d5",
@@ -320,10 +648,12 @@
     "Demo/results/run_409408568/config.json": "227aacd5ac554ae449e6e9c8b5b2d8f3fb981b1a9de4ff9fd19abadefc360d8d",
     "Demo/results/run_409408568/events.jsonl": "f48fa61b69e73f517ed76638ac22e7596725ddd47815bd4ffbfc341d294ea1d4",
     "Demo/results/run_409408568/summary.json": "735a3dbca639c63685d5eabd5527c3cfc491f2c18061d2fe78ecfebb61bc3e5a",
-    "Demo/results/run_409468194/android.jsonl": "5109a174788507f59bcc9a38ecb101573b571256eb4839205199d456f9c6404a",
-    "Demo/results/run_409468194/config.json": "3c54403b802322e52d81b622fde0643e2729148687d45b7738055511d191f823",
-    "Demo/results/run_409468194/events.jsonl": "b8fc64e6075f69e8ebd15ceb2a5ec090023e3a147a02b54b1c09d9167c56d650",
-    "Demo/results/run_409468194/summary.json": "40197603fc3bc6d8b24cba9c1c63b5389d74584ab7a7e3b0d4512b861030d365",
+    "Demo/results/run_421584576/config.json": "c7be2299bc98ccd983f0083cd05369db10b5dc73f218bf04dcefd659ad20c864",
+    "Demo/results/run_421584576/events.jsonl": "aa88d08022020582f4f70ad750c5a94b123f450803c20b2455ee3b04f7cde4ea",
+    "Demo/results/run_421584576/summary.json": "7e3637ba0d06bdfde460d9d0386cee1a9aeba05863251160e3c5ae5f5975f5e8",
+    "Demo/results/run_421592606/config.json": "816f1c8a67b4b945af9614da961cdbd982b64530e4c0f5a4c3f1eec07acec866",
+    "Demo/results/run_421592606/events.jsonl": "18d9ace6d1336cbaaba26bce7e435bf0c49b07585442da3240aa6d4ab3eeb50a",
+    "Demo/results/run_421592606/summary.json": "f27fb027aa4a71c8a49ff097d78f616be53b860ac7d4f0d6d451f8fcacb7a1f7",
     "Demo/results/science/energy_model.pdf": "17107ac8f81f7c6b216e2e9549b52f89ad57c999b522b15f09783c05b4f125a7",
     "Demo/results/science/energy_model.png": "60c673df469793f2ff4e53dbc60b95ff85d0675333fe622b3e8e3549d67e9e71",
     "Demo/results/science/metrics.csv": "6ade4ad69fd37eefaea079139952d6e0df5590663ecac97c4d96a39f0096a800",
@@ -337,79 +667,79 @@
     "Demo/results/selection_study/holdout_metrics.csv": "d48a413c6c91f3c6b04f45f205074284cf7672b654f076865765d30ac5dfd285",
     "Demo/results/selection_study/holdout_results.json": "449aa6f7b0ace91ce49e7d4490411b6ad37f184b1a2ad74af6d680d16ab5b5f4",
     "Demo/results/selection_study/plan.json": "be46abe3015d9b00ea37af0c89ab35fc521ba81096e217de8668009c70eaed12",
-    "Demo/results/ux_261/acceptance.json": "58e21b502338e924a2bb87437e98d5214e409ee8b7dc443d48439152c2eda538",
-    "Demo/scripts/analyze_sessions.py": "123c4dee2f6f666c79ac82473361aff603b48efa95a9fca6419dc45a9de80b08",
-    "Demo/scripts/browser_smoke.mjs": "be2746c5416d2e7911bbbb1e9b14bde9da3b77d372f91f7e65073616f6d35c2e",
+    "Demo/results/ux_261/acceptance.json": "24ad7d32da11a929c839c252d621194f80ebe958f2f99232d048e28f53f5c33c",
+    "Demo/scripts/analyze_sessions.py": "3196fd24ee63863cc94e855a89758a17406e662895616929d5845944d71fb39f",
+    "Demo/scripts/browser_smoke.mjs": "0292e9a35873a2db335e730093fc4b75f7010a985dc0e13174709cbcf9c31a30",
     "Demo/scripts/build_android.ps1": "d2b6dcdff5d141d167558fdaa19f84a69be2718a6df85819b953e00155216fcf",
-    "Demo/scripts/build_esp32.ps1": "6a13c0ada176acb93163613c0dfceaa0ad43e43a594a8fe763487c3455d49c74",
-    "Demo/scripts/build_native_tests.cmd": "da0198933ceaa55c575aad0f44ff682a4123376062cc60be0e22fa0cd43bb603",
-    "Demo/scripts/capture_live.mjs": "19ad8b0855a1e38049daa0cc627ba35e48c2d1287c084396cbf7b5cc9aa05eaa",
-    "Demo/scripts/check_bench_ui.mjs": "8e156aa5520320d8dc835c19f2f4fd40d7a97e2138bace527ad15d35e40f8d79",
-    "Demo/scripts/check_board_model.py": "8bdb221b88c3017fce5f7b52d17951e2f863f33903edec24baf1db6a4fd027bc",
-    "Demo/scripts/check_controls.mjs": "cdf040083098944a0a3a4fac38506ac1b99e2492bd82bf329dd755afd6fadee0",
-    "Demo/scripts/check_esp26.py": "872c81726a9c372f1ceaefb03890760f22b59fb47fd582a1577c5d8b191d7829",
-    "Demo/scripts/check_esp32_hardware.py": "e4fa18052a8b422481f74e3b3504b70ac65e0e88ae053b8244499829c3a1ef39",
-    "Demo/scripts/check_interop.py": "f665113e3742cafa4592a9f60ae9cf99158d58681c98610e1f3e33f049a4aadd",
-    "Demo/scripts/check_phone_room.py": "838ad793c1a802c44615297fd57e96f2145dd7902c1c1b5b8f380969572b5584",
-    "Demo/scripts/check_wifi_internet.py": "185d739a73c41c531cbe5c6464bfe14b4abe368c9e4174f56776556ea0f4afb2",
+    "Demo/scripts/build_esp32.ps1": "8e497f9fd6b3ce34b02f715078e1a2355489e26893c6d25a9e34ef0e1350a148",
+    "Demo/scripts/build_native_tests.cmd": "a043bc0861e3d413fc177c65d9b4ade16e6863e6ef3d5e0be7f2c5095820b5d9",
+    "Demo/scripts/capture_live.mjs": "8f58ebfce1fab49edd18f4498feb4de111195eb226e7736fc75279dcc77f6db2",
+    "Demo/scripts/check_bench_ui.mjs": "74e8f72a8694a9baa14ed7d01aef4402c2611611deb140207b11c4ee0d2ddc08",
+    "Demo/scripts/check_board_model.py": "55044f22895719efee09a9a62582581438136913814e6db011ecc60b414a9f36",
+    "Demo/scripts/check_controls.mjs": "42a3ed15a147294844df2e19a181a12394b59ab6551bd69ad54bedb5dcd3a372",
+    "Demo/scripts/check_esp26.py": "dacbaca2030886853d541afbea78677a3f423ba3e317bbad91ed619fb26279ce",
+    "Demo/scripts/check_esp32_hardware.py": "1d7a265f1e8787bdecfcd0ef645296c19b89dbeac8b5498d245847bc14d97451",
+    "Demo/scripts/check_interop.py": "5864ced18eaa7e3869b65cdc1d8bc843bad8f29db09c689c2647e3caa5ee9a11",
+    "Demo/scripts/check_phone_room.py": "b9020a8dd20a455d23f0ea842a858ca13345942f50b9983b325946f76c8e0e9a",
+    "Demo/scripts/check_wifi_internet.py": "6af6a30e9de17064c694bd7a80e4ec40d8822225edb2cf40bde35ccee2a8d9a9",
     "Demo/scripts/doctor.ps1": "e587cec81311b538c703989f34d60b99cd22026011f6cb5dd0dd3eb792742237",
     "Demo/scripts/evaluate_selection.py": "f92bc705245c795e6d14cbad230ef989a8c1143d47f7a952de4ef018b0829138",
-    "Demo/scripts/export_science.py": "70bc1b5841b4c28bc7b018284fd301cd7612bc76b365f6e202b3e66374618a32",
-    "Demo/scripts/hardware_smoke.py": "372ee425f6f7b071773e8782e4041268c3af41c7880a234817019be6009a7aca",
-    "Demo/scripts/install_android.ps1": "59289f8da1939f38c01e678c65a983ae37c2b021d63a66469a263894b2919847",
+    "Demo/scripts/export_science.py": "56248b4167a611a50612b16fdb4ac95bcd36199bfa8bad8be0cf124439c7b066",
+    "Demo/scripts/hardware_smoke.py": "5ec8973d5b44eb0765590a22e0d90645540eabba9895660808e4b1923ebda511",
+    "Demo/scripts/install_android.ps1": "4af042f8985f039ab37de92c762b27039a5c11090b439c12ec8dcd2f7395d01d",
     "Demo/scripts/mo_phong_do.py": "f0789fde633e7b81ce2a210fd48d99ee32c2c21f76dbc2d0bc29f40145233c08",
-    "Demo/scripts/package_bench.py": "23b5eb92faa6e8ce3f43e6da48f223c1b0de63b1a6f78fa4572a1b9a648e529d",
+    "Demo/scripts/package_bench.py": "07e8d6252bcdd1d6637e25e50f0c1ed39d55cb4fae4f4d2584545a8a2c6a7a18",
     "Demo/scripts/paired_bench.py": "9d77c8d9c83366681f91839e6caf44631679bd22f73aef41a9afe78d8fdc07a9",
     "Demo/scripts/report_bench.py": "036173f5aaddb9a4aa522b44ee91506cae15b3d3ddc822ad9443b658117bef4a",
-    "Demo/scripts/reproduce_final.py": "a3d925befde321554ead35145f621b02e5cec5e00d9e776eb86f11fcbe7d430d",
-    "Demo/scripts/reset_practice.py": "6ce3f269fc9b2dbf2d15f0f995474c053f4e2e1b89852adec62660d5033e360a",
+    "Demo/scripts/reproduce_final.py": "2b79ff9458a7396441c46da8d076b30e4f0e99ba5693c1c8a08ace3a6d3c24b0",
+    "Demo/scripts/reset_practice.py": "d40fb95c848c16750d4c1d34320102903dbb114ba1fe9da634a34f3a38d127e5",
     "Demo/scripts/run_experiment.py": "dfd46121b32205176b26af7c1da0cd923de9752c6e92f694c7b7105d150f37b8",
     "Demo/scripts/setup.ps1": "f66e1fe11c168231c882ca1a8ce17cda6b725d385e8c7f8d55fd1674b14563d5",
     "Demo/scripts/start_lab.ps1": "913e175e091c2b9c4755bc502599bde06a19b8dc4049900f90c23bd7cd3f1c15",
-    "Demo/scripts/validate_delivery_ui.mjs": "5c4e70e1329f8f0b6be4d0e4d48815332e59d74ac433673dde3f83029b5fad6b",
+    "Demo/scripts/validate_delivery_ui.mjs": "e90d2bfc671fcacf58980bebbc839554702df52a93b83352acc3e126cf25282d",
     "Demo/scripts/validate_docs.mjs": "1e6768c34da017a1de6490f0bcc32bb4d0357e4543130a148e3d32f259e8f47c",
-    "Demo/scripts/validate_hardware_v2.py": "d2efe70707750b6c4b16dbce069d92925f2056e7ed32bb93c76437e62538b506",
-    "Demo/scripts/validate_plan.mjs": "87a2500c5091d169b54d25b3b3be67bf91626b1db88755f2fa0c7f8757a9b6d6",
-    "Demo/scripts/write_receipt.py": "69d65361c1c10ff1e195a424239569f28ff6c0b17bf625c25aef6b0de4954215",
-    "Demo/sim/__init__.py": "a0d73e24b48e4588b7d82966fc6cfd7652e01ccb253a5893f4dce57f538284e8",
-    "Demo/sim/model.py": "51dc8fd18298815a63e411e50bf2a92e835f72096fa035da605c47cb3dbd2396",
+    "Demo/scripts/validate_hardware_v2.py": "6c2c6b130fe216bd7cc6ff0c0925d2eb72ed56b97ff21ae39a99691bc19e2bc1",
+    "Demo/scripts/validate_plan.mjs": "509f047ecea5604d29db6a05515fd1ac5e43934b70a7313bf7e2f886ed564207",
+    "Demo/scripts/write_receipt.py": "18669fcca5e5ff379cd777639c55da0172bf36869449b65073db44189774d43d",
+    "Demo/sim/__init__.py": "17c90765741f861509bd290c0f03debf52984f307a4c314e583796a43b49ee7c",
+    "Demo/sim/model.py": "96933ae4709b209d1b1785ca0f8608279e2c9265ca5618aa87cf6788e65debcf",
     "Demo/START_LAB.cmd": "24ec5536791bf8b80b7861667fb0eac809fa13daf83a4fcf4fbd8636c2be4926",
     "Demo/START_READY.cmd": "4d6093be49946771ca45b44d299282c3d1dd8db48ef638e5499f3369b4f2aef6",
     "Demo/TAP_TREN_LAPTOP.cmd": "9c29b2900110891e190de78b54774a7caadbdba461af8967f0c719578a68d62f",
-    "Demo/tests/native_protocol.cpp": "2b277bfb2d23494820fe30c43e8170114729a285699ddd78fd0e30359cb8f944",
-    "Demo/tests/PacketProbe.java": "3129053a79498dc452cfd1ba6ac00555785dcec7a7252e1e139b2e3d3e0bdb8d",
-    "Demo/tests/test_android_route.py": "3767ace7a178fb87683b332c04c7bc6a3ab3d71a8ad6f8a212f090bac649f2a8",
-    "Demo/tests/test_demo_workflow.py": "c825597945c2161299da8f6e25c54d1e9ac8a0e864c293d6100336a3fa11ec8a",
+    "Demo/tests/native_protocol.cpp": "56f51fa911398826bb7408de63eba3fcf3ff323dfd26c6e6fae9235aebc7bff0",
+    "Demo/tests/PacketProbe.java": "0ca6c8771f6832b9b4355e7339e90e95394968c642d968d3d01523088edbc823",
+    "Demo/tests/test_demo_workflow.py": "d2aae386591f6d59f4d2147a6e1c58a9be3d053aa1be30e31d42b5a814840774",
+    "Demo/tests/test_esp_only.py": "29b0538c46e576bc3812ee4a247c4bc767e5b9f7f444bcf555ccabcc50b83e0a",
     "Demo/tests/test_records.py": "5602d6a993bf428cb665a0dcb375d8431b6650e42c36a8d4d513fed0b3026c2a",
-    "Demo/tests/test_science.py": "5295deebde527e62cfa513b2d7a81c13bd0785b15f06cbbde66ef22632607aba",
-    "Demo/tests/test_trace_delivery.py": "7752b265272059d86f6995439a1e7df38d115851fbbb622642a2c1246fc0ba06",
+    "Demo/tests/test_science.py": "7e774c39e07cafc41b5e982a2ee298dbe0d86b9459e3fa60de9e28a7a34712ce",
+    "Demo/tests/test_trace_delivery.py": "376e4a3dae747837218cc20c4a94686b41951d22842163df58a8ff9a638607de",
     "Demo/tests/test_transport.py": "15d3032fba488e13612461914bd4b41e7a8058cdcc680a51e71eb54a249e4622",
-    "Demo/tests/test_v2.py": "22d1484d9f9a0e71f163bd632420b446bf71815c6243792146e3dd413b1f508f",
-    "Demo/web/index.html": "1d28597ddb4cb8e3ad24112d9ab00f076cdc827615a78e8f2723a8c16814f6c5",
+    "Demo/tests/test_v2.py": "6f2222d68412b420660c5ca3bc2deb171396882e0c8d6d835fe581063153eee9",
+    "Demo/web/index.html": "9636bc934ab3ea09ee5aa658cac314c418860b3712e420244d4aa59609529829",
     "Demo/web/src/api.js": "ca11487ee423e1ad8aa9a174fddda277183c1ac904150c3345286039137096d4",
     "Demo/web/src/bench.js": "ed92bb8b5689aa5fb9d5fd0a8db726b7ab219a04a009f1f354854728978ac2f2",
     "Demo/web/src/cameras.js": "038f2781186bd411d1a76f027a4126e3116db8760306dd23280f0526df1630e3",
     "Demo/web/src/charts.js": "5c0a7668e04492c331f8f8789a6bcddf8d6a2e9762ee069ca80c29f39034ecf4",
     "Demo/web/src/esp32.js": "f8b664db65391f3ac8ee50ded82b9a1974118f082f6321c09b49823c88a136d2",
-    "Demo/web/src/guide_figures/devices.js": "e4d5712b26c4727343543c86ec03f7d5e0ea615bf40b9dc24ad8854d0a6b3a0f",
+    "Demo/web/src/guide_figures/devices.js": "2a4db26616c1488db2e9ad22445673438e43b5e255cb582ed9d1de4d486fdaab",
     "Demo/web/src/guide_figures/esp32.js": "f8b664db65391f3ac8ee50ded82b9a1974118f082f6321c09b49823c88a136d2",
     "Demo/web/src/guide_figures/index.html": "8437bc22bc462c9f10859fc2c8f6e7daff8aa985febf19cb2557b39b7f8c2ccc",
     "Demo/web/src/guide_figures/main.js": "2bf7ec243de80c807a28526c54b7901f5edef782e8dfb1156cc5d9903cd50377",
-    "Demo/web/src/guide_figures/state.js": "48c9b89b03c5404fc4a9c842790e882dc4ed9125ae62d1229560e70bdb1a0a63",
+    "Demo/web/src/guide_figures/state.js": "34f85fba64d5b44906e739ed6a3c93249c9d9ad4eaffbddd29e25fb252cab062",
     "Demo/web/src/guide_figures/world.js": "323403894a31152c45bc20d722ee697ce7a4adcc3ec67967cb96a77ec0ad9e9a",
     "Demo/web/src/logs.js": "b9f3252fa3dd2c8f337157b88c372d044b73b114cfe22bac4eafd5c050a04edd",
-    "Demo/web/src/main.js": "60387b34b6bf118fa168d9275f49697436de3abd5a849c9f018485c2fedaa50d",
-    "Demo/web/src/nodes.js": "6418ea2447178dda018cf5e3d05206bf6aff3af52e56226ce7fdd14f8b13dafa",
+    "Demo/web/src/main.js": "8d20a65dc89b280d97424a9519bdfec49c99c6376973206c74e30e438c34b418",
+    "Demo/web/src/nodes.js": "02f727c43d3e2b159a272721e76ee2f32d1897f4f29493686008c0395a9c8eec",
     "Demo/web/src/packets.js": "c763c3806f7fd832ed8a3a6f09b179a7e9fd28a629802eca1471e0fbfa79a9b3",
-    "Demo/web/src/routes.js": "3a47990e3c0deac0483976ef82b01a81bf64df19a6938367a6c89d8eac6adadc",
+    "Demo/web/src/routes.js": "82cf0de47b3797c60f6342444a94f3651d996b7c56bfa5fa6b274b52096f376d",
     "Demo/web/src/state.js": "8360c0866e7bb6509afc64b4a2e18ad0e22fe0fed7214a63d3cb3819b7567e28",
     "Demo/web/src/studio.css": "3bd970b4d05e61cd3f9a79a41a718c1c448aaa35e2c71e4d0556ebbb4856ab05",
-    "Demo/web/src/ui.js": "6157dc7d928439b88caef75f448161d6fea8712609d0ce1fb3dca07bf3272379",
+    "Demo/web/src/ui.js": "d7bf98402dd26564ce39c013f3f6957770a2da506a280d5e2b879aba50d3cdab",
     "Demo/web/src/world.js": "4cae71a15cc3d155d428c48af561ac77e57154bd958bc290b611e93f648ca068",
-    "Demo/web/vendor/OrbitControls.js": "e1cdf5833c6e0aa095bd1a4f67dffe68f35677a992e1fb26fe374b5b759ce267",
-    "Demo/web/vendor/three.core.js": "03fb6e9fa08628385a9096948593251ae473239c7039496d7c280cba73d84631",
-    "Demo/web/vendor/three.module.js": "1bb0b770bac5da2b59b21aa5fff4c547eeb864d4e408e4c36fbc6ced1dce0e9e",
-    "Demo/web/vendor/THREE_LICENSE.txt": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "Demo/web/vendor/OrbitControls.js": "2a2a5e362bda2577da4b8d04be3f55988dfd044a0d96a36e7da85ed5589ea28f",
+    "Demo/web/vendor/three.core.js": "79428bf5237e858aa88975db844107ec5cff92d23de9ac903dfd8e7d26b6646b",
+    "Demo/web/vendor/three.module.js": "c5590f3d83594fb24d7fb4112b75860d2c89caa3523f42d585c122962080de2e",
+    "Demo/web/vendor/THREE_LICENSE.txt": "df2a91696186fe58c92518a25d48bc59c8ee2edc7cac9ca6d19a5a0d599a2a05",
     "Demo/wheels/annotated_doc-0.0.5-py3-none-any.whl": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
     "Demo/wheels/annotated_types-0.7.0-py3-none-any.whl": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53",
     "Demo/wheels/anyio-4.12.1-py3-none-any.whl": "d405828884fc140aa80a3c667b8beed277f1dfedec42ba031bd6ac3db606ab6c",
@@ -449,16 +779,13 @@
     "Demo/wheels/uvicorn-0.39.0-py3-none-any.whl": "7beec21bd2693562b386285b188a7963b06853c0d006302b3e4cfed950c9929a",
     "Demo/wheels/zipp-3.23.1-py3-none-any.whl": "0b3596c50a5c700c9cb40ba8d86d9f2cc4807e9bedb06bcdf7fac85633e444dc",
     "Hanh_trinh_cua_mot_goi_tin.mp4": "9cda21c7cea99040956be660d48edd625fbf49f5fabb7584b0314a6c91df93ec",
-    "Nghiem_thu/Giao_dien/Dashboard_2_5.png": "3d94f9a475614f6498e196003e79a7f9505c3453e1ab556050bc571f0e194867",
-    "Nghiem_thu/Giao_dien/Dashboard_Android_relay.png": "1e80ebac8c889ef4df598dc51b1f933ee192405a41fce3f9287100bdde315764",
-    "Nghiem_thu/Giao_dien/Do_thiet_bi_2_6_1.png": "40f11f8d86a6dc65b555623a9aecaf12cf4263d5f7429bf79b26ff2a1da73277",
-    "Nghiem_thu/Giao_dien/OPPO_relay.png": "9fb87ea5f9820a0dd7213334e3d207da2f26593084c208b18b6603fc0c2d9752",
+    "Nghiem_thu/Giao_dien/Android_2_7.png": "f3710d96672aed92a9d33330b24bf92ba151642b6b659a9815e48d3dd6e2917c",
     "Nghiem_thu/Giao_dien/Portal_ESP32_2_5_xem_truoc.png": "353717b83ab9abc70def01a2cc6cee8e32a30bee7e0d77c2b7f2e51745906613",
+    "Nghiem_thu/Giao_dien/Windows_2_7.png": "dbe886dbd24c1e2bbe4772dfef5b650648496550807261180721d468243beed4",
     "Nghiem_thu/Internet/esp-app.png": "06f54c2be0ba3f40c8a74c47d4b5c17065c9733ffbff423109e06a189420d2d5",
     "Nghiem_thu/Internet/esp-chrome.png": "04ffaea9e585d321253b9f91902cff24f3dddba3ee3fae60e0f208ab21f681c9",
     "Nghiem_thu/Internet/qa-windows.json": "8803c5bf7273a3066aaa926f3aab4939260bb4e26ebb7a1c23fd34460f2acd74",
     "Nghiem_thu/Internet/So_sanh_tren_ESP32.png": "b1aa06d98b090753d65d8481f93e536057284ca6942206971ae0a185530a40dc",
-    "Nghiem_thu/kiem_tra_ban_cai/Android_trang_ESP.png": "c479d64f593bab4ca5c73d11e630cc34b1c791dfa77c7ac2ec814a0374341c1a",
     "Nghiem_thu/kiem_tra_ban_cai/nghiem_thu.json": "c7ee529f7bf79d3d00d9977454f1197891b10e11bb4ef0c1b2c858f637ce136f",
     "Nghiem_thu/kiem_tra_ban_cai/run_396733634/android-local.jsonl": "9e46d528b680e653e3212e66e4e977baacc196ab6629df48ac1e3f85a65e96d5",
     "Nghiem_thu/kiem_tra_ban_cai/run_396733634/config.json": "edc04349afdd33299dca77683550debd13ae3d7d494f8e2f7ad33803812dd644",
@@ -476,23 +803,11 @@
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/config.json": "125fd8ffa6676858cdbaace85ce5e9347af3530b1e86391f92a6d2f084bc8ee4",
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/events.jsonl": "fa5cd962d5013114aa1eb819c61ef4031ec47775209123086fd071fe5ecee996",
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/summary.json": "e617ae6dacd40d0acfacbb655d2b244779ebe263c7b4b0ea3328fb09cc25e10a",
-    "Nghiem_thu/kiem_tra_ban_cai/Samsung_cau_hinh.png": "45893d88c1674e69bfa6f7f1ece36e132ce78aa06c6400fc81ad2ac44e6140c0",
-    "Nghiem_thu/kiem_tra_ban_cai/Samsung_chon_phien.png": "8fd48a96db1b634fd718213a965cae3922b731b5904ad3eaafe796f61852442f",
-    "Nghiem_thu/kiem_tra_ban_cai/Samsung_mo_phong.png": "3ad1ba2d0de7bee7467254511e34c815a81588388bbec316d06c670cf8e0baa7",
-    "Nghiem_thu/kiem_tra_ban_cai/Samsung_nguon.png": "a1fbeb44e9238ef64aa62fafee8e9eab9aec2966c9d225e0fc7dc48d2fcb47b0",
     "Nghiem_thu/kiem_tra_ban_cai/sink.json": "ca66d07c123deb6bb7987fdac83d7f49dac0942d118643de91abcd425858dc72",
     "Nghiem_thu/kiem_tra_ban_cai/source.json": "a1752d35745aab4f43f392db9a4149df9c640f92b3ffa538f7ed2b18ed7dba2b",
-    "Nghiem_thu/kiem_tra_ban_cai/Windows_Samsung_sink.png": "feb089a0ed90924b825bc1a1cf1d7c29a482d47c26a1b9cd386ee97f1371e4eb",
-    "Nghiem_thu/kiem_tra_ban_cai/Windows_Samsung_source.png": "516bef4a70a1c7daf3ba0ec6c8961e6018f87e6f9ae489d581aa9bd2c6cf104b",
-    "Nghiem_thu/Phan_bien_va_nghiem_thu.html": "7ea64860a080357511a4af7ec1217e3d2146c568eb3645976d1626be46d9705d",
+    "Nghiem_thu/Phan_bien_va_nghiem_thu.html": "715bef18f690bdf6ea43fe3f2a0cf7fd623a32d2dc484d8e3d0dfbaca3278acd",
     "Nghiem_thu/phone_room_396250058/android-local.jsonl": "622cd4f4980e1d3415f5d4eae583515c16e3d52bab537d6463ec5b6ad026ee8b",
     "Nghiem_thu/phone_room_396250058/pc-peer.jsonl": "fcc2ebc048a357d2c40e3a8c2fdfb3d195564a23958dcea3cca01b2342ec4d18",
-    "Nghiem_thu/run_386535674/config.json": "9968b190809a5bd89719bff99a310d47a8a123c67fca0b2b49718489e3927a7c",
-    "Nghiem_thu/run_386535674/events.jsonl": "5dea52b1150c400ccff8679a5dfc2a34c3275bf74dfef8eb6b6a6a52a0b96726",
-    "Nghiem_thu/run_386535674/summary.json": "2d8c22ee0fc462e56f53d973b6b006fc23ded9f35aa32317eaeb94c54c9b23e5",
-    "Nghiem_thu/run_386544543/config.json": "c82451bb084b37d7c8825973f9369a1f1285e781ad13f0022686a90f8cebadfe",
-    "Nghiem_thu/run_386544543/events.jsonl": "924b337bffa056985f2ed964d8e6652d7c313ff12520de298edabb12371776fb",
-    "Nghiem_thu/run_386544543/summary.json": "420350f2de3a773c0b5f5b1dc991fe0d97d875d1708387dcb8e658cc575d377b",
     "Nghiem_thu/run_386555075/config.json": "20db3c5cb8566c80adf2e7c9be6b311a7fc40f1dfd19bc2f1b5d39b8a88dcd74",
     "Nghiem_thu/run_386555075/events.jsonl": "6c3657ffec8bd24385f27455a67230729106f23cb3d3c91032b8de2f2020af1e",
     "Nghiem_thu/run_386555075/summary.json": "f2949855857c00b29b90ce4356ff6d67b7eb8f79e847a3eadbe4cca3e2b470fd",
@@ -502,12 +817,6 @@
     "Nghiem_thu/run_386748154/config.json": "f19bfddec70a719a25b969a7f4719d38a083940425746aca166dad34c54fcfc7",
     "Nghiem_thu/run_386748154/events.jsonl": "03feb86c44d913e154b239d39324573a39b98c906c78ad34e158e743ef720fce",
     "Nghiem_thu/run_386748154/summary.json": "4fb8ffaf9f41a8689ffb70a58f0c7df9b7c87b239800d4d37dcb948baa40f7cf",
-    "Nghiem_thu/run_386759993/config.json": "8dd56ad19121bddb8b282c1bb28ce48d8a1915fa15e4aa36654443a5d5d78911",
-    "Nghiem_thu/run_386759993/events.jsonl": "40b9c01f3ec3612eb890756aa800fe1f8389093df5d54a2a7bf0b4256bfec009",
-    "Nghiem_thu/run_386759993/summary.json": "5118c5b6e7a770d5a97bd308c6988830a7bbeeb7f75830f6bf29ddeb4cb17985",
-    "Nghiem_thu/run_386770324/config.json": "2f20844346a143a465d31b29d2b1f19e7021a6cf2679541284b721dfd7c45842",
-    "Nghiem_thu/run_386770324/events.jsonl": "12b7b7e72d6be8083d297414f8b100b7f9d42e05ac73df61bc6323816bd26f90",
-    "Nghiem_thu/run_386770324/summary.json": "5d3d6a3364b23776f63f6421855509347b3212910e9dcafa203fe437b42402d7",
     "Nghiem_thu/run_386782466/config.json": "29c40d35027640e8809f15ab9549e3b0174adce89952cbc71afc33b1e54b8087",
     "Nghiem_thu/run_386782466/events.jsonl": "3f74162e571a463da9902d518bab3eddf06db1916d906b0ced0ec581112a9f81",
     "Nghiem_thu/run_386782466/summary.json": "716b357bab7c83885a60e288ac2a4151b0b39f5175ab457f59a93f85c247d6f7",
@@ -533,1142 +842,7 @@
     "Nghiem_thu/run_395604760/events.jsonl": "cdb453f6a49469443e0be598d6e5c98f507f2c2ab3eb6d12cb1622c763b4ed30",
     "Nghiem_thu/run_395604760/summary.json": "67eb39b7f2eb153c301097b514f4bb43e3fa6d4d2d02f1abf48feff7fb780186",
     "Nghiem_thu/So_lieu_20_phien_ghep_cap.csv": "6393506165d24bb528a33496740a1ceff2973a967e672a0bfaaee15115595ff0",
-    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "7589baab3ea010d587075b0805a63fb6014a259e4c03fc565299b31a91455a00",
-    "Slide_xem_nhanh.pdf": "449bf66ac5373e27f6772d782634fb7b18af892e18e556328d1f78c92c7d3e23"
-  },
-  "historical_devices_and_hardware": {
-    "pc": "2.5.0",
-    "android": "2.5.0",
-    "apk_sha256": "ec7355fd7c990ed3f2ccce887ea588e0c244db341bcc558279048c3d226a6143",
-    "esp_candidate": "2.5.0",
-    "esp_cam_bin_sha256": "4fde4166cf23b716e7c31891d59ffa4ca4c880546ce0175110bb5c55951dbacf",
-    "bench_esp": "2.1.0",
-    "live_controller": "2.1.0",
-    "new_ui_probes": [
-      {
-        "id": 382797232,
-        "route": "direct",
-        "sent": 40,
-        "received": 40,
-        "acks": 39,
-        "forwarded": 0,
-        "goodput_kbps": 10.24,
-        "p95_ms": 195.84633520000003,
-        "sha256": "bd75df109bc250ad75d2d1f254f0f723ac9ee4b7b11db8cdffc6c41cfbe370e0",
-        "relay_platform": "",
-        "invalid_relay": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 382833268,
-        "route": "relay",
-        "sent": 40,
-        "received": 40,
-        "acks": 32,
-        "forwarded": 40,
-        "goodput_kbps": 10.24,
-        "p95_ms": 875.4746610499999,
-        "sha256": "4aaf0f198996bfa08b67ed24dac3c4fac788c63bc6a80e8bc9973cd92ac67511",
-        "relay_platform": "esp32",
-        "invalid_relay": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 383656707,
-        "route": "relay",
-        "sent": 40,
-        "received": 39,
-        "acks": 39,
-        "forwarded": 40,
-        "goodput_kbps": 9.984,
-        "p95_ms": 197.7428769,
-        "sha256": "82a3a6db11bb144a10a38dafb9d9d7377a3f7e1d8c40e4ad6009b23d26913270",
-        "relay_platform": "android",
-        "invalid_relay": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 383668602,
-        "route": "relay",
-        "sent": 40,
-        "received": 31,
-        "acks": 31,
-        "forwarded": 32,
-        "goodput_kbps": 7.936,
-        "p95_ms": 227.4999805,
-        "sha256": "220b30bd9d2493037d76dff6b2be848f6c4f947520254bdbc791fc17e7c36034",
-        "relay_platform": "android",
-        "invalid_relay": 8,
-        "corrupt_every": 5
-      }
-    ],
-    "scope": "Four live UI probes (Direct, ESP, Android relay, and Android relay CRC), separate from the four measurement series. This subsection records the original four UI probes only."
-  },
-  "historical_final_acceptance": {
-    "date": "2026-11-26",
-    "controller": "2.5.1",
-    "android": "2.5.1",
-    "esp_on_bench": "2.1.0",
-    "windows_launchers": [
-      "START_READY.cmd",
-      "TAP_TREN_LAPTOP.cmd"
-    ],
-    "pytest_passed": 24,
-    "wire_vectors": 22,
-    "hardware_runs": [
-      {
-        "id": 386535674,
-        "route": "android",
-        "source": "laptop",
-        "relay": "a7962314",
-        "destination": "laptop",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 40,
-        "receive": 40,
-        "ack": 40,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386535674/events.jsonl",
-        "event_sha256": "5dea52b1150c400ccff8679a5dfc2a34c3275bf74dfef8eb6b6a6a52a0b96726"
-      },
-      {
-        "id": 386544543,
-        "route": "android",
-        "source": "laptop",
-        "relay": "a7962314",
-        "destination": "laptop",
-        "corrupt_every": 5,
-        "send": 40,
-        "forward": 31,
-        "receive": 30,
-        "ack": 30,
-        "invalid": 8,
-        "raw_events": "Nghiem_thu/run_386544543/events.jsonl",
-        "event_sha256": "924b337bffa056985f2ed964d8e6652d7c313ff12520de298edabb12371776fb"
-      },
-      {
-        "id": 386555075,
-        "route": "direct",
-        "source": "laptop",
-        "relay": "",
-        "destination": "a7962314",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 0,
-        "receive": 40,
-        "ack": 40,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386555075/events.jsonl",
-        "event_sha256": "6c3657ffec8bd24385f27455a67230729106f23cb3d3c91032b8de2f2020af1e"
-      },
-      {
-        "id": 386578150,
-        "route": "relay",
-        "source": "laptop",
-        "relay": "esp32-641d44",
-        "destination": "a7962314",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 40,
-        "receive": 39,
-        "ack": 39,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386578150/events.jsonl",
-        "event_sha256": "94d682a986c9eaaba91f64451855e9d48998e43d05b12703f292e5729418f405"
-      },
-      {
-        "id": 386748154,
-        "route": "direct",
-        "source": "6b9f8608",
-        "relay": "",
-        "destination": "laptop",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 0,
-        "receive": 39,
-        "ack": 39,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386748154/events.jsonl",
-        "event_sha256": "03feb86c44d913e154b239d39324573a39b98c906c78ad34e158e743ef720fce"
-      },
-      {
-        "id": 386759993,
-        "route": "android",
-        "source": "6b9f8608",
-        "relay": "a7962314",
-        "destination": "laptop",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 37,
-        "receive": 37,
-        "ack": 35,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386759993/events.jsonl",
-        "event_sha256": "40b9c01f3ec3612eb890756aa800fe1f8389093df5d54a2a7bf0b4256bfec009"
-      },
-      {
-        "id": 386770324,
-        "route": "android",
-        "source": "6b9f8608",
-        "relay": "a7962314",
-        "destination": "laptop",
-        "corrupt_every": 5,
-        "send": 40,
-        "forward": 32,
-        "receive": 32,
-        "ack": 32,
-        "invalid": 8,
-        "raw_events": "Nghiem_thu/run_386770324/events.jsonl",
-        "event_sha256": "12b7b7e72d6be8083d297414f8b100b7f9d42e05ac73df61bc6323816bd26f90"
-      },
-      {
-        "id": 386782466,
-        "route": "direct",
-        "source": "6b9f8608",
-        "relay": "",
-        "destination": "a7962314",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 0,
-        "receive": 40,
-        "ack": 40,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386782466/events.jsonl",
-        "event_sha256": "3f74162e571a463da9902d518bab3eddf06db1916d906b0ced0ec581112a9f81"
-      },
-      {
-        "id": 386807565,
-        "route": "relay",
-        "source": "6b9f8608",
-        "relay": "esp32-641d44",
-        "destination": "a7962314",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 0,
-        "receive": 0,
-        "ack": 0,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386807565/events.jsonl",
-        "event_sha256": "d707ba047c3aacf4acd00704f10784635a08a66a47c3bf2694ed39240ba22abf"
-      },
-      {
-        "id": 386906316,
-        "route": "relay",
-        "source": "6b9f8608",
-        "relay": "esp32-641d44",
-        "destination": "a7962314",
-        "corrupt_every": 0,
-        "send": 40,
-        "forward": 40,
-        "receive": 40,
-        "ack": 40,
-        "invalid": 0,
-        "raw_events": "Nghiem_thu/run_386906316/events.jsonl",
-        "event_sha256": "6300877cb3d2702f6581477450fe1df7be28b1f6e22f20e8b9724040fc0fdfc6"
-      }
-    ],
-    "browser": {
-      "widths": [
-        360,
-        390,
-        768,
-        1440
-      ],
-      "modes": 3,
-      "practice_runs": [
-        386827237,
-        386832004,
-        386836538,
-        386841018
-      ],
-      "each_sent_received_acked": 20,
-      "evidence": 33,
-      "simulation_samples": 1000000,
-      "live_portal": "2.1.0",
-      "portal_preview_widths": [
-        390,
-        768,
-        1440
-      ],
-      "figure_routes": 3
-    },
-    "powerpoint_show": [
-      {
-        "slide": 1,
-        "visited": true,
-        "notes_length": 328,
-        "charts": 0
-      },
-      {
-        "slide": 2,
-        "visited": true,
-        "notes_length": 411,
-        "charts": 0
-      },
-      {
-        "slide": 3,
-        "visited": true,
-        "notes_length": 443,
-        "charts": 0
-      },
-      {
-        "slide": 4,
-        "visited": true,
-        "notes_length": 456,
-        "charts": 0
-      },
-      {
-        "slide": 5,
-        "visited": true,
-        "notes_length": 362,
-        "charts": 0
-      },
-      {
-        "slide": 6,
-        "visited": true,
-        "notes_length": 429,
-        "charts": 0
-      },
-      {
-        "slide": 7,
-        "visited": true,
-        "notes_length": 475,
-        "charts": 0
-      },
-      {
-        "slide": 8,
-        "visited": true,
-        "notes_length": 560,
-        "charts": 0
-      },
-      {
-        "slide": 9,
-        "visited": true,
-        "notes_length": 683,
-        "charts": 0
-      },
-      {
-        "slide": 10,
-        "visited": true,
-        "notes_length": 278,
-        "charts": 1
-      },
-      {
-        "slide": 11,
-        "visited": true,
-        "notes_length": 364,
-        "charts": 0
-      },
-      {
-        "slide": 12,
-        "visited": true,
-        "notes_length": 643,
-        "charts": 0
-      },
-      {
-        "slide": 13,
-        "visited": true,
-        "notes_length": 438,
-        "charts": 0
-      },
-      {
-        "slide": 14,
-        "visited": true,
-        "notes_length": 376,
-        "charts": 0
-      },
-      {
-        "slide": 15,
-        "visited": true,
-        "notes_length": 315,
-        "charts": 0
-      },
-      {
-        "slide": 16,
-        "visited": true,
-        "notes_length": 336,
-        "charts": 1
-      },
-      {
-        "slide": 17,
-        "visited": true,
-        "notes_length": 452,
-        "charts": 0
-      },
-      {
-        "slide": 18,
-        "visited": true,
-        "notes_length": 316,
-        "charts": 0
-      },
-      {
-        "slide": 19,
-        "visited": true,
-        "notes_length": 340,
-        "charts": 0
-      },
-      {
-        "slide": 20,
-        "visited": true,
-        "notes_length": 346,
-        "charts": 0
-      },
-      {
-        "slide": 21,
-        "visited": true,
-        "notes_length": 592,
-        "charts": 0
-      }
-    ],
-    "report_pages": 38,
-    "report_rgb_chromatic_pixels_144dpi": 0,
-    "guide_pages": 5,
-    "guide_diagrams": 3,
-    "repro": [
-      "Reproduced all 16 SNR points and seven relay positions.",
-      "paired_20261126_112923 10 sessions match the raw events.",
-      "paired_20261126_125705 4 sessions match the raw events.",
-      "paired_20261126_133222 2 sessions match the raw events.",
-      "paired_20261126_140526 4 sessions match the raw events.",
-      "Relay Lab 2.5: four live UI probes match the raw events."
-    ],
-    "reference_runs": 36,
-    "new_runs_on_first_open": 0,
-    "reset": "Accepted test copy: 12 folders archived; repeat returned 0. Protected 33 evidence IDs.",
-    "presentation_style": {
-      "reference": "Demo/web/src/studio.css and state.js",
-      "font": "Segoe UI",
-      "metric_font": "Consolas",
-      "page_count": 21,
-      "model_series_colors": {
-        "DF": "#242522",
-        "AF-FG": "#c14f24",
-        "AF-VG": "#75639e"
-      },
-      "verification": "Slide Show, native chart data, text inventory, notes and image equality checked."
-    },
-    "windows_installer": {
-      "filename": "Cai_dat_Relay_Lab_2_5_Windows_x64.exe",
-      "user_scope": "per user, x64",
-      "bundled_python": "3.9.13",
-      "network_at_install": "not required",
-      "generated_with": "Inno Setup",
-      "signed_windows_exe": false,
-      "installed_tests": 24,
-      "model_and_paired_reproduction": true,
-      "installed_room_checks": {
-        "8877": {
-          "version": "2.5.0",
-          "practice": true,
-          "direct": [
-            10,
-            10,
-            10
-          ],
-          "relay": [
-            10,
-            10,
-            10
-          ]
-        },
-        "8765": {
-          "version": "2.5.0",
-          "practice": false
-        }
-      },
-      "android_apk": "vn.relaylab 2.5.1 build 9, tested on Samsung SM-G965F",
-      "shell": "RelayLab.exe 2.5.0.1 / WinForms + Microsoft Edge WebView2 x64",
-      "runtime_requirement": "Microsoft Edge WebView2 Runtime together with .NET Framework 4.6.2 or higher",
-      "desktop_shortcut": "Relay Lab.lnk",
-      "verified_native_window": {
-        "launch_from_desktop": true,
-        "single_window_on_repeat": true,
-        "webgl2": true,
-        "live_port": 8765,
-        "practice_port": 8877,
-        "graceful_close_and_reopen": true,
-        "replay_crc_run": 383668602,
-        "test_runs": [
-          {
-            "id": 390612718,
-            "route": "direct",
-            "sent": 20,
-            "received": 20,
-            "acked": 20
-          },
-          {
-            "id": 390617324,
-            "route": "relay",
-            "sent": 20,
-            "received": 20,
-            "acked": 20
-          }
-        ]
-      },
-      "installer_sha256": "5e0aa19754a54daf65f7ce60d06b8f814bc2863bf426a970c6c39436f3e7e269"
-    }
-  },
-  "historical_phone_room_acceptance": {
-    "controller": "2.5.1",
-    "android": "2.5.1 (9)",
-    "board": "ESP32 Classic RelayBox 2.1.0",
-    "installed_dashboard_runs": [
-      {
-        "id": 396733634,
-        "android_role": "sink",
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acks": 40,
-        "missing_ack": []
-      },
-      {
-        "id": 396766685,
-        "android_role": "sink",
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acks": 40,
-        "missing_ack": []
-      },
-      {
-        "id": 396796728,
-        "android_role": "sink",
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acks": 40,
-        "missing_ack": []
-      },
-      {
-        "id": 396822730,
-        "android_role": "source",
-        "sent": 40,
-        "forwarded": 40,
-        "received": 39,
-        "acks": 39,
-        "missing_ack": [
-          36
-        ]
-      }
-    ],
-    "phone_room": {
-      "run": 396250058,
-      "controller": "Samsung SM-G965F",
-      "source": "Samsung",
-      "relay": "ESP32",
-      "destination": "PC UDP receiver on RelayBox",
-      "sent": 50,
-      "received": 50,
-      "acks": 50
-    },
-    "android_exports": [
-      {
-        "run": 395590684,
-        "events": 101,
-        "bytes": 21657,
-        "sha256": "34381741bb56494e43b1675d8d7d1598af2892dff132dcbd2557eb317a94bc2b"
-      },
-      {
-        "run": 395604760,
-        "events": 91,
-        "bytes": 19700,
-        "sha256": "27c1c290313df16ec13f5aed3ca3a54c75d603c9da8f6a61eac0faac17a27ded"
-      }
-    ],
-    "report_pages": 38,
-    "ppt_slides": 21,
-    "guide_pages": 5,
-    "report_chromatic_pixels_144dpi": 0
-  },
-  "devices_and_hardware": {
-    "pc": "2.6.1",
-    "android": "2.6.0",
-    "board": "2.6.0",
-    "android_api": 29,
-    "esp_id": "esp32-641d44",
-    "esp_cam_bin_sha256": "a89af6c0017e1d6ca5a5441d7ea5c6c16a071ab38e7277a9c0383870a7e51a6a",
-    "apk_sha256": "a8c288bc1d2631e3a73cd1fc1dfdcebc248934895e87e536f837a5b0c2b7f4c8",
-    "phone_cellular_enabled": false,
-    "https_trials": 3,
-    "rly1_regression": [
-      {
-        "id": 405451643,
-        "sent": 40,
-        "received_observed": 40,
-        "acked": 40
-      },
-      {
-        "id": 405462659,
-        "sent": 40,
-        "received_observed": 40,
-        "acked": 40
-      }
-    ],
-    "esp_library": "Arduino-ESP32 3.3.0",
-    "scope": "bench",
-    "android_as_relay": "RLY1 DATA/ACK",
-    "internet_relay": "ESP32 IPv4 NAPT",
-    "final_android_probe": {
-      "time_ms": 1795703837540,
-      "wifi_ip": "192.168.50.2",
-      "gateway": "192.168.50.1",
-      "relay": "esp32-641d44",
-      "firmware": "2.6.0",
-      "endpoint": "https://www.google.com/generate_204",
-      "http_status": 204,
-      "ok": true
-    },
-    "final_pc_probe": {
-      "time": "2026-11-26T14:37:43.703490+00:00",
-      "interface": "Wi-Fi",
-      "client": "192.168.50.3",
-      "gateway": "192.168.50.1",
-      "dns": "192.168.4.1",
-      "host": "www.google.com",
-      "http": 204,
-      "tls": "TLSv1.3"
-    },
-    "final_board_runs": [
-      {
-        "id": 407438734,
-        "phone": "sink",
-        "corrupt_every": 0,
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acked": 40,
-        "invalid": []
-      },
-      {
-        "id": 407449784,
-        "phone": "source",
-        "corrupt_every": 0,
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acked": 40,
-        "invalid": []
-      },
-      {
-        "id": 407463710,
-        "phone": "sink",
-        "corrupt_every": 5,
-        "sent": 40,
-        "forwarded": 32,
-        "received": 32,
-        "acked": 32,
-        "invalid": [
-          4,
-          9,
-          14,
-          19,
-          24,
-          29,
-          34,
-          39
-        ]
-      }
-    ],
-    "onboard_comparison": {
-      "model": "HD Rayleigh",
-      "samples": 32768,
-      "seed": 20261126,
-      "rate": 0.5,
-      "x": 0.5,
-      "alpha": 2.2,
-      "done": 32768,
-      "rows": [
-        {
-          "snr_db": 0,
-          "df_closed": 0.352913,
-          "failures": {
-            "Direct": 11143,
-            "DF": 11733,
-            "AF-FG": 17523,
-            "AF-VG": 16610
-          }
-        },
-        {
-          "snr_db": 8,
-          "df_closed": 0.066661,
-          "failures": {
-            "Direct": 2122,
-            "DF": 2227,
-            "AF-FG": 4917,
-            "AF-VG": 2649
-          }
-        },
-        {
-          "snr_db": 16,
-          "df_closed": 0.010874,
-          "failures": {
-            "Direct": 368,
-            "DF": 367,
-            "AF-FG": 1103,
-            "AF-VG": 396
-          }
-        }
-      ]
-    }
-  },
-  "figures": {
-    "report_pdf_pages": [
-      16,
-      17,
-      24
-    ],
-    "slides": [
-      16,
-      17,
-      18
-    ],
-    "rt_data": [
-      405451643,
-      405462659
-    ],
-    "model": "Demo/results/internet_26/board-model.json"
-  },
-  "final_acceptance": {
-    "slide_show": [
-      {
-        "slide": 1,
-        "visited": true,
-        "notes_length": 303,
-        "charts": 0
-      },
-      {
-        "slide": 2,
-        "visited": true,
-        "notes_length": 411,
-        "charts": 0
-      },
-      {
-        "slide": 3,
-        "visited": true,
-        "notes_length": 239,
-        "charts": 0
-      },
-      {
-        "slide": 4,
-        "visited": true,
-        "notes_length": 456,
-        "charts": 0
-      },
-      {
-        "slide": 5,
-        "visited": true,
-        "notes_length": 354,
-        "charts": 0
-      },
-      {
-        "slide": 6,
-        "visited": true,
-        "notes_length": 429,
-        "charts": 0
-      },
-      {
-        "slide": 7,
-        "visited": true,
-        "notes_length": 475,
-        "charts": 0
-      },
-      {
-        "slide": 8,
-        "visited": true,
-        "notes_length": 560,
-        "charts": 0
-      },
-      {
-        "slide": 9,
-        "visited": true,
-        "notes_length": 683,
-        "charts": 0
-      },
-      {
-        "slide": 10,
-        "visited": true,
-        "notes_length": 278,
-        "charts": 1
-      },
-      {
-        "slide": 11,
-        "visited": true,
-        "notes_length": 364,
-        "charts": 0
-      },
-      {
-        "slide": 12,
-        "visited": true,
-        "notes_length": 643,
-        "charts": 0
-      },
-      {
-        "slide": 13,
-        "visited": true,
-        "notes_length": 438,
-        "charts": 0
-      },
-      {
-        "slide": 14,
-        "visited": true,
-        "notes_length": 217,
-        "charts": 0
-      },
-      {
-        "slide": 15,
-        "visited": true,
-        "notes_length": 302,
-        "charts": 0
-      },
-      {
-        "slide": 16,
-        "visited": true,
-        "notes_length": 271,
-        "charts": 0
-      },
-      {
-        "slide": 17,
-        "visited": true,
-        "notes_length": 449,
-        "charts": 0
-      },
-      {
-        "slide": 18,
-        "visited": true,
-        "notes_length": 449,
-        "charts": 0
-      },
-      {
-        "slide": 19,
-        "visited": true,
-        "notes_length": 336,
-        "charts": 1
-      },
-      {
-        "slide": 20,
-        "visited": true,
-        "notes_length": 452,
-        "charts": 0
-      },
-      {
-        "slide": 21,
-        "visited": true,
-        "notes_length": 316,
-        "charts": 0
-      },
-      {
-        "slide": 22,
-        "visited": true,
-        "notes_length": 340,
-        "charts": 0
-      },
-      {
-        "slide": 23,
-        "visited": true,
-        "notes_length": 346,
-        "charts": 0
-      },
-      {
-        "slide": 24,
-        "visited": true,
-        "notes_length": 592,
-        "charts": 0
-      }
-    ],
-    "guide_pages": 5,
-    "esp_acceptance": [
-      {
-        "id": 407438734,
-        "phone": "sink",
-        "corrupt_every": 0,
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acked": 40,
-        "invalid": []
-      },
-      {
-        "id": 407449784,
-        "phone": "source",
-        "corrupt_every": 0,
-        "sent": 40,
-        "forwarded": 40,
-        "received": 40,
-        "acked": 40,
-        "invalid": []
-      },
-      {
-        "id": 407463710,
-        "phone": "sink",
-        "corrupt_every": 5,
-        "sent": 40,
-        "forwarded": 32,
-        "received": 32,
-        "acked": 32,
-        "invalid": [
-          4,
-          9,
-          14,
-          19,
-          24,
-          29,
-          34,
-          39
-        ]
-      }
-    ],
-    "tests": "python -m pytest tests -q",
-    "reproduce": "python scripts/reproduce_final.py",
-    "pytest_passed": 25,
-    "installed_ui": {
-      "errors": [],
-      "rooms": [
-        {
-          "port": 8765,
-          "practice": false,
-          "fresh_sessions": 0,
-          "device_models": [
-            "ESP32 Classic RelayBox",
-            "SM-G965F"
-          ],
-          "missing_ack_packet": 21,
-          "webgl_fallback_replay": true,
-          "guide_apk_research": true
-        },
-        {
-          "port": 8877,
-          "practice": true,
-          "fresh_sessions": 0,
-          "device_models": [],
-          "missing_ack_packet": 21,
-          "webgl_fallback_replay": true,
-          "guide_apk_research": true
-        }
-      ]
-    },
-    "fresh_sessions": 0,
-    "report_chromatic_pixels_72dpi": 0,
-    "windows_installer": "Cai_dat_Relay_Lab_2_6_1_Windows_x64.exe"
-  },
-  "pc_ux_acceptance": {
-    "pc": "2.6.1",
-    "android": "2.6.0",
-    "esp32": "2.6.0",
-    "devices": [
-      "Windows x64",
-      "Samsung SM-G965F",
-      "ESP32 Classic RelayBox"
-    ],
-    "checks": [
-      "Desktop → đo thiết bị → ESP32",
-      "Wi-Fi, cổng ESP, IP, hướng dẫn, APK và chặn tuyến thiếu thiết bị",
-      "Đo thật bằng nút Bắt đầu",
-      "Bốn giao thức, công thức, SNR, vị trí, QoS, năng lượng, Monte Carlo",
-      "Tập UDP trực tiếp và qua relay, tiêm lỗi, tạm dừng, tiếp tục, kết thúc",
-      "Nhật ký mới/minh chứng, phát lại, mở theo mã, 3 bộ lọc, chi tiết gói và log gốc",
-      "Bố cục 390, 1024 và 1440 px"
-    ],
-    "browser_errors": [],
-    "runs": [
-      {
-        "id": 409270498,
-        "sent": 40,
-        "received_observed": 40,
-        "acked": 40,
-        "rtt_p95_ms": 162.82145499999993,
-        "goodput_kbps": 10.24,
-        "environment": "live",
-        "route": "relay",
-        "relay_kind": "esp32",
-        "source_id": "laptop",
-        "destination_id": "6b9f8608",
-        "drop_every": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 409279804,
-        "sent": 20,
-        "received_observed": 20,
-        "acked": 20,
-        "rtt_p95_ms": 0.943835,
-        "goodput_kbps": 10.24,
-        "environment": "local",
-        "route": "direct",
-        "relay_kind": "",
-        "source_id": "laptop",
-        "destination_id": "laptop",
-        "drop_every": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 409284345,
-        "sent": 11,
-        "received_observed": 1,
-        "acked": 1,
-        "rtt_p95_ms": 1.1083,
-        "goodput_kbps": 0.08533333333333333,
-        "environment": "local",
-        "route": "relay",
-        "relay_kind": "esp32",
-        "source_id": "laptop",
-        "destination_id": "laptop",
-        "drop_every": 5,
-        "corrupt_every": 7
-      },
-      {
-        "id": 409351681,
-        "sent": 40,
-        "received_observed": 40,
-        "acked": 40,
-        "rtt_p95_ms": 196.65499049999997,
-        "goodput_kbps": 10.24,
-        "environment": "live",
-        "route": "relay",
-        "relay_kind": "esp32",
-        "source_id": "6b9f8608",
-        "destination_id": "laptop",
-        "drop_every": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 409408568,
-        "sent": 40,
-        "received_observed": 40,
-        "acked": 40,
-        "rtt_p95_ms": 176.9953049999999,
-        "goodput_kbps": 10.24,
-        "environment": "live",
-        "route": "direct",
-        "relay_kind": "",
-        "source_id": "laptop",
-        "destination_id": "6b9f8608",
-        "drop_every": 0,
-        "corrupt_every": 0
-      },
-      {
-        "id": 409468194,
-        "sent": 30,
-        "received_observed": 30,
-        "acked": 29,
-        "rtt_p95_ms": 222.56721999999996,
-        "goodput_kbps": 10.24,
-        "environment": "live",
-        "route": "relay",
-        "relay_kind": "android",
-        "source_id": "laptop",
-        "destination_id": "laptop",
-        "drop_every": 0,
-        "corrupt_every": 0
-      }
-    ]
-  },
-  "video": {
-    "duration_s": 118.032,
-    "frames": 2833,
-    "fps": 24,
-    "width": 1440,
-    "height": 810,
-    "video": "H.264",
-    "audio": "Vietnamese narration and original music, AAC",
-    "audio_peak_dbfs": -1.5,
-    "audio_mean_dbfs": -18.6,
-    "shots": [
-      {
-        "chapter": "Nhà ba tầng",
-        "start_s": 0,
-        "checked_frame_s": 3.996,
-        "preview_psnr_db": 46.9
-      },
-      {
-        "chapter": "Tầng hai",
-        "start_s": 9.081,
-        "checked_frame_s": 13.304,
-        "preview_psnr_db": 46.6
-      },
-      {
-        "chapter": "Hai mạng Wi-Fi",
-        "start_s": 18.678,
-        "checked_frame_s": 22.869,
-        "preview_psnr_db": 40.6
-      },
-      {
-        "chapter": "Chiều đi",
-        "start_s": 28.204,
-        "checked_frame_s": 32.934,
-        "preview_psnr_db": 41.9
-      },
-      {
-        "chapter": "Chiều về",
-        "start_s": 38.953,
-        "checked_frame_s": 43.916,
-        "preview_psnr_db": 40.8
-      },
-      {
-        "chapter": "Cùng chiếc hộp",
-        "start_s": 50.233,
-        "checked_frame_s": 54.863,
-        "preview_psnr_db": 40.5
-      },
-      {
-        "chapter": "Mô hình tín hiệu",
-        "start_s": 60.755,
-        "checked_frame_s": 66.073,
-        "preview_psnr_db": 45.4
-      },
-      {
-        "chapter": "Hai cách chuyển tín hiệu",
-        "start_s": 72.842,
-        "checked_frame_s": 77.7,
-        "preview_psnr_db": 46.3
-      },
-      {
-        "chapter": "Hai cách chuyển tín hiệu",
-        "start_s": 83.882,
-        "checked_frame_s": 88.818,
-        "preview_psnr_db": 46.4
-      },
-      {
-        "chapter": "Trở lại bàn đo",
-        "start_s": 95.1,
-        "checked_frame_s": 100.274,
-        "preview_psnr_db": 46.9
-      },
-      {
-        "chapter": "Từ bàn đo đến cầu thang",
-        "start_s": 106.86,
-        "checked_frame_s": 111.776,
-        "preview_psnr_db": 44.3
-      }
-    ],
-    "powerpoint": {
-      "duration_ms": 118041,
-      "observed_playback_ms": 1351,
-      "seek_to_theory_ms": 74405,
-      "embedded": true,
-      "slide": 1
-    },
-    "voice": {
-      "engine": "VieNeu-TTS v3 Turbo",
-      "preset": "Thiện Minh",
-      "pcm_sample_rate_hz": 48000,
-      "utterances": 24,
-      "asr_check": "Whisper small, Vietnamese per recorded utterance",
-      "max_within_phrase_quiet_s": 0.5,
-      "level_window_ms": 20,
-      "level_threshold_rms": 0.011
-    },
-    "caption_check": {
-      "captions": 41,
-      "language": "vi",
-      "layout_px": [
-        1440,
-        810
-      ],
-      "overlaps": 0,
-      "runtime_errors": 0
-    }
-  },
-  "materials_revision": "2026-11-26 · Tiểu luận, minh họa, slide và thuyết minh khoa học",
-  "movie_revision": "2026-11-27 · Lời kể và phụ đề theo hành trình của một tấm ảnh"
+    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "81cf5357e1e6a54f9206caf11ed293b607db2f4b45ac35d3f047421c32cf8ce1",
+    "Slide_xem_nhanh.pdf": "a51ff0337738c92acfbe7d44a15325d24050bedc9b2369d7220729d058c19c43"
+  }
 }

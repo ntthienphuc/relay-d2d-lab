@@ -54,4 +54,4 @@ if(world){
 }
 setupUI(camera);
 setupLogs();
-window.relayLab={version:'2.6.1',state,renderer:world?.renderer,scene:world?.scene};
+window.relayLab={version:'2.7.0',state,renderer:world?.renderer,scene:world?.scene};

@@ -7,7 +7,7 @@
 | Thư mục | Chức năng |
 | --- | --- |
 | `esp32` | Firmware RelayBox, cấu hình Wi-Fi, chuyển gói, NAPT và so sánh giao thức theo mô hình |
-| `android` | Ứng dụng nguồn, đích, relay và nhật ký cục bộ |
+| `android` | Nguồn hoặc đích; ghi và xuất nhật ký trên máy |
 | `lab`, `desktop`, `web` | Điều phối phiên, cửa sổ Windows và giao diện Three.js |
 | `sim`, `research`, `results` | Mô hình kênh, bài báo và dữ liệu thí nghiệm |
 | `tests`, `scripts` | Kiểm thử, tái lập và đóng gói |

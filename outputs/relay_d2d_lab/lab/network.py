@@ -132,11 +132,8 @@ class Engine:
                     if self.devices[key].get('role') != role: raise ValueError('Vai trò thiết bị không đúng: ' + role)
             dd = self.devices.get(dest_id, {})
             relay = self.devices.get(relay_id, {}) if route == 'relay' else {}
-            kind = config.get('relay_kind')
-            if route == 'relay' and kind and relay.get('platform') != kind:
-                raise ValueError('Hãy chọn đúng Android hoặc ESP32 ở vai Relay.')
-            if relay.get('platform') == 'android' and relay.get('bridge_id'):
-                raise ValueError('Đưa Android làm Relay về cùng Wi-Fi với laptop rồi chọn Laptop trong ứng dụng.')
+            if route == 'relay' and (relay.get('platform') != 'esp32' or config.get('relay_kind') not in (None, '', 'esp32')):
+                raise ValueError('Trạm chuyển tiếp phải là ESP32.')
             source_bridge = self.devices.get(source_id, {}).get('bridge_id')
             if source_bridge and (relay_id != source_bridge or relay.get('platform') != 'esp32'):
                 raise ValueError('Nguồn đang nối RelayBox. Chọn ESP32 đang phát mạng này.')
@@ -158,8 +155,7 @@ class Engine:
                     target = (td.get('local_ip', target[0]), td.get('listen_port', target[1]))
             if source_bridge:
                 target = (relay['ap_ip'], relay['listen_port'])
-            platform = self.devices.get(relay_id, {}).get('platform', 'android')
-            topology = ('LAN UDP via ' + platform + ' packet relay') if route == 'relay' else 'LAN UDP application-direct'
+            topology = 'LAN UDP via esp32 packet relay' if route == 'relay' else 'LAN UDP application-direct'
             if dd.get('bridge_id'): topology += '; sink on ESP32 SoftAP, control HTTP proxied'
             if source_bridge: topology += '; source on ESP32 SoftAP, control HTTP proxied'
             if source_id == dest_id == 'laptop': topology += '; laptop holds S and D (pilot)'

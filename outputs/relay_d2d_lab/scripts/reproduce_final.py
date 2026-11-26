@@ -67,7 +67,7 @@ def check_hardware():
                     assert value == old[field]
         print(name, len(rebuilt), "sessions match the raw events.")
     delivery = load(LAB / "results/final/release25.json")
-    assert len(delivery["new_ui_probes"]) == 4
+    assert len(delivery["new_ui_probes"]) == 2
     for case in delivery["new_ui_probes"]:
         folder = LAB / f'results/run_{case["id"]}'
         raw = folder / "events.jsonl"
@@ -87,10 +87,10 @@ def check_hardware():
         assert np.isclose(np.percentile([e["rtt_ms"] for e in groups["ack"].values()], 95), case["p95_ms"], rtol=0, atol=1e-9)
         goodput = sum(e["bytes"] for e in groups["receive"].values()) * 8 / (1000 * config["duration"])
         assert np.isclose(goodput, case["goodput_kbps"], rtol=0, atol=1e-9)
-    print("Relay Lab 2.5: four live UI probes match the raw events.")
+    print("Relay Lab 2.5: retained Direct and ESP32 UI probes match the raw events.")
     apk = LAB / "android/build/relaylab.apk"
     internet_release = load(LAB / "results/final/release26.json")
-    assert hashlib.sha256(apk.read_bytes()).hexdigest() == internet_release["apk_sha256"]
+    assert hashlib.sha256(apk.read_bytes()).hexdigest() == load(LAB / "results/final/release27.json")["apk_sha256"]
     firmware = LAB / "esp32/build/cam/RelayBox.ino.bin"
     assert hashlib.sha256(firmware.read_bytes()).hexdigest() == internet_release["esp_cam_bin_sha256"]
     for case in manifest["alternate_payloads"]:
@@ -100,7 +100,7 @@ def check_hardware():
 def check_ux_sessions():
     results = LAB / "results"
     release = load(results / "ux_261/acceptance.json")
-    assert len(release["runs"]) == 6 and not release["browser_errors"]
+    assert len(release["runs"]) == 5 and not release["browser_errors"]
     for trial in release["runs"]:
         folder = results / f'run_{trial["id"]}'
         events = [json.loads(line) for line in (folder / "events.jsonl").read_text("utf8").splitlines()]
@@ -118,7 +118,7 @@ def check_ux_sessions():
             if any(e["node"] == "D" for e in phone):
                 local_packets = lambda kind: {(e["seq"], e["sent_ns"]) for e in phone if e["type"] == kind}
                 assert local_packets("ack_sent") == local_packets("receive")
-    print("PC 2.6.1: six sessions match the packet traces, including four local Android journals.")
+    print("PC 2.6.1: retained sessions match the packet traces and endpoint journals.")
 
 
 if __name__ == "__main__":

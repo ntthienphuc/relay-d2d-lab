@@ -57,8 +57,6 @@ export function setMode(page){
   $('liveHeading').textContent=page==='practice'?'Tập điều khiển phiên':'Chuẩn bị thiết bị';
   $('route').options[0].textContent=page==='practice'?'Qua relay nội bộ':'Qua ESP32-CAM';
   $('route').options[1].textContent=page==='practice'?'Hai đầu trực tiếp':'Direct · cùng Wi-Fi';
-  $('route').options[2].hidden=page==='practice';
-  if(page==='practice'&&$('route').value==='android')$('route').value='relay';
   for(const id of ['espSetup','apkLink','hardwareNote'])$(id).hidden=page==='practice';
   $('deviceList').closest('details').hidden=page==='practice';
   state.pulses=[];state.replay=null;state.activeRun=null;state.eventsSeen.clear();
@@ -97,15 +95,14 @@ function renderLive(run){
     $('sceneCaption').textContent=state.page==='practice'?'Gói chỉ chạy trên laptop':'UDP ứng dụng · DATA và ACK';
   }
   const cfg=run?.config;
-  state.preview=state.mode==='replay'?null:{route:selectedRoute(),relay_kind:$('route').value==='relay'?'esp32':'android',source_id:$('sourceDevice').value,destination_id:$('destinationDevice').value};
+  state.preview=state.mode==='replay'?null:{route:selectedRoute(),relay_kind:$('route').value==='relay'?'esp32':'',source_id:$('sourceDevice').value,destination_id:$('destinationDevice').value};
   const practice=cfg?.environment==='local'||state.page==='practice';
   const src=cfg?.source_id||$('sourceDevice').value;
   const dst=cfg?.destination_id||$('destinationDevice').value;
   const route=cfg?.route||selectedRoute();
-  const isEsp=cfg?String(cfg.relay_id).startsWith('esp32-'):$('route').value==='relay';
   const online=state.status?.devices||[];
   const name=(id,fallback)=>id==='laptop'?'Laptop':online.find(d=>d.id===id)?.model||fallback;
-  const relay=practice?'Relay nội bộ':isEsp?'RelayBox':'Android relay';
+  const relay=practice?'Relay nội bộ':'ESP32 RelayBox';
   const source=practice?'Nguồn nội bộ':name(src,'Điện thoại nguồn'),dest=practice?'Đích nội bộ':name(dst,'Điện thoại đích');
   const empty=state.mode==='replay'&&!cfg;
   $('labelS').querySelector('small').textContent=empty?'—':source;
@@ -195,7 +192,7 @@ export async function setupUI(camera){
     $('simulate').disabled=true;$('footerStatus').textContent='Đang sinh kênh và đếm sự kiện outage…';
     try{state.simulation=await api('simulation',{samples:+$('samples').value,rate:+$('rate').value,relay_position:state.relayPosition,qos:+$('qos').value,processing_mj:+$('processing').value,csi_mj:+$('csi').value});dirty=false;renderSimulation();toast('Đã hoàn tất Monte Carlo và khoảng tin cậy.');}catch(e){toast(e.message,true);}finally{$('simulate').disabled=false;}
   };
-  $('startRun').onclick=async()=>{if(starting)return;for(const input of $('livePanel').querySelectorAll('input[type=number]'))if(!input.reportValidity())return;starting=true;$('startRun').disabled=true;try{if($('environment').value==='live'&&selectedRoute()==='relay'&&!$('relayDevice').value){$('routeDevices').open=true;throw new Error('Kết nối thiết bị chuyển tiếp trước khi bắt đầu.');}state.eventsSeen.clear();state.pulses=[];const run=await api('run',{environment:$('environment').value,route:selectedRoute(),relay_kind:$('route').value==='android'?'android':$('route').value==='relay'?'esp32':'',source_id:$('sourceDevice').value,experiment_label:$('experimentLabel').value,corrupt_every:+$('corruptEvery').value,drop_every:+$('dropEvery').value,duration:+$('duration').value,rate:+$('pps').value,payload:+$('payload').value,relay_id:$('relayDevice').value,destination_id:$('destinationDevice').value});state.status.run=run;state.activeRun=run;renderLive(run);toast('Đang đo phiên '+run.id);}catch(e){toast(e.message,true);}finally{starting=false;}};
+  $('startRun').onclick=async()=>{if(starting)return;for(const input of $('livePanel').querySelectorAll('input[type=number]'))if(!input.reportValidity())return;starting=true;$('startRun').disabled=true;try{if($('environment').value==='live'&&selectedRoute()==='relay'&&!$('relayDevice').value){$('routeDevices').open=true;throw new Error('Kết nối thiết bị chuyển tiếp trước khi bắt đầu.');}state.eventsSeen.clear();state.pulses=[];const run=await api('run',{environment:$('environment').value,route:selectedRoute(),relay_kind:$('route').value==='relay'?'esp32':'',source_id:$('sourceDevice').value,experiment_label:$('experimentLabel').value,corrupt_every:+$('corruptEvery').value,drop_every:+$('dropEvery').value,duration:+$('duration').value,rate:+$('pps').value,payload:+$('payload').value,relay_id:$('relayDevice').value,destination_id:$('destinationDevice').value});state.status.run=run;state.activeRun=run;renderLive(run);toast('Đang đo phiên '+run.id);}catch(e){toast(e.message,true);}finally{starting=false;}};
   $('pauseRelay').onclick=async()=>{try{const r=await api('pause-relay',{});toast(r.paused?'Đã tạm dừng chuyển gói.':'Relay tiếp tục chuyển gói.');}catch(e){toast(e.message,true);}};
   $('stopRun').onclick=async()=>{try{await api('stop',{});}catch(e){toast(e.message,true);}};
   $('refreshHistory').onclick=loadHistory;
