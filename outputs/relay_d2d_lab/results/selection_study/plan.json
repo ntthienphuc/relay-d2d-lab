@@ -1,0 +1,53 @@
+{
+  "train_samples": 100000,
+  "validation_samples": 1000000,
+  "train_seed": 20261125,
+  "validation_seeds": [
+    20261126,
+    20261127,
+    20261128
+  ],
+  "snr_db": [
+    -10,
+    -8,
+    -6,
+    -4,
+    -2,
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30
+  ],
+  "qos": 0.1,
+  "profiles": [
+    [
+      "low_processing",
+      0.05,
+      0.02
+    ],
+    [
+      "reference",
+      0.2,
+      0.1
+    ],
+    [
+      "high_processing",
+      1.0,
+      0.4
+    ]
+  ],
+  "predeclared": true,
+  "scope": "SISO HD Rayleigh, modeled energy only; independent validation seeds; no claimed new algorithm"
+}

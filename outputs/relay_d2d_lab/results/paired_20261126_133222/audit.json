@@ -1,0 +1,46 @@
+{
+  "runs": [
+    {
+      "block": 1,
+      "route": "direct",
+      "id": 378446080,
+      "sent": 60,
+      "received": 57,
+      "acked": 57,
+      "forwarded": 0,
+      "pdr": 95.0,
+      "p95": 212.75409199999999,
+      "goodput": 9.728,
+      "events_sha256": "775d42a8b4125bf0930730de600807cd582937cb06e596bded31c27154199d29"
+    },
+    {
+      "block": 1,
+      "route": "relay",
+      "id": 378477200,
+      "sent": 60,
+      "received": 60,
+      "acked": 60,
+      "forwarded": 60,
+      "pdr": 100.0,
+      "p95": 226.31486134999994,
+      "goodput": 10.24,
+      "events_sha256": "3ba1bca99cd45c458852aaa4ecba9b2e643f903794d625931bb140d6fc1b7a8d"
+    }
+  ],
+  "paired": {
+    "pdr": {
+      "direct_mean": 95.0,
+      "relay_mean": 100.0,
+      "relay_minus_direct": 5.0,
+      "paired_bootstrap95": null
+    },
+    "p95": {
+      "direct_mean": 212.75409199999999,
+      "relay_mean": 226.31486134999994,
+      "relay_minus_direct": 13.560769349999958,
+      "paired_bootstrap95": null
+    }
+  },
+  "setup_interruptions": [],
+  "method": "Single paired trial for functional acceptance. No interval estimated."
+}

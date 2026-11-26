@@ -19,7 +19,9 @@ class Packet:
     flags: int = 0
 
     def encode(self):
-        if len(self.payload) > MAX_PAYLOAD or self.hops > 2:
+        if (len(self.payload) > MAX_PAYLOAD or not 0 <= self.hops <= 2
+                or self.kind not in (DATA, ACK, HELLO) or self.flags != 0
+                or (self.kind == ACK and self.payload)):
             raise ValueError('Packet exceeds experiment limits')
         return HEADER.pack(b'RLY1', 1, self.kind, self.hops, self.flags,
                            self.run, self.seq, self.sent_ns, len(self.payload), 0,
@@ -29,12 +31,14 @@ class Packet:
     def decode(cls, raw):
         if len(raw) < HEADER.size:
             raise ValueError('Truncated header')
-        magic, version, kind, hops, flags, run, seq, stamp, size, _, crc = HEADER.unpack_from(raw)
+        magic, version, kind, hops, flags, run, seq, stamp, size, reserved, crc = HEADER.unpack_from(raw)
         payload = raw[HEADER.size:]
         if magic != b'RLY1' or version != 1 or kind not in (DATA, ACK, HELLO):
             raise ValueError('Unknown protocol')
-        if size != len(payload) or size > MAX_PAYLOAD or hops > 2:
+        if size != len(payload) or size > MAX_PAYLOAD or hops > 2 or flags or reserved:
             raise ValueError('Length or hop limit')
+        if kind == ACK and payload:
+            raise ValueError('ACK must have an empty payload')
         if zlib.crc32(payload) != crc:
             raise ValueError('CRC32 mismatch')
         return cls(kind, run, seq, stamp, payload, hops, flags)

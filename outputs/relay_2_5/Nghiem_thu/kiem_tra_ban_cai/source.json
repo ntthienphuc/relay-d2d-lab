@@ -1,0 +1,10 @@
+{
+  "id": 396822730,
+  "android_role": "source",
+  "version": "2.5.1",
+  "server": "192.168.4.109",
+  "sent": 40,
+  "received": 39,
+  "acks": 39,
+  "errors": []
+}

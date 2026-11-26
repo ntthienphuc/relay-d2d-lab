@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "block": 1,
+      "route": "direct",
+      "id": 376318635,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 0,
+      "pdr": 100.0,
+      "p95": 197.90221079999998,
+      "goodput": 10.24,
+      "events_sha256": "8ffd993b1a11e268acd0320201818bfcd7e9d03e840d5f6723cf310f6df12368"
+    },
+    {
+      "block": 1,
+      "route": "relay",
+      "id": 376356214,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 100,
+      "pdr": 100.0,
+      "p95": 216.00495639999997,
+      "goodput": 10.24,
+      "events_sha256": "c2e142240294e0a21ca54bd253e049773009ce52e12812f1bd76e3d1915fb80a"
+    },
+    {
+      "block": 2,
+      "route": "direct",
+      "id": 376396412,
+      "sent": 100,
+      "received": 98,
+      "acked": 98,
+      "forwarded": 0,
+      "pdr": 98.0,
+      "p95": 206.33853814999986,
+      "goodput": 10.035200000000001,
+      "events_sha256": "44aef6ac5892f5584cccc2f56ef4f9a6f360805a78e1b395228c990d0f39275f"
+    },
+    {
+      "block": 2,
+      "route": "relay",
+      "id": 376432151,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 100,
+      "pdr": 100.0,
+      "p95": 212.46150759999998,
+      "goodput": 10.24,
+      "events_sha256": "c5cb2d56b76ce356c2749d40b4e3213e5ee5f2140d056d321a8b5bd9d037fc45"
+    }
+  ],
+  "paired": {
+    "pdr": {
+      "direct_mean": 99.0,
+      "relay_mean": 100.0,
+      "relay_minus_direct": 1.0,
+      "paired_bootstrap95": [
+        0.0,
+        2.0
+      ]
+    },
+    "p95": {
+      "direct_mean": 202.12037447499992,
+      "relay_mean": 214.233232,
+      "relay_minus_direct": 12.112857525000052,
+      "paired_bootstrap95": [
+        6.122969450000113,
+        18.10274559999999
+      ]
+    }
+  },
+  "setup_interruptions": [],
+  "method": "Receiver-observed PDR. Paired resampling of blocks, 10000 draws, percentile 95%. Descriptive bench pilot."
+}

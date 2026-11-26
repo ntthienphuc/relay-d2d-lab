@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {createRelayBox} from './esp32.js';
 
 function material(color,metalness=.3,roughness=.45){return new THREE.MeshStandardMaterial({color,metalness,roughness});}
 function box(parent,w,h,d,mat,x=0,y=0,z=0){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
@@ -23,15 +24,15 @@ function laptop(){
   for(let row=0;row<4;row++)for(let col=0;col<12;col++)box(g,.115,.012,.105,material('#1b2c3c'),-.87+col*.157,.253,-.33+row*.14);
   const lid=new THREE.Group();lid.position.set(0,.23,-.54);lid.rotation.x=-.15;g.add(lid);
   box(lid,2.15,1.4,.08,alloy,0,.7,0);box(lid,1.99,1.21,.012,material('#0a1d2c'),0,.72,.048);
-  for(let i=0;i<7;i++)box(lid,1.3-(i%3)*.25,.025,.015,material(i%3?'#4f768d':'#40d9b8'),-.13,.26+i*.13,.06);
+  for(let i=0;i<7;i++)box(lid,1.3-(i%3)*.25,.025,.015,material(i%3?'#4f768d':'#405cd9'),-.13,.26+i*.13,.06);
   return g;
 }
 
 export function createNodes(scene){
   const nodes={};
-  for(const [id,color,x,z] of [['S','#a4cbff',-4.4,0],['R','#40d9b8',0,-.7],['D','#b4a7ff',4.4,0]]){
+  for(const [id,color,x,z] of [['S','#2f4652',-4.4,0],['R','#ef652e',0,-.7],['D','#7464a3',4.4,0]]){
     const g=new THREE.Group();g.position.set(x,.2,z);const device=id==='S'?laptop():phone(color);g.add(device);scene.add(g);
-    let alternate=null;if(id==='D'){alternate=laptop();alternate.visible=false;g.add(alternate);}
+    let alternate=id==='D'?laptop():id==='R'?createRelayBox():phone(color);alternate.visible=false;g.add(alternate);
     const ring=new THREE.Mesh(new THREE.TorusGeometry(1,.018,8,64),new THREE.MeshBasicMaterial({color}));
     ring.rotation.x=Math.PI/2;ring.position.y=.02;g.add(ring);
     const light=new THREE.PointLight(color,3,3);light.position.set(0,.6,.5);g.add(light);
@@ -44,6 +45,11 @@ export function updateNodes(nodes,state,time){
   const relayX=-4.4+8.8*(state.mode==='simulation'?state.relayPosition:.5);
   const laptopSink=state.mode!=='simulation'&&state.activeRun?.config?.destination_id==='laptop';
   nodes.D.device.visible=!laptopSink;nodes.D.alternate.visible=laptopSink;
+  const androidSource=state.mode!=='simulation'&&state.activeRun?.config?.source_id&&state.activeRun.config.source_id!=='laptop';
+  nodes.S.device.visible=!androidSource;nodes.S.alternate.visible=!!androidSource;
+  const relay=state.status?.devices?.find(d=>d.id===state.activeRun?.config?.relay_id);
+  const esp=(state.mode==='simulation'||relay?.platform==='esp32'||String(state.activeRun?.config?.relay_id).startsWith('esp32-'));
+  nodes.R.device.visible=!esp;nodes.R.alternate.visible=!!esp;
   nodes.R.group.position.x=relayX;nodes.R.anchor.x=relayX;
   for(const node of Object.values(nodes)){
     node.ring.material.opacity=.55+.25*Math.sin(time*2);node.ring.material.transparent=true;

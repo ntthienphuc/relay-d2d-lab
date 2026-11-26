@@ -1,0 +1,1 @@
+<resources><style name="RelayStation" parent="@android:style/Theme.Material.Light.NoActionBar"><item name="android:colorAccent">#244DDC</item><item name="android:colorPrimary">#142344</item><item name="android:colorPrimaryDark">#142344</item><item name="android:windowLightStatusBar">false</item></style></resources>

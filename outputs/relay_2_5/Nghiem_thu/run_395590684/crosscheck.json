@@ -1,0 +1,23 @@
+{
+  "run": 395590684,
+  "android_role": "source",
+  "drop_every": 0,
+  "board": "esp32-641d44",
+  "phone": "SM-G965F",
+  "subnet": "192.168.50.2",
+  "controller": "192.168.4.109",
+  "central": {
+    "ack": 50,
+    "ack_forward": 50,
+    "forward": 50,
+    "receive": 50,
+    "relay_receive": 50,
+    "send": 50,
+    "source_done": 1
+  },
+  "phone_log": {
+    "ack": 50,
+    "send": 50,
+    "source_done": 1
+  }
+}

@@ -14,7 +14,7 @@ Assert-Exit
 $classFiles = @(Get-ChildItem (Join-Path $buildDir 'classes') -Filter '*.class' -Recurse | ForEach-Object FullName)
 & (Join-Path $buildTools 'd8.bat') --lib $androidJar --min-api 26 --output (Join-Path $buildDir 'dex') $classFiles
 Assert-Exit
-& (Join-Path $buildTools 'aapt.exe') package -f -M (Join-Path $projectRoot 'android\AndroidManifest.xml') -I $androidJar -F (Join-Path $buildDir 'unsigned.apk')
+& (Join-Path $buildTools 'aapt.exe') package -f -S (Join-Path $projectRoot 'android\res') -M (Join-Path $projectRoot 'android\AndroidManifest.xml') -I $androidJar -F (Join-Path $buildDir 'unsigned.apk')
 Assert-Exit
 Push-Location (Join-Path $buildDir 'dex')
 try { & (Join-Path $buildTools 'aapt.exe') add (Join-Path $buildDir 'unsigned.apk') classes.dex; Assert-Exit } finally { Pop-Location }

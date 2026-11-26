@@ -1,0 +1,172 @@
+{
+  "runs": [
+    {
+      "block": 1,
+      "route": "direct",
+      "id": 371040694,
+      "sent": 100,
+      "received": 94,
+      "acked": 94,
+      "forwarded": 0,
+      "pdr": 94.0,
+      "p95": 223.47983084999998,
+      "goodput": 9.6256,
+      "events_sha256": "661cceb197d4bb5e74c49a220154dec969b6288e3cf84f4c9a48515be282f53f"
+    },
+    {
+      "block": 1,
+      "route": "relay",
+      "id": 371086032,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 100,
+      "pdr": 100.0,
+      "p95": 234.42032659999998,
+      "goodput": 10.24,
+      "events_sha256": "a64936fd8b60d9fd50592c88c9bf9d7b26be4bcce66d414f354f795b3d989ef2"
+    },
+    {
+      "block": 2,
+      "route": "direct",
+      "id": 371309371,
+      "sent": 100,
+      "received": 97,
+      "acked": 97,
+      "forwarded": 0,
+      "pdr": 97.0,
+      "p95": 313.19829259999887,
+      "goodput": 9.932799999999999,
+      "events_sha256": "ac423e1a1926701fe1bd774bfb796a8f61a1f440a11dcc0b0b8079b46f267bc9"
+    },
+    {
+      "block": 2,
+      "route": "relay",
+      "id": 371348015,
+      "sent": 100,
+      "received": 99,
+      "acked": 99,
+      "forwarded": 100,
+      "pdr": 99.0,
+      "p95": 193.75361509999985,
+      "goodput": 10.1376,
+      "events_sha256": "3f950e8cc31a6cdffa08e0a1dde486ea3d965f84a71d058278ec6136dd897453"
+    },
+    {
+      "block": 3,
+      "route": "relay",
+      "id": 371372346,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 100,
+      "pdr": 100.0,
+      "p95": 197.01753275000002,
+      "goodput": 10.24,
+      "events_sha256": "4ef201e76e50655bede5648cec3c73dc16080babe1f0e543dfff5c6e72c044a1"
+    },
+    {
+      "block": 3,
+      "route": "direct",
+      "id": 371410138,
+      "sent": 100,
+      "received": 98,
+      "acked": 98,
+      "forwarded": 0,
+      "pdr": 98.0,
+      "p95": 190.1078939999999,
+      "goodput": 10.035200000000001,
+      "events_sha256": "dbff960b228ad4a7e347316151a96f5e37f68b442fb082441cee94002c69ea55"
+    },
+    {
+      "block": 4,
+      "route": "relay",
+      "id": 371445429,
+      "sent": 100,
+      "received": 100,
+      "acked": 100,
+      "forwarded": 100,
+      "pdr": 100.0,
+      "p95": 241.99063275,
+      "goodput": 10.24,
+      "events_sha256": "0dffb2b5184826f52bfb41fb7de3c7f7512b8304ab58047eb723f451e1bc133c"
+    },
+    {
+      "block": 4,
+      "route": "direct",
+      "id": 371487634,
+      "sent": 100,
+      "received": 96,
+      "acked": 96,
+      "forwarded": 0,
+      "pdr": 96.0,
+      "p95": 424.079663,
+      "goodput": 9.8304,
+      "events_sha256": "4b542b7317a658148c30f47fa00fe3b9fc745122b34d65f9213504a1e0e4ca7c"
+    },
+    {
+      "block": 5,
+      "route": "direct",
+      "id": 371510352,
+      "sent": 100,
+      "received": 95,
+      "acked": 95,
+      "forwarded": 0,
+      "pdr": 95.0,
+      "p95": 186.6697116,
+      "goodput": 9.728,
+      "events_sha256": "69241188bd6fa173de6374689896965c52650e94bb44e2aa9f1baf0399d7a3fb"
+    },
+    {
+      "block": 5,
+      "route": "relay",
+      "id": 371545590,
+      "sent": 100,
+      "received": 99,
+      "acked": 99,
+      "forwarded": 100,
+      "pdr": 99.0,
+      "p95": 242.0736538,
+      "goodput": 10.1376,
+      "events_sha256": "c9820d07cc313a38d7ff54c474bc9e1a7c838b9850b8c0993960bdd0301bc5db"
+    }
+  ],
+  "paired": {
+    "pdr": {
+      "direct_mean": 96.0,
+      "relay_mean": 99.6,
+      "relay_minus_direct": 3.6,
+      "paired_bootstrap95": [
+        2.4,
+        4.8
+      ]
+    },
+    "p95": {
+      "direct_mean": 267.50707840999974,
+      "relay_mean": 221.85115219999997,
+      "relay_minus_direct": -45.65592620999978,
+      "paired_bootstrap95": [
+        -122.0615652099998,
+        27.919702930000017
+      ]
+    }
+  },
+  "setup_interruptions": [
+    {
+      "block": 2,
+      "route": "direct",
+      "error": "Sink registration does not match planned route."
+    },
+    {
+      "block": 2,
+      "route": "direct",
+      "error": "Sink registration does not match planned route."
+    },
+    {
+      "block": 2,
+      "route": "direct",
+      "error": "Command '['adb', '-s', '<sink-usb>', 'shell', 'am', 'start', '-W', '--activity-clear-task', '--activity-new-task', '-a', 'android.intent.action.MAIN', '-c', 'android.intent.category.LAUNCHER', '-n', 'vn.relaylab/.MainActivity', '--es', 'server', '192.168.4.109', '--es', 'role', 'sink', '--ez', 'auto', 'true']' returned non-zero exit status 255."
+    }
+  ],
+  "method": "Receiver-observed PDR. Paired resampling of blocks, 10000 draws, percentile 95%. Descriptive bench pilot."
+}

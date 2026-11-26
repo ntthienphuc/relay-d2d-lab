@@ -1,0 +1,69 @@
+{
+  "pc": "2.5.1",
+  "android": "2.5.1",
+  "apk_sha256": "4601600228f3cf0e82c3f926f5e5ea26d83561b2c621c8619f476560a51c5496",
+  "esp_candidate": "2.5.0",
+  "esp_cam_bin_sha256": "4fde4166cf23b716e7c31891d59ffa4ca4c880546ce0175110bb5c55951dbacf",
+  "bench_esp": "2.1.0",
+  "live_controller": "2.1.0",
+  "new_ui_probes": [
+    {
+      "id": 382797232,
+      "route": "direct",
+      "sent": 40,
+      "received": 40,
+      "acks": 39,
+      "forwarded": 0,
+      "goodput_kbps": 10.24,
+      "p95_ms": 195.84633520000003,
+      "sha256": "bd75df109bc250ad75d2d1f254f0f723ac9ee4b7b11db8cdffc6c41cfbe370e0",
+      "relay_platform": "",
+      "invalid_relay": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 382833268,
+      "route": "relay",
+      "sent": 40,
+      "received": 40,
+      "acks": 32,
+      "forwarded": 40,
+      "goodput_kbps": 10.24,
+      "p95_ms": 875.4746610499999,
+      "sha256": "4aaf0f198996bfa08b67ed24dac3c4fac788c63bc6a80e8bc9973cd92ac67511",
+      "relay_platform": "esp32",
+      "invalid_relay": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 383656707,
+      "route": "relay",
+      "sent": 40,
+      "received": 39,
+      "acks": 39,
+      "forwarded": 40,
+      "goodput_kbps": 9.984,
+      "p95_ms": 197.7428769,
+      "sha256": "82a3a6db11bb144a10a38dafb9d9d7377a3f7e1d8c40e4ad6009b23d26913270",
+      "relay_platform": "android",
+      "invalid_relay": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 383668602,
+      "route": "relay",
+      "sent": 40,
+      "received": 31,
+      "acks": 31,
+      "forwarded": 32,
+      "goodput_kbps": 7.936,
+      "p95_ms": 227.4999805,
+      "sha256": "220b30bd9d2493037d76dff6b2be848f6c4f947520254bdbc791fc17e7c36034",
+      "relay_platform": "android",
+      "invalid_relay": 8,
+      "corrupt_every": 5
+    }
+  ],
+  "scope": "Four live UI probes (Direct, ESP, Android relay, and Android relay CRC), separate from the four measurement series.",
+  "historical_ui_probe_apk_sha256": "ec7355fd7c990ed3f2ccce887ea588e0c244db341bcc558279048c3d226a6143"
+}

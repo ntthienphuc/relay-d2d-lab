@@ -1,0 +1,73 @@
+{
+  "controller": "2.5.1",
+  "android": "2.5.1 (9)",
+  "board": "ESP32 Classic RelayBox 2.1.0",
+  "installed_dashboard_runs": [
+    {
+      "id": 396733634,
+      "android_role": "sink",
+      "sent": 40,
+      "forwarded": 40,
+      "received": 40,
+      "acks": 40,
+      "missing_ack": []
+    },
+    {
+      "id": 396766685,
+      "android_role": "sink",
+      "sent": 40,
+      "forwarded": 40,
+      "received": 40,
+      "acks": 40,
+      "missing_ack": []
+    },
+    {
+      "id": 396796728,
+      "android_role": "sink",
+      "sent": 40,
+      "forwarded": 40,
+      "received": 40,
+      "acks": 40,
+      "missing_ack": []
+    },
+    {
+      "id": 396822730,
+      "android_role": "source",
+      "sent": 40,
+      "forwarded": 40,
+      "received": 39,
+      "acks": 39,
+      "missing_ack": [
+        36
+      ]
+    }
+  ],
+  "phone_room": {
+    "run": 396250058,
+    "controller": "Samsung SM-G965F",
+    "source": "Samsung",
+    "relay": "ESP32",
+    "destination": "PC UDP receiver on RelayBox",
+    "sent": 50,
+    "received": 50,
+    "acks": 50
+  },
+  "android_exports": [
+    {
+      "run": 395590684,
+      "events": 101,
+      "bytes": 21657,
+      "sha256": "34381741bb56494e43b1675d8d7d1598af2892dff132dcbd2557eb317a94bc2b"
+    },
+    {
+      "run": 395604760,
+      "events": 91,
+      "bytes": 19700,
+      "sha256": "27c1c290313df16ec13f5aed3ca3a54c75d603c9da8f6a61eac0faac17a27ded"
+    }
+  ],
+  "report_pages": 38,
+  "ppt_slides": 21,
+  "guide_pages": 5,
+  "report_chromatic_pixels_144dpi": 0
+}

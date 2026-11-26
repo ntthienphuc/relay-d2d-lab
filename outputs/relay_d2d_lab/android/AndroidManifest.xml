@@ -1,10 +1,13 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vn.relaylab" android:versionCode="1" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="28" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vn.relaylab" android:versionCode="9" android:versionName="2.5.1">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
-  <application android:label="Relay Lab" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true">
+  <application android:label="Relay Lab" android:icon="@drawable/station_mark" android:theme="@style/RelayStation" android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true">
+    <activity android:name=".EspPortal" android:exported="false" />
     <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="portrait">
       <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
     </activity>

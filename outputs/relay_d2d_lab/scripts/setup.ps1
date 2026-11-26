@@ -2,7 +2,13 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
 Set-Location -LiteralPath $projectRoot
 if (-not (Test-Path '.venv\Scripts\python.exe')) { python -m venv .venv; if ($LASTEXITCODE) { throw 'venv failed' } }
-& '.venv\Scripts\python.exe' -m pip install -r requirements.txt
+$wheelFolder = Join-Path $projectRoot 'wheels'
+$runtimeTag = & '.venv\Scripts\python.exe' -c "import sys,struct;print(str(sys.version_info.major)+'.'+str(sys.version_info.minor)+'-'+str(8*struct.calcsize('P')))"
+if ($runtimeTag -eq '3.9-64' -and (Test-Path $wheelFolder)) {
+    & '.venv\Scripts\python.exe' -m pip install --disable-pip-version-check --no-index --find-links $wheelFolder -r requirements.txt
+} else {
+    & '.venv\Scripts\python.exe' -m pip install -r requirements.txt
+}
 if ($LASTEXITCODE) { throw 'Python dependencies failed' }
 if (-not (Test-Path 'web\vendor\three.module.js')) {
     npm.cmd ci

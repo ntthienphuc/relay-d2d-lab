@@ -15,7 +15,8 @@ def test_binary_roundtrip_corruption_and_hops():
     with pytest.raises(ValueError):p.encode()
 
 
-def test_real_loopback_udp_loss_and_ack():
+def test_real_loopback_udp_loss_and_ack(tmp_path, monkeypatch):
+    monkeypatch.setattr("lab.records.RESULTS", tmp_path)
     async def run():
         # Test uses its own ephemeral UDP endpoints, avoiding running lab server.
         from lab.network import SourceProtocol, SinkProtocol, LocalRelay

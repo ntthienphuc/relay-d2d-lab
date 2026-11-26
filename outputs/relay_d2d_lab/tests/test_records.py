@@ -2,7 +2,8 @@ import time
 from lab.records import Run
 
 
-def test_deduplicated_telemetry_and_trace_preserve_receiver_evidence():
+def test_deduplicated_telemetry_and_trace_preserve_receiver_evidence(tmp_path, monkeypatch):
+    monkeypatch.setattr("lab.records.RESULTS", tmp_path)
     config={'duration':1,'rate':1,'payload':128,'environment':'test','route':'relay'}
     run=Run(int(time.time()*1000)%0x7fffffff,config,'PYTEST record reconciliation')
     try:

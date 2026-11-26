@@ -1,0 +1,10 @@
+{
+  "id": 396796728,
+  "android_role": "sink",
+  "version": "2.5.1",
+  "server": "192.168.4.109",
+  "sent": 40,
+  "received": 40,
+  "acks": 40,
+  "errors": []
+}

@@ -1,0 +1,84 @@
+{
+  "runs": [
+    {
+      "block": 1,
+      "route": "relay",
+      "id": 380417682,
+      "sent": 60,
+      "received": 60,
+      "acked": 60,
+      "forwarded": 60,
+      "pdr": 100.0,
+      "p95": 222.31119654999998,
+      "goodput": 10.24,
+      "events_sha256": "7e145b3c6e103922e3004978617b095d886c47ac5d866c80b762e9ae3412f324"
+    },
+    {
+      "block": 1,
+      "route": "direct",
+      "id": 380724211,
+      "sent": 60,
+      "received": 60,
+      "acked": 60,
+      "forwarded": 0,
+      "pdr": 100.0,
+      "p95": 206.9647246499999,
+      "goodput": 10.24,
+      "events_sha256": "a1e2a1b13079ab56ef832322fbc988dca251e14f2ba92ab9ba3641e11924bc0f"
+    },
+    {
+      "block": 2,
+      "route": "relay",
+      "id": 380754949,
+      "sent": 60,
+      "received": 60,
+      "acked": 60,
+      "forwarded": 60,
+      "pdr": 100.0,
+      "p95": 225.49368994999998,
+      "goodput": 10.24,
+      "events_sha256": "90cdc7dc289d252a4e81f30f770f3307d490cda6bac7772ffe5d960797a65c79"
+    },
+    {
+      "block": 2,
+      "route": "direct",
+      "id": 380791924,
+      "sent": 60,
+      "received": 59,
+      "acked": 59,
+      "forwarded": 0,
+      "pdr": 98.33333333333333,
+      "p95": 218.09759579999985,
+      "goodput": 10.069333333333333,
+      "events_sha256": "16844816221dd6a78eb25421deb1a4587f8ef8d2526307dd7ef81278a98bfa57"
+    }
+  ],
+  "paired": {
+    "pdr": {
+      "direct_mean": 99.16666666666666,
+      "relay_mean": 100.0,
+      "relay_minus_direct": 0.8333333333333357,
+      "paired_bootstrap95": [
+        0.0,
+        1.6666666666666714
+      ]
+    },
+    "p95": {
+      "direct_mean": 212.5311602249999,
+      "relay_mean": 223.90244324999998,
+      "relay_minus_direct": 11.371283025000096,
+      "paired_bootstrap95": [
+        7.396094150000124,
+        15.346471900000068
+      ]
+    }
+  },
+  "setup_interruptions": [
+    {
+      "block": 1,
+      "route": "direct",
+      "error": "Command '['adb', '-s', 'b3ed5a3b', 'shell', 'uiautomator', 'dump', '/data/local/tmp/relay-wifi.xml']' returned non-zero exit status 137."
+    }
+  ],
+  "method": "Receiver-observed PDR. Paired resampling of blocks, 10000 draws, percentile 95%. Descriptive bench pilot."
+}

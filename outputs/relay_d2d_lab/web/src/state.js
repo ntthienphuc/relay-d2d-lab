@@ -2,7 +2,7 @@ export const state = {
   mode: 'simulation', running: true, protocol: 'DF', snr: 4, relayPosition: .5,
   simulation: null, status: null, activeRun: null, replay: null,
   pulses: [], packetId: 0, eventsSeen: new Set(), selectedNode: null,
-  palette: {Direct:'#8291a2',DF:'#087f6a','AF-FG':'#c87916','AF-VG':'#6c60bc'},
+  palette: {Direct:'#818580',DF:'#242522','AF-FG':'#c14f24','AF-VG':'#75639e'},
 };
 
 export function emitPulse(from,to,success=true,label='',duration=1.05){
@@ -18,8 +18,9 @@ export function consumeEvent(e){
   const route=state.activeRun?.config?.route||'relay';
   if(e.type==='send')emitPulse('S',route==='relay'?'R':'D',true,`#${e.seq}`);
   if(e.type==='forward')emitPulse('R','D',true,`#${e.seq}`);
-  if(e.type==='ack')emitPulse('D','S',true,'ACK',.8);
-  if(e.type.startsWith('drop'))emitPulse('R','R',false,`#${e.seq}`,1.2);
+  if(e.type==='ack_forward')emitPulse('D','R',true,'ACK',.45);
+  if(e.type==='ack')emitPulse(route==='relay'?'R':'D','S',true,'ACK',.55);
+  if(e.type.startsWith('drop')||e.type==='invalid')emitPulse(e.node,e.node,false,`#${e.seq}`,1.2);
 }
 
 export function selectedRow(){

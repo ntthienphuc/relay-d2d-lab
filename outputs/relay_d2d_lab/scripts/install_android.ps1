@@ -1,6 +1,6 @@
 param(
   [Parameter(Mandatory=$true)][string]$Serial,
-  [ValidateSet('relay','sink')][string]$Role = 'sink',
+  [ValidateSet('source','relay','sink')][string]$Role = 'sink',
   [string]$Server = ''
 )
 $ErrorActionPreference = 'Stop'
@@ -10,6 +10,6 @@ $apkFile = Join-Path $projectRoot 'android\build\relaylab.apk'
 & adb -s $Serial install -r $apkFile
 if ($LASTEXITCODE) { throw 'ADB install failed. Check USB debugging authorization.' }
 & adb -s $Serial shell am force-stop vn.relaylab
-& adb -s $Serial shell am start -n vn.relaylab/.MainActivity --es server $Server --es role $Role --ez auto true
+& adb -s $Serial shell am start -W -f 0x10008000 -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n vn.relaylab/.MainActivity --es server $Server --es role $Role --ez auto true
 if ($LASTEXITCODE) { throw 'Android launch failed' }
 Write-Host "Started Relay Lab as $Role. Keep the app visible and connect the phone to the lab Wi-Fi."

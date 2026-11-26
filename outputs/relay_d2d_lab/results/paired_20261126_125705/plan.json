@@ -1,0 +1,36 @@
+{
+  "parameters": {
+    "source": "6b9f8608",
+    "sink": "a7962314",
+    "relay": "esp32-641d44",
+    "upstream": "PHUC VY LAU 3",
+    "softap": "RelayBox-641d44",
+    "blocks": 2,
+    "duration": 10,
+    "rate": 10,
+    "payload": 128,
+    "placement": "Stationary bench, Android 2.2.0 acceptance",
+    "seed": 92
+  },
+  "order": [
+    [
+      1,
+      "direct"
+    ],
+    [
+      1,
+      "relay"
+    ],
+    [
+      2,
+      "direct"
+    ],
+    [
+      2,
+      "relay"
+    ]
+  ],
+  "unit": "paired block",
+  "settle_seconds": 4,
+  "route_change": "Switch sink Wi-Fi only. Source and relay stay upstream."
+}

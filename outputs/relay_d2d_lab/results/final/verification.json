@@ -1,0 +1,161 @@
+{
+  "android_version": "2.3.0",
+  "members_source": "LeafyCare_COSC63180_Final_Report_Updated_LaTeX.zip",
+  "scope": "Stationary bench pilot. No wall/floor trials, RF gain measurements, or physical energy readings.",
+  "paired": [
+    "paired_20261126_112923",
+    "paired_20261126_125705"
+  ],
+  "run_ids": [
+    371040694,
+    371086032,
+    371309371,
+    371348015,
+    371372346,
+    371410138,
+    371445429,
+    371487634,
+    371510352,
+    371545590,
+    371618511,
+    371634611,
+    376318635,
+    376356214,
+    376396412,
+    376432151,
+    376526886,
+    376666629,
+    376682693,
+    376888705,
+    376900907
+  ],
+  "alternate_payloads": [
+    {
+      "id": 376888705,
+      "payload": 512,
+      "sent": 50,
+      "received": 50,
+      "acked": 50
+    },
+    {
+      "id": 376900907,
+      "payload": 1024,
+      "sent": 50,
+      "received": 50,
+      "acked": 50
+    }
+  ],
+  "ui_acceptance": {
+    "study": "paired_20261126_133222",
+    "unit": "one paired functional check only",
+    "runs": [
+      {
+        "block": 1,
+        "route": "direct",
+        "id": 378446080,
+        "sent": 60,
+        "received": 57,
+        "acked": 57,
+        "forwarded": 0,
+        "pdr": 95.0,
+        "p95": 212.75409199999999,
+        "goodput": 9.728,
+        "events_sha256": "775d42a8b4125bf0930730de600807cd582937cb06e596bded31c27154199d29"
+      },
+      {
+        "block": 1,
+        "route": "relay",
+        "id": 378477200,
+        "sent": 60,
+        "received": 60,
+        "acked": 60,
+        "forwarded": 60,
+        "pdr": 100.0,
+        "p95": 226.31486134999994,
+        "goodput": 10.24,
+        "events_sha256": "3ba1bca99cd45c458852aaa4ecba9b2e643f903794d625931bb140d6fc1b7a8d"
+      }
+    ],
+    "models": [
+      "SM-G965F",
+      "CPH2219",
+      "ESP32-CAM"
+    ],
+    "android_checks": [
+      "invalid IPv4 blocks startup and focuses address",
+      "help dialog and return",
+      "three role descriptions",
+      "gateway and saved laptop",
+      "installed version on SM-G965F and CPH2219"
+    ],
+    "web_and_apk": {
+      "widths": [
+        390,
+        768,
+        1440
+      ],
+      "apk_sha256": "1258d61ceb584ac1c4ea47b625e6f6c9785fc897dbdef9091d815568e7da6bd7",
+      "errors": []
+    },
+    "portal": "Physical ESP successfully returned RelayBox · Thiết bị after flash",
+    "pytest_passed": 12
+  },
+  "prior_release_checks": {
+    "apk_version": "2.2.0",
+    "checks": {
+      "python_tests": 12,
+      "cross_language_wire_vectors": 22,
+      "browser": {
+        "errors": [],
+        "overflow": false,
+        "run": {
+          "id": 376526886,
+          "sent": 40,
+          "confirmed": 40
+        },
+        "webgl": true,
+        "tested_at": "2026-11-26T06:01:04.897Z"
+      },
+      "android_ui": [
+        "invalid IPv4 feedback",
+        "in-app instructions",
+        "stop and reconfigure",
+        "gateway and saved laptop"
+      ],
+      "guide_and_apk": {
+        "widths": [
+          390,
+          768,
+          1440
+        ],
+        "apk_sha256": "6aa5d450f39e2b1c01a2a4df27fff778bf4466d526a5be0e9799ee45b074f779",
+        "errors": []
+      },
+      "physical_esp_portal": true
+    }
+  },
+  "apk_sha256": "1258d61ceb584ac1c4ea47b625e6f6c9785fc897dbdef9091d815568e7da6bd7",
+  "publication": {
+    "pdf_pages": 35,
+    "grayscale_render": {
+      "72": {
+        "pages": 35,
+        "non_neutral_pixels": 0
+      },
+      "144": {
+        "pages": 35,
+        "non_neutral_pixels": 0
+      }
+    },
+    "ppt_slides": 15,
+    "notes": 15,
+    "editable_charts": 2,
+    "pptx_sha256": "b06d5724d277507b74de6dd5ff64c558c6038a4e5321227942b7043ad58e152a",
+    "powerpoint_edit_roundtrip": true,
+    "template_references": [
+      "https://www.craftscicom.org/ae_templates.html",
+      "https://carbondesignsystem.com/data-visualization/dashboards/",
+      "https://m3.material.io/components/segmented-buttons/overview"
+    ]
+  }
+}

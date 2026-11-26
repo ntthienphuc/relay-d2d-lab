@@ -1,6 +1,6 @@
 {
   "name": "relay_d2d_lab",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Local Relay D2D research lab: Three.js, native Android UDP and AF/DF Monte Carlo",
   "main": "index.js",
   "directories": {

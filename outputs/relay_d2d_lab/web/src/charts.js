@@ -8,9 +8,9 @@ export function outageChart(container,result,palette,snr){
   const floor=1/result.config.samples;
   const bottom=Math.max(-6,Math.floor(Math.log10(floor)));
   const x=v=>L+(v+10)/40*w,y=v=>T+Math.log10(Math.max(v,10**bottom))/bottom*h;
-  for(let p=0;p>=bottom;p--){const yy=y(10**p);svg.append(el('line',{x1:L,x2:W-R,y1:yy,y2:yy,stroke:'#22364b','stroke-width':1}));svg.append(el('text',{x:L-7,y:yy+3,fill:'#7892ad','font-size':9,'text-anchor':'end'},p===0?'1':`10${['⁰','⁻¹','⁻²','⁻³','⁻⁴','⁻⁵','⁻⁶'][-p]}`));}
-  for(let v=-10;v<=30;v+=10)svg.append(el('text',{x:x(v),y:H-8,fill:'#7892ad','font-size':9,'text-anchor':'middle'},`${v}`));
-  svg.append(el('text',{x:W-8,y:H-8,fill:'#7892ad','font-size':9,'text-anchor':'end'},'dB'));
+  for(let p=0;p>=bottom;p--){const yy=y(10**p);svg.append(el('line',{x1:L,x2:W-R,y1:yy,y2:yy,stroke:'#cbd3e3','stroke-width':1}));svg.append(el('text',{x:L-7,y:yy+3,fill:'#526580','font-size':9,'text-anchor':'end'},p===0?'1':`10${['⁰','⁻¹','⁻²','⁻³','⁻⁴','⁻⁵','⁻⁶'][-p]}`));}
+  for(let v=-10;v<=30;v+=10)svg.append(el('text',{x:x(v),y:H-8,fill:'#526580','font-size':9,'text-anchor':'middle'},`${v}`));
+  svg.append(el('text',{x:W-8,y:H-8,fill:'#526580','font-size':9,'text-anchor':'end'},'dB'));
   svg.append(el('line',{x1:x(snr),x2:x(snr),y1:T,y2:T+h,stroke:'#5e809b','stroke-dasharray':'3 4'}));
   for(const[mode,color]of Object.entries(palette)){
     const rows=result.rows;
@@ -34,7 +34,7 @@ export function packetChart(container,events,sent){
     svg.append(el('line',{x1:65,x2:590,y1:yy,y2:yy,stroke:'#203348'}));
   }
   for(const e of events){if(!(e.type in rows)||e.seq<first||e.seq>last)continue;
-    svg.append(el('rect',{x:68+(e.seq-first)/50*520,y:13+rows[e.type]*28,width:6,height:11,rx:2,fill:e.type==='ack'?'#e5c569':e.type==='receive'?'#a89dfb':'#40d9b8'}));}
-  svg.append(el('text',{x:68,y:166,fill:'#7892ad','font-size':9},`Sequence ${first} → ${last} · mỗi dấu là sự kiện ghi nhận, không phải thời gian bay`));
+    svg.append(el('rect',{x:68+(e.seq-first)/50*520,y:13+rows[e.type]*28,width:6,height:11,rx:2,fill:e.type==='ack'?'#e5c569':e.type==='receive'?'#a89dfb':'#405cd9'}));}
+  svg.append(el('text',{x:68,y:166,fill:'#526580','font-size':9},`Sequence ${first} → ${last} · mỗi dấu là sự kiện ghi nhận, không phải thời gian bay`));
   container.replaceChildren(svg);
 }

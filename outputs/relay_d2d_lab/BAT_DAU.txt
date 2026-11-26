@@ -1,0 +1,7 @@
+RELAY LAB 2.5 · Windows
+Giải nén toàn bộ vào một thư mục mới. Dùng Python 3.9 64-bit để cài ngoại tuyến bằng bộ thư viện đi kèm.
+1. Đo trên phần cứng: mở START_READY.cmd. Trên laptop mở http://127.0.0.1:8765. Nếu một máy chủ Relay Lab cũ đang giữ cổng này, kết thúc phiên đang chạy rồi đóng đúng cửa sổ máy chủ cũ trước khi mở bản 2.5.
+2. Tập trên laptop: mở TAP_TREN_LAPTOP.cmd rồi tới http://127.0.0.1:8877. Dùng Nhật ký hoặc vào Đo trên thiết bị và chọn Tập chạy trên laptop.
+3. Xem Huong_dan_Relay_Lab_2_5_va_demo.pdf. Samsung chọn Nguồn, OPPO chọn Đích. Dùng Android 2.5 trong android/build/relaylab.apk. Board hiện trường dùng firmware 2.1; không cần nạp để chạy. Firmware 2.5 cấp khóa riêng qua USB Serial lần đầu.
+4. Nhật ký mở danh sách lượt mới. Phiên minh chứng có sẵn ở danh sách riêng; nhập 376666629 để tra gói 0 và 4.
+5. Từ gốc demo, chạy .venv\Scripts\activate rồi python -m pytest tests -q và python scripts/reproduce_final.py. Xem results/final/release25.json để tra hash; verification.json ghi hiện trạng bản 2.3.

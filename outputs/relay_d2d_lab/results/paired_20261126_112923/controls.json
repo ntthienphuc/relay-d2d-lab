@@ -1,0 +1,23 @@
+{
+  "runs": [
+    {
+      "kind": "crc",
+      "id": 371618511,
+      "sent": 100,
+      "invalid_or_paused": 20,
+      "forward": 80,
+      "received": 79,
+      "acked": 79
+    },
+    {
+      "kind": "pause",
+      "id": 371634611,
+      "sent": 140,
+      "invalid_or_paused": 15,
+      "forward": 125,
+      "received": 125,
+      "acked": 125
+    }
+  ],
+  "errors": []
+}
