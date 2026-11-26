@@ -289,130 +289,130 @@
     },
     "powerpoint_show": [
       {
+        "slide": 1,
         "visited": true,
         "notes_length": 328,
-        "charts": 0,
-        "slide": 1
+        "charts": 0
       },
       {
+        "slide": 2,
         "visited": true,
         "notes_length": 411,
-        "charts": 0,
-        "slide": 2
+        "charts": 0
       },
       {
+        "slide": 3,
         "visited": true,
         "notes_length": 443,
-        "charts": 0,
-        "slide": 3
+        "charts": 0
       },
       {
+        "slide": 4,
         "visited": true,
         "notes_length": 456,
-        "charts": 0,
-        "slide": 4
+        "charts": 0
       },
       {
+        "slide": 5,
         "visited": true,
         "notes_length": 362,
-        "charts": 0,
-        "slide": 5
+        "charts": 0
       },
       {
+        "slide": 6,
         "visited": true,
         "notes_length": 429,
-        "charts": 0,
-        "slide": 6
+        "charts": 0
       },
       {
+        "slide": 7,
         "visited": true,
         "notes_length": 475,
-        "charts": 0,
-        "slide": 7
+        "charts": 0
       },
       {
+        "slide": 8,
         "visited": true,
         "notes_length": 560,
-        "charts": 0,
-        "slide": 8
+        "charts": 0
       },
       {
+        "slide": 9,
         "visited": true,
         "notes_length": 683,
-        "charts": 0,
-        "slide": 9
+        "charts": 0
       },
       {
+        "slide": 10,
         "visited": true,
         "notes_length": 278,
-        "charts": 1,
-        "slide": 10
+        "charts": 1
       },
       {
+        "slide": 11,
         "visited": true,
         "notes_length": 364,
-        "charts": 0,
-        "slide": 11
+        "charts": 0
       },
       {
+        "slide": 12,
         "visited": true,
         "notes_length": 643,
-        "charts": 0,
-        "slide": 12
+        "charts": 0
       },
       {
+        "slide": 13,
         "visited": true,
         "notes_length": 438,
-        "charts": 0,
-        "slide": 13
+        "charts": 0
       },
       {
+        "slide": 14,
         "visited": true,
-        "notes_length": 368,
-        "charts": 0,
-        "slide": 14
+        "notes_length": 376,
+        "charts": 0
       },
       {
+        "slide": 15,
         "visited": true,
         "notes_length": 315,
-        "charts": 0,
-        "slide": 15
+        "charts": 0
       },
       {
+        "slide": 16,
         "visited": true,
         "notes_length": 336,
-        "charts": 1,
-        "slide": 16
+        "charts": 1
       },
       {
+        "slide": 17,
         "visited": true,
         "notes_length": 452,
-        "charts": 0,
-        "slide": 17
+        "charts": 0
       },
       {
+        "slide": 18,
         "visited": true,
         "notes_length": 316,
-        "charts": 0,
-        "slide": 18
+        "charts": 0
       },
       {
+        "slide": 19,
         "visited": true,
         "notes_length": 340,
-        "charts": 0,
-        "slide": 19
+        "charts": 0
       },
       {
+        "slide": 20,
         "visited": true,
         "notes_length": 346,
-        "charts": 0,
-        "slide": 20
+        "charts": 0
       },
       {
+        "slide": 21,
         "visited": true,
         "notes_length": 592,
-        "charts": 0,
-        "slide": 21
+        "charts": 0
       }
     ],
     "report_pages": 38,
@@ -506,7 +506,7 @@
   "deliverable_sha256": {
     "Bao_cao_Overleaf.zip": "496be8d4923885f530430fe038a9280573239f2be566d0f93e64bd8d8e0edcc3",
     "Bao_cao_Relay_D2D.pdf": "22e2e0882f90da9a1f3a6ec5b612258d2501f8853db7fd6627d558abba24a632",
-    "BAT_DAU.html": "b6b2f7683fc24a125dc5f11e23559730cb81479911bfbb39da5eff045b85e62c",
+    "BAT_DAU.html": "b555b58c0c657fcd699d0a3d0d5bf1eae971267ad213abbcb4888647601d25ad",
     "Cai_dat_Relay_Lab_2_5_Windows_x64.exe": "5e0aa19754a54daf65f7ce60d06b8f814bc2863bf426a970c6c39436f3e7e269",
     "Dashboard_2_5.png": "3d94f9a475614f6498e196003e79a7f9505c3453e1ab556050bc571f0e194867",
     "Dashboard_Android_relay.png": "1e80ebac8c889ef4df598dc51b1f933ee192405a41fce3f9287100bdde315764",
@@ -859,7 +859,9 @@
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/config.json": "125fd8ffa6676858cdbaace85ce5e9347af3530b1e86391f92a6d2f084bc8ee4",
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/events.jsonl": "fa5cd962d5013114aa1eb819c61ef4031ec47775209123086fd071fe5ecee996",
     "Nghiem_thu/kiem_tra_ban_cai/run_396822730/summary.json": "e617ae6dacd40d0acfacbb655d2b244779ebe263c7b4b0ea3328fb09cc25e10a",
+    "Nghiem_thu/kiem_tra_ban_cai/Samsung_cau_hinh.png": "45893d88c1674e69bfa6f7f1ece36e132ce78aa06c6400fc81ad2ac44e6140c0",
     "Nghiem_thu/kiem_tra_ban_cai/Samsung_chon_phien.png": "8fd48a96db1b634fd718213a965cae3922b731b5904ad3eaafe796f61852442f",
+    "Nghiem_thu/kiem_tra_ban_cai/Samsung_mo_phong.png": "3ad1ba2d0de7bee7467254511e34c815a81588388bbec316d06c670cf8e0baa7",
     "Nghiem_thu/kiem_tra_ban_cai/Samsung_nguon.png": "a1fbeb44e9238ef64aa62fafee8e9eab9aec2966c9d225e0fc7dc48d2fcb47b0",
     "Nghiem_thu/kiem_tra_ban_cai/sink.json": "ca66d07c123deb6bb7987fdac83d7f49dac0942d118643de91abcd425858dc72",
     "Nghiem_thu/kiem_tra_ban_cai/source.json": "a1752d35745aab4f43f392db9a4149df9c640f92b3ffa538f7ed2b18ed7dba2b",
@@ -913,10 +915,10 @@
     "Nghiem_thu/run_395604760/events.jsonl": "cdb453f6a49469443e0be598d6e5c98f507f2c2ab3eb6d12cb1622c763b4ed30",
     "Nghiem_thu/run_395604760/summary.json": "67eb39b7f2eb153c301097b514f4bb43e3fa6d4d2d02f1abf48feff7fb780186",
     "OPPO_relay.png": "9fb87ea5f9820a0dd7213334e3d207da2f26593084c208b18b6603fc0c2d9752",
-    "Phan_bien_va_nghiem_thu.html": "269cb9d3a3fa1ac5ddff93d51b0fcca98566421a92fde3ebed08e0e2ff3c19db",
+    "Phan_bien_va_nghiem_thu.html": "b27bc7618616748357ee700c46423cde22f771fa006ae209685c2c4cef644999",
     "Portal_ESP32_2_5_xem_truoc.png": "353717b83ab9abc70def01a2cc6cee8e32a30bee7e0d77c2b7f2e51745906613",
-    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "7a59a6199ec9a851b7d23e6a3c290aad44a54eda8f68c26dd512e506b7e64660",
-    "Slide_xem_nhanh.pdf": "e5fd7557b002d6479e6cace247cd7b97dbd8a1a8624bddb912bb906a8363aec1",
+    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "0c669a13b4d265606443251f2568c74c1967e74cbafc572331183177b22c65e7",
+    "Slide_xem_nhanh.pdf": "ef12c9e2455dc191818f434876484724699ffa3ea24edee1e9ace77e921db39b",
     "So_lieu_20_phien_ghep_cap.csv": "6393506165d24bb528a33496740a1ceff2973a967e672a0bfaaee15115595ff0"
   },
   "phone_room_acceptance": {
