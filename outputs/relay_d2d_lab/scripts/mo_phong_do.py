@@ -26,13 +26,13 @@ def main():
     def open_dashboard():
         for _ in range(80):
             result = status()
-            if result and result.get("version") == "2.5.1" and bool(result.get("practice")) == args.practice:
+            if result and result.get("version") == "2.6.0" and bool(result.get("practice")) == args.practice:
                 webbrowser.open(url)
                 return
             time.sleep(0.25)
     existing = status()
     if existing is not None:
-        if existing.get("version") != "2.5.1" or bool(existing.get("practice")) != args.practice:
+        if existing.get("version") != "2.6.0" or bool(existing.get("practice")) != args.practice:
             raise SystemExit(f"Close the previous server on port {port} and start Relay Lab again.")
         if not args.no_browser:
             webbrowser.open(url)

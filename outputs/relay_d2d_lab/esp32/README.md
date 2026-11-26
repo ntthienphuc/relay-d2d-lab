@@ -1,3 +1,13 @@
+# RelayBox ESP32 · firmware 2.6
+
+Board ESP32-CAM đã chạy IPv4 NAPT trên SoftAP. C lấy IP, gateway và DNS qua DHCP. Khi STA có địa chỉ, ESP cho phép chuyển tiếp IP sang router. Khi mạng gốc mất, ESP ngừng chia sẻ và tiếp tục thử kết nối. Nếu mạng router cũng dùng dải 192.168.50.0/24, đổi dải trên router trước khi thử. Trang 192.168.50.1 hiển thị trạng thái định tuyến. Kiểm tra HTTPS trên C để xác nhận đường ra Internet.
+
+Trên máy mới, đặt khóa riêng cho RelayBox qua cổng nối tiếp theo lời nhắc. Khi chỉ cần duyệt web, để trống IP máy mở phòng trong trang cấu hình. DATA/ACK của phép đo vẫn dùng UDP cổng 39010. Các bộ đếm DATA/ACK chỉ dành cho gói RLY1.
+
+Trong trang RelayBox, mở **So sánh Direct, DF và AF trên ESP** để chạy mô hình cố định trên vi xử lý. Direct, DF, AF-FG và AF-VG dùng cùng 32.768 mẫu ở từng SNR. Firmware sinh mẫu theo từng nhóm nhỏ trong tác vụ quản lý. USB và laptop có thể ngắt sau khi cấp nguồn ngoài. Số đếm thô nằm ở `/compare`. Dữ liệu Wi-Fi thật chạy ở `relay_core.h`: kiểm CRC, xử lý DATA, tra ACK và cập nhật số chặng.
+
+## Mốc thử nghiệm trước 2.6
+
 # RelayBox ESP32 Classic — firmware 2.1
 
 Bản CAM 2.1 đã nạp qua đế COM17. Trong phép đo hai Android, ESP32 kết nối điểm phát ở vai trò STA và cấp SoftAP cho OPPO. [Hướng dẫn chạy và đổi Wi-Fi](../docs/READY.html) · [Phép đo thực tế](../results/paired_20261126_112923/REPORT.html). Biên bản kiểm tra SoftAP dưới đây thuộc lần nạp trước.

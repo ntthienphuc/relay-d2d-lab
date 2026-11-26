@@ -1,0 +1,41 @@
+{
+  "model": "HD Rayleigh",
+  "samples": 32768,
+  "seed": 20261126,
+  "rate": 0.5,
+  "x": 0.5,
+  "alpha": 2.2,
+  "done": 32768,
+  "rows": [
+    {
+      "snr_db": 0,
+      "df_closed": 0.352913,
+      "failures": {
+        "Direct": 11143,
+        "DF": 11733,
+        "AF-FG": 17523,
+        "AF-VG": 16610
+      }
+    },
+    {
+      "snr_db": 8,
+      "df_closed": 0.066661,
+      "failures": {
+        "Direct": 2122,
+        "DF": 2227,
+        "AF-FG": 4917,
+        "AF-VG": 2649
+      }
+    },
+    {
+      "snr_db": 16,
+      "df_closed": 0.010874,
+      "failures": {
+        "Direct": 368,
+        "DF": 367,
+        "AF-FG": 1103,
+        "AF-VG": 396
+      }
+    }
+  ]
+}

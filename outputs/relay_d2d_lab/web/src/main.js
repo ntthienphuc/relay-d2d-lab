@@ -42,4 +42,4 @@ function draw(now){
 requestAnimationFrame(draw);
 setupUI(camera);
 setupLogs();
-window.relayLab={version:'2.5.0',state,renderer,scene};
+window.relayLab={version:'2.6.0',state,renderer,scene};

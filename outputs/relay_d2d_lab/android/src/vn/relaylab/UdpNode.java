@@ -87,7 +87,7 @@ public final class UdpNode {
     }
     private JSONObject identity()throws Exception{
         JSONObject d=new JSONObject();d.put("id",id);d.put("model",Build.MODEL);d.put("role",role);
-        d.put("local_ip",localIp);d.put("listen_port",port);d.put("running",running);d.put("version","2.5.1");
+        d.put("local_ip",localIp);d.put("listen_port",port);d.put("running",running);d.put("version","2.6.0");
         d.put("platform","android");d.put("session",session);d.put("control_version",controlVersion);d.put("bridge_id","");
         d.put("pending_events",telemetry.pending());d.put("queue_lost",telemetry.lost());d.put("paused",paused);
         JSONObject info=wifi.describe();for(Iterator<String> it=info.keys();it.hasNext();){String key=it.next();d.put(key,info.get(key));}

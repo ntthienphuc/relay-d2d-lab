@@ -1,4 +1,5 @@
 #include "state.h"
+#include "compare.h"
 #include <WebServer.h>
 #include <Preferences.h>
 
@@ -10,10 +11,14 @@ static bool apClient(IPAddress ip){return ip[0]==192&&ip[1]==168&&ip[2]==50&&ip[
 void portalBegin(){
     portal.on("/",HTTP_GET,[]{portal.send_P(200,"text/html; charset=utf-8",PAGE);});
     portal.on("/status",HTTP_GET,[]{JsonDocument d;identity(d);{Guard g;d["received"]=lab.received;d["forwarded"]=lab.forwarded;d["acks"]=lab.acks;d["invalid"]=lab.invalid;d["send_errors"]=lab.sendErrors;}d["heap_free"]=ESP.getFreeHeap();String s;serializeJson(d,s);portal.send(200,"application/json",s);});
+    portal.on("/compare",HTTP_GET,[]{
+        JsonDocument result; comparisonStatus(result); String body; serializeJson(result,body);
+        portal.sendHeader("Cache-Control","no-store"); portal.send(200,"application/json",body);
+    });
     portal.on("/save",HTTP_POST,[]{
         if(!apClient(portal.client().remoteIP())){portal.send(403,"text/plain","Connect to RelayBox Wi-Fi to configure");return;}
         String ssid=portal.arg("ssid"),pass=portal.arg("password"),server=portal.arg("server");IPAddress ip;
-        if(ssid.isEmpty()||ssid.length()>32||pass.length()>64||!ip.fromString(server)||ip==IPAddress(0,0,0,0)||ip==IPAddress(192,168,50,1)){
+        if(ssid.isEmpty()||ssid.length()>32||pass.length()>64||(server.length()&&(!ip.fromString(server)||ip==IPAddress(0,0,0,0)||ip==IPAddress(192,168,50,1)))){
             portal.send(400,"text/plain","Invalid SSID or laptop IPv4");return;
         }
         Preferences p;p.begin("relaylab",false);p.putString("ssid",ssid);p.putString("pass",pass);p.putString("server",server);p.end();
@@ -32,4 +37,4 @@ void portalBegin(){
     });
     proxy.onNotFound([]{proxy.send(404,"application/json","{\"error\":\"RelayBox management gateway only\"}");});proxy.begin();
 }
-void portalTick(){portal.handleClient();proxy.handleClient();if(rebootAt&&int32_t(millis()-rebootAt)>=0)ESP.restart();}
+void portalTick(){comparisonTick();portal.handleClient();proxy.handleClient();if(rebootAt&&int32_t(millis()-rebootAt)>=0)ESP.restart();}

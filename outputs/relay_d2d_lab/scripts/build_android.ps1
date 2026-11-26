@@ -7,6 +7,9 @@ $buildTools = Join-Path $sdkRoot 'build-tools\35.0.0'
 $androidJar = Join-Path $sdkRoot 'platforms\android-35\android.jar'
 $buildDir = Join-Path $projectRoot 'android\build'
 New-Item -ItemType Directory -Force -Path $buildDir,(Join-Path $buildDir 'classes'),(Join-Path $buildDir 'dex') | Out-Null
+# Discard stale compiler output from Java sources removed between releases.
+Get-ChildItem -LiteralPath (Join-Path $buildDir 'classes'),(Join-Path $buildDir 'dex') -Recurse -File |
+    Where-Object { $_.Extension -in '.class','.dex' } | Remove-Item -Force
 function Assert-Exit { if ($LASTEXITCODE -ne 0) { throw "Build command failed: $LASTEXITCODE" } }
 $sources = @(Get-ChildItem (Join-Path $projectRoot 'android\src') -Filter '*.java' -Recurse | ForEach-Object FullName)
 & (Join-Path $jdkRoot 'bin\javac.exe') -encoding UTF-8 -source 8 -target 8 -classpath $androidJar -d (Join-Path $buildDir 'classes') $sources

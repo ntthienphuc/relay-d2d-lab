@@ -51,6 +51,8 @@ public class MainActivity extends Activity {
         bar.addView(mark,new LinearLayout.LayoutParams(ui.dp(34),ui.dp(34)));
         TextView brand=ui.label("Relay Lab",21,INK,true);
         brand.setLetterSpacing(-.045f);ui.flex(bar,brand,10);
+        Button internet=ui.button("ESP Wi-Fi",false);ui.paint(internet,PAGE,EDGE,INK);bar.addView(internet);
+        internet.setOnClickListener(v->startActivity(new Intent(this,InternetActivity.class)));
         Button help=ui.button("Hướng dẫn",false);ui.paint(help,PAGE,EDGE,INK);bar.addView(help);
         help.setOnClickListener(v->help());
         ScrollView scroll=new ScrollView(this);root.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));

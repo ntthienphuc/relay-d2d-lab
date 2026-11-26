@@ -8,6 +8,6 @@ if not exist ".venv\Scripts\python.exe" (
     exit /b 1
   )
 )
-start "Relay Lab Guide" "%~dp0Huong_dan_Relay_Lab_2_5_va_demo.pdf"
+start "Relay Lab Guide" "%~dp0Huong_dan_va_kich_ban_demo.pdf"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\start_lab.ps1"
 pause

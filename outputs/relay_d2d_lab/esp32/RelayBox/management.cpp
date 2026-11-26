@@ -25,7 +25,7 @@ void managementTask(void*){
     portalBegin();String pending;uint32_t heartbeat=0,flush=0;uint64_t eventNo=0;
     for(;;){
         portalTick();
-        if(WiFi.status()==WL_CONNECTED){
+        if(WiFi.status()==WL_CONNECTED && lab.server.length()){
             int code;
             if(uint32_t(millis()-heartbeat)>700){
                 heartbeat=millis();JsonDocument d;identity(d);String body;serializeJson(d,body);

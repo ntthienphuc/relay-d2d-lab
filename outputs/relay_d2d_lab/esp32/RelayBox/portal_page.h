@@ -37,14 +37,20 @@ pre{max-height:240px;overflow:auto;font-size:12px;padding:10px;border-radius:8px
 <section class="status"><h1>Kết nối Wi-Fi gốc</h1><p id="link" role="status">Đang đọc trạng thái…</p></section>
 <section class="readings"><h2>Gói qua trạm</h2><dl id="counts"></dl></section>
 <details>
-  <summary>Đổi mạng hoặc IP laptop</summary>
-  <p>Nối thiết bị này vào Wi-Fi RelayBox để lưu cấu hình. OPPO dùng gateway 192.168.50.1 khi đo qua trạm.</p>
+  <summary>Chọn router và máy mở phòng</summary>
+  <p>Nối thiết bị này vào Wi-Fi RelayBox để lưu cấu hình. C tiếp tục dùng Wi-Fi RelayBox sau khi ESP kết nối router.</p>
   <form action="/save" method="post">
     <label for="ssid">Tên Wi-Fi gốc (2,4 GHz)</label><input id="ssid" name="ssid" maxlength="32" required>
     <label for="pass">Mật khẩu Wi-Fi gốc</label><input id="pass" name="password" type="password" maxlength="64" autocomplete="new-password">
-    <label for="server">IPv4 của laptop</label><input id="server" name="server" inputmode="decimal" required>
+    <label for="server">IP máy mở phòng (bỏ trống nếu chỉ dùng Internet)</label><input id="server" name="server" inputmode="decimal">
     <button>Lưu và kết nối lại</button>
   </form>
+</details>
+<details id="lesson"><summary>So sánh Direct, DF và AF trên ESP</summary>
+  <p>ESP tự mô phỏng kênh Rayleigh. Mỗi phương án nhận cùng 32.768 mẫu. Chọn SNR để xem tỷ lệ khung không đạt 0,5 bit/s/Hz.</p>
+  <label for="snr">SNR tham chiếu</label><select id="snr" style="padding:7px;font:inherit"><option>0 dB</option><option selected>8 dB</option><option>16 dB</option></select>
+  <p id="modelstate" role="status"></p><table style="width:100%;text-align:left;font-size:14px"><thead><tr><th>Cơ chế</th><th>Khung lỗi</th><th>Outage</th></tr></thead><tbody id="modelrows"></tbody></table>
+  <p>DF giải mã ở B. AF-FG và AF-VG khuếch đại mẫu tín hiệu theo gain cố định hoặc biến đổi trong mô hình. Số DATA/ACK ở trên lấy từ UDP thật.</p>
 </details>
 <details><summary>Thông số kỹ thuật</summary><pre id="status"></pre></details>
 </main>
@@ -64,6 +70,33 @@ const values = fields.map(([name]) => {
   counts.append(cell);
   return value;
 });
+const lesson=document.querySelector('#lesson'),snr=document.querySelector('#snr');
+const modelstate=document.querySelector('#modelstate'),modelrows=document.querySelector('#modelrows');
+let model=null,loading=false;
+function renderModel(){
+  if(!model)return;
+  const row=model.rows[snr.selectedIndex];
+  const percent=x=>(100*x).toFixed(2).replace('.',',')+'%';
+  modelstate.textContent='DF dạng đóng: '+percent(row.df_closed)+' · Vị trí B ở giữa hai đầu.';
+  modelrows.replaceChildren();
+  Object.entries(row.failures).forEach(([name,n])=>{
+    const tr=modelrows.insertRow();
+    [name,n,percent(n/model.samples)].forEach(value=>tr.insertCell().textContent=value);
+  });
+}
+async function loadModel(){
+  if(loading||model||!lesson.open)return;
+  loading=true;
+  try{
+    const response=await fetch('/compare',{cache:'no-store'});
+    if(!response.ok)throw Error();
+    const data=await response.json();
+    if(data.rows){model=data;renderModel();}
+    else {modelstate.textContent='ESP đang tính: '+data.done+' / '+data.samples+' mẫu…';setTimeout(loadModel,550);}
+  }catch(e){modelstate.textContent='Chưa đọc được kết quả. Đóng rồi mở lại mục này.';}
+  finally{loading=false;}
+}
+lesson.addEventListener('toggle',loadModel);snr.addEventListener('change',renderModel);
 async function poll() {
   try {
     const response = await fetch('/status', {cache:'no-store'});
@@ -71,7 +104,7 @@ async function poll() {
     const data = await response.json();
     link.classList.toggle('online',Boolean(data.wifi_connected));
     link.textContent = data.wifi_connected
-      ? 'Đã kết nối · ' + data.local_ip + ' · ' + data.rssi_dbm + ' dBm'
+      ? (data.ipv4_forwarding ? 'Đang chia sẻ Internet qua IPv4' : data.internet_mode === 'subnet_overlap' ? 'Trùng dải mạng. Đổi dải IP của router.' : 'Đang chuẩn bị định tuyến') + ' · ' + data.local_ip
       : 'Đang dò mạng đã lưu';
     fields.forEach(([,key],index) => { values[index].textContent = data[key] ?? '—'; });
     status.textContent = JSON.stringify(data,null,2);

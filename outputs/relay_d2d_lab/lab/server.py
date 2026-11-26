@@ -75,7 +75,7 @@ async def status():
         'udp_source_port':engine.source.transport.get_extra_info('sockname')[1],
         'udp_sink_port':engine.local_sink[1],
         'devices':devices,'run':engine.current.snapshot() if engine.current else None,
-        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.5.1','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
+        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.6.0','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
 
 
 @app.post('/api/network')
@@ -161,7 +161,7 @@ async def events(data:dict):
 @app.get('/api/preflight')
 async def preflight():
     devices=[dict(d,online=time.time()-d.get('last_seen',0)<8) for d in engine.devices.values()]
-    return {'version':'2.5.1','server_ip':lan_ip(),'devices':devices,
+    return {'version':'2.6.0','server_ip':lan_ip(),'devices':devices,
             'checks':{'android_apk':(ROOT/'android/build/relaylab.apk').exists(),
                       'esp32_firmware':(ROOT/'esp32/build/cam/RelayBox.ino.bin').exists(),
                       'local_udp':len(engine.transports)==3},
@@ -172,7 +172,7 @@ async def preflight():
 
 @app.get('/docs/THAO_TAC.html')
 @app.get('/guide')
-async def guide(): return FileResponse(ROOT/'Huong_dan_Relay_Lab_2_5_va_demo.pdf', media_type='application/pdf')
+async def guide(): return FileResponse(ROOT/'Huong_dan_va_kich_ban_demo.pdf', media_type='application/pdf')
 
 
 @app.get('/research')

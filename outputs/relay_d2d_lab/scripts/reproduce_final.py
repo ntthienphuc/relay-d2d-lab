@@ -88,9 +88,10 @@ def check_hardware():
         assert np.isclose(goodput, case["goodput_kbps"], rtol=0, atol=1e-9)
     print("Relay Lab 2.5: four live UI probes match the raw events.")
     apk = LAB / "android/build/relaylab.apk"
-    assert hashlib.sha256(apk.read_bytes()).hexdigest() == delivery["apk_sha256"]
+    internet_release = load(LAB / "results/final/release26.json")
+    assert hashlib.sha256(apk.read_bytes()).hexdigest() == internet_release["apk_sha256"]
     firmware = LAB / "esp32/build/cam/RelayBox.ino.bin"
-    assert hashlib.sha256(firmware.read_bytes()).hexdigest() == delivery["esp_cam_bin_sha256"]
+    assert hashlib.sha256(firmware.read_bytes()).hexdigest() == internet_release["esp_cam_bin_sha256"]
     for case in manifest["alternate_payloads"]:
         s = load(LAB / "results" / ("run_" + str(case["id"])) / "summary.json")
         assert (case["sent"],case["received"],case["acked"]) == (s["sent"],s["received_observed"],s["acked"])
@@ -101,3 +102,7 @@ if __name__ == "__main__":
     from check_phone_room import check
     check()
 
+    from check_esp26 import check as check_esp
+    check_esp(LAB)
+    from check_board_model import check as check_model
+    check_model(LAB / 'results/internet_26/board-model.json')

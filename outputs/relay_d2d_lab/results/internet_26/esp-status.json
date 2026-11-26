@@ -1,0 +1,10 @@
+{
+  "id": "esp32-641d44",
+  "version": "2.6.0",
+  "local_ip": "192.168.4.122",
+  "ap_ip": "192.168.50.1",
+  "internet_mode": "routing_ipv4",
+  "dhcp_dns": "192.168.4.1",
+  "ipv4_forwarding": true,
+  "ap_clients": 1
+}

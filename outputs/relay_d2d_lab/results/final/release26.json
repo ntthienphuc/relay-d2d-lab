@@ -1,0 +1,131 @@
+{
+  "pc": "2.6.0",
+  "android": "2.6.0",
+  "board": "2.6.0",
+  "android_api": 29,
+  "esp_id": "esp32-641d44",
+  "esp_cam_bin_sha256": "a89af6c0017e1d6ca5a5441d7ea5c6c16a071ab38e7277a9c0383870a7e51a6a",
+  "apk_sha256": "a8c288bc1d2631e3a73cd1fc1dfdcebc248934895e87e536f837a5b0c2b7f4c8",
+  "phone_cellular_enabled": false,
+  "https_trials": 3,
+  "rly1_regression": [
+    {
+      "id": 405451643,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40
+    },
+    {
+      "id": 405462659,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40
+    }
+  ],
+  "esp_library": "Arduino-ESP32 3.3.0",
+  "scope": "bench",
+  "android_as_relay": "RLY1 DATA/ACK",
+  "internet_relay": "ESP32 IPv4 NAPT",
+  "final_android_probe": {
+    "time_ms": 1795703837540,
+    "wifi_ip": "192.168.50.2",
+    "gateway": "192.168.50.1",
+    "relay": "esp32-641d44",
+    "firmware": "2.6.0",
+    "endpoint": "https://www.google.com/generate_204",
+    "http_status": 204,
+    "ok": true
+  },
+  "final_pc_probe": {
+    "time": "2026-11-26T14:37:43.703490+00:00",
+    "interface": "Wi-Fi",
+    "client": "192.168.50.3",
+    "gateway": "192.168.50.1",
+    "dns": "192.168.4.1",
+    "host": "www.google.com",
+    "http": 204,
+    "tls": "TLSv1.3"
+  },
+  "final_board_runs": [
+    {
+      "id": 407438734,
+      "phone": "sink",
+      "corrupt_every": 0,
+      "sent": 40,
+      "forwarded": 40,
+      "received": 40,
+      "acked": 40,
+      "invalid": []
+    },
+    {
+      "id": 407449784,
+      "phone": "source",
+      "corrupt_every": 0,
+      "sent": 40,
+      "forwarded": 40,
+      "received": 40,
+      "acked": 40,
+      "invalid": []
+    },
+    {
+      "id": 407463710,
+      "phone": "sink",
+      "corrupt_every": 5,
+      "sent": 40,
+      "forwarded": 32,
+      "received": 32,
+      "acked": 32,
+      "invalid": [
+        4,
+        9,
+        14,
+        19,
+        24,
+        29,
+        34,
+        39
+      ]
+    }
+  ],
+  "onboard_comparison": {
+    "model": "HD Rayleigh",
+    "samples": 32768,
+    "seed": 20261126,
+    "rate": 0.5,
+    "x": 0.5,
+    "alpha": 2.2,
+    "done": 32768,
+    "rows": [
+      {
+        "snr_db": 0,
+        "df_closed": 0.352913,
+        "failures": {
+          "Direct": 11143,
+          "DF": 11733,
+          "AF-FG": 17523,
+          "AF-VG": 16610
+        }
+      },
+      {
+        "snr_db": 8,
+        "df_closed": 0.066661,
+        "failures": {
+          "Direct": 2122,
+          "DF": 2227,
+          "AF-FG": 4917,
+          "AF-VG": 2649
+        }
+      },
+      {
+        "snr_db": 16,
+        "df_closed": 0.010874,
+        "failures": {
+          "Direct": 368,
+          "DF": 367,
+          "AF-FG": 1103,
+          "AF-VG": 396
+        }
+      }
+    ]
+  }
+}

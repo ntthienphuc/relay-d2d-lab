@@ -1,0 +1,41 @@
+[
+  {
+    "id": 407438734,
+    "phone": "sink",
+    "corrupt_every": 0,
+    "sent": 40,
+    "forwarded": 40,
+    "received": 40,
+    "acked": 40,
+    "invalid": []
+  },
+  {
+    "id": 407449784,
+    "phone": "source",
+    "corrupt_every": 0,
+    "sent": 40,
+    "forwarded": 40,
+    "received": 40,
+    "acked": 40,
+    "invalid": []
+  },
+  {
+    "id": 407463710,
+    "phone": "sink",
+    "corrupt_every": 5,
+    "sent": 40,
+    "forwarded": 32,
+    "received": 32,
+    "acked": 32,
+    "invalid": [
+      4,
+      9,
+      14,
+      19,
+      24,
+      29,
+      34,
+      39
+    ]
+  }
+]

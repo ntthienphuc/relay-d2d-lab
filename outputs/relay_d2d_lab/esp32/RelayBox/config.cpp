@@ -1,4 +1,5 @@
 #include "state.h"
+#include "internet.h"
 #include <Preferences.h>
 #include <esp_system.h>
 
@@ -49,7 +50,8 @@ void configureWiFi(){
         Guard guard;disconnectReason=info.wifi_sta_disconnected.reason;
     },ARDUINO_EVENT_WIFI_STA_DISCONNECTED);
     WiFi.mode(WIFI_AP_STA);WiFi.setSleep(false);
-    WiFi.softAPConfig(IPAddress(192,168,50,1),IPAddress(192,168,50,1),IPAddress(255,255,255,0));
+    WiFi.softAPConfig(IPAddress(192,168,50,1),IPAddress(192,168,50,1),IPAddress(255,255,255,0),
+                      IPAddress(192,168,50,2),IPAddress(1,1,1,1));
     WiFi.softAP(lab.apName.c_str(),privateApKey().c_str(),1,false,3);
     WiFi.setAutoReconnect(true);
     if(lab.ssid.length()){WiFi.begin(lab.ssid.c_str(),lab.password.c_str());nextRetry=millis()+20000;}
@@ -59,7 +61,8 @@ void configureWiFi(){
 void identity(JsonDocument& d){
     Guard guard;
     d["id"]=lab.id;d["model"]="ESP32 Classic RelayBox";d["platform"]="esp32";d["role"]="relay";
-    d["version"]="2.5.0";d["session"]=lab.session;d["running"]=true;d["local_ip"]=WiFi.localIP().toString();
+    d["version"]="2.6.0";d["session"]=lab.session;d["running"]=true;d["local_ip"]=WiFi.localIP().toString();
+    internetStatus(d);
     d["listen_port"]=39010;d["ap_ip"]="192.168.50.1";d["ssid"]=lab.apName;
     d["rssi_dbm"]=WiFi.status()==WL_CONNECTED?WiFi.RSSI():0;
     d["pending_events"]=uxQueueMessagesWaiting(eventQueue)+lab.retryBatch;d["queue_lost"]=lab.queueLost;

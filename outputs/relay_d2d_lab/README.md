@@ -1,3 +1,7 @@
+# Relay Lab 2.6 · ESP32 RelayBox
+
+Mở hướng dẫn và kịch bản ở `Huong_dan_va_kich_ban_demo.pdf`. Phép đo ESP32 thật, nhật ký hai chiều và dữ liệu mô hình chạy trên board được kiểm tra khi chạy `python scripts/reproduce_final.py`.
+
 # Relay Lab — chủ đề 3: Mạng truyền thông cộng tác Relay, D2D
 
 Bản demo cục bộ dùng **hai Android và laptop**, không cần ESP32. Sản phẩm có ứng dụng Android native nhận/chuyển tiếp UDP, dashboard 3D Three.js, mô phỏng AF/DF, lưu log và phát lại. Phần LAN chạy được trên thiết bị hiện có; bản mô phỏng giải thích AF/DF ở tầng tín hiệu.
