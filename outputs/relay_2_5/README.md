@@ -1,10 +1,7 @@
-# Relay Lab 2.6
+# Bộ bảo vệ Relay Lab 2.6.1
 
-Mã chạy, APK và hướng dẫn PDF nằm trong `../relay_d2d_lab`. Bộ cài Windows, thư viện ngoại tuyến và các tài liệu được đóng chung trong bộ bàn giao tại Downloads.
+[PowerPoint có ghi chú](Relay_D2D_Thuyet_trinh_cuoi_ky.pptx) · [Slide PDF](Slide_xem_nhanh.pdf) · [Tiểu luận](Bao_cao_Relay_D2D.pdf) · [LaTeX](Bao_cao_Overleaf.zip) · [Hướng dẫn và kịch bản demo](../relay_d2d_lab/Huong_dan_va_kich_ban_demo.pdf)
 
-- `python -m pytest tests -q` chạy các bài kiểm thử từ gốc demo.
-- `python scripts/reproduce_final.py` tính lại kết quả mô phỏng và đối chiếu các phiên thiết bị.
-- `python scripts/check_phone_room.py` khớp DATA và ACK theo phiên, số thứ tự và dấu thời gian. Thư mục `Nghiem_thu` giữ log Android và kết quả phép thử qua ESP.
+Thư mục [Nghiem_thu](Nghiem_thu) chứa bảng số liệu ghép cặp, ảnh giao diện và các phiên kiểm tra. [Manifest bàn giao](Kiem_chung.json) ghi SHA-256 theo đường dẫn trong bộ cài đặt và tài liệu đã giao ở Downloads. [Kết quả 2.6.1](../relay_d2d_lab/results/ux_261/acceptance.json) liên kết sáu mã phiên mới với các lượt đo và tập trên laptop.
 
-
-ESP32-CAM là RelayBox. Mở trang của board để cấu hình Wi-Fi, tra DATA/ACK và đối chiếu Direct, DF, AF-FG, AF-VG. Các phép thử của bản này ở `../relay_d2d_lab/results/internet_26`.
+[Xem phim Hành trình của một gói tin](Hanh_trinh_cua_mot_goi_tin.mp4). PowerPoint có nhúng cùng video ở slide 1.

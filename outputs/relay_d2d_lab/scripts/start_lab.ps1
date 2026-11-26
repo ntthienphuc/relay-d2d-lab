@@ -5,7 +5,7 @@ $pythonExe = Join-Path $projectRoot '.venv\Scripts\python.exe'
 if (-not (Test-Path $pythonExe)) { throw 'Run scripts\setup.ps1 first to install the local environment.' }
 $existing = $null
 try { $existing = Invoke-RestMethod -Uri 'http://127.0.0.1:8765/api/status' -TimeoutSec 2 } catch {}
-if ($existing.version -eq '2.6.0') {
+if ($existing.version -eq '2.6.1') {
     Write-Host "Relay Lab is already running at http://127.0.0.1:8765"
     Start-Process 'http://127.0.0.1:8765'
     exit 0

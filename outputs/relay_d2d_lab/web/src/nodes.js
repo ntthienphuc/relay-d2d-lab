@@ -43,12 +43,13 @@ export function createNodes(scene){
 
 export function updateNodes(nodes,state,time){
   const relayX=-4.4+8.8*(state.mode==='simulation'?state.relayPosition:.5);
-  const laptopSink=state.mode!=='simulation'&&state.activeRun?.config?.destination_id==='laptop';
+  const config=state.activeRun?.config||state.preview;
+  const laptopSink=state.mode!=='simulation'&&config?.destination_id==='laptop';
   nodes.D.device.visible=!laptopSink;nodes.D.alternate.visible=laptopSink;
-  const androidSource=state.mode!=='simulation'&&state.activeRun?.config?.source_id&&state.activeRun.config.source_id!=='laptop';
+  const androidSource=state.mode!=='simulation'&&config?.source_id&&config.source_id!=='laptop';
   nodes.S.device.visible=!androidSource;nodes.S.alternate.visible=!!androidSource;
   const relay=state.status?.devices?.find(d=>d.id===state.activeRun?.config?.relay_id);
-  const esp=(state.mode==='simulation'||relay?.platform==='esp32'||String(state.activeRun?.config?.relay_id).startsWith('esp32-'));
+  const esp=(state.mode==='simulation'||relay?.platform==='esp32'||config?.relay_kind==='esp32'||String(state.activeRun?.config?.relay_id).startsWith('esp32-'));
   nodes.R.device.visible=!esp;nodes.R.alternate.visible=!!esp;
   nodes.R.group.position.x=relayX;nodes.R.anchor.x=relayX;
   for(const node of Object.values(nodes)){

@@ -1,57 +1,23 @@
-# Relay D2D Lab
+# Relay Lab · ESP32 RelayBox
 
-Đồ án **Chủ đề 3 — Mạng truyền thông cộng tác Relay, D2D**: demo truyền gói UDP bằng laptop và Android, mô phỏng AF/DF, dashboard 3D nền sáng và bộ slide thuyết trình tiếng Việt.
+Đồ án *Mạng truyền thông cộng tác Relay, D2D* đặt router và nguồn ở tầng 1, RelayBox ở tầng 2 và đích ở tầng 3. Nhóm đã kiểm tra mô hình trên bàn. ESP32 kết nối Wi-Fi của router, phát mạng cho máy đích, chuyển DATA/ACK và chia sẻ Internet bằng IPv4 NAPT. Android có thể đóng vai nguồn, đích hoặc relay gói.
 
-## Mở đúng phần cần dùng
-
-| Nội dung | Đường dẫn |
+| Mở từ nhánh này | Nội dung |
 | --- | --- |
-| Demo, cách cài và quy trình đo | [outputs/relay_d2d_lab/README.md](outputs/relay_d2d_lab/README.md) |
-| PowerPoint 30 slide, có speaker notes | [Relay_D2D_Thuyet_trinh.pptx](outputs/relay_presentation/Relay_D2D_Thuyet_trinh.pptx) |
-| Lời thuyết trình, hình slide và câu hỏi bảo vệ | [Loi_thuyet_trinh_Relay_D2D.pdf](outputs/relay_presentation/Loi_thuyet_trinh_Relay_D2D.pdf) |
-| Bộ tài liệu thuyết trình đóng gói | [Relay_D2D_Tron_bo.zip](outputs/relay_presentation/Relay_D2D_Tron_bo.zip) |
-| Code minh họa tín hiệu AF/DF, NOMA/SIC và Monte Carlo | [outputs/relay_presentation/code](outputs/relay_presentation/code) |
-| Số liệu mô phỏng, hình khoa học và log thí nghiệm | [outputs/relay_d2d_lab/results](outputs/relay_d2d_lab/results) |
-| Đọc và kiểm tra bài báo tham khảo | [outputs/relay_paper_review](outputs/relay_paper_review) |
-| Mã nguồn tạo slide và lời thuyết trình | [work/relay_slides](work/relay_slides) |
+| [Hướng dẫn và kịch bản demo](outputs/relay_d2d_lab/Huong_dan_va_kich_ban_demo.pdf) | Cách nối thiết bị và kịch bản 5 phút ở cuối |
+| [Phim 3D có lời kể tiếng Việt](outputs/relay_2_5/Hanh_trinh_cua_mot_goi_tin.mp4) | 1 phút 52 giây về DATA/ACK, NAPT, AF, DF và hai lượt đo qua ESP |
+| [PowerPoint](outputs/relay_2_5/Relay_D2D_Thuyet_trinh_cuoi_ky.pptx) · [PDF slide](outputs/relay_2_5/Slide_xem_nhanh.pdf) | 24 slide từ bài toán, lý thuyết đến mô phỏng và đo thật |
+| [Tiểu luận](outputs/relay_2_5/Bao_cao_Relay_D2D.pdf) · [Nguồn LaTeX](outputs/relay_2_5/Bao_cao_Overleaf.zip) | 40 trang, đồ thị trắng đen |
+| [Mã nguồn](outputs/relay_d2d_lab) · [APK](outputs/relay_d2d_lab/android/build/relaylab.apk) | Windows 2.6.1, Android và firmware ESP32 2.6.0 |
+| [Nghiệm thu PC](outputs/relay_d2d_lab/results/ux_261/acceptance.json) · [20 phiên ghép cặp](outputs/relay_2_5/Nghiem_thu/So_lieu_20_phien_ghep_cap.csv) | Kết quả theo từng mã phiên |
+| [Bài báo và phương pháp](outputs/relay_d2d_lab/research/PAPER_REVIEW.html) | Các giả định và nguồn đối chiếu |
 
-## Chạy demo sau khi clone
+Trong bộ giao tại Downloads, mở **BAT_DAU.html** để tìm bộ cài Windows và tài liệu. Để chạy từ mã nguồn trên Windows, vào `outputs/relay_d2d_lab`, chạy `scripts/setup.ps1` rồi `START_READY.cmd`. Phòng đo mặc định ở cổng 8765.
 
-Trên Windows, cần Python 3.9 trở lên. Mở PowerShell tại thư mục repo:
+Từ gốc demo với môi trường Python của dự án, chạy `python -m pytest tests -q` và `python scripts/reproduce_final.py` để đối chiếu các số đo và tính lại kết quả mô phỏng.
 
-```powershell
-Set-Location outputs/relay_d2d_lab
-.\scripts\setup.ps1
-.\START_LAB.cmd
-```
+### Mã dựng phim
 
-Mở **http://127.0.0.1:8765**. Thư viện Three.js dùng lúc chạy đã có trong `web/vendor`; môi trường Python được tạo lại bằng script setup.
+Cảnh nhà ba tầng, thiết bị, gói tin, máy hiện sóng, camera và phụ đề nằm ở [work/relay_film](work/relay_film). Trong thư mục đó, mở PowerShell và dùng `py -3.11 -m pip install --target film-tools piper-tts==1.8.0 imageio-ffmpeg==0.8.1`. Tải hai tệp của [giọng Piper VAIS-1000 medium](https://huggingface.co/rhasspy/piper-voices/tree/main/vi/vi_VN/vais1000/medium) vào `film-voice`. Chạy `py -3.11 audio.py` để tạo lời kể, nhạc nền và mốc phụ đề. Sau đó chạy `npm install --no-save playwright` rồi `node render.cjs` trên Windows có Chrome. Có thể đặt `RELAY_CHROME` và `RELAY_FFMPEG` để chỉ định chương trình đã cài ở đường dẫn khác.
 
-Ứng dụng Android thử nghiệm: [relaylab.apk](outputs/relay_d2d_lab/android/build/relaylab.apk). Có thể cài qua USB/ADB hoặc tải từ dashboard. Cấu hình mục tiêu là **laptop nguồn → Android relay → Android đích**, các máy truy cập được nhau trong cùng LAN/Wi-Fi. USB dùng cài app và kiểm tra; dữ liệu UDP đi qua mạng.
-
-Khi chưa có điện thoại, dùng chế độ **LOOPBACK** để kiểm tra phần mềm. Xem README của demo để cài máy thứ hai, xây dựng APK từ nguồn và đọc ý nghĩa từng chỉ số.
-
-## Phạm vi và bằng chứng
-
-- Android thực hiện nhận, kiểm tra và chuyển tiếp **gói tin ở tầng ứng dụng**. AF ở tầng tín hiệu được minh họa bằng mô phỏng riêng; ứng dụng điện thoại không khuếch đại sóng RF analog.
-- Direct trong demo nghĩa là không qua chương trình relay; Wi-Fi vẫn có thể đi qua AP. Đây chưa phải thí nghiệm Wi-Fi Direct/sidelink, NOMA RF hay full-duplex cùng tần số.
-- Pilot phần cứng đã kiểm tra với **một Android và laptop**. Cấu hình hai Android đồng thời cần đo lại khi đủ thiết bị. Không dùng kết quả một máy để khẳng định tăng vùng phủ hay ưu thế thực nghiệm của relay.
-- Mô phỏng chính là SISO Rayleigh, HD hai khe bằng nhau, so sánh DF, AF fixed gain và AF variable gain. Có Monte Carlo, đối chiếu DF dạng đóng và khoảng tin cậy; chi phí năng lượng là giả định để khảo sát, chưa đo từ điện thoại.
-- Log thử nghiệm, hình và biên bản kiểm tra được giữ trong repo. Kết quả cũ là bằng chứng của từng phiên, không phải cam kết mọi máy hoặc mọi cấu hình mạng đều cho cùng số đo.
-
-## Kiểm tra và tái tạo
-
-Từ thư mục `outputs/relay_d2d_lab` sau khi setup:
-
-```powershell
-.venv\Scripts\python -m pytest tests -q
-.venv\Scripts\python scripts\export_science.py
-```
-
-Code mẫu cho thuyết trình có hướng dẫn riêng tại [HUONG_DAN.txt](outputs/relay_presentation/code/HUONG_DAN.txt). Có thể mở PowerPoint/PDF ngay, không cần chạy lại bộ tạo slide.
-
-Các script trong `work/relay_slides` lưu lại quy trình dựng tài liệu trên máy phát triển; chúng có phụ thuộc runtime tạo slide đi kèm Codex, font Windows và PowerPoint cho bước kiểm tra hiển thị. Runtime đó không được đóng gói trong repo, nên việc dựng lại slide trên máy khác cần cấu hình đường dẫn/phụ thuộc tương ứng.
-
-Thư mục `outputs/relay_d2d_design` giữ thiết kế ban đầu để tham khảo lịch sử. Khi có khác biệt, dùng README của demo hiện tại và bộ thuyết trình làm hướng dẫn cho cấu hình Android.
-
-Repo không chứa môi trường ảo, `node_modules`, khóa ký APK, file tạm hay các ảnh render kiểm tra trùng lặp. APK đã build và các tài liệu cuối cùng được giữ để thuận tiện chạy demo và thuyết trình.
+Dạng sóng AF và DF trong phim dùng tín hiệu minh họa. Số liệu thực nghiệm ở cuối phim lấy từ phiên 409270498 và 409351681. Giọng tổng hợp dựa trên ngữ liệu [VAIS-1000](https://ieee-dataport.org/documents/vais-1000-vietnamese-speech-synthesis-corpus) theo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "house",
+    "chapter": "Căn nhà ba tầng",
+    "lead": "Sóng yếu ở tầng trên",
+    "detail": "A và router ở tầng 1 · C ở tầng 3",
+    "lines": [
+      "Ở tầng một, A có mạng. Trên tầng ba, C cũng muốn nhận một gói tin.",
+      "Nhưng khi qua hai sàn nhà, tín hiệu có thể yếu đi. Gửi thẳng chưa chắc đã tới."
+    ]
+  },
+  {
+    "id": "relay",
+    "chapter": "Một điểm tiếp sức",
+    "lead": "B đứng ở tầng 2",
+    "detail": "B kết nối Wi-Fi của router",
+    "lines": [
+      "Ta đặt một hộp nhỏ tên là B ở tầng hai, nơi vẫn còn bắt được mạng của router.",
+      "B nối vào mạng dưới nhà, rồi phát một mạng riêng mang tên RelayBox."
+    ]
+  },
+  {
+    "id": "join",
+    "chapter": "C tìm đúng mạng",
+    "lead": "C nối Wi-Fi RelayBox",
+    "detail": "Router ở tầng 1   ·   B phát Wi-Fi ở tầng 2",
+    "lines": [
+      "Bây giờ C chọn mạng do B phát. C chỉ cần liên lạc tốt với tầng ngay bên dưới.",
+      "Mỗi chặng ngắn hơn. B nhận được gói rồi mới chuyển tiếp lên trên."
+    ]
+  },
+  {
+    "id": "data",
+    "chapter": "Hành trình của một gói tin",
+    "lead": "DATA đi từ A đến C",
+    "detail": "A  →  B  →  C",
+    "lines": [
+      "Nhìn phong bì màu cam nhé. A gửi dữ liệu đến B, rồi B chuyển đúng gói đó đến C.",
+      "Số thứ tự đi cùng gói tin. Nhờ vậy, ta có thể tìm lại cả hành trình trong nhật ký."
+    ]
+  },
+  {
+    "id": "ack",
+    "chapter": "Lời nhắn quay về",
+    "lead": "ACK đi từ C về A",
+    "detail": "C  →  B  →  A",
+    "lines": [
+      "Khi nhận gói hợp lệ, C gửi về một lời xác nhận. B chuyển lời nhắn ấy về A.",
+      "Đích đã nhận dữ liệu và nguồn đã nhận xác nhận là hai việc khác nhau."
+    ]
+  },
+  {
+    "id": "internet",
+    "chapter": "Mở web qua RelayBox",
+    "lead": "C dùng được Internet",
+    "detail": "C  →  RelayBox  →  router  →  Internet",
+    "lines": [
+      "Chiếc hộp còn làm được một việc nữa. C vẫn nối vào mạng của B để mở một trang web.",
+      "B định tuyến và đổi địa chỉ để yêu cầu đi qua router. Phản hồi quay lại đúng máy C."
+    ]
+  },
+  {
+    "id": "slots",
+    "chapter": "Lý thuyết relay",
+    "lead": "Hai chặng, hai khe",
+    "detail": "Khe 1 · A gửi cho B\nKhe 2 · B gửi cho C",
+    "lines": [
+      "Với đường trực tiếp, A gửi thẳng cho C. Còn trong mô hình bán song công, B nghe rồi mới phát.",
+      "Khe thời gian đầu dành cho A gửi đến B. Khe sau mới dành cho B gửi tiếp đến C."
+    ]
+  },
+  {
+    "id": "af",
+    "chapter": "Khuếch đại rồi chuyển tiếp",
+    "lead": "AF giữ cả nhiễu",
+    "detail": "AF-FG · hệ số cố định\nAF-VG · hệ số đổi theo kênh",
+    "lines": [
+      "Với AF, B khuếch đại tín hiệu vừa nhận rồi phát tiếp. Nhìn hai màn hình nhé, cả phần nhiễu cũng lớn lên.",
+      "B có thể giữ hệ số khuếch đại cố định, hoặc thay đổi hệ số theo tình trạng kênh."
+    ]
+  },
+  {
+    "id": "df",
+    "chapter": "Giải mã rồi chuyển tiếp",
+    "lead": "DF tạo tín hiệu mới",
+    "detail": "Giải mã được → phát lại\nGiải mã lỗi → dừng",
+    "lines": [
+      "Với DF, B thử đọc các bit. Nếu đọc đúng, B mã hóa lại và phát một tín hiệu mới.",
+      "Trong mô hình này, khi B giải mã lỗi, nó dừng ở đó. C sẽ thiếu gói của lần truyền ấy."
+    ]
+  },
+  {
+    "id": "bench",
+    "chapter": "Từ mô hình đến bàn đo",
+    "lead": "40 gói ở mỗi chiều",
+    "detail": "Laptop   ·   ESP32   ·   Samsung",
+    "lines": [
+      "Trở lại bàn đo, hộp thật chuyển tiếp gói Wi-Fi. Còn AF và DF là hai cơ chế nhóm so sánh bằng mô hình.",
+      "Gửi bốn mươi gói qua hộp ở mỗi chiều. Cả hai lượt đều nhận đủ dữ liệu và đủ xác nhận."
+    ]
+  },
+  {
+    "id": "end",
+    "chapter": "Điều ta biết",
+    "lead": "Một hộp nối hai chặng",
+    "detail": "Mô hình ba tầng · Đã kiểm tra trên bàn",
+    "lines": [
+      "Vậy là gói tin có một điểm dừng giữa đường, và ta biết chính xác nó đã đi tới đâu.",
+      "Mô hình kể câu chuyện ba tầng. Muốn biết tòa nhà thật phủ được bao xa, ta cần đo ngay tại đó."
+    ]
+  }
+]

@@ -10,3 +10,6 @@
 *.ico binary
 *.woff binary
 *.woff2 binary
+*.bin binary
+# Preserve the recorded byte stream used by the benchmark SHA-256 checks.
+*.jsonl -text whitespace=cr-at-eol

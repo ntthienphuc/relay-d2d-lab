@@ -75,7 +75,7 @@ async def status():
         'udp_source_port':engine.source.transport.get_extra_info('sockname')[1],
         'udp_sink_port':engine.local_sink[1],
         'devices':devices,'run':engine.current.snapshot() if engine.current else None,
-        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.6.0','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
+        'paused':engine.paused,'practice':os.getenv('RELAY_LAB_PRACTICE') == '1','version':'2.6.1','network':settings.snapshot(relay_peer()),'notice':'LAN/ESP32 SoftAP packet relay. AF/DF PHY is simulated; no RF mesh claim.'}
 
 
 @app.post('/api/network')
@@ -161,7 +161,7 @@ async def events(data:dict):
 @app.get('/api/preflight')
 async def preflight():
     devices=[dict(d,online=time.time()-d.get('last_seen',0)<8) for d in engine.devices.values()]
-    return {'version':'2.6.0','server_ip':lan_ip(),'devices':devices,
+    return {'version':'2.6.1','server_ip':lan_ip(),'devices':devices,
             'checks':{'android_apk':(ROOT/'android/build/relaylab.apk').exists(),
                       'esp32_firmware':(ROOT/'esp32/build/cam/RelayBox.ino.bin').exists(),
                       'local_udp':len(engine.transports)==3},
@@ -236,7 +236,7 @@ async def trace(run_id:int,filter:str='all'):
     def response(packets,finished):
         rows=[packets[k] for k in sorted(packets,reverse=True)]
         if filter=='ack':rows=[p for p in rows if p.get('ack')]
-        if filter=='missing':rows=[p for p in rows if not(p.get('ack') or p.get('receive')) or p.get('drop_paused') or p.get('drop_injected')]
+        if filter=='missing':rows=[p for p in rows if not p.get('ack') or any(e['type']=='invalid' or e['type'].startswith('drop') for e in p['events'])]
         return {'id':run_id,'finished':finished,'total':len(packets),'matching':len(rows),'packets':rows[:120]}
     run=engine.runs.get(run_id)
     if run:

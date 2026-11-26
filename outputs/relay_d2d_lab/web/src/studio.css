@@ -16,3 +16,11 @@ body[data-view="live"] .route-strip,body[data-view="replay"] .route-strip{font-w
 .trace-tools select{max-width:100%}
 
 .network-path{margin:0 0 9px;color:var(--accent);font-weight:650;font-size:13px}
+
+.lab-switch{display:flex;gap:4px;padding:4px;margin-bottom:12px;border:1px solid var(--rule);border-radius:10px;background:#eeede5}
+.lab-switch button{flex:1;border:0;background:transparent;font-weight:600;padding:7px 6px;font-size:13px}
+.lab-switch button[aria-pressed=true]{background:var(--surface);box-shadow:0 1px 3px #25262022}
+button:disabled{cursor:default}
+body[data-view=live] .route-strip, body[data-view=practice] .route-strip{font-weight:600}
+body[data-view=replay] .badge{background:#ede7f3;color:#55436a}
+body[data-view=live] .badge{background:#fae7d6;color:#90390f}

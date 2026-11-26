@@ -1,0 +1,35 @@
+{"type": "send", "node": "S", "seq": 0, "bytes": 128, "sent_ns": 157583487100, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.2405686, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 0, "bytes": 128, "server_time": 1795705613.2405686, "run": 409284345}
+{"type": "forward", "node": "R", "seq": 0, "processing_ms": 0.0, "server_time": 1795705613.2405686, "run": 409284345}
+{"type": "receive", "node": "D", "seq": 0, "bytes": 128, "sent_ns": 157583487100, "hops": 1, "server_time": 1795705613.2415657, "run": 409284345}
+{"type": "ack", "node": "S", "seq": 0, "sent_ns": 157583487100, "hops": 1, "rtt_ms": 1.1083, "server_time": 1795705613.2415657, "run": 409284345}
+{"type": "send", "node": "S", "seq": 1, "bytes": 128, "sent_ns": 157679716500, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.3367357, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 1, "bytes": 128, "server_time": 1795705613.3367357, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 1, "server_time": 1795705613.3367357, "run": 409284345}
+{"type": "send", "node": "S", "seq": 2, "bytes": 128, "sent_ns": 157788017800, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.4450614, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 2, "bytes": 128, "server_time": 1795705613.4450614, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 2, "server_time": 1795705613.4450614, "run": 409284345}
+{"type": "send", "node": "S", "seq": 3, "bytes": 128, "sent_ns": 157896777800, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.553728, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 3, "bytes": 128, "server_time": 1795705613.553728, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 3, "server_time": 1795705613.553728, "run": 409284345}
+{"type": "send", "node": "S", "seq": 4, "bytes": 128, "sent_ns": 157970376500, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.627476, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 4, "bytes": 128, "server_time": 1795705613.627476, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 4, "server_time": 1795705613.627476, "run": 409284345}
+{"type": "send", "node": "S", "seq": 5, "bytes": 128, "sent_ns": 158084941000, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.7418876, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 5, "bytes": 128, "server_time": 1795705613.7418876, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 5, "server_time": 1795705613.7418876, "run": 409284345}
+{"type": "send", "node": "S", "seq": 6, "bytes": 128, "sent_ns": 158179030900, "hops": 0, "corrupted_deliberately": true, "server_time": 1795705613.8359656, "run": 409284345}
+{"type": "invalid", "node": "R", "server_time": 1795705613.8359656, "run": 409284345}
+{"type": "send", "node": "S", "seq": 7, "bytes": 128, "sent_ns": 158286761400, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705613.9436858, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 7, "bytes": 128, "server_time": 1795705613.9436858, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 7, "server_time": 1795705613.9436858, "run": 409284345}
+{"type": "send", "node": "S", "seq": 8, "bytes": 128, "sent_ns": 158395956300, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705614.053007, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 8, "bytes": 128, "server_time": 1795705614.053007, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 8, "server_time": 1795705614.053007, "run": 409284345}
+{"type": "send", "node": "S", "seq": 9, "bytes": 128, "sent_ns": 158478366300, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705614.1354113, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 9, "bytes": 128, "server_time": 1795705614.1354113, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 9, "server_time": 1795705614.1354113, "run": 409284345}
+{"type": "send", "node": "S", "seq": 10, "bytes": 128, "sent_ns": 158557591900, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705614.2141085, "run": 409284345}
+{"type": "relay_receive", "node": "R", "seq": 10, "bytes": 128, "server_time": 1795705614.2151277, "run": 409284345}
+{"type": "drop_paused", "node": "R", "seq": 10, "server_time": 1795705614.2151277, "run": 409284345}
+{"type": "stopped", "node": "S", "server_time": 1795705614.3398423, "run": 409284345}

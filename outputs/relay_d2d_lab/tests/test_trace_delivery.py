@@ -22,3 +22,14 @@ def test_archived_replay_preserves_forward_and_rejection():
     assert packets[4]['invalid'] and 'forward' not in packets[4]
     assert 'ack' not in packets[4]
 
+
+
+def test_missing_ack_includes_data_received_at_destination():
+    run_id = 409468194
+    missing = asyncio.run(server.trace(run_id, 'missing'))
+    acknowledged = asyncio.run(server.trace(run_id, 'ack'))
+    assert missing['total'] == 30 and missing['matching'] == 1
+    packet, = missing['packets']
+    assert packet['receive'] and not packet.get('ack')
+    assert acknowledged['matching'] == 29
+    assert all(p['seq'] != packet['seq'] for p in acknowledged['packets'])

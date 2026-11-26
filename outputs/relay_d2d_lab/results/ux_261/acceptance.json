@@ -1,0 +1,112 @@
+{
+  "pc": "2.6.1",
+  "android": "2.6.0",
+  "esp32": "2.6.0",
+  "devices": [
+    "Windows x64",
+    "Samsung SM-G965F",
+    "ESP32 Classic RelayBox"
+  ],
+  "checks": [
+    "Desktop → đo thiết bị → ESP32",
+    "Wi-Fi, cổng ESP, IP, hướng dẫn, APK và chặn tuyến thiếu thiết bị",
+    "Đo thật bằng nút Bắt đầu",
+    "Bốn giao thức, công thức, SNR, vị trí, QoS, năng lượng, Monte Carlo",
+    "Tập UDP trực tiếp và qua relay, tiêm lỗi, tạm dừng, tiếp tục, kết thúc",
+    "Nhật ký mới/minh chứng, phát lại, mở theo mã, 3 bộ lọc, chi tiết gói và log gốc",
+    "Bố cục 390, 1024 và 1440 px"
+  ],
+  "browser_errors": [],
+  "runs": [
+    {
+      "id": 409270498,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40,
+      "rtt_p95_ms": 162.82145499999993,
+      "goodput_kbps": 10.24,
+      "environment": "live",
+      "route": "relay",
+      "relay_kind": "esp32",
+      "source_id": "laptop",
+      "destination_id": "6b9f8608",
+      "drop_every": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 409279804,
+      "sent": 20,
+      "received_observed": 20,
+      "acked": 20,
+      "rtt_p95_ms": 0.943835,
+      "goodput_kbps": 10.24,
+      "environment": "local",
+      "route": "direct",
+      "relay_kind": "",
+      "source_id": "laptop",
+      "destination_id": "laptop",
+      "drop_every": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 409284345,
+      "sent": 11,
+      "received_observed": 1,
+      "acked": 1,
+      "rtt_p95_ms": 1.1083,
+      "goodput_kbps": 0.08533333333333333,
+      "environment": "local",
+      "route": "relay",
+      "relay_kind": "esp32",
+      "source_id": "laptop",
+      "destination_id": "laptop",
+      "drop_every": 5,
+      "corrupt_every": 7
+    },
+    {
+      "id": 409351681,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40,
+      "rtt_p95_ms": 196.65499049999997,
+      "goodput_kbps": 10.24,
+      "environment": "live",
+      "route": "relay",
+      "relay_kind": "esp32",
+      "source_id": "6b9f8608",
+      "destination_id": "laptop",
+      "drop_every": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 409408568,
+      "sent": 40,
+      "received_observed": 40,
+      "acked": 40,
+      "rtt_p95_ms": 176.9953049999999,
+      "goodput_kbps": 10.24,
+      "environment": "live",
+      "route": "direct",
+      "relay_kind": "",
+      "source_id": "laptop",
+      "destination_id": "6b9f8608",
+      "drop_every": 0,
+      "corrupt_every": 0
+    },
+    {
+      "id": 409468194,
+      "sent": 30,
+      "received_observed": 30,
+      "acked": 29,
+      "rtt_p95_ms": 222.56721999999996,
+      "goodput_kbps": 10.24,
+      "environment": "live",
+      "route": "relay",
+      "relay_kind": "android",
+      "source_id": "laptop",
+      "destination_id": "laptop",
+      "drop_every": 0,
+      "corrupt_every": 0
+    }
+  ]
+}

@@ -4,8 +4,8 @@
 [Setup]
 AppId=RelayLabD2D25
 AppName=Relay Lab
-AppVersion=2.6.0
-VersionInfoVersion=2.6.0.1
+AppVersion=2.6.1
+VersionInfoVersion=2.6.1.0
 AppPublisher=Relay Lab
 DefaultDirName={localappdata}\Programs\Relay Lab 2.5
 DefaultGroupName=Relay Lab 2.5
@@ -17,7 +17,7 @@ DisableProgramGroupPage=yes
 Compression=lzma2/fast
 SolidCompression=yes
 OutputDir={#OutputRoot}
-OutputBaseFilename=Cai_dat_Relay_Lab_2_6_Windows_x64
+OutputBaseFilename=Cai_dat_Relay_Lab_2_6_1_Windows_x64
 SetupIconFile={#DemoSource}\desktop\relaylab.ico
 UninstallDisplayIcon={app}\RelayLab.exe
 UninstallDisplayName=Relay Lab

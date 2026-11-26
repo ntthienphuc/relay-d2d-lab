@@ -1,0 +1,6 @@
+/film-tools/
+/film-voice/
+/node_modules/
+/*.jpg
+/*.wav
+/*.mp4

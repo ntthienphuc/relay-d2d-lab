@@ -1,6 +1,7 @@
 """Start the installed room and open its dashboard when ready."""
 import argparse
 import os
+import sys
 import json
 import threading
 import time
@@ -10,11 +11,13 @@ from pathlib import Path
 import uvicorn
 
 def main():
-    parser = argparse.ArgumentParser(description="Relay Lab 2.5")
+    parser = argparse.ArgumentParser(description="Relay Lab 2.6.1")
     parser.add_argument("--practice", action="store_true")
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
-    os.chdir(Path(__file__).resolve().parents[1])
+    room_root = Path(__file__).resolve().parents[1]
+    os.chdir(room_root)
+    sys.path.insert(0, str(room_root))
     port = 8877 if args.practice else 8765
     url = f"http://127.0.0.1:{port}"
     def status():
@@ -26,13 +29,13 @@ def main():
     def open_dashboard():
         for _ in range(80):
             result = status()
-            if result and result.get("version") == "2.6.0" and bool(result.get("practice")) == args.practice:
+            if result and result.get("version") == "2.6.1" and bool(result.get("practice")) == args.practice:
                 webbrowser.open(url)
                 return
             time.sleep(0.25)
     existing = status()
     if existing is not None:
-        if existing.get("version") != "2.6.0" or bool(existing.get("practice")) != args.practice:
+        if existing.get("version") != "2.6.1" or bool(existing.get("practice")) != args.practice:
             raise SystemExit(f"Close the previous server on port {port} and start Relay Lab again.")
         if not args.no_browser:
             webbrowser.open(url)
@@ -40,7 +43,7 @@ def main():
     os.environ["RELAY_LAB_PRACTICE"] = "1" if args.practice else "0"
     if not args.no_browser:
         threading.Thread(target=open_dashboard, daemon=True).start()
-    print(f"Relay Lab 2.5  |  {url}  |  Ctrl+C to stop", flush=True)
+    print(f"Relay Lab 2.6.1  |  {url}  |  Ctrl+C to stop", flush=True)
     uvicorn.run("lab.server:app", host="127.0.0.1" if args.practice else "0.0.0.0", port=port, access_log=False)
 
 if __name__ == "__main__":

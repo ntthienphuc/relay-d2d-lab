@@ -11,7 +11,9 @@ import uvicorn
 
 async def run(practice):
     os.environ["RELAY_LAB_PRACTICE"] = "1" if practice else "0"
-    os.chdir(Path(__file__).resolve().parent.parent)
+    room_root = Path(__file__).resolve().parent.parent
+    os.chdir(room_root)
+    sys.path.insert(0, str(room_root))
     from lab.server import app, engine
 
     config = uvicorn.Config(app, host="127.0.0.1" if practice else "0.0.0.0",

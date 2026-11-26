@@ -8,6 +8,7 @@ import numpy as np
 
 LAB = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(LAB))
+sys.path.insert(1, str(LAB / "scripts"))
 from sim.model import Config, evaluate
 from report_bench import audit
 
@@ -96,9 +97,34 @@ def check_hardware():
         s = load(LAB / "results" / ("run_" + str(case["id"])) / "summary.json")
         assert (case["sent"],case["received"],case["acked"]) == (s["sent"],s["received_observed"],s["acked"])
 
+def check_ux_sessions():
+    results = LAB / "results"
+    release = load(results / "ux_261/acceptance.json")
+    assert len(release["runs"]) == 6 and not release["browser_errors"]
+    for trial in release["runs"]:
+        folder = results / f'run_{trial["id"]}'
+        events = [json.loads(line) for line in (folder / "events.jsonl").read_text("utf8").splitlines()]
+        for node, kind, field in (("S", "send", "sent"), ("D", "receive", "received_observed"), ("S", "ack", "acked")):
+            seqs = {e["seq"] for e in events if e["node"] == node and e["type"] == kind}
+            assert len(seqs) == trial[field], (trial["id"], field, len(seqs))
+        rtt = {e["seq"]: e["rtt_ms"] for e in events if e["node"] == "S" and e["type"] == "ack"}
+        assert np.isclose(np.percentile(list(rtt.values()), 95), trial["rtt_p95_ms"])
+        if trial["environment"] == "live":
+            phone = [json.loads(line) for line in (folder / "android.jsonl").read_text("utf8").splitlines()]
+            event_ids = {e["event_id"] for e in events if e.get("event_id")}
+            assert phone and all(e["run"] == trial["id"] for e in phone)
+            # The sink records ACK transmission locally. The source reports ACK arrival separately.
+            assert all(e["event_id"] in event_ids for e in phone if e["type"] != "ack_sent")
+            if any(e["node"] == "D" for e in phone):
+                local_packets = lambda kind: {(e["seq"], e["sent_ns"]) for e in phone if e["type"] == kind}
+                assert local_packets("ack_sent") == local_packets("receive")
+    print("PC 2.6.1: six sessions match the packet traces, including four local Android journals.")
+
+
 if __name__ == "__main__":
     check_channel()
     check_hardware()
+    check_ux_sessions()
     from check_phone_room import check
     check()
 

@@ -1,4 +1,7 @@
 export function renderBench(list, nodes) {
+  const signature=JSON.stringify(nodes.map(n=>[n.id,n.role,n.model,n.online,n.local_ip,n.bridge_id,n.platform,n.rssi_dbm,n.forwarded,n.queue_lost]));
+  if(list.dataset.signature===signature)return;
+  list.dataset.signature=signature;
   const rows = nodes.map(node => {
     const row = document.createElement('div');
     row.className = 'bench-node' + (node.online ? '' : ' offline');

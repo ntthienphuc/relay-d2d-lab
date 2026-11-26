@@ -1,0 +1,60 @@
+{"type": "send", "node": "S", "seq": 0, "bytes": 128, "sent_ns": 153042459700, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705608.699535, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 0, "bytes": 128, "sent_ns": 153042459700, "hops": 0, "server_time": 1795705608.699535, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 0, "sent_ns": 153042459700, "hops": 0, "rtt_ms": 0.8788, "server_time": 1795705608.700511, "run": 409279804}
+{"type": "send", "node": "S", "seq": 1, "bytes": 128, "sent_ns": 153139102700, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705608.7960358, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 1, "bytes": 128, "sent_ns": 153139102700, "hops": 0, "server_time": 1795705608.7960358, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 1, "sent_ns": 153139102700, "hops": 0, "rtt_ms": 0.8184, "server_time": 1795705608.797037, "run": 409279804}
+{"type": "send", "node": "S", "seq": 2, "bytes": 128, "sent_ns": 153249250500, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705608.90631, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 2, "bytes": 128, "sent_ns": 153249250500, "hops": 0, "server_time": 1795705608.90631, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 2, "sent_ns": 153249250500, "hops": 0, "rtt_ms": 0.6429, "server_time": 1795705608.90631, "run": 409279804}
+{"type": "send", "node": "S", "seq": 3, "bytes": 128, "sent_ns": 153358047100, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.0150075, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 3, "bytes": 128, "sent_ns": 153358047100, "hops": 0, "server_time": 1795705609.0150075, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 3, "sent_ns": 153358047100, "hops": 0, "rtt_ms": 0.9429, "server_time": 1795705609.016008, "run": 409279804}
+{"type": "send", "node": "S", "seq": 4, "bytes": 128, "sent_ns": 153451443600, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.1084716, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 4, "bytes": 128, "sent_ns": 153451443600, "hops": 0, "server_time": 1795705609.1084716, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 4, "sent_ns": 153451443600, "hops": 0, "rtt_ms": 0.4337, "server_time": 1795705609.1084716, "run": 409279804}
+{"type": "send", "node": "S", "seq": 5, "bytes": 128, "sent_ns": 153537486700, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.1948025, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 5, "bytes": 128, "sent_ns": 153537486700, "hops": 0, "server_time": 1795705609.1948025, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 5, "sent_ns": 153537486700, "hops": 0, "rtt_ms": 0.6739, "server_time": 1795705609.1948025, "run": 409279804}
+{"type": "send", "node": "S", "seq": 6, "bytes": 128, "sent_ns": 153638051900, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.294514, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 6, "bytes": 128, "sent_ns": 153638051900, "hops": 0, "server_time": 1795705609.2955127, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 6, "sent_ns": 153638051900, "hops": 0, "rtt_ms": 0.7294, "server_time": 1795705609.2955127, "run": 409279804}
+{"type": "send", "node": "S", "seq": 7, "bytes": 128, "sent_ns": 153743372600, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.4002457, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 7, "bytes": 128, "sent_ns": 153743372600, "hops": 0, "server_time": 1795705609.4002457, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 7, "sent_ns": 153743372600, "hops": 0, "rtt_ms": 0.6318, "server_time": 1795705609.4002457, "run": 409279804}
+{"type": "send", "node": "S", "seq": 8, "bytes": 128, "sent_ns": 153842512100, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.4995475, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 8, "bytes": 128, "sent_ns": 153842512100, "hops": 0, "server_time": 1795705609.4995475, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 8, "sent_ns": 153842512100, "hops": 0, "rtt_ms": 0.8342, "server_time": 1795705609.5005555, "run": 409279804}
+{"type": "send", "node": "S", "seq": 9, "bytes": 128, "sent_ns": 153951502200, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.6085486, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 9, "bytes": 128, "sent_ns": 153951502200, "hops": 0, "server_time": 1795705609.6085486, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 9, "sent_ns": 153951502200, "hops": 0, "rtt_ms": 0.4814, "server_time": 1795705609.6085486, "run": 409279804}
+{"type": "send", "node": "S", "seq": 10, "bytes": 128, "sent_ns": 154060872400, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.7177935, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 10, "bytes": 128, "sent_ns": 154060872400, "hops": 0, "server_time": 1795705609.7177935, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 10, "sent_ns": 154060872400, "hops": 0, "rtt_ms": 0.4755, "server_time": 1795705609.7177935, "run": 409279804}
+{"type": "send", "node": "S", "seq": 11, "bytes": 128, "sent_ns": 154155762700, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.8126092, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 11, "bytes": 128, "sent_ns": 154155762700, "hops": 0, "server_time": 1795705609.8126092, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 11, "sent_ns": 154155762700, "hops": 0, "rtt_ms": 0.795, "server_time": 1795705609.8136241, "run": 409279804}
+{"type": "send", "node": "S", "seq": 12, "bytes": 128, "sent_ns": 154248818900, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.9062257, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 12, "bytes": 128, "sent_ns": 154248818900, "hops": 0, "server_time": 1795705609.9062257, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 12, "sent_ns": 154248818900, "hops": 0, "rtt_ms": 0.6219, "server_time": 1795705609.9062257, "run": 409279804}
+{"type": "send", "node": "S", "seq": 13, "bytes": 128, "sent_ns": 154326453800, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705609.9830654, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 13, "bytes": 128, "sent_ns": 154326453800, "hops": 0, "server_time": 1795705609.9830654, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 13, "sent_ns": 154326453800, "hops": 0, "rtt_ms": 0.3699, "server_time": 1795705609.9830654, "run": 409279804}
+{"type": "send", "node": "S", "seq": 14, "bytes": 128, "sent_ns": 154436489900, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.0930917, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 14, "bytes": 128, "sent_ns": 154436489900, "hops": 0, "server_time": 1795705610.0930917, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 14, "sent_ns": 154436489900, "hops": 0, "rtt_ms": 0.3936, "server_time": 1795705610.0940912, "run": 409279804}
+{"type": "send", "node": "S", "seq": 15, "bytes": 128, "sent_ns": 154530751000, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.1876335, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 15, "bytes": 128, "sent_ns": 154530751000, "hops": 0, "server_time": 1795705610.1876335, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 15, "sent_ns": 154530751000, "hops": 0, "rtt_ms": 0.8851, "server_time": 1795705610.188634, "run": 409279804}
+{"type": "send", "node": "S", "seq": 16, "bytes": 128, "sent_ns": 154639314000, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.2962496, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 16, "bytes": 128, "sent_ns": 154639314000, "hops": 0, "server_time": 1795705610.2962496, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 16, "sent_ns": 154639314000, "hops": 0, "rtt_ms": 0.4233, "server_time": 1795705610.2962496, "run": 409279804}
+{"type": "send", "node": "S", "seq": 17, "bytes": 128, "sent_ns": 154748452600, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.405203, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 17, "bytes": 128, "sent_ns": 154748452600, "hops": 0, "server_time": 1795705610.405203, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 17, "sent_ns": 154748452600, "hops": 0, "rtt_ms": 0.5881, "server_time": 1795705610.4061873, "run": 409279804}
+{"type": "send", "node": "S", "seq": 18, "bytes": 128, "sent_ns": 154857341800, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.5142043, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 18, "bytes": 128, "sent_ns": 154857341800, "hops": 0, "server_time": 1795705610.515216, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 18, "sent_ns": 154857341800, "hops": 0, "rtt_ms": 0.9616, "server_time": 1795705610.515216, "run": 409279804}
+{"type": "send", "node": "S", "seq": 19, "bytes": 128, "sent_ns": 154952578000, "hops": 0, "corrupted_deliberately": false, "server_time": 1795705610.6095572, "run": 409279804}
+{"type": "receive", "node": "D", "seq": 19, "bytes": 128, "sent_ns": 154952578000, "hops": 0, "server_time": 1795705610.6095572, "run": 409279804}
+{"type": "ack", "node": "S", "seq": 19, "sent_ns": 154952578000, "hops": 0, "rtt_ms": 0.5523, "server_time": 1795705610.6095572, "run": 409279804}

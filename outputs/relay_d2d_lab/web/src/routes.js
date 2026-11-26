@@ -15,12 +15,8 @@ function listed(nodes, role, allow) {
     .map(node => [node.id, node.model + ' · ' + node.local_ip]);
 }
 
-export function updateRouteControls(status) {
+export function updateRouteControls(status, pending=false) {
   const nodes = status?.devices ?? [];
-  if (status?.practice) {
-    $('environment').value = 'local';
-    $('environment').options[0].disabled = true;
-  }
   const practice = $('environment').value === 'local' || status?.practice === true;
   const choice = $('route').value;
   const direct = choice === 'direct';
@@ -56,11 +52,29 @@ export function updateRouteControls(status) {
   const form = $('routeDevices');
   if (phoneRelay && !practice && form.dataset.route !== choice) form.open = true;
   form.dataset.route = choice;
-  const pause = $('pauseRelay');
-  pause.classList.toggle('hidden', direct);
-  const active = status?.run && !status.run.finished;
-  pause.disabled = !active || status.run.config.route !== 'relay';
-  $('stopRun').disabled = !active;
+  const run=status?.run;
+  const active=!!run&&!run.finished;
+  const sameRoom=active&&run.config.environment===$('environment').value;
+  const bothLaptop=$('sourceDevice').value==='laptop'&&$('destinationDevice').value==='laptop';
+  const missingRelay=!practice&&!direct&&!relays.length;
+  const pilotAvailable=!practice&&!direct&&bothLaptop&&!missingRelay;
+  $('pilotRow').hidden=!pilotAvailable;
+  if(!pilotAvailable)$('pilot').checked=false;
+  const missingEnd=!practice&&bothLaptop&&!(pilotAvailable&&$('pilot').checked);
+  if(active&&!sameRoom)hint.textContent='Một phiên đang chạy trong phòng khác. Đợi phiên kết thúc rồi bắt đầu.';
+  else if(missingRelay)hint.textContent=phoneRelay?'Trên máy B, chọn Relay và nối cùng Wi-Fi router với laptop.':'Cấp nguồn ESP32 và kiểm tra IP máy mở phòng trên trang RelayBox.';
+  else if(missingEnd)hint.textContent=direct||phoneRelay?'Chọn Nguồn hoặc Đích trên điện thoại, nối Wi-Fi router và kết nối trạm.':'Trên điện thoại, nối RelayBox, chọn Nguồn hoặc Đích → Gateway ESP → Kết nối trạm.';
+  if(pilotAvailable&&$('pilot').checked)hint.textContent='Kiểm tra relay thật với laptop đảm nhiệm cả nguồn và đích.';
+  $('startRun').disabled=!status||pending||active||missingRelay||missingEnd;
+  $('startRun').textContent=active&&sameRoom?'Đang gửi gói…':practice?'Bắt đầu tập UDP':'Bắt đầu đo';
+  const pause=$('pauseRelay');
+  pause.classList.toggle('hidden',sameRoom?run.config.route!=='relay':direct);
+  pause.disabled=!sameRoom||run.config.route!=='relay';
+  pause.textContent=status?.paused&&sameRoom?'Tiếp tục relay':'Tạm dừng relay';
+  $('stopRun').disabled=!sameRoom;
+  for(const id of ['route','sourceDevice','destinationDevice','relayDevice','useBenchAddress','payload','duration','pps','dropEvery','corruptEvery','experimentLabel','pilot'])$(id).disabled=active;
+  $('pps').max=!practice&&!direct&&!phoneRelay?'50':'200';
+
 }
 
 export function selectedRoute() {
