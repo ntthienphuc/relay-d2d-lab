@@ -5,8 +5,8 @@
     "lead": "Sóng yếu ở tầng trên",
     "detail": "A và router ở tầng 1 · C ở tầng 3",
     "lines": [
-      "Ở tầng một, A có mạng. Trên tầng ba, C cũng muốn nhận một gói tin.",
-      "Nhưng khi qua hai sàn nhà, tín hiệu có thể yếu đi. Gửi thẳng chưa chắc đã tới."
+      "Ở tầng một, điện thoại kết nối mạng rất ổn định.",
+      "Nhưng trên tầng ba, máy vẫn thấy tên mạng mà gói tin gửi đi đôi khi chẳng tới nơi."
     ]
   },
   {
@@ -15,8 +15,8 @@
     "lead": "B đứng ở tầng 2",
     "detail": "B kết nối Wi-Fi của router",
     "lines": [
-      "Ta đặt một hộp nhỏ tên là B ở tầng hai, nơi vẫn còn bắt được mạng của router.",
-      "B nối vào mạng dưới nhà, rồi phát một mạng riêng mang tên RelayBox."
+      "Giữa hai tầng có một chỗ vẫn còn bắt sóng tốt. Đó là nơi nhóm đặt hộp chuyển tiếp.",
+      "Chiếc hộp kết nối với bộ phát ở tầng một, rồi tạo một mạng riêng cho tầng trên."
     ]
   },
   {
@@ -25,8 +25,8 @@
     "lead": "C nối Wi-Fi RelayBox",
     "detail": "Router ở tầng 1   ·   B phát Wi-Fi ở tầng 2",
     "lines": [
-      "Bây giờ C chọn mạng do B phát. C chỉ cần liên lạc tốt với tầng ngay bên dưới.",
-      "Mỗi chặng ngắn hơn. B nhận được gói rồi mới chuyển tiếp lên trên."
+      "Điện thoại ở tầng ba lúc này chỉ cần nối vào mạng ở tầng hai.",
+      "Từ đây, gói tin có thể đi qua hai chặng ngắn hơn."
     ]
   },
   {
@@ -35,8 +35,8 @@
     "lead": "DATA đi từ A đến C",
     "detail": "A  →  B  →  C",
     "lines": [
-      "Nhìn phong bì màu cam nhé. A gửi dữ liệu đến B, rồi B chuyển đúng gói đó đến C.",
-      "Số thứ tự đi cùng gói tin. Nhờ vậy, ta có thể tìm lại cả hành trình trong nhật ký."
+      "Hãy theo dõi chiếc phong bì màu cam. Nó đi từ máy nguồn đến chiếc hộp, rồi mới lên tới điện thoại ở tầng ba.",
+      "Số thứ tự trên mỗi gói giúp nhóm đối chiếu hành trình ấy với nhật ký ở hai đầu."
     ]
   },
   {
@@ -45,8 +45,8 @@
     "lead": "ACK đi từ C về A",
     "detail": "C  →  B  →  A",
     "lines": [
-      "Khi nhận gói hợp lệ, C gửi về một lời xác nhận. B chuyển lời nhắn ấy về A.",
-      "Đích đã nhận dữ liệu và nguồn đã nhận xác nhận là hai việc khác nhau."
+      "Nhận được dữ liệu hợp lệ, điện thoại gửi một lời xác nhận về theo chiều ngược lại.",
+      "Có khi dữ liệu đã tới đích, nhưng lời xác nhận lại mất trên đường về."
     ]
   },
   {
@@ -55,8 +55,8 @@
     "lead": "C dùng được Internet",
     "detail": "C  →  RelayBox  →  router  →  Internet",
     "lines": [
-      "Chiếc hộp còn làm được một việc nữa. C vẫn nối vào mạng của B để mở một trang web.",
-      "B định tuyến và đổi địa chỉ để yêu cầu đi qua router. Phản hồi quay lại đúng máy C."
+      "Cũng qua chiếc hộp này, điện thoại ở tầng ba có thể truy cập Internet.",
+      "Hộp ghi nhớ máy nào đã gửi yêu cầu, để khi trang web trả lời, dữ liệu quay về đúng điện thoại."
     ]
   },
   {
@@ -65,8 +65,8 @@
     "lead": "Hai chặng, hai khe",
     "detail": "Khe 1 · A gửi cho B\nKhe 2 · B gửi cho C",
     "lines": [
-      "Với đường trực tiếp, A gửi thẳng cho C. Còn trong mô hình bán song công, B nghe rồi mới phát.",
-      "Khe thời gian đầu dành cho A gửi đến B. Khe sau mới dành cho B gửi tiếp đến C."
+      "Tại sao phải dành hai khe thời gian cho một gói tin?",
+      "Trong mô hình bán song công, khe đầu dành cho nguồn gửi. Đến khe thứ hai, relay mới chuyển bản tin tới đích."
     ]
   },
   {
@@ -75,8 +75,8 @@
     "lead": "AF giữ cả nhiễu",
     "detail": "AF-FG · hệ số cố định\nAF-VG · hệ số đổi theo kênh",
     "lines": [
-      "Với AF, B khuếch đại tín hiệu vừa nhận rồi phát tiếp. Nhìn hai màn hình nhé, cả phần nhiễu cũng lớn lên.",
-      "B có thể giữ hệ số khuếch đại cố định, hoặc thay đổi hệ số theo tình trạng kênh."
+      "Với cơ chế khuếch đại rồi chuyển tiếp, trạm làm tín hiệu mạnh lên. Nhìn sang màn hình bên phải, những gợn nhiễu cũng lớn theo.",
+      "Hệ số khuếch đại có thể giữ cố định, hoặc điều chỉnh theo chất lượng của chặng đầu."
     ]
   },
   {
@@ -85,8 +85,8 @@
     "lead": "DF tạo tín hiệu mới",
     "detail": "Giải mã được → phát lại\nGiải mã lỗi → dừng",
     "lines": [
-      "Với DF, B thử đọc các bit. Nếu đọc đúng, B mã hóa lại và phát một tín hiệu mới.",
-      "Trong mô hình này, khi B giải mã lỗi, nó dừng ở đó. C sẽ thiếu gói của lần truyền ấy."
+      "Cách thứ hai là giải mã rồi chuyển tiếp. Khi đọc đúng dãy bit, trạm tạo một tín hiệu mới để gửi đi.",
+      "Nếu giải mã lỗi, trạm sẽ dừng phát. Vì vậy ở lần truyền ấy, đích không nhận được gói."
     ]
   },
   {
@@ -95,8 +95,8 @@
     "lead": "40 gói ở mỗi chiều",
     "detail": "Laptop   ·   ESP32   ·   Samsung",
     "lines": [
-      "Trở lại bàn đo, hộp thật chuyển tiếp gói Wi-Fi. Còn AF và DF là hai cơ chế nhóm so sánh bằng mô hình.",
-      "Gửi bốn mươi gói qua hộp ở mỗi chiều. Cả hai lượt đều nhận đủ dữ liệu và đủ xác nhận."
+      "Những dạng sóng vừa thấy thuộc phần mô hình. Trên bàn thí nghiệm, bo mạch thực tế chuyển tiếp các gói Wi-Fi.",
+      "Nhóm gửi bốn mươi gói ở mỗi chiều giữa laptop và điện thoại. Cả hai lượt, đích nhận đủ dữ liệu và nguồn nhận đủ xác nhận."
     ]
   },
   {
@@ -105,8 +105,8 @@
     "lead": "Một hộp nối hai chặng",
     "detail": "Mô hình ba tầng · Đã kiểm tra trên bàn",
     "lines": [
-      "Vậy là gói tin có một điểm dừng giữa đường, và ta biết chính xác nó đã đi tới đâu.",
-      "Mô hình kể câu chuyện ba tầng. Muốn biết tòa nhà thật phủ được bao xa, ta cần đo ngay tại đó."
+      "Như vậy, chiếc hộp đã chuyển được dữ liệu theo cả hai chiều trên bàn đo.",
+      "Muốn biết cách bố trí này có hiệu quả trong tòa nhà thật hay không, ta cần đo ở nhiều vị trí khác nhau."
     ]
   }
 ]

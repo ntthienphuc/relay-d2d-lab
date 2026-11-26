@@ -12,7 +12,7 @@ function render(time){
    for(const eye of h.eyes)eye.scale.y=.082*blink;
  }
  if(id==='join')c.g.rotation.z=.035*Math.sin(t*2.35);else c.g.rotation.z=0;
- channels(id,t,f.progress);traffic.update(id,f.progress,t);aim(world.cam,id,f.progress,t);
+ channels(id,t,f.phaseChanged);traffic.update(id,f.progress,t);aim(world.cam,id,f.progress,t);
  if(render.last!==id||enter>0){world.renderer.shadowMap.needsUpdate=true;render.last=id;}
  world.renderer.render(world.scene,world.cam);updateHUD(f,t,world.cam);
 }

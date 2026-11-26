@@ -2,8 +2,17 @@
   "release": "2.6.1",
   "offline_dependencies": "38 pinned Windows x64/Python 3.9 wheels, install verified before final package",
   "report": {
-    "pages": 40,
-    "rgb_nonneutral_144dpi": 0
+    "pages": 31,
+    "rgb_nonneutral_144dpi": 0,
+    "board_photo": "https://www.dfrobot.com/product-1879.html",
+    "theory_figures": [
+      "AF / DF",
+      "outage crossover",
+      "gain",
+      "Monte Carlo precision",
+      "paired bootstrap",
+      "packet-level DATA / ACK"
+    ]
   },
   "native_vectors": 22,
   "holdout_rows": 945,
@@ -37,9 +46,9 @@
     "PC 2.6.1 UI re-test used one USB-visible Samsung and a laptop. The Android relay pilot used the laptop as both endpoints."
   ],
   "deliverable_sha256": {
-    "Bao_cao_Overleaf.zip": "7992d0c549ae10b9c531607e232b98ae127056032a4e8c7b5858599e61eb0b45",
-    "Bao_cao_Relay_D2D.pdf": "f414d11f7a79a8e8862cbd7e2c01fdac1cb9dc5e529fbe365278bc4a1010ab35",
-    "BAT_DAU.html": "520808dc46532067bfe519d94b435fa44c8da0a66986d95ff7213030d182dcac",
+    "Bao_cao_Overleaf.zip": "9179b7071dd765c98af3112bc849101c2dca04ad19b57ebf33b6519a965604dc",
+    "Bao_cao_Relay_D2D.pdf": "09fbe7f4bf8aee60bfeba0c98866e32143701b2e1d67c071b6985c83c15c6e45",
+    "BAT_DAU.html": "56ef1219ee073c34616b2eef3799f8f3bf8f895290fac63d0dd3202b7a694d9b",
     "Cai_dat_Relay_Lab_2_6_1_Windows_x64.exe": "2150c72fad0cfc9ddd606c98ae035e993060bbbddf8b6389a7002e5ea9b593fe",
     "De_bai/01_Chu_de_3.png": "ec16922d347c15f53d1447f62b0ec2abc8bdc5590055c81c219b51cd599ae325",
     "De_bai/02_Yeu_cau_bao_cao.png": "55528feafca23631731d02d32f34dcaf2cb2855c8ef9afebca123bba3cd67e9d",
@@ -439,7 +448,7 @@
     "Demo/wheels/tzdata-2026.6-py2.py3-none-any.whl": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
     "Demo/wheels/uvicorn-0.39.0-py3-none-any.whl": "7beec21bd2693562b386285b188a7963b06853c0d006302b3e4cfed950c9929a",
     "Demo/wheels/zipp-3.23.1-py3-none-any.whl": "0b3596c50a5c700c9cb40ba8d86d9f2cc4807e9bedb06bcdf7fac85633e444dc",
-    "Hanh_trinh_cua_mot_goi_tin.mp4": "16eb5f7c98d97b3466c73c3a19eb759328ca16deea700b058fd5639a55b41feb",
+    "Hanh_trinh_cua_mot_goi_tin.mp4": "b12d77482c5c848030135d54879135ecdab7ee4a46d53ecdbc63892103bd390c",
     "Nghiem_thu/Giao_dien/Dashboard_2_5.png": "3d94f9a475614f6498e196003e79a7f9505c3453e1ab556050bc571f0e194867",
     "Nghiem_thu/Giao_dien/Dashboard_Android_relay.png": "1e80ebac8c889ef4df598dc51b1f933ee192405a41fce3f9287100bdde315764",
     "Nghiem_thu/Giao_dien/Do_thiet_bi_2_6_1.png": "40f11f8d86a6dc65b555623a9aecaf12cf4263d5f7429bf79b26ff2a1da73277",
@@ -475,7 +484,7 @@
     "Nghiem_thu/kiem_tra_ban_cai/source.json": "a1752d35745aab4f43f392db9a4149df9c640f92b3ffa538f7ed2b18ed7dba2b",
     "Nghiem_thu/kiem_tra_ban_cai/Windows_Samsung_sink.png": "feb089a0ed90924b825bc1a1cf1d7c29a482d47c26a1b9cd386ee97f1371e4eb",
     "Nghiem_thu/kiem_tra_ban_cai/Windows_Samsung_source.png": "516bef4a70a1c7daf3ba0ec6c8961e6018f87e6f9ae489d581aa9bd2c6cf104b",
-    "Nghiem_thu/Phan_bien_va_nghiem_thu.html": "fff8a305404693a88b34f19b71859e83b9eb43a84c557648216990067b39faed",
+    "Nghiem_thu/Phan_bien_va_nghiem_thu.html": "7ea64860a080357511a4af7ec1217e3d2146c568eb3645976d1626be46d9705d",
     "Nghiem_thu/phone_room_396250058/android-local.jsonl": "622cd4f4980e1d3415f5d4eae583515c16e3d52bab537d6463ec5b6ad026ee8b",
     "Nghiem_thu/phone_room_396250058/pc-peer.jsonl": "fcc2ebc048a357d2c40e3a8c2fdfb3d195564a23958dcea3cca01b2342ec4d18",
     "Nghiem_thu/run_386535674/config.json": "9968b190809a5bd89719bff99a310d47a8a123c67fca0b2b49718489e3927a7c",
@@ -524,8 +533,8 @@
     "Nghiem_thu/run_395604760/events.jsonl": "cdb453f6a49469443e0be598d6e5c98f507f2c2ab3eb6d12cb1622c763b4ed30",
     "Nghiem_thu/run_395604760/summary.json": "67eb39b7f2eb153c301097b514f4bb43e3fa6d4d2d02f1abf48feff7fb780186",
     "Nghiem_thu/So_lieu_20_phien_ghep_cap.csv": "6393506165d24bb528a33496740a1ceff2973a967e672a0bfaaee15115595ff0",
-    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "f3ce9461f54e32d36245a55f1c642dbaa959209b78ea1e5e479260c491f93ee8",
-    "Slide_xem_nhanh.pdf": "b2f7b86650c64a2d73d7fa34d832ed6f234c815836d56d2163085e674a4b8606"
+    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "1d59888710d49a7fd58bc563626469b18f1742fea03a441085ca03b394ff2825",
+    "Slide_xem_nhanh.pdf": "0c5d08d407df21c4f2e1b58d729e6afccf29ac46174f4deab706163dcabca494"
   },
   "historical_devices_and_hardware": {
     "pc": "2.5.0",
@@ -1205,8 +1214,9 @@
   },
   "figures": {
     "report_pdf_pages": [
-      38,
-      39
+      16,
+      17,
+      24
     ],
     "slides": [
       16,
@@ -1224,7 +1234,7 @@
       {
         "slide": 1,
         "visited": true,
-        "notes_length": 484,
+        "notes_length": 303,
         "charts": 0
       },
       {
@@ -1236,7 +1246,7 @@
       {
         "slide": 3,
         "visited": true,
-        "notes_length": 443,
+        "notes_length": 239,
         "charts": 0
       },
       {
@@ -1248,7 +1258,7 @@
       {
         "slide": 5,
         "visited": true,
-        "notes_length": 362,
+        "notes_length": 354,
         "charts": 0
       },
       {
@@ -1302,19 +1312,19 @@
       {
         "slide": 14,
         "visited": true,
-        "notes_length": 376,
+        "notes_length": 217,
         "charts": 0
       },
       {
         "slide": 15,
         "visited": true,
-        "notes_length": 413,
+        "notes_length": 302,
         "charts": 0
       },
       {
         "slide": 16,
         "visited": true,
-        "notes_length": 712,
+        "notes_length": 271,
         "charts": 0
       },
       {
@@ -1554,89 +1564,101 @@
     ]
   },
   "video": {
-    "duration_s": 112.255,
-    "frames": 2694,
+    "duration_s": 104.517,
+    "frames": 2508,
     "fps": 24,
     "width": 1440,
     "height": 810,
     "video": "H.264",
     "audio": "Vietnamese narration and original music, AAC",
-    "audio_peak_dbfs": -2.1,
-    "audio_mean_dbfs": -18.1,
+    "audio_peak_dbfs": -1.5,
+    "audio_mean_dbfs": -18.5,
     "shots": [
       {
         "chapter": "Căn nhà ba tầng",
-        "start_s": 0.0,
-        "checked_frame_s": 3.998,
-        "preview_psnr_db": 46.9
+        "start_s": 0,
+        "checked_frame_s": 3.419,
+        "preview_psnr_db": 46.5
       },
       {
         "chapter": "Một điểm tiếp sức",
-        "start_s": 9.087,
-        "checked_frame_s": 13.128,
-        "preview_psnr_db": 46.4
+        "start_s": 7.771,
+        "checked_frame_s": 11.822,
+        "preview_psnr_db": 46.5
       },
       {
         "chapter": "C tìm đúng mạng",
-        "start_s": 18.27,
-        "checked_frame_s": 22.047,
-        "preview_psnr_db": 40.4
+        "start_s": 16.978,
+        "checked_frame_s": 19.887,
+        "preview_psnr_db": 40.9
       },
       {
         "chapter": "Hành trình của một gói tin",
-        "start_s": 26.855,
-        "checked_frame_s": 31.631,
-        "preview_psnr_db": 39.2
+        "start_s": 23.59,
+        "checked_frame_s": 28.236,
+        "preview_psnr_db": 41.8
       },
       {
         "chapter": "Lời nhắn quay về",
-        "start_s": 37.709,
-        "checked_frame_s": 41.75,
-        "preview_psnr_db": 45.5
+        "start_s": 34.148,
+        "checked_frame_s": 37.771,
+        "preview_psnr_db": 41.3
       },
       {
         "chapter": "Mở web qua RelayBox",
-        "start_s": 46.892,
-        "checked_frame_s": 51.218,
-        "preview_psnr_db": 42.5
+        "start_s": 42.383,
+        "checked_frame_s": 46.564,
+        "preview_psnr_db": 38.9
       },
       {
         "chapter": "Lý thuyết relay",
-        "start_s": 56.724,
-        "checked_frame_s": 61.48,
-        "preview_psnr_db": 42.3
+        "start_s": 51.885,
+        "checked_frame_s": 55.87,
+        "preview_psnr_db": 45.3
       },
       {
         "chapter": "Khuếch đại rồi chuyển tiếp",
-        "start_s": 67.532,
-        "checked_frame_s": 72.41,
-        "preview_psnr_db": 46.1
+        "start_s": 60.941,
+        "checked_frame_s": 65.817,
+        "preview_psnr_db": 44.6
       },
       {
         "chapter": "Giải mã rồi chuyển tiếp",
-        "start_s": 78.618,
-        "checked_frame_s": 83.409,
-        "preview_psnr_db": 46.4
+        "start_s": 72.023,
+        "checked_frame_s": 76.628,
+        "preview_psnr_db": 44.4
       },
       {
         "chapter": "Từ mô hình đến bàn đo",
-        "start_s": 89.507,
-        "checked_frame_s": 94.549,
-        "preview_psnr_db": 46.8
+        "start_s": 82.49,
+        "checked_frame_s": 87.808,
+        "preview_psnr_db": 46.9
       },
       {
         "chapter": "Điều ta biết",
-        "start_s": 100.965,
-        "checked_frame_s": 105.933,
-        "preview_psnr_db": 43.2
+        "start_s": 94.577,
+        "checked_frame_s": 98.951,
+        "preview_psnr_db": 44.9
       }
     ],
     "powerpoint": {
-      "duration_ms": 112254,
-      "observed_playback_ms": 1308,
-      "seek_to_theory_ms": 73749,
+      "duration_ms": 104516,
+      "observed_playback_ms": 1352,
+      "seek_to_theory_ms": 69396,
       "embedded": true,
       "slide": 1
+    },
+    "voice": {
+      "engine": "VieNeu-TTS v3 Turbo",
+      "preset": "Thiện Minh",
+      "pcm_sample_rate_hz": 48000,
+      "utterances": 22,
+      "asr_check": "Whisper small, vi, alignment by phrase",
+      "median_max_within_phrase_quiet_s": 0.28,
+      "max_within_phrase_quiet_s": 0.42,
+      "level_window_ms": 20,
+      "level_threshold_rms": 0.011
     }
-  }
+  },
+  "materials_revision": "2026-11-26 · Tiểu luận, minh họa, slide và thuyết minh khoa học"
 }

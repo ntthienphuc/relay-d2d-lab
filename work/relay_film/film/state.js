@@ -4,5 +4,7 @@ export function at(t){
  const i=timeline.findIndex(s=>t<s.end),index=i<0?timeline.length-1:i,shot=timeline[index];
  const progress=Math.max(0,Math.min(1,(t-shot.start)/(shot.end-shot.start)));
  const cue=shot.cues.find(c=>t>=c.start-.06&&t<=c.start+c.duration+.27);
- return {shot,index,progress,cue};
+ const second=shot.cues[1];
+ const phaseChanged=t>=second.start+(shot.id==='af'?second.duration*.58:.24);
+ return {shot,index,progress,cue,phaseChanged};
 }

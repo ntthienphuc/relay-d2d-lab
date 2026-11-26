@@ -5,23 +5,23 @@
     "lead": "Sóng yếu ở tầng trên",
     "detail": "A và router ở tầng 1 · C ở tầng 3",
     "lines": [
-      "Ở tầng một, A có mạng. Trên tầng ba, C cũng muốn nhận một gói tin.",
-      "Nhưng khi qua hai sàn nhà, tín hiệu có thể yếu đi. Gửi thẳng chưa chắc đã tới."
+      "Ở tầng một, điện thoại kết nối mạng rất ổn định.",
+      "Nhưng trên tầng ba, máy vẫn thấy tên mạng mà gói tin gửi đi đôi khi chẳng tới nơi."
     ],
-    "start": 0.0,
+    "start": 0,
     "cues": [
       {
-        "start": 0.65,
-        "duration": 3.204,
-        "text": "Ở tầng một, A có mạng. Trên tầng ba, C cũng muốn nhận một gói tin."
+        "start": 0.46,
+        "duration": 2.509,
+        "text": "Ở tầng một, điện thoại kết nối mạng rất ổn định."
       },
       {
-        "start": 4.194,
-        "duration": 4.073,
-        "text": "Nhưng khi qua hai sàn nhà, tín hiệu có thể yếu đi. Gửi thẳng chưa chắc đã tới."
+        "start": 3.129,
+        "duration": 4.231,
+        "text": "Nhưng trên tầng ba, máy vẫn thấy tên mạng mà gói tin gửi đi đôi khi chẳng tới nơi."
       }
     ],
-    "end": 9.087
+    "end": 7.771
   },
   {
     "id": "relay",
@@ -29,23 +29,23 @@
     "lead": "B đứng ở tầng 2",
     "detail": "B kết nối Wi-Fi của router",
     "lines": [
-      "Ta đặt một hộp nhỏ tên là B ở tầng hai, nơi vẫn còn bắt được mạng của router.",
-      "B nối vào mạng dưới nhà, rồi phát một mạng riêng mang tên RelayBox."
+      "Giữa hai tầng có một chỗ vẫn còn bắt sóng tốt. Đó là nơi nhóm đặt hộp chuyển tiếp.",
+      "Chiếc hộp kết nối với bộ phát ở tầng một, rồi tạo một mạng riêng cho tầng trên."
     ],
-    "start": 9.087,
+    "start": 7.771,
     "cues": [
       {
-        "start": 9.737,
-        "duration": 4.087,
-        "text": "Ta đặt một hộp nhỏ tên là B ở tầng hai, nơi vẫn còn bắt được mạng của router."
+        "start": 8.011,
+        "duration": 4.32,
+        "text": "Giữa hai tầng có một chỗ vẫn còn bắt sóng tốt. Đó là nơi nhóm đặt hộp chuyển tiếp."
       },
       {
-        "start": 14.164,
-        "duration": 3.286,
-        "text": "B nối vào mạng dưới nhà, rồi phát một mạng riêng mang tên RelayBox."
+        "start": 12.491,
+        "duration": 4.077,
+        "text": "Chiếc hộp kết nối với bộ phát ở tầng một, rồi tạo một mạng riêng cho tầng trên."
       }
     ],
-    "end": 18.27
+    "end": 16.978
   },
   {
     "id": "join",
@@ -53,23 +53,23 @@
     "lead": "C nối Wi-Fi RelayBox",
     "detail": "Router ở tầng 1   ·   B phát Wi-Fi ở tầng 2",
     "lines": [
-      "Bây giờ C chọn mạng do B phát. C chỉ cần liên lạc tốt với tầng ngay bên dưới.",
-      "Mỗi chặng ngắn hơn. B nhận được gói rồi mới chuyển tiếp lên trên."
+      "Điện thoại ở tầng ba lúc này chỉ cần nối vào mạng ở tầng hai.",
+      "Từ đây, gói tin có thể đi qua hai chặng ngắn hơn."
     ],
-    "start": 18.27,
+    "start": 16.978,
     "cues": [
       {
-        "start": 18.92,
-        "duration": 3.977,
-        "text": "Bây giờ C chọn mạng do B phát. C chỉ cần liên lạc tốt với tầng ngay bên dưới."
+        "start": 17.218,
+        "duration": 3.002,
+        "text": "Điện thoại ở tầng ba lúc này chỉ cần nối vào mạng ở tầng hai."
       },
       {
-        "start": 23.237,
-        "duration": 2.798,
-        "text": "Mỗi chặng ngắn hơn. B nhận được gói rồi mới chuyển tiếp lên trên."
+        "start": 20.38,
+        "duration": 2.8,
+        "text": "Từ đây, gói tin có thể đi qua hai chặng ngắn hơn."
       }
     ],
-    "end": 26.855
+    "end": 23.59
   },
   {
     "id": "data",
@@ -77,23 +77,23 @@
     "lead": "DATA đi từ A đến C",
     "detail": "A  →  B  →  C",
     "lines": [
-      "Nhìn phong bì màu cam nhé. A gửi dữ liệu đến B, rồi B chuyển đúng gói đó đến C.",
-      "Số thứ tự đi cùng gói tin. Nhờ vậy, ta có thể tìm lại cả hành trình trong nhật ký."
+      "Hãy theo dõi chiếc phong bì màu cam. Nó đi từ máy nguồn đến chiếc hộp, rồi mới lên tới điện thoại ở tầng ba.",
+      "Số thứ tự trên mỗi gói giúp nhóm đối chiếu hành trình ấy với nhật ký ở hai đầu."
     ],
-    "start": 26.855,
+    "start": 23.59,
     "cues": [
       {
-        "start": 27.505,
-        "duration": 4.632,
-        "text": "Nhìn phong bì màu cam nhé. A gửi dữ liệu đến B, rồi B chuyển đúng gói đó đến C."
+        "start": 23.83,
+        "duration": 5.508,
+        "text": "Hãy theo dõi chiếc phong bì màu cam. Nó đi từ máy nguồn đến chiếc hộp, rồi mới lên tới điện thoại ở tầng ba."
       },
       {
-        "start": 32.477,
-        "duration": 4.412,
-        "text": "Số thứ tự đi cùng gói tin. Nhờ vậy, ta có thể tìm lại cả hành trình trong nhật ký."
+        "start": 29.498,
+        "duration": 4.24,
+        "text": "Số thứ tự trên mỗi gói giúp nhóm đối chiếu hành trình ấy với nhật ký ở hai đầu."
       }
     ],
-    "end": 37.709
+    "end": 34.148
   },
   {
     "id": "ack",
@@ -101,23 +101,23 @@
     "lead": "ACK đi từ C về A",
     "detail": "C  →  B  →  A",
     "lines": [
-      "Khi nhận gói hợp lệ, C gửi về một lời xác nhận. B chuyển lời nhắn ấy về A.",
-      "Đích đã nhận dữ liệu và nguồn đã nhận xác nhận là hai việc khác nhau."
+      "Nhận được dữ liệu hợp lệ, điện thoại gửi một lời xác nhận về theo chiều ngược lại.",
+      "Có khi dữ liệu đã tới đích, nhưng lời xác nhận lại mất trên đường về."
     ],
-    "start": 37.709,
+    "start": 34.148,
     "cues": [
       {
-        "start": 38.359,
-        "duration": 4.249,
-        "text": "Khi nhận gói hợp lệ, C gửi về một lời xác nhận. B chuyển lời nhắn ấy về A."
+        "start": 34.388,
+        "duration": 3.904,
+        "text": "Nhận được dữ liệu hợp lệ, điện thoại gửi một lời xác nhận về theo chiều ngược lại."
       },
       {
-        "start": 42.948,
-        "duration": 3.123,
-        "text": "Đích đã nhận dữ liệu và nguồn đã nhận xác nhận là hai việc khác nhau."
+        "start": 38.453,
+        "duration": 3.52,
+        "text": "Có khi dữ liệu đã tới đích, nhưng lời xác nhận lại mất trên đường về."
       }
     ],
-    "end": 46.892
+    "end": 42.383
   },
   {
     "id": "internet",
@@ -125,23 +125,23 @@
     "lead": "C dùng được Internet",
     "detail": "C  →  RelayBox  →  router  →  Internet",
     "lines": [
-      "Chiếc hộp còn làm được một việc nữa. C vẫn nối vào mạng của B để mở một trang web.",
-      "B định tuyến và đổi địa chỉ để yêu cầu đi qua router. Phản hồi quay lại đúng máy C."
+      "Cũng qua chiếc hộp này, điện thoại ở tầng ba có thể truy cập Internet.",
+      "Hộp ghi nhớ máy nào đã gửi yêu cầu, để khi trang web trả lời, dữ liệu quay về đúng điện thoại."
     ],
-    "start": 46.892,
+    "start": 42.383,
     "cues": [
       {
-        "start": 47.542,
-        "duration": 3.901,
-        "text": "Chiếc hộp còn làm được một việc nữa. C vẫn nối vào mạng của B để mở một trang web."
+        "start": 42.623,
+        "duration": 3.6,
+        "text": "Cũng qua chiếc hộp này, điện thoại ở tầng ba có thể truy cập Internet."
       },
       {
-        "start": 51.782,
-        "duration": 4.122,
-        "text": "B định tuyến và đổi địa chỉ để yêu cầu đi qua router. Phản hồi quay lại đúng máy C."
+        "start": 46.383,
+        "duration": 5.093,
+        "text": "Hộp ghi nhớ máy nào đã gửi yêu cầu, để khi trang web trả lời, dữ liệu quay về đúng điện thoại."
       }
     ],
-    "end": 56.724
+    "end": 51.885
   },
   {
     "id": "slots",
@@ -149,23 +149,23 @@
     "lead": "Hai chặng, hai khe",
     "detail": "Khe 1 · A gửi cho B\nKhe 2 · B gửi cho C",
     "lines": [
-      "Với đường trực tiếp, A gửi thẳng cho C. Còn trong mô hình bán song công, B nghe rồi mới phát.",
-      "Khe thời gian đầu dành cho A gửi đến B. Khe sau mới dành cho B gửi tiếp đến C."
+      "Tại sao phải dành hai khe thời gian cho một gói tin?",
+      "Trong mô hình bán song công, khe đầu dành cho nguồn gửi. Đến khe thứ hai, relay mới chuyển bản tin tới đích."
     ],
-    "start": 56.724,
+    "start": 51.885,
     "cues": [
       {
-        "start": 57.374,
-        "duration": 4.807,
-        "text": "Với đường trực tiếp, A gửi thẳng cho C. Còn trong mô hình bán song công, B nghe rồi mới phát."
+        "start": 52.125,
+        "duration": 2.523,
+        "text": "Tại sao phải dành hai khe thời gian cho một gói tin?"
       },
       {
-        "start": 62.521,
-        "duration": 4.191,
-        "text": "Khe thời gian đầu dành cho A gửi đến B. Khe sau mới dành cho B gửi tiếp đến C."
+        "start": 54.808,
+        "duration": 5.723,
+        "text": "Trong mô hình bán song công, khe đầu dành cho nguồn gửi. Đến khe thứ hai, relay mới chuyển bản tin tới đích."
       }
     ],
-    "end": 67.532
+    "end": 60.941
   },
   {
     "id": "af",
@@ -173,23 +173,23 @@
     "lead": "AF giữ cả nhiễu",
     "detail": "AF-FG · hệ số cố định\nAF-VG · hệ số đổi theo kênh",
     "lines": [
-      "Với AF, B khuếch đại tín hiệu vừa nhận rồi phát tiếp. Nhìn hai màn hình nhé, cả phần nhiễu cũng lớn lên.",
-      "B có thể giữ hệ số khuếch đại cố định, hoặc thay đổi hệ số theo tình trạng kênh."
+      "Với cơ chế khuếch đại rồi chuyển tiếp, trạm làm tín hiệu mạnh lên. Nhìn sang màn hình bên phải, những gợn nhiễu cũng lớn theo.",
+      "Hệ số khuếch đại có thể giữ cố định, hoặc điều chỉnh theo chất lượng của chặng đầu."
     ],
-    "start": 67.532,
+    "start": 60.941,
     "cues": [
       {
-        "start": 68.182,
-        "duration": 5.155,
-        "text": "Với AF, B khuếch đại tín hiệu vừa nhận rồi phát tiếp. Nhìn hai màn hình nhé, cả phần nhiễu cũng lớn lên."
+        "start": 61.181,
+        "duration": 6.363,
+        "text": "Với cơ chế khuếch đại rồi chuyển tiếp, trạm làm tín hiệu mạnh lên. Nhìn sang màn hình bên phải, những gợn nhiễu cũng lớn theo."
       },
       {
-        "start": 73.677,
-        "duration": 4.122,
-        "text": "B có thể giữ hệ số khuếch đại cố định, hoặc thay đổi hệ số theo tình trạng kênh."
+        "start": 67.704,
+        "duration": 3.909,
+        "text": "Hệ số khuếch đại có thể giữ cố định, hoặc điều chỉnh theo chất lượng của chặng đầu."
       }
     ],
-    "end": 78.618
+    "end": 72.023
   },
   {
     "id": "df",
@@ -197,23 +197,23 @@
     "lead": "DF tạo tín hiệu mới",
     "detail": "Giải mã được → phát lại\nGiải mã lỗi → dừng",
     "lines": [
-      "Với DF, B thử đọc các bit. Nếu đọc đúng, B mã hóa lại và phát một tín hiệu mới.",
-      "Trong mô hình này, khi B giải mã lỗi, nó dừng ở đó. C sẽ thiếu gói của lần truyền ấy."
+      "Cách thứ hai là giải mã rồi chuyển tiếp. Khi đọc đúng dãy bit, trạm tạo một tín hiệu mới để gửi đi.",
+      "Nếu giải mã lỗi, trạm sẽ dừng phát. Vì vậy ở lần truyền ấy, đích không nhận được gói."
     ],
-    "start": 78.618,
+    "start": 72.023,
     "cues": [
       {
-        "start": 79.268,
-        "duration": 4.423,
-        "text": "Với DF, B thử đọc các bit. Nếu đọc đúng, B mã hóa lại và phát một tín hiệu mới."
+        "start": 72.263,
+        "duration": 5.12,
+        "text": "Cách thứ hai là giải mã rồi chuyển tiếp. Khi đọc đúng dãy bit, trạm tạo một tín hiệu mới để gửi đi."
       },
       {
-        "start": 84.032,
-        "duration": 4.656,
-        "text": "Trong mô hình này, khi B giải mã lỗi, nó dừng ở đó. C sẽ thiếu gói của lần truyền ấy."
+        "start": 77.543,
+        "duration": 4.537,
+        "text": "Nếu giải mã lỗi, trạm sẽ dừng phát. Vì vậy ở lần truyền ấy, đích không nhận được gói."
       }
     ],
-    "end": 89.507
+    "end": 82.49
   },
   {
     "id": "bench",
@@ -221,23 +221,23 @@
     "lead": "40 gói ở mỗi chiều",
     "detail": "Laptop   ·   ESP32   ·   Samsung",
     "lines": [
-      "Trở lại bàn đo, hộp thật chuyển tiếp gói Wi-Fi. Còn AF và DF là hai cơ chế nhóm so sánh bằng mô hình.",
-      "Gửi bốn mươi gói qua hộp ở mỗi chiều. Cả hai lượt đều nhận đủ dữ liệu và đủ xác nhận."
+      "Những dạng sóng vừa thấy thuộc phần mô hình. Trên bàn thí nghiệm, bo mạch thực tế chuyển tiếp các gói Wi-Fi.",
+      "Nhóm gửi bốn mươi gói ở mỗi chiều giữa laptop và điện thoại. Cả hai lượt, đích nhận đủ dữ liệu và nguồn nhận đủ xác nhận."
     ],
-    "start": 89.507,
+    "start": 82.49,
     "cues": [
       {
-        "start": 90.157,
-        "duration": 5.515,
-        "text": "Trở lại bàn đo, hộp thật chuyển tiếp gói Wi-Fi. Còn AF và DF là hai cơ chế nhóm so sánh bằng mô hình."
+        "start": 82.73,
+        "duration": 5.277,
+        "text": "Những dạng sóng vừa thấy thuộc phần mô hình. Trên bàn thí nghiệm, bo mạch thực tế chuyển tiếp các gói Wi-Fi."
       },
       {
-        "start": 96.012,
-        "duration": 4.133,
-        "text": "Gửi bốn mươi gói qua hộp ở mỗi chiều. Cả hai lượt đều nhận đủ dữ liệu và đủ xác nhận."
+        "start": 88.167,
+        "duration": 6.0,
+        "text": "Nhóm gửi bốn mươi gói ở mỗi chiều giữa laptop và điện thoại. Cả hai lượt, đích nhận đủ dữ liệu và nguồn nhận đủ xác nhận."
       }
     ],
-    "end": 100.965
+    "end": 94.577
   },
   {
     "id": "end",
@@ -245,22 +245,22 @@
     "lead": "Một hộp nối hai chặng",
     "detail": "Mô hình ba tầng · Đã kiểm tra trên bàn",
     "lines": [
-      "Vậy là gói tin có một điểm dừng giữa đường, và ta biết chính xác nó đã đi tới đâu.",
-      "Mô hình kể câu chuyện ba tầng. Muốn biết tòa nhà thật phủ được bao xa, ta cần đo ngay tại đó."
+      "Như vậy, chiếc hộp đã chuyển được dữ liệu theo cả hai chiều trên bàn đo.",
+      "Muốn biết cách bố trí này có hiệu quả trong tòa nhà thật hay không, ta cần đo ở nhiều vị trí khác nhau."
     ],
-    "start": 100.965,
+    "start": 94.577,
     "cues": [
       {
-        "start": 101.615,
-        "duration": 3.924,
-        "text": "Vậy là gói tin có một điểm dừng giữa đường, và ta biết chính xác nó đã đi tới đâu."
+        "start": 94.817,
+        "duration": 3.44,
+        "text": "Như vậy, chiếc hộp đã chuyển được dữ liệu theo cả hai chiều trên bàn đo."
       },
       {
-        "start": 105.879,
-        "duration": 4.656,
-        "text": "Mô hình kể câu chuyện ba tầng. Muốn biết tòa nhà thật phủ được bao xa, ta cần đo ngay tại đó."
+        "start": 98.417,
+        "duration": 5.2,
+        "text": "Muốn biết cách bố trí này có hiệu quả trong tòa nhà thật hay không, ta cần đo ở nhiều vị trí khác nhau."
       }
     ],
-    "end": 112.255
+    "end": 104.517
   }
 ]

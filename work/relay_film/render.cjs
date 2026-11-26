@@ -20,9 +20,9 @@ const web=http.createServer((req,res)=>{
  await page.evaluate(t=>window.film.render(t),item.start+(item.end-item.start)*.44);await page.screenshot({path:path.join(work,'film-'+item.id+'.jpg'),type:'jpeg',quality:88});
  }
  if(process.argv.includes('--preview'))return;
- const bin=process.env.RELAY_FFMPEG||fs.readdirSync(path.join(work,'film-tools','imageio_ffmpeg','binaries')).map(n=>path.join(work,'film-tools','imageio_ffmpeg','binaries',n)).find(n=>n.endsWith('.exe'));
+ const bin=process.env.RELAY_FFMPEG||'ffmpeg';
  const duration=await page.evaluate(()=>window.film.duration),fps=24,total=Math.ceil(duration*fps),target=path.join(work,'Hanh_trinh_cua_mot_goi_tin.mp4');
- const proc=spawn(bin,['-hide_banner','-loglevel','error','-y','-f','image2pipe','-vcodec','mjpeg','-framerate',String(fps),'-i','pipe:0','-i',path.join(work,'film-narration.wav'),'-c:v','libx264','-preset','fast','-crf','17','-pix_fmt','yuv420p','-r',String(fps),'-c:a','aac','-b:a','128k','-ar','48000','-movflags','+faststart','-metadata','title=Hành trình của một gói tin — RelayBox','-metadata','comment=Vietnamese synthetic narration: Piper vi_VN-vais1000-medium; VAIS-1000 dataset, CC BY 4.0. Original animation and music: Relay Lab.','-t',String(duration),target],{stdio:['pipe','ignore','inherit']});
+ const proc=spawn(bin,['-hide_banner','-loglevel','error','-y','-f','image2pipe','-vcodec','mjpeg','-framerate',String(fps),'-i','pipe:0','-i',path.join(work,'film-narration.wav'),'-c:v','libx264','-preset','fast','-crf','17','-pix_fmt','yuv420p','-r',String(fps),'-c:a','aac','-b:a','128k','-ar','48000','-movflags','+faststart','-metadata','title=Hành trình của một gói tin — RelayBox','-metadata','comment=Vietnamese synthetic narration: VieNeu-TTS v3 Turbo, preset voice Thien Minh. Original animation and music: Relay Lab.','-t',String(duration),target],{stdio:['pipe','ignore','inherit']});
  const closed=once(proc,'close');const start=Date.now();
  const cdp=await page.context().newCDPSession(page);
  for(let frame=0;frame<total;frame++){

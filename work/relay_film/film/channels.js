@@ -36,16 +36,16 @@ export function createChannels(scene){
  const left=scope(g,-2.02,'#efbb79'),right=scope(g,2.02,'#94e3db');
  const b=board(g);b.g.position.set(0,.34,.26);b.g.scale.setScalar(.98);
  const lamp=orb(g,.53,.60,.51,.062,.062,.062,'#71bca4');
- return (id,t,progress)=>{
+ return (id,t,phaseChanged)=>{
    g.visible=id==='af'||id==='df';if(!g.visible)return false;
    const input=[],output=[],bits=[1,-1,1,1,-1,-1,1,-1];
-   const failed=id==='df'&&progress>=.58;
+   const failed=id==='df'&&phaseChanged;
    for(let i=0;i<points;i++){
     const x=i/(points-1),ph=x*2*Math.PI,clock=t*.95;
     const noise=.048*Math.sin(ph*15.2+clock*2.3)+.029*Math.sin(ph*24.4-clock*4.2)+.018*Math.cos(ph*33.3+clock);
     if(id==='af'){
      const sample=.146*Math.sin(ph*2+clock)+.059*Math.sin(ph*3.7-clock*.55)+noise;
-     input.push(sample);output.push(sample*(progress<.64?1.63:1.45+.23*Math.sin(clock)));
+     input.push(sample);output.push(sample*(!phaseChanged?1.63:1.45+.23*Math.sin(clock)));
     }else{
      const bit=bits[Math.min(7,Math.floor(x*8))];
      input.push(bit*(failed?.055:.192)+noise*(failed?2.8:1.42));output.push(bit*.269);
