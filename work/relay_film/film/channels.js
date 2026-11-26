@@ -43,13 +43,10 @@ export function createChannels(scene){
    for(let i=0;i<points;i++){
     const x=i/(points-1),ph=x*2*Math.PI,clock=t*.95;
     const noise=.048*Math.sin(ph*15.2+clock*2.3)+.029*Math.sin(ph*24.4-clock*4.2)+.018*Math.cos(ph*33.3+clock);
-    if(id==='af'){
-     const sample=.146*Math.sin(ph*2+clock)+.059*Math.sin(ph*3.7-clock*.55)+noise;
-     input.push(sample);output.push(sample*(!phaseChanged?1.63:1.45+.23*Math.sin(clock)));
-    }else{
-     const bit=bits[Math.min(7,Math.floor(x*8))];
-     input.push(bit*(failed?.055:.192)+noise*(failed?2.8:1.42));output.push(bit*.269);
-    }
+    const bit=bits[Math.min(7,Math.floor(x*8))];
+    const sample=bit*(failed?.055:.143)+noise*(failed?2.8:.87);
+    input.push(sample);
+    output.push(id==='af'?sample*1.65:bit*.269);
    }
    lamp.material=mat(failed?'#d26945':'#71bca4');
    left(input,false);right(output,failed);return failed;

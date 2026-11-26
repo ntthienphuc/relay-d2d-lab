@@ -1,5 +1,5 @@
 from pathlib import Path
-import json,os,hashlib
+import json,os,hashlib,re
 import numpy as np
 import soundfile as sf
 from vieneu import Vieneu
@@ -8,12 +8,33 @@ scene=r/'film'
 story=json.loads((scene/'story.json').read_text('utf8'))
 engine=Vieneu(backend='onnx');voice=os.environ.get('RELAY_VOICE','Thiện Minh')
 rate=48000;current=.22;pieces=[];clips=r/('speech-'+voice);clips.mkdir(exist_ok=True)
+def subtitle_phrases(line, samples):
+    phrases = re.split(r'(?<=[.!?])\s+', line)
+    if len(phrases) == 1:
+        return [(0.0, line)]
+    step = int(.02 * rate)
+    rms = np.sqrt(np.mean(samples[:len(samples)//step*step].reshape(-1,step)**2, axis=1))
+    breaks = [0.0]
+    words = [len(phrase.split()) for phrase in phrases]
+    for i in range(1,len(phrases)):
+        expected = len(rms) * sum(words[:i]) / sum(words)
+        window = min(30, int(len(rms)*.18))
+        left = max(int(breaks[-1]/.02)+10, int(expected)-window)
+        right = min(len(rms)-10, int(expected)+window+1)
+        candidates = np.arange(left, right)
+        if not len(candidates):
+            return [(0.0, line)]
+        smooth = np.convolve(rms, np.ones(5)/5, mode='same')
+        cost = smooth[candidates] + .008 * abs(candidates-expected)/max(1,window)
+        breaks.append(round(candidates[np.argmin(cost)]*.02,3))
+    return list(zip(breaks,phrases))
+
 for idx,storyshot in enumerate(story):
     storyshot['start']=0 if idx==0 else round(current,3)
     current+=.24
     storyshot['cues']=[]
     for j,line in enumerate(storyshot['lines']):
-        spoken=line.replace('relay','trạm chuyển tiếp').replace('laptop','máy tính').replace('Wi-Fi','wifi')
+        spoken=line.replace('RelayBox','rì lây bóc').replace('AF','a ép').replace('DF','đê ép').replace('“','').replace('”','')
         f=clips/f'{idx:02d}-{j}.wav'
         key=hashlib.sha256((voice+'|'+spoken).encode()).hexdigest()
         marker=f.with_suffix('.sha256')
@@ -26,8 +47,9 @@ for idx,storyshot in enumerate(story):
         y=y[max(0,active[0]-int(.09*rate)):min(len(y),active[-1]+int(.15*rate))]
         n=int(.010*rate);y[:n]*=np.linspace(0,1,n);y[-n:]*=np.linspace(1,0,n)
         rms=np.sqrt(np.mean(y[np.abs(y)>.012]**2));y*=min(.165/max(.05,rms),.84/max(.1,max(abs(y))))
-        storyshot['cues'].append(dict(start=round(current,3),duration=round(len(y)/rate,3),text=line))
-        pieces.append((current,y));current+=len(y)/rate+(.16 if j==0 else .20)
+        captions=[dict(start=round(current+offset,3),text=words) for offset,words in subtitle_phrases(line,y)]
+        storyshot['cues'].append(dict(start=round(current,3),duration=round(len(y)/rate,3),text=line,captions=captions))
+        pieces.append((current,y));current+=len(y)/rate+(.28 if j<len(storyshot['lines'])-1 else .23)
         print(idx,j,round(len(y)/rate,2),flush=True)
     current+=.21;storyshot['end']=round(current,3)
 current+=.49;story[-1]['end']=round(current,3)

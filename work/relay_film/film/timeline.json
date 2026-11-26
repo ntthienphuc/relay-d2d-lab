@@ -1,266 +1,490 @@
 [
   {
     "id": "house",
-    "chapter": "Căn nhà ba tầng",
-    "lead": "Sóng yếu ở tầng trên",
-    "detail": "A và router ở tầng 1 · C ở tầng 3",
+    "chapter": "Nhà ba tầng",
+    "lead": "Sóng tới được tầng ba?",
+    "detail": "Tầng 1 · máy gửi và bộ phát\nTầng 3 · điện thoại nhận",
     "lines": [
-      "Ở tầng một, điện thoại kết nối mạng rất ổn định.",
-      "Nhưng trên tầng ba, máy vẫn thấy tên mạng mà gói tin gửi đi đôi khi chẳng tới nơi."
+      "Mình muốn gửi một tấm ảnh từ tầng một lên cho bạn ở tầng ba.",
+      "Ở tầng ba, điện thoại vẫn thấy tên mạng. Nhưng sóng yếu quá, có lúc ảnh gửi mãi mà chẳng tới."
     ],
     "start": 0,
     "cues": [
       {
         "start": 0.46,
-        "duration": 2.509,
-        "text": "Ở tầng một, điện thoại kết nối mạng rất ổn định."
+        "duration": 3.04,
+        "text": "Mình muốn gửi một tấm ảnh từ tầng một lên cho bạn ở tầng ba.",
+        "captions": [
+          {
+            "start": 0.46,
+            "text": "Mình muốn gửi một tấm ảnh từ tầng một lên cho bạn ở tầng ba."
+          }
+        ]
       },
       {
-        "start": 3.129,
-        "duration": 4.231,
-        "text": "Nhưng trên tầng ba, máy vẫn thấy tên mạng mà gói tin gửi đi đôi khi chẳng tới nơi."
+        "start": 3.78,
+        "duration": 4.861,
+        "text": "Ở tầng ba, điện thoại vẫn thấy tên mạng. Nhưng sóng yếu quá, có lúc ảnh gửi mãi mà chẳng tới.",
+        "captions": [
+          {
+            "start": 3.78,
+            "text": "Ở tầng ba, điện thoại vẫn thấy tên mạng."
+          },
+          {
+            "start": 5.84,
+            "text": "Nhưng sóng yếu quá, có lúc ảnh gửi mãi mà chẳng tới."
+          }
+        ]
       }
     ],
-    "end": 7.771
+    "end": 9.081
   },
   {
     "id": "relay",
-    "chapter": "Một điểm tiếp sức",
-    "lead": "B đứng ở tầng 2",
-    "detail": "B kết nối Wi-Fi của router",
+    "chapter": "Tầng hai",
+    "lead": "Thêm một trạm chuyển tiếp",
+    "detail": "Relay · trạm nhận rồi chuyển tiếp",
     "lines": [
-      "Giữa hai tầng có một chỗ vẫn còn bắt sóng tốt. Đó là nơi nhóm đặt hộp chuyển tiếp.",
-      "Chiếc hộp kết nối với bộ phát ở tầng một, rồi tạo một mạng riêng cho tầng trên."
+      "Ở chiếu nghỉ tầng hai, điện thoại vẫn bắt sóng tốt. Nhóm đặt một chiếc hộp ở đó.",
+      "Chiếc hộp nối vào mạng tầng một, rồi phát mạng riêng cho tầng trên. Đó là trạm chuyển tiếp."
     ],
-    "start": 7.771,
+    "start": 9.081,
     "cues": [
       {
-        "start": 8.011,
-        "duration": 4.32,
-        "text": "Giữa hai tầng có một chỗ vẫn còn bắt sóng tốt. Đó là nơi nhóm đặt hộp chuyển tiếp."
+        "start": 9.321,
+        "duration": 4.16,
+        "text": "Ở chiếu nghỉ tầng hai, điện thoại vẫn bắt sóng tốt. Nhóm đặt một chiếc hộp ở đó.",
+        "captions": [
+          {
+            "start": 9.321,
+            "text": "Ở chiếu nghỉ tầng hai, điện thoại vẫn bắt sóng tốt."
+          },
+          {
+            "start": 11.861,
+            "text": "Nhóm đặt một chiếc hộp ở đó."
+          }
+        ]
       },
       {
-        "start": 12.491,
-        "duration": 4.077,
-        "text": "Chiếc hộp kết nối với bộ phát ở tầng một, rồi tạo một mạng riêng cho tầng trên."
+        "start": 13.761,
+        "duration": 4.477,
+        "text": "Chiếc hộp nối vào mạng tầng một, rồi phát mạng riêng cho tầng trên. Đó là trạm chuyển tiếp.",
+        "captions": [
+          {
+            "start": 13.761,
+            "text": "Chiếc hộp nối vào mạng tầng một, rồi phát mạng riêng cho tầng trên."
+          },
+          {
+            "start": 17.041,
+            "text": "Đó là trạm chuyển tiếp."
+          }
+        ]
       }
     ],
-    "end": 16.978
+    "end": 18.678
   },
   {
     "id": "join",
-    "chapter": "C tìm đúng mạng",
-    "lead": "C nối Wi-Fi RelayBox",
-    "detail": "Router ở tầng 1   ·   B phát Wi-Fi ở tầng 2",
+    "chapter": "Hai mạng Wi-Fi",
+    "lead": "Điện thoại nối vào đâu?",
+    "detail": "Tầng 1 · mạng của bộ phát\nTầng 3 · chọn mạng RelayBox",
     "lines": [
-      "Điện thoại ở tầng ba lúc này chỉ cần nối vào mạng ở tầng hai.",
-      "Từ đây, gói tin có thể đi qua hai chặng ngắn hơn."
+      "Chiếc điện thoại ở tầng một vẫn dùng mạng của bộ phát ban đầu.",
+      "Còn điện thoại tầng ba chọn mạng của chiếc hộp ở tầng hai. Vậy là hai điện thoại đang nối vào hai mạng khác nhau."
     ],
-    "start": 16.978,
+    "start": 18.678,
     "cues": [
       {
-        "start": 17.218,
-        "duration": 3.002,
-        "text": "Điện thoại ở tầng ba lúc này chỉ cần nối vào mạng ở tầng hai."
+        "start": 18.918,
+        "duration": 2.989,
+        "text": "Chiếc điện thoại ở tầng một vẫn dùng mạng của bộ phát ban đầu.",
+        "captions": [
+          {
+            "start": 18.918,
+            "text": "Chiếc điện thoại ở tầng một vẫn dùng mạng của bộ phát ban đầu."
+          }
+        ]
       },
       {
-        "start": 20.38,
-        "duration": 2.8,
-        "text": "Từ đây, gói tin có thể đi qua hai chặng ngắn hơn."
+        "start": 22.187,
+        "duration": 5.577,
+        "text": "Còn điện thoại tầng ba chọn mạng của chiếc hộp ở tầng hai. Vậy là hai điện thoại đang nối vào hai mạng khác nhau.",
+        "captions": [
+          {
+            "start": 22.187,
+            "text": "Còn điện thoại tầng ba chọn mạng của chiếc hộp ở tầng hai."
+          },
+          {
+            "start": 25.087,
+            "text": "Vậy là hai điện thoại đang nối vào hai mạng khác nhau."
+          }
+        ]
       }
     ],
-    "end": 23.59
+    "end": 28.204
   },
   {
     "id": "data",
-    "chapter": "Hành trình của một gói tin",
-    "lead": "DATA đi từ A đến C",
-    "detail": "A  →  B  →  C",
+    "chapter": "Chiều đi",
+    "lead": "DATA mang dữ liệu",
+    "detail": "Màu cam · một gói dữ liệu\nA → bộ phát → B → C",
     "lines": [
-      "Hãy theo dõi chiếc phong bì màu cam. Nó đi từ máy nguồn đến chiếc hộp, rồi mới lên tới điện thoại ở tầng ba.",
-      "Số thứ tự trên mỗi gói giúp nhóm đối chiếu hành trình ấy với nhật ký ở hai đầu."
+      "Một tấm ảnh có thể được chia thành nhiều gói nhỏ. Phong bì màu cam tượng trưng cho một gói như thế.",
+      "Từ máy gửi, gói đi qua bộ phát tầng một, đến chiếc hộp ở tầng hai, rồi tới điện thoại tầng ba."
     ],
-    "start": 23.59,
+    "start": 28.204,
     "cues": [
       {
-        "start": 23.83,
-        "duration": 5.508,
-        "text": "Hãy theo dõi chiếc phong bì màu cam. Nó đi từ máy nguồn đến chiếc hộp, rồi mới lên tới điện thoại ở tầng ba."
+        "start": 28.444,
+        "duration": 4.829,
+        "text": "Một tấm ảnh có thể được chia thành nhiều gói nhỏ. Phong bì màu cam tượng trưng cho một gói như thế.",
+        "captions": [
+          {
+            "start": 28.444,
+            "text": "Một tấm ảnh có thể được chia thành nhiều gói nhỏ."
+          },
+          {
+            "start": 30.844,
+            "text": "Phong bì màu cam tượng trưng cho một gói như thế."
+          }
+        ]
       },
       {
-        "start": 29.498,
-        "duration": 4.24,
-        "text": "Số thứ tự trên mỗi gói giúp nhóm đối chiếu hành trình ấy với nhật ký ở hai đầu."
+        "start": 33.553,
+        "duration": 4.96,
+        "text": "Từ máy gửi, gói đi qua bộ phát tầng một, đến chiếc hộp ở tầng hai, rồi tới điện thoại tầng ba.",
+        "captions": [
+          {
+            "start": 33.553,
+            "text": "Từ máy gửi, gói đi qua bộ phát tầng một, đến chiếc hộp ở tầng hai, rồi tới điện thoại tầng ba."
+          }
+        ]
       }
     ],
-    "end": 34.148
+    "end": 38.953
   },
   {
     "id": "ack",
-    "chapter": "Lời nhắn quay về",
-    "lead": "ACK đi từ C về A",
-    "detail": "C  →  B  →  A",
+    "chapter": "Chiều về",
+    "lead": "ACK báo đã nhận",
+    "detail": "Màu xanh · gói xác nhận\nC → B → bộ phát → A",
     "lines": [
-      "Nhận được dữ liệu hợp lệ, điện thoại gửi một lời xác nhận về theo chiều ngược lại.",
-      "Có khi dữ liệu đã tới đích, nhưng lời xác nhận lại mất trên đường về."
+      "Điện thoại nhận được gói rồi gửi lời báo về cho máy gửi. Phong bì xanh mang lời nhắn “đã nhận”.",
+      "Có lúc máy gửi chờ mãi vì lời xác nhận bị mất. Trong khi đó, điện thoại trên tầng ba đã nhận được gói rồi."
     ],
-    "start": 34.148,
+    "start": 38.953,
     "cues": [
       {
-        "start": 34.388,
-        "duration": 3.904,
-        "text": "Nhận được dữ liệu hợp lệ, điện thoại gửi một lời xác nhận về theo chiều ngược lại."
+        "start": 39.193,
+        "duration": 4.64,
+        "text": "Điện thoại nhận được gói rồi gửi lời báo về cho máy gửi. Phong bì xanh mang lời nhắn “đã nhận”.",
+        "captions": [
+          {
+            "start": 39.193,
+            "text": "Điện thoại nhận được gói rồi gửi lời báo về cho máy gửi."
+          },
+          {
+            "start": 42.073,
+            "text": "Phong bì xanh mang lời nhắn “đã nhận”."
+          }
+        ]
       },
       {
-        "start": 38.453,
-        "duration": 3.52,
-        "text": "Có khi dữ liệu đã tới đích, nhưng lời xác nhận lại mất trên đường về."
+        "start": 44.113,
+        "duration": 5.68,
+        "text": "Có lúc máy gửi chờ mãi vì lời xác nhận bị mất. Trong khi đó, điện thoại trên tầng ba đã nhận được gói rồi.",
+        "captions": [
+          {
+            "start": 44.113,
+            "text": "Có lúc máy gửi chờ mãi vì lời xác nhận bị mất."
+          },
+          {
+            "start": 46.793,
+            "text": "Trong khi đó, điện thoại trên tầng ba đã nhận được gói rồi."
+          }
+        ]
       }
     ],
-    "end": 42.383
+    "end": 50.233
   },
   {
     "id": "internet",
-    "chapter": "Mở web qua RelayBox",
-    "lead": "C dùng được Internet",
-    "detail": "C  →  RelayBox  →  router  →  Internet",
+    "chapter": "Cùng chiếc hộp",
+    "lead": "Mở web từ tầng ba",
+    "detail": "Điện thoại → hộp → bộ phát → Internet",
     "lines": [
-      "Cũng qua chiếc hộp này, điện thoại ở tầng ba có thể truy cập Internet.",
-      "Hộp ghi nhớ máy nào đã gửi yêu cầu, để khi trang web trả lời, dữ liệu quay về đúng điện thoại."
+      "Giờ thử mở một trang web. Điện thoại gửi yêu cầu qua chiếc hộp, rồi qua bộ phát để ra Internet.",
+      "Chiếc hộp ghi nhớ yêu cầu đến từ điện thoại nào, để chuyển câu trả lời về đúng máy."
     ],
-    "start": 42.383,
+    "start": 50.233,
     "cues": [
       {
-        "start": 42.623,
-        "duration": 3.6,
-        "text": "Cũng qua chiếc hộp này, điện thoại ở tầng ba có thể truy cập Internet."
+        "start": 50.473,
+        "duration": 5.04,
+        "text": "Giờ thử mở một trang web. Điện thoại gửi yêu cầu qua chiếc hộp, rồi qua bộ phát để ra Internet.",
+        "captions": [
+          {
+            "start": 50.473,
+            "text": "Giờ thử mở một trang web."
+          },
+          {
+            "start": 51.913,
+            "text": "Điện thoại gửi yêu cầu qua chiếc hộp, rồi qua bộ phát để ra Internet."
+          }
+        ]
       },
       {
-        "start": 46.383,
-        "duration": 5.093,
-        "text": "Hộp ghi nhớ máy nào đã gửi yêu cầu, để khi trang web trả lời, dữ liệu quay về đúng điện thoại."
+        "start": 55.793,
+        "duration": 4.522,
+        "text": "Chiếc hộp ghi nhớ yêu cầu đến từ điện thoại nào, để chuyển câu trả lời về đúng máy.",
+        "captions": [
+          {
+            "start": 55.793,
+            "text": "Chiếc hộp ghi nhớ yêu cầu đến từ điện thoại nào, để chuyển câu trả lời về đúng máy."
+          }
+        ]
       }
     ],
-    "end": 51.885
+    "end": 60.755
   },
   {
     "id": "slots",
-    "chapter": "Lý thuyết relay",
-    "lead": "Hai chặng, hai khe",
-    "detail": "Khe 1 · A gửi cho B\nKhe 2 · B gửi cho C",
+    "chapter": "Mô hình tín hiệu",
+    "lead": "B nghe rồi mới phát",
+    "detail": "Bán song công · hai lượt trong một khung",
     "lines": [
-      "Tại sao phải dành hai khe thời gian cho một gói tin?",
-      "Trong mô hình bán song công, khe đầu dành cho nguồn gửi. Đến khe thứ hai, relay mới chuyển bản tin tới đích."
+      "Giờ hãy nhìn vào tín hiệu. Trong mô hình này, trạm phải lần lượt làm hai việc.",
+      "Lượt đầu, trạm lắng nghe máy gửi.",
+      "Lượt sau, trạm phát cho máy nhận.",
+      "Nhận và phát vào hai lúc khác nhau gọi là bán song công."
     ],
-    "start": 51.885,
+    "start": 60.755,
     "cues": [
       {
-        "start": 52.125,
-        "duration": 2.523,
-        "text": "Tại sao phải dành hai khe thời gian cho một gói tin?"
+        "start": 60.995,
+        "duration": 3.894,
+        "text": "Giờ hãy nhìn vào tín hiệu. Trong mô hình này, trạm phải lần lượt làm hai việc.",
+        "captions": [
+          {
+            "start": 60.995,
+            "text": "Giờ hãy nhìn vào tín hiệu."
+          },
+          {
+            "start": 62.355,
+            "text": "Trong mô hình này, trạm phải lần lượt làm hai việc."
+          }
+        ]
       },
       {
-        "start": 54.808,
-        "duration": 5.723,
-        "text": "Trong mô hình bán song công, khe đầu dành cho nguồn gửi. Đến khe thứ hai, relay mới chuyển bản tin tới đích."
+        "start": 65.169,
+        "duration": 1.829,
+        "text": "Lượt đầu, trạm lắng nghe máy gửi.",
+        "captions": [
+          {
+            "start": 65.169,
+            "text": "Lượt đầu, trạm lắng nghe máy gửi."
+          }
+        ]
+      },
+      {
+        "start": 67.278,
+        "duration": 1.92,
+        "text": "Lượt sau, trạm phát cho máy nhận.",
+        "captions": [
+          {
+            "start": 67.278,
+            "text": "Lượt sau, trạm phát cho máy nhận."
+          }
+        ]
+      },
+      {
+        "start": 69.478,
+        "duration": 2.923,
+        "text": "Nhận và phát vào hai lúc khác nhau gọi là bán song công.",
+        "captions": [
+          {
+            "start": 69.478,
+            "text": "Nhận và phát vào hai lúc khác nhau gọi là bán song công."
+          }
+        ]
       }
     ],
-    "end": 60.941
+    "end": 72.842
   },
   {
     "id": "af",
-    "chapter": "Khuếch đại rồi chuyển tiếp",
-    "lead": "AF giữ cả nhiễu",
-    "detail": "AF-FG · hệ số cố định\nAF-VG · hệ số đổi theo kênh",
+    "chapter": "Hai cách chuyển tín hiệu",
+    "lead": "AF · khuếch đại",
+    "detail": "Amplify-and-Forward",
     "lines": [
-      "Với cơ chế khuếch đại rồi chuyển tiếp, trạm làm tín hiệu mạnh lên. Nhìn sang màn hình bên phải, những gợn nhiễu cũng lớn theo.",
-      "Hệ số khuếch đại có thể giữ cố định, hoặc điều chỉnh theo chất lượng của chặng đầu."
+      "Cách thứ nhất gọi là AF. Hãy nhìn đường sóng bên trái. Những gợn nhỏ là nhiễu lẫn vào tín hiệu.",
+      "Bên phải là sóng trạm phát đi. Trạm làm tín hiệu mạnh hơn, nên cả những gợn nhiễu cũng lớn theo."
     ],
-    "start": 60.941,
+    "start": 72.842,
     "cues": [
       {
-        "start": 61.181,
-        "duration": 6.363,
-        "text": "Với cơ chế khuếch đại rồi chuyển tiếp, trạm làm tín hiệu mạnh lên. Nhìn sang màn hình bên phải, những gợn nhiễu cũng lớn theo."
+        "start": 73.082,
+        "duration": 5.2,
+        "text": "Cách thứ nhất gọi là AF. Hãy nhìn đường sóng bên trái. Những gợn nhỏ là nhiễu lẫn vào tín hiệu.",
+        "captions": [
+          {
+            "start": 73.082,
+            "text": "Cách thứ nhất gọi là AF."
+          },
+          {
+            "start": 74.602,
+            "text": "Hãy nhìn đường sóng bên trái."
+          },
+          {
+            "start": 76.282,
+            "text": "Những gợn nhỏ là nhiễu lẫn vào tín hiệu."
+          }
+        ]
       },
       {
-        "start": 67.704,
-        "duration": 3.909,
-        "text": "Hệ số khuếch đại có thể giữ cố định, hoặc điều chỉnh theo chất lượng của chặng đầu."
+        "start": 78.562,
+        "duration": 4.88,
+        "text": "Bên phải là sóng trạm phát đi. Trạm làm tín hiệu mạnh hơn, nên cả những gợn nhiễu cũng lớn theo.",
+        "captions": [
+          {
+            "start": 78.562,
+            "text": "Bên phải là sóng trạm phát đi."
+          },
+          {
+            "start": 80.182,
+            "text": "Trạm làm tín hiệu mạnh hơn, nên cả những gợn nhiễu cũng lớn theo."
+          }
+        ]
       }
     ],
-    "end": 72.023
+    "end": 83.882
   },
   {
     "id": "df",
-    "chapter": "Giải mã rồi chuyển tiếp",
-    "lead": "DF tạo tín hiệu mới",
-    "detail": "Giải mã được → phát lại\nGiải mã lỗi → dừng",
+    "chapter": "Hai cách chuyển tín hiệu",
+    "lead": "DF · giải mã",
+    "detail": "Decode-and-Forward",
     "lines": [
-      "Cách thứ hai là giải mã rồi chuyển tiếp. Khi đọc đúng dãy bit, trạm tạo một tín hiệu mới để gửi đi.",
-      "Nếu giải mã lỗi, trạm sẽ dừng phát. Vì vậy ở lần truyền ấy, đích không nhận được gói."
+      "Cách thứ hai gọi là DF. Trạm đọc tín hiệu thành các số không và một, rồi tạo sóng mới để gửi dãy số ấy đi.",
+      "Nếu tín hiệu quá nhiễu, trạm không đọc được. Trong mô hình này, trạm sẽ bỏ qua gói đó."
     ],
-    "start": 72.023,
+    "start": 83.882,
     "cues": [
       {
-        "start": 72.263,
-        "duration": 5.12,
-        "text": "Cách thứ hai là giải mã rồi chuyển tiếp. Khi đọc đúng dãy bit, trạm tạo một tín hiệu mới để gửi đi."
+        "start": 84.122,
+        "duration": 5.76,
+        "text": "Cách thứ hai gọi là DF. Trạm đọc tín hiệu thành các số không và một, rồi tạo sóng mới để gửi dãy số ấy đi.",
+        "captions": [
+          {
+            "start": 84.122,
+            "text": "Cách thứ hai gọi là DF."
+          },
+          {
+            "start": 85.442,
+            "text": "Trạm đọc tín hiệu thành các số không và một, rồi tạo sóng mới để gửi dãy số ấy đi."
+          }
+        ]
       },
       {
-        "start": 77.543,
-        "duration": 4.537,
-        "text": "Nếu giải mã lỗi, trạm sẽ dừng phát. Vì vậy ở lần truyền ấy, đích không nhận được gói."
+        "start": 90.162,
+        "duration": 4.499,
+        "text": "Nếu tín hiệu quá nhiễu, trạm không đọc được. Trong mô hình này, trạm sẽ bỏ qua gói đó.",
+        "captions": [
+          {
+            "start": 90.162,
+            "text": "Nếu tín hiệu quá nhiễu, trạm không đọc được."
+          },
+          {
+            "start": 92.282,
+            "text": "Trong mô hình này, trạm sẽ bỏ qua gói đó."
+          }
+        ]
       }
     ],
-    "end": 82.49
+    "end": 95.1
   },
   {
     "id": "bench",
-    "chapter": "Từ mô hình đến bàn đo",
-    "lead": "40 gói ở mỗi chiều",
-    "detail": "Laptop   ·   ESP32   ·   Samsung",
+    "chapter": "Trở lại bàn đo",
+    "lead": "Đổi chiều, đếm lại",
+    "detail": "Máy tính ↔ ESP32 ↔ điện thoại",
     "lines": [
-      "Những dạng sóng vừa thấy thuộc phần mô hình. Trên bàn thí nghiệm, bo mạch thực tế chuyển tiếp các gói Wi-Fi.",
-      "Nhóm gửi bốn mươi gói ở mỗi chiều giữa laptop và điện thoại. Cả hai lượt, đích nhận đủ dữ liệu và nguồn nhận đủ xác nhận."
+      "Hai đường sóng vừa rồi là hình mô phỏng. Trên bàn đo, chiếc hộp thật chuyển từng gói dữ liệu giữa máy tính và điện thoại.",
+      "Nhóm gửi bốn mươi gói, rồi đổi chiều và gửi thêm bốn mươi. Ở cả hai lượt, máy nhận đều nhận đủ."
     ],
-    "start": 82.49,
+    "start": 95.1,
     "cues": [
       {
-        "start": 82.73,
-        "duration": 5.277,
-        "text": "Những dạng sóng vừa thấy thuộc phần mô hình. Trên bàn thí nghiệm, bo mạch thực tế chuyển tiếp các gói Wi-Fi."
+        "start": 95.34,
+        "duration": 5.84,
+        "text": "Hai đường sóng vừa rồi là hình mô phỏng. Trên bàn đo, chiếc hộp thật chuyển từng gói dữ liệu giữa máy tính và điện thoại.",
+        "captions": [
+          {
+            "start": 95.34,
+            "text": "Hai đường sóng vừa rồi là hình mô phỏng."
+          },
+          {
+            "start": 97.36,
+            "text": "Trên bàn đo, chiếc hộp thật chuyển từng gói dữ liệu giữa máy tính và điện thoại."
+          }
+        ]
       },
       {
-        "start": 88.167,
-        "duration": 6.0,
-        "text": "Nhóm gửi bốn mươi gói ở mỗi chiều giữa laptop và điện thoại. Cả hai lượt, đích nhận đủ dữ liệu và nguồn nhận đủ xác nhận."
+        "start": 101.46,
+        "duration": 4.96,
+        "text": "Nhóm gửi bốn mươi gói, rồi đổi chiều và gửi thêm bốn mươi. Ở cả hai lượt, máy nhận đều nhận đủ.",
+        "captions": [
+          {
+            "start": 101.46,
+            "text": "Nhóm gửi bốn mươi gói, rồi đổi chiều và gửi thêm bốn mươi."
+          },
+          {
+            "start": 104.4,
+            "text": "Ở cả hai lượt, máy nhận đều nhận đủ."
+          }
+        ]
       }
     ],
-    "end": 94.577
+    "end": 106.86
   },
   {
     "id": "end",
-    "chapter": "Điều ta biết",
-    "lead": "Một hộp nối hai chặng",
-    "detail": "Mô hình ba tầng · Đã kiểm tra trên bàn",
+    "chapter": "Từ bàn đo đến cầu thang",
+    "lead": "Đặt hộp ở đâu?",
+    "detail": "Lần đo tiếp theo · so cùng vị trí, cùng số gói",
     "lines": [
-      "Như vậy, chiếc hộp đã chuyển được dữ liệu theo cả hai chiều trên bàn đo.",
-      "Muốn biết cách bố trí này có hiệu quả trong tòa nhà thật hay không, ta cần đo ở nhiều vị trí khác nhau."
+      "Bây giờ ta biết chiếc hộp chuyển được gói theo cả hai chiều.",
+      "Còn ở cầu thang nhà mình thì sao? Hãy thử gửi cùng số gói khi có hộp và khi bỏ hộp ra, rồi đếm xem tầng ba nhận được bao nhiêu."
     ],
-    "start": 94.577,
+    "start": 106.86,
     "cues": [
       {
-        "start": 94.817,
-        "duration": 3.44,
-        "text": "Như vậy, chiếc hộp đã chuyển được dữ liệu theo cả hai chiều trên bàn đo."
+        "start": 107.1,
+        "duration": 2.859,
+        "text": "Bây giờ ta biết chiếc hộp chuyển được gói theo cả hai chiều.",
+        "captions": [
+          {
+            "start": 107.1,
+            "text": "Bây giờ ta biết chiếc hộp chuyển được gói theo cả hai chiều."
+          }
+        ]
       },
       {
-        "start": 98.417,
-        "duration": 5.2,
-        "text": "Muốn biết cách bố trí này có hiệu quả trong tòa nhà thật hay không, ta cần đo ở nhiều vị trí khác nhau."
+        "start": 110.239,
+        "duration": 6.863,
+        "text": "Còn ở cầu thang nhà mình thì sao? Hãy thử gửi cùng số gói khi có hộp và khi bỏ hộp ra, rồi đếm xem tầng ba nhận được bao nhiêu.",
+        "captions": [
+          {
+            "start": 110.239,
+            "text": "Còn ở cầu thang nhà mình thì sao?"
+          },
+          {
+            "start": 111.999,
+            "text": "Hãy thử gửi cùng số gói khi có hộp và khi bỏ hộp ra, rồi đếm xem tầng ba nhận được bao nhiêu."
+          }
+        ]
       }
     ],
-    "end": 104.517
+    "end": 118.032
   }
 ]

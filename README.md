@@ -5,7 +5,7 @@
 | Mở từ nhánh này | Nội dung |
 | --- | --- |
 | [Hướng dẫn và kịch bản demo](outputs/relay_d2d_lab/Huong_dan_va_kich_ban_demo.pdf) | Cách nối thiết bị và kịch bản 5 phút ở cuối |
-| [Phim 3D có lời kể tiếng Việt](outputs/relay_2_5/Hanh_trinh_cua_mot_goi_tin.mp4) | 1 phút 45 giây về DATA/ACK, NAPT, AF, DF và hai lượt đo qua ESP |
+| [Phim 3D có lời kể tiếng Việt](outputs/relay_2_5/Hanh_trinh_cua_mot_goi_tin.mp4) | 1 phút 58 giây theo một tấm ảnh, gói DATA và ACK, nguyên lý AF/DF và hai lượt đo qua ESP |
 | [PowerPoint](outputs/relay_2_5/Relay_D2D_Thuyet_trinh_cuoi_ky.pptx) · [PDF slide](outputs/relay_2_5/Slide_xem_nhanh.pdf) | 24 slide từ bài toán, lý thuyết đến mô phỏng và đo thật |
 | [Tiểu luận](outputs/relay_2_5/Bao_cao_Relay_D2D.pdf) · [Nguồn LaTeX](outputs/relay_2_5/Bao_cao_Overleaf.zip) | 31 trang, hình dạng sóng AF/DF và kết quả thực nghiệm |
 | [Mã nguồn](outputs/relay_d2d_lab) · [APK](outputs/relay_d2d_lab/android/build/relaylab.apk) | Windows 2.6.1, Android và firmware ESP32 2.6.0 |
@@ -18,7 +18,7 @@ Từ gốc demo với môi trường Python của dự án, chạy `python -m py
 
 ### Mã dựng phim
 
-Cảnh nhà ba tầng, gói tin, máy hiện sóng và phụ đề nằm ở [work/relay_film](work/relay_film). Trong môi trường Python 3.11, cài `python -m pip install vieneu==3.8.5` rồi chạy `python audio.py` tại thư mục đó. Lần đầu chạy cần Internet để tải bộ tổng hợp tiếng Việt. Chương trình tạo `film-narration.wav` và ghi thời điểm từng câu vào `film/timeline.json`. Phần AF/DF trong hoạt họa chuyển trạng thái theo các mốc lời kể này.
+Cảnh nhà ba tầng, gói tin, máy hiện sóng và phụ đề nằm ở [work/relay_film](work/relay_film). Trong môi trường Python 3.11, cài `python -m pip install vieneu==3.8.5` rồi chạy `python audio.py` tại thư mục đó. Lần đầu chạy cần Internet để tải bộ tổng hợp tiếng Việt. Chương trình tạo `film-narration.wav` và ghi thời điểm từng câu vào `film/timeline.json`. Phụ đề tách theo câu. Chặng nhận và chặng phát trong mô hình bán song công, cùng minh họa DF đọc lỗi, chuyển trạng thái theo lời kể.
 
 Để xuất MP4, cài FFmpeg trên PATH, chạy `npm install --no-save playwright` rồi chạy `node render.cjs` trên Windows có Chrome. Hai biến `RELAY_CHROME` và `RELAY_FFMPEG` cho phép chọn đường dẫn chương trình.
 

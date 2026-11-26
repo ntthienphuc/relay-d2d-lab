@@ -48,7 +48,7 @@
   "deliverable_sha256": {
     "Bao_cao_Overleaf.zip": "9179b7071dd765c98af3112bc849101c2dca04ad19b57ebf33b6519a965604dc",
     "Bao_cao_Relay_D2D.pdf": "09fbe7f4bf8aee60bfeba0c98866e32143701b2e1d67c071b6985c83c15c6e45",
-    "BAT_DAU.html": "56ef1219ee073c34616b2eef3799f8f3bf8f895290fac63d0dd3202b7a694d9b",
+    "BAT_DAU.html": "5da54c43d0c89abf503776da7ae6e58d59b26d20a9b400e332e212d91d6b27db",
     "Cai_dat_Relay_Lab_2_6_1_Windows_x64.exe": "2150c72fad0cfc9ddd606c98ae035e993060bbbddf8b6389a7002e5ea9b593fe",
     "De_bai/01_Chu_de_3.png": "ec16922d347c15f53d1447f62b0ec2abc8bdc5590055c81c219b51cd599ae325",
     "De_bai/02_Yeu_cau_bao_cao.png": "55528feafca23631731d02d32f34dcaf2cb2855c8ef9afebca123bba3cd67e9d",
@@ -448,7 +448,7 @@
     "Demo/wheels/tzdata-2026.6-py2.py3-none-any.whl": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
     "Demo/wheels/uvicorn-0.39.0-py3-none-any.whl": "7beec21bd2693562b386285b188a7963b06853c0d006302b3e4cfed950c9929a",
     "Demo/wheels/zipp-3.23.1-py3-none-any.whl": "0b3596c50a5c700c9cb40ba8d86d9f2cc4807e9bedb06bcdf7fac85633e444dc",
-    "Hanh_trinh_cua_mot_goi_tin.mp4": "b12d77482c5c848030135d54879135ecdab7ee4a46d53ecdbc63892103bd390c",
+    "Hanh_trinh_cua_mot_goi_tin.mp4": "9cda21c7cea99040956be660d48edd625fbf49f5fabb7584b0314a6c91df93ec",
     "Nghiem_thu/Giao_dien/Dashboard_2_5.png": "3d94f9a475614f6498e196003e79a7f9505c3453e1ab556050bc571f0e194867",
     "Nghiem_thu/Giao_dien/Dashboard_Android_relay.png": "1e80ebac8c889ef4df598dc51b1f933ee192405a41fce3f9287100bdde315764",
     "Nghiem_thu/Giao_dien/Do_thiet_bi_2_6_1.png": "40f11f8d86a6dc65b555623a9aecaf12cf4263d5f7429bf79b26ff2a1da73277",
@@ -533,8 +533,8 @@
     "Nghiem_thu/run_395604760/events.jsonl": "cdb453f6a49469443e0be598d6e5c98f507f2c2ab3eb6d12cb1622c763b4ed30",
     "Nghiem_thu/run_395604760/summary.json": "67eb39b7f2eb153c301097b514f4bb43e3fa6d4d2d02f1abf48feff7fb780186",
     "Nghiem_thu/So_lieu_20_phien_ghep_cap.csv": "6393506165d24bb528a33496740a1ceff2973a967e672a0bfaaee15115595ff0",
-    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "1d59888710d49a7fd58bc563626469b18f1742fea03a441085ca03b394ff2825",
-    "Slide_xem_nhanh.pdf": "0c5d08d407df21c4f2e1b58d729e6afccf29ac46174f4deab706163dcabca494"
+    "Relay_D2D_Thuyet_trinh_cuoi_ky.pptx": "7589baab3ea010d587075b0805a63fb6014a259e4c03fc565299b31a91455a00",
+    "Slide_xem_nhanh.pdf": "449bf66ac5373e27f6772d782634fb7b18af892e18e556328d1f78c92c7d3e23"
   },
   "historical_devices_and_hardware": {
     "pc": "2.5.0",
@@ -1564,87 +1564,87 @@
     ]
   },
   "video": {
-    "duration_s": 104.517,
-    "frames": 2508,
+    "duration_s": 118.032,
+    "frames": 2833,
     "fps": 24,
     "width": 1440,
     "height": 810,
     "video": "H.264",
     "audio": "Vietnamese narration and original music, AAC",
     "audio_peak_dbfs": -1.5,
-    "audio_mean_dbfs": -18.5,
+    "audio_mean_dbfs": -18.6,
     "shots": [
       {
-        "chapter": "Căn nhà ba tầng",
+        "chapter": "Nhà ba tầng",
         "start_s": 0,
-        "checked_frame_s": 3.419,
-        "preview_psnr_db": 46.5
-      },
-      {
-        "chapter": "Một điểm tiếp sức",
-        "start_s": 7.771,
-        "checked_frame_s": 11.822,
-        "preview_psnr_db": 46.5
-      },
-      {
-        "chapter": "C tìm đúng mạng",
-        "start_s": 16.978,
-        "checked_frame_s": 19.887,
-        "preview_psnr_db": 40.9
-      },
-      {
-        "chapter": "Hành trình của một gói tin",
-        "start_s": 23.59,
-        "checked_frame_s": 28.236,
-        "preview_psnr_db": 41.8
-      },
-      {
-        "chapter": "Lời nhắn quay về",
-        "start_s": 34.148,
-        "checked_frame_s": 37.771,
-        "preview_psnr_db": 41.3
-      },
-      {
-        "chapter": "Mở web qua RelayBox",
-        "start_s": 42.383,
-        "checked_frame_s": 46.564,
-        "preview_psnr_db": 38.9
-      },
-      {
-        "chapter": "Lý thuyết relay",
-        "start_s": 51.885,
-        "checked_frame_s": 55.87,
-        "preview_psnr_db": 45.3
-      },
-      {
-        "chapter": "Khuếch đại rồi chuyển tiếp",
-        "start_s": 60.941,
-        "checked_frame_s": 65.817,
-        "preview_psnr_db": 44.6
-      },
-      {
-        "chapter": "Giải mã rồi chuyển tiếp",
-        "start_s": 72.023,
-        "checked_frame_s": 76.628,
-        "preview_psnr_db": 44.4
-      },
-      {
-        "chapter": "Từ mô hình đến bàn đo",
-        "start_s": 82.49,
-        "checked_frame_s": 87.808,
+        "checked_frame_s": 3.996,
         "preview_psnr_db": 46.9
       },
       {
-        "chapter": "Điều ta biết",
-        "start_s": 94.577,
-        "checked_frame_s": 98.951,
-        "preview_psnr_db": 44.9
+        "chapter": "Tầng hai",
+        "start_s": 9.081,
+        "checked_frame_s": 13.304,
+        "preview_psnr_db": 46.6
+      },
+      {
+        "chapter": "Hai mạng Wi-Fi",
+        "start_s": 18.678,
+        "checked_frame_s": 22.869,
+        "preview_psnr_db": 40.6
+      },
+      {
+        "chapter": "Chiều đi",
+        "start_s": 28.204,
+        "checked_frame_s": 32.934,
+        "preview_psnr_db": 41.9
+      },
+      {
+        "chapter": "Chiều về",
+        "start_s": 38.953,
+        "checked_frame_s": 43.916,
+        "preview_psnr_db": 40.8
+      },
+      {
+        "chapter": "Cùng chiếc hộp",
+        "start_s": 50.233,
+        "checked_frame_s": 54.863,
+        "preview_psnr_db": 40.5
+      },
+      {
+        "chapter": "Mô hình tín hiệu",
+        "start_s": 60.755,
+        "checked_frame_s": 66.073,
+        "preview_psnr_db": 45.4
+      },
+      {
+        "chapter": "Hai cách chuyển tín hiệu",
+        "start_s": 72.842,
+        "checked_frame_s": 77.7,
+        "preview_psnr_db": 46.3
+      },
+      {
+        "chapter": "Hai cách chuyển tín hiệu",
+        "start_s": 83.882,
+        "checked_frame_s": 88.818,
+        "preview_psnr_db": 46.4
+      },
+      {
+        "chapter": "Trở lại bàn đo",
+        "start_s": 95.1,
+        "checked_frame_s": 100.274,
+        "preview_psnr_db": 46.9
+      },
+      {
+        "chapter": "Từ bàn đo đến cầu thang",
+        "start_s": 106.86,
+        "checked_frame_s": 111.776,
+        "preview_psnr_db": 44.3
       }
     ],
     "powerpoint": {
-      "duration_ms": 104516,
-      "observed_playback_ms": 1352,
-      "seek_to_theory_ms": 69396,
+      "duration_ms": 118041,
+      "observed_playback_ms": 1351,
+      "seek_to_theory_ms": 74405,
       "embedded": true,
       "slide": 1
     },
@@ -1652,13 +1652,23 @@
       "engine": "VieNeu-TTS v3 Turbo",
       "preset": "Thiện Minh",
       "pcm_sample_rate_hz": 48000,
-      "utterances": 22,
-      "asr_check": "Whisper small, vi, alignment by phrase",
-      "median_max_within_phrase_quiet_s": 0.28,
-      "max_within_phrase_quiet_s": 0.42,
+      "utterances": 24,
+      "asr_check": "Whisper small, Vietnamese per recorded utterance",
+      "max_within_phrase_quiet_s": 0.5,
       "level_window_ms": 20,
       "level_threshold_rms": 0.011
+    },
+    "caption_check": {
+      "captions": 41,
+      "language": "vi",
+      "layout_px": [
+        1440,
+        810
+      ],
+      "overlaps": 0,
+      "runtime_errors": 0
     }
   },
-  "materials_revision": "2026-11-26 · Tiểu luận, minh họa, slide và thuyết minh khoa học"
+  "materials_revision": "2026-11-26 · Tiểu luận, minh họa, slide và thuyết minh khoa học",
+  "movie_revision": "2026-11-27 · Lời kể và phụ đề theo hành trình của một tấm ảnh"
 }
